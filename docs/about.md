@@ -2,10 +2,6 @@
 title: About the Author
 ---
 
-<div style="display:flex; flex-wrap:wrap; gap:2rem; align-items:flex-start;">
-
-<div style="flex:1 1 60%; min-width:260px;">
-
 # Dr. Majid Memari
 
 Dr. Majid Memari is an AI researcher, educator, and solution architect passionate about advancing the design and application of high-impact artificial intelligence systems.
