@@ -22,7 +22,6 @@ Dr. Memari publishes peer-reviewed research and public articles on generative AI
 
 Feel free to connect or explore more of his work through the links below.
 
-
 ---
 
 [Return to Home](index.md) 
