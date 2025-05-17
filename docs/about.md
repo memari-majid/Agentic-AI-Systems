@@ -2,14 +2,42 @@
 title: About the Author
 ---
 
+<style>
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  .about-text {
+    flex: 1 1 60%;
+    min-width: 260px;
+  }
+  .about-image-container {
+    flex: 0 0 220px;
+    max-width: 220px;
+    text-align: center;
+  }
+  .about-image-container img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+</style>
+
+<div class="about-container">
+<div class="about-text">
+
 # Dr. Majid Memari
 
 Dr. Majid Memari is an AI researcher, educator, and solution architect passionate about advancing the design and application of high-impact artificial intelligence systems.
 
 ### Academic Credentials
 
-- **Ph.D. in Computer Science** – Southern Illinois University Carbondale
-- **M.S. in Computer Science** – Southern Illinois University Carbondale
+- **PhD in Computer Science**
+- **MS in Computer Science**
+- **Master of Business Administration(MBA)**
+- **BS in Industrial Engineering**
 
 ### Professional Focus
 
@@ -26,8 +54,8 @@ Feel free to connect or explore more of his work through the links below.
 
 </div>
 
-<div style="flex:0 0 220px; max-width:220px; text-align:center;">
-  <img src="./majid_memari_profile.png" alt="Dr. Majid Memari" style="width:100%; border-radius:50%; box-shadow:0 4px 12px rgba(0,0,0,0.15);">
+<div class="about-image-container">
+  <img src="assets/images/majid_memari_profile.png" alt="Dr. Majid Memari">
   <p><strong>Dr. Majid Memari</strong><br><em>Researcher · Educator · Architect</em></p>
   <p>
     <a href="https://github.com/memari-majid" target="_blank">GitHub</a> ·
@@ -39,4 +67,4 @@ Feel free to connect or explore more of his work through the links below.
 
 ---
 
-Return to the [Home](index.md) page. 
+[Return to Home](index.md) 
