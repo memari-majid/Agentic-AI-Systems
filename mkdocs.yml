@@ -2,8 +2,8 @@ site_name: Agentic AI Systems
 site_url: https://memari-majid.github.io/Agentic-AI-Systems/
 theme:
   name: material
-  logo: image.png
-  favicon: image.png
+  logo: logo.png
+  favicon: logo.png
   features:
     - navigation.instant
     - navigation.tracking
