@@ -1,5 +1,8 @@
 # Introduction to Agentic AI Systems
-![Banner](./image.png)
+
+[![Course Website](https://img.shields.io/badge/View%20Course%20Website-online-blue)](https://memari-majid.github.io/Agentic-AI-Systems/)
+
+**Course Website:** [https://memari-majid.github.io/Agentic-AI-Systems/](https://memari-majid.github.io/Agentic-AI-Systems/)
 
 This course provides a rigorous exploration of the theoretical underpinnings and practical applications of advanced agentic AI systems. It emphasizes core design principles, system orchestration, and the deployment of intelligent agents using contemporary software frameworks and methodologies.
 
