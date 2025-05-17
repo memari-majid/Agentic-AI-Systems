@@ -19,25 +19,36 @@ The curriculum is organized into thematic parts, encompassing lessons, practical
 ### Part 1: Foundations of Agentic Intelligence
 *Exploring the underpinnings of generative AI and the elemental components of intelligent agents.*
 
-1.  **[Chapter 01: Paradigms of Generative AI & Agentic Systems](Lessons/Chapter01)** (Core Agentic Principles, Foundational Models, Ethical Considerations)
-2.  **[Chapter 02: Fundamental Components of Agent Architectures](Lessons/Chapter02)** (Perception, Memory Models, Reasoning Mechanisms, Action Formulation)
-3.  **[Chapter 03: Frameworks for Agent Development & Orchestration](Lessons/Chapter03)** (Advanced Component-Based Development, Introduction to Graph-Based State Management for Agents)
+1.  **[Chapter 01: Paradigms of Generative AI & Agentic Systems](Lessons/Chapter01)**
+    -   [Fundamentals of Generative AI](Lessons/Chapter01/1%20Fundamentals%20of%20Generative%20AI.md) (Core Agentic Principles, Foundational Models, Ethical Considerations)
+2.  **[Chapter 02: Fundamental Components of Agent Architectures](Lessons/Chapter02)**
+    -   [Principles of Agentic Systems](Lessons/Chapter02/2%20Principles%20of%20Agentic%20Systems.md) (Perception, Memory Models, Reasoning Mechanisms, Action Formulation)
+3.  **[Chapter 03: Frameworks for Agent Development & Orchestration](Lessons/Chapter03)**
+    -   [Essential Components of Intelligent Agents](Lessons/Chapter03/3%20Essential%20Components%20of%20Intelligent%20Agents.md) (Advanced Component-Based Development, Introduction to Graph-Based State Management)
 
 ### Part 2: Advanced Agent Design and Orchestration Strategies
 *Focusing on sophisticated design patterns for agents, including reflective capabilities, tool integration, multi-agent systems, and resilient state management.*
 
-4.  **[Chapter 04: Reflection and Introspection in Agent Cognition](Lessons/Chapter04)** (Self-Correction Paradigms, Metacognitive Loops for Enhanced Performance)
-5.  **[Chapter 05: Tool Augmentation & Deliberative Planning in Agents](Lessons/Chapter05)** (Integration of External Utilities, Advanced Planning Algorithms, e.g., ReAct)
-6.  **[Chapter 06: Principles of Multi-Agent Systems](Lessons/Chapter06)** (Distributed Agent Architectures, Communication Protocols, Collaborative Task Execution)
-7.  **[Chapter 07: Advanced Methodologies for State Persistence & System Resilience](Lessons/Chapter07)** (Sophisticated State Management, Checkpointing Techniques, Fault Tolerance)
+4.  **[Chapter 04: Reflection and Introspection in Agent Cognition](Lessons/Chapter04)**
+    -   [Reflection and Introspection in Agents](Lessons/Chapter04/4%20Reflection%20and%20Introspection%20in%20Agents.md) (Self-Correction Paradigms, Metacognitive Loops)
+5.  **[Chapter 05: Tool Augmentation & Deliberative Planning in Agents](Lessons/Chapter05)**
+    -   [Enabling Tool Use and Planning in Agents](Lessons/Chapter05/5%20Enabling%20Tool%20Use%20and%20Planning%20in%20Agents.md) (Integration of External Utilities, Advanced Planning Algorithms)
+6.  **[Chapter 06: Principles of Multi-Agent Systems](Lessons/Chapter06)**
+    -   [Exploring the Coordinator, Worker, and Delegator Approach](Lessons/Chapter06/6%20Exploring%20the%20Coordinator%2C%20Worker%2C%20and%20Delegator%20Approach.md) (Distributed Architectures, Communication, Collaboration)
+7.  **[Chapter 07: Advanced Methodologies for State Persistence & System Resilience](Lessons/Chapter07)**
+    -   [Effective Agentic System Design Techniques](Lessons/Chapter07/7%20Effective%20Agentic%20System%20Design%20Techniques.md) (Sophisticated State Management, Checkpointing, Fault Tolerance)
 
 ### Part 3: Evaluation, Security, and Application of Agentic Systems
 *Addressing trustworthy AI, system safety, evaluation methodologies, and the deployment of agentic systems in various domains.*
 
-8.  **[Chapter 08: Constructing Trustworthy and Explainable Agentic Systems](Lessons/Chapter08)** (Explainable AI (XAI) for Agents, Alignment with Human Values, System Transparency)
-9.  **[Chapter 09: Ensuring Safety and Ethical Conduct in AI Systems](Lessons/Chapter09)** (Risk Identification and Mitigation, Implementation of Safeguards, Bias and Fairness Considerations)
-10. **[Chapter 10: Evaluation and Optimization of Agentic System Performance](Lessons/Chapter10)** (Performance Metrics, Debugging Methodologies, Optimization of Reasoning Pipelines)
-11. **[Chapter 11: Real-World Applications & Future Trajectories of Agentic AI](Lessons/Chapter11)** (Domain-Specific Case Studies, Emerging Research Directions)
+8.  **[Chapter 08: Constructing Trustworthy and Explainable Agentic Systems](Lessons/Chapter08)**
+    -   [Building Trust in Generative AI Systems](Lessons/Chapter08/8%20Building%20Trust%20in%20Generative%20AI%20Systems.md) (XAI for Agents, Alignment with Human Values, Transparency)
+9.  **[Chapter 09: Ensuring Safety and Ethical Conduct in AI Systems](Lessons/Chapter09)**
+    -   [Managing Safety and Ethical Considerations](Lessons/Chapter09/9%20Managing%20Safety%20and%20Ethical%20Considerations.md) (Risk Identification, Safeguards, Bias & Fairness)
+10. **[Chapter 10: Common Use Cases and Applications of Agentic AI](Lessons/Chapter10)**
+    -   [Common Use Cases and Applications](Lessons/Chapter10/10%20Common%20Use%20Cases%20and%20Applications.md) (Performance Metrics, Debugging, Optimization of Reasoning Pipelines)
+11. **[Chapter 11: Conclusion and Future Outlook for Agentic AI](Lessons/Chapter11)**
+    -   [Conclusion and Future Outlook](Lessons/Chapter11/11%20Conclusion%20and%20Future%20Outlook.md) (Domain-Specific Case Studies, Emerging Research Directions)
 
 ## Lab Exercises: Practical Application of Agentic AI
 
