@@ -39,7 +39,7 @@ The curriculum is organized into thematic parts, encompassing lessons, practical
 10. **Chapter 10: Evaluation and Optimization of Agentic System Performance** (Performance Metrics, Debugging Methodologies, Optimization of Reasoning Pipelines)
 11. **Chapter 11: Real-World Applications & Future Trajectories of Agentic AI** (Domain-Specific Case Studies, Emerging Research Directions)
 
-## Laboratory Exercises: Practical Application of Agentic AI
+## Lab Exercises: Practical Application of Agentic AI
 
 The `Labs` directory contains exercises for applying theoretical concepts to practical agentic AI design and implementation. These labs explore topics such as conversational intelligence, stateful interaction management, reflective processing, multi-agent dynamics, and tool-augmented reasoning, primarily utilizing frameworks like **LangChain** and **LangGraph** for illustration. Detailed descriptions are available in `Labs/README.md`.
 
