@@ -35,7 +35,7 @@ Feel free to connect or explore more of his work through the links below.
   <p><strong>Dr. Majid Memari</strong><br><em>Researcher · Educator · Architect</em></p>
   <p>
     <a href="https://github.com/memari-majid" target="_blank">GitHub</a> ·
-    <a href="https://www.linkedin.com/in/majidmemari/" target="_blank">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/majid-memari/" target="_blank">LinkedIn</a>
   </p>
 </div>
 
