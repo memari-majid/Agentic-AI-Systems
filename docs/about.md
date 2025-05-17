@@ -1,8 +1,4 @@
----
-title: About the Author
----
-
-# Dr. Majid Memari
+# About the Author
 
 Dr. Majid Memari is an AI researcher, educator, and solution architect passionate about advancing the design and application of high-impact artificial intelligence systems.
 
@@ -26,18 +22,6 @@ Dr. Memari publishes peer-reviewed research and public articles on generative AI
 
 Feel free to connect or explore more of his work through the links below.
 
-</div>
-
-<div class="about-image-container">
-  <img src="./majid_memari_profile.png" alt="Dr. Majid Memari">
-  <p><strong>Dr. Majid Memari</strong><br><em>Researcher · Educator · Architect</em></p>
-  <p>
-    <a href="https://github.com/memari-majid" target="_blank">GitHub</a> ·
-    <a href="https://www.linkedin.com/in/majid-memari/" target="_blank">LinkedIn</a>
-  </p>
-</div>
-
-</div>
 
 ---
 

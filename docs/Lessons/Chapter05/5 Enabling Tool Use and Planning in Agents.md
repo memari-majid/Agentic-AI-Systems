@@ -6,7 +6,7 @@ This chapter explores how intelligent agents use tools and planning algorithms t
 ## Key Concepts
 
 ### Understanding Tool Use in Agents
-- **Definition**: Tool usage refers to an agent\'s ability to identify the need for, select, and leverage external resources, software functions, or APIs to augment its functionality, gather information, or interact with the environment.
+- **Definition**: Tool usage refers to an agent's ability to identify the need for, select, and leverage external resources, software functions, or APIs to augment its functionality, gather information, or interact with the environment.
 - **Tool Calling vs. Function Calling**:
   - **Function Calling**: Typically refers to an LLM generating a structured request (e.g., JSON) that specifies a function to be executed *within the same application or runtime environment* as the agent. The agent\'s internal code directly handles this call. For example, an LLM might output a JSON object like `{"function": "calculator", "parameters": {"expression": "2+2"}}`, which the agent\'s code then parses and executes locally.
   - **Tool Calling**: A broader term that encompasses function calling but often implies interaction with *external* APIs, services, systems, or even physical hardware. The LLM still generates a structured request, but the agent controller might need to make network requests, interact with operating system utilities, or interface with other processes. For example, calling a weather API, a database, or a custom enterprise API.
