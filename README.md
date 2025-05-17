@@ -1,4 +1,4 @@
-# Mastering Agentic AI
+# Agentic AI Systems
 ![Mastering Agentic AI Banner](./image.png)
 
 Welcome to a comprehensive course on designing, orchestrating, and applying advanced agentic AI systems. This course explores core principles and practical implementation using key technologies like **LangChain** for building agent components and **LangGraph** for orchestrating stateful workflows.
