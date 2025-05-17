@@ -2,32 +2,6 @@
 title: About the Author
 ---
 
-<style>
-  .about-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    align-items: flex-start;
-  }
-  .about-text {
-    flex: 1 1 60%;
-    min-width: 260px;
-  }
-  .about-image-container {
-    flex: 0 0 220px;
-    max-width: 220px;
-    text-align: center;
-  }
-  .about-image-container img {
-    width: 100%;
-    border-radius: 50%;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  }
-</style>
-
-<div class="about-container">
-<div class="about-text">
-
 # Dr. Majid Memari
 
 Dr. Majid Memari is an AI researcher, educator, and solution architect passionate about advancing the design and application of high-impact artificial intelligence systems.
@@ -55,7 +29,7 @@ Feel free to connect or explore more of his work through the links below.
 </div>
 
 <div class="about-image-container">
-  <img src="assets/images/majid_memari_profile.png" alt="Dr. Majid Memari">
+  <img src="./majid_memari_profile.png" alt="Dr. Majid Memari">
   <p><strong>Dr. Majid Memari</strong><br><em>Researcher · Educator · Architect</em></p>
   <p>
     <a href="https://github.com/memari-majid" target="_blank">GitHub</a> ·
