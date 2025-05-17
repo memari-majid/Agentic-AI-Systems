@@ -101,6 +101,22 @@ The `Appendix` offers detailed guides on specific technologies and concepts:
 
 *(Refer to `Appendix/README.md` for a detailed table of contents.)*
 
+## About the Author
+
+This course is developed by **Majid Memari**, an AI researcher, educator, and solution architect with a passion for building and deploying high-impact AI systems.
+
+**Key AI-Related Education & Experience:**
+
+-   **Education:**
+    -   Ph.D. in Computer Science, Southern Illinois University Carbondale
+    -   M.S. in Computer Science, Southern Illinois University Carbondale
+-   **Professional Focus:** Dr. Memari has been involved in the full lifecycle of production-grade AI systems since 2015, specializing in Large Language Models (LLMs), Deep Learning, and Computer Vision.
+-   **Academic Role:** As an Assistant Professor at Utah Valley University, he designs and delivers project-based AI curricula covering Machine Learning, Artificial Intelligence, Computer Vision, and Strategic AI Applications, with a strong emphasis on Generative AI and LLMs.
+-   **Research Leadership:** He has led and contributed to numerous funded AI research projects, including applications of machine learning for predictive maintenance (e.g., wind turbine fault detection using drone imagery and ML), autonomous vehicle safety (real-time anomaly detection using YOLO and Transformers), and the development of LLM-based educational platforms.
+-   **Consulting & Industry Experience:** His experience includes AI consulting for the legal-tech sector, providing guidance on AI strategy, architecture, and ethical deployment, as well as data science roles focused on predictive modeling and NLP for big data analysis in healthcare and well-being research.
+
+Dr. Memari is dedicated to advancing real-world AI innovation through a combination of academic leadership, research, and strategic application.
+
 ## Textbooks
 
 For those looking to deepen their understanding of agentic AI systems and related technologies, the following textbooks are recommended:
