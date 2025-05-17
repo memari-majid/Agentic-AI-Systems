@@ -1,4 +1,4 @@
-# Building Agentic AI Systems
+# Introduction to Agentic AI Systems
 
 ![Banner](./image.png)
 

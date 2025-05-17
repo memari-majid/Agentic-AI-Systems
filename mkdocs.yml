@@ -2,7 +2,7 @@ site_name: Agentic AI Systems
 site_url: https://memari-majid.github.io/Agentic-AI-Systems/
 repo_url: https://github.com/memari-majid/Agentic-AI-Systems
 repo_name: memari-majid/Agentic-AI-Systems
-edit_uri: edit/main/docs/
+# edit_uri removed to disable "Edit this page" links
 
 # Theme configuration
 theme:
@@ -19,7 +19,6 @@ theme:
     - navigation.top
     - toc.integrate
     - content.code.copy
-    - content.action.edit
     - search.suggest
     - search.highlight
   palette:
