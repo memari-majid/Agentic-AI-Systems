@@ -49,7 +49,7 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/majidmemari/
   generator: false
-  copyright: Copyright © 2024 Majid Memari
+  copyright: Copyright © 2025 Majid Memari
   analytics:
     provider: google
     property: G-XXXXXXXXXX
@@ -88,4 +88,3 @@ nav:
       - DSPy Introduction: Appendix/DSPy_Introduction.md
       - Cloud Services: Appendix/Cloud_Agentic_AI_Services_Tutorial.md
       - More: Appendix/README.md
-  - About: index.md 
