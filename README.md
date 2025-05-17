@@ -116,7 +116,6 @@ The `Appendix` provides in-depth tutorials and an overview of the **LangChain** 
 
 -   **[LangChain Tutorial](Appendix/LangChain_Tutorial.md)**: Comprehensive guide to **LangChain** (core components, **LCEL**, agents, tools, memory, etc.).
 -   **[LangGraph Tutorial](Appendix/LangGraph_Tutorial.md)**: Detailed tutorial on **LangGraph** for orchestrating stateful agent workflows.
--   **[LangChain Ecosystem Overview](Appendix/LangChain_Ecosystem.md)**: Explanation of the broader **LangChain** ecosystem (**LangSmith**, open-source, commercial offerings). *(Note: This document is planned for future addition.)*
 
 *(See `Appendix/README.md` for its own table of contents.)*
 
