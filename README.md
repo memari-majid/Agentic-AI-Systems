@@ -12,6 +12,43 @@ This course aims to equip learners with the ability to:
 - Integrate diverse capabilities, including external knowledge sources and specialized tools, into agentic frameworks.
 - Analyze and apply these concepts to construct and evaluate real-world agentic applications.
 
+## Prerequisites
+
+-   Proficiency in Python programming.
+-   Understanding of fundamental Machine Learning concepts.
+-   Basic familiarity with Natural Language Processing (NLP) is advantageous.
+-   Access to and foundational knowledge of Large Language Model (LLM) APIs.
+
+## Core Technologies Utilized
+
+This course utilizes several key software frameworks and libraries to illustrate and implement concepts in agentic AI design:
+-   **LangChain**: For constructing agent components and foundational application logic.
+-   **LangGraph**: For orchestrating complex, stateful agentic interactions and workflows.
+-   **LangSmith**: For tracing, debugging, and evaluating agent performance.
+-   **DSPy**: For systematic optimization of language model operations within agentic pipelines.
+-   LLM SDKs (OpenAI, Anthropic, Vertex AI, etc.): For interfacing with various large language models.
+-   Standard Python data science libraries: For auxiliary data manipulation and analysis tasks.
+
+Refer to `requirements.txt` for a comprehensive list of dependencies.
+
+## Getting Started
+
+1.  **Clone Repository**: `git clone https://github.com/memari-majid/Agentic-AI-Systems.git`
+2.  **Navigate**: `cd Agentic-AI-Systems`
+3.  **Install Dependencies** (Python 3.9+): `pip install -r requirements.txt`
+4.  **Set API Keys**: Create a `.env` file in the root directory for necessary API credentials (e.g., for language model access, specific tools, or tracing services).
+    ```env
+    OPENAI_API_KEY="your_openai_api_key"
+    ANTHROPIC_API_KEY="your_anthropic_api_key"
+    TAVILY_API_KEY="your_tavily_api_key"
+    LANGCHAIN_API_KEY="your_langsmith_api_key"
+    LANGCHAIN_TRACING_V2="true"
+    LANGCHAIN_PROJECT="AdvancedAgenticAI"
+    ```
+    **Important**: Add `.env` to your `.gitignore`.
+5.  **Explore Lessons**: Commence with `Lessons/Chapter01`.
+6.  **Engage with Labs**: E.g., `python Labs/01_hello_graph.py`.
+
 ## Course Structure
 
 The curriculum is organized into thematic parts, encompassing lessons, practical laboratory exercises, and supplementary appendix materials, fostering a holistic understanding of agentic AI system design.
@@ -64,56 +101,7 @@ The `Appendix` offers detailed guides on specific technologies and concepts:
 
 *(Refer to `Appendix/README.md` for a detailed table of contents.)*
 
-## Getting Started
-
-1.  **Clone Repository**: `git clone https://github.com/memari-majid/Agentic-AI-Systems.git`
-2.  **Navigate**: `cd Agentic-AI-Systems`
-3.  **Install Dependencies** (Python 3.9+): `pip install -r requirements.txt`
-4.  **Set API Keys**: Create a `.env` file in the root directory for necessary API credentials (e.g., for language model access, specific tools, or tracing services).
-    ```env
-    OPENAI_API_KEY="your_openai_api_key"
-    ANTHROPIC_API_KEY="your_anthropic_api_key"
-    TAVILY_API_KEY="your_tavily_api_key"
-    LANGCHAIN_API_KEY="your_langsmith_api_key"
-    LANGCHAIN_TRACING_V2="true"
-    LANGCHAIN_PROJECT="AdvancedAgenticAI"
-    ```
-    **Important**: Add `.env` to your `.gitignore`.
-5.  **Explore Lessons**: Commence with `Lessons/Chapter01`.
-6.  **Engage with Labs**: E.g., `python Labs/01_hello_graph.py`.
-
-## Prerequisites
-
--   Proficiency in Python programming.
--   Understanding of fundamental Machine Learning concepts.
--   Basic familiarity with Natural Language Processing (NLP) is advantageous.
--   Access to and foundational knowledge of Large Language Model (LLM) APIs.
-
-## Core Technologies Utilized
-
-This course utilizes several key software frameworks and libraries to illustrate and implement concepts in agentic AI design:
--   **LangChain**: For constructing agent components and foundational application logic.
--   **LangGraph**: For orchestrating complex, stateful agentic interactions and workflows.
--   **LangSmith**: For tracing, debugging, and evaluating agent performance.
--   **DSPy**: For systematic optimization of language model operations within agentic pipelines.
--   LLM SDKs (OpenAI, Anthropic, Vertex AI, etc.): For interfacing with various large language models.
--   Standard Python data science libraries: For auxiliary data manipulation and analysis tasks.
-
-Refer to `requirements.txt` for a comprehensive list of dependencies.
-
-## Contributing
-
-Contributions to enhance this educational resource are highly encouraged. Please open an issue or submit a pull request for any suggestions, corrections, or improvements.
-
-## License
-
-This course material is provided under the [MIT License](LICENSE.txt).
-
----
-
-We hope you find this course an enriching experience in your exploration of agentic artificial intelligence.
-
-## Further Reading and Textbooks
+## Textbooks
 
 For those looking to deepen their understanding of agentic AI systems and related technologies, the following textbooks are recommended:
 
@@ -135,5 +123,14 @@ For those looking to deepen their understanding of agentic AI systems and relate
     -   Publication Date: April 2025
     -   [View on O'Reilly Learning](https://learning.oreilly.com/library/view/building-agentic-ai/9781803238753/)
 
+## Contributing
 
+Contributions to enhance this educational resource are highly encouraged. Please open an issue or submit a pull request for any suggestions, corrections, or improvements.
 
+## License
+
+This course material is provided under the [MIT License](LICENSE.txt).
+
+---
+
+We hope you find this course an enriching experience in your exploration of agentic artificial intelligence.
