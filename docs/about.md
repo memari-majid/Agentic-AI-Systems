@@ -31,7 +31,7 @@ Feel free to connect or explore more of his work through the links below.
 </div>
 
 <div style="flex:0 0 220px; max-width:220px; text-align:center;">
-  <img src="./majid_memari_profile.png" alt="Dr. Majid Memari" style="width:100%; border-radius:50%; box-shadow:0 4px 12px rgba(0,0,0,0.15);">
+  <img src="assets/images/majid_memari_profile.png" alt="Dr. Majid Memari" style="width:100%; border-radius:50%; box-shadow:0 4px 12px rgba(0,0,0,0.15);">
   <p><strong>Dr. Majid Memari</strong><br><em>Researcher · Educator · Architect</em></p>
   <p>
     <a href="https://github.com/memari-majid" target="_blank">GitHub</a> ·
