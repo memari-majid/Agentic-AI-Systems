@@ -21,7 +21,7 @@ Upon successful completion of this course, learners will be equipped to:
 
 1. **Clone Repository**: `git clone https://github.com/memari-majid/Agentic-AI-Systems.git`
 2. **Navigate**: `cd Agentic-AI-Systems`
-3. **Install Dependencies** (Python 3.9+ recommended): `pip install -r requirements.txt`
+3. **Install Dependencies** (Python 3.10+ recommended): `pip install -r requirements.txt`
 4. **Configure API Keys**: Create a `.env` file in the project root for necessary API credentials (see README for details).
 5. **Begin with Lessons**: Start with Chapter 01 or explore the Labs for hands-on exercises.
 
