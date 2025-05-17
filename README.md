@@ -60,6 +60,7 @@ The `Appendix` offers detailed guides on specific technologies and concepts:
 
 -   **[Agentic AI Design with LangChain and LangGraph](Appendix/Agentic_AI_Design_Tutorial.md)**: A comprehensive guide on leveraging specific frameworks for building sophisticated AI agents.
 -   **[Introduction to DSPy: Programming over Prompting](Appendix/DSPy_Introduction.md)**: An overview of a framework for optimizing LM-driven pipelines.
+-   **[Leveraging Cloud Services for Agentic AI Systems](Appendix/Cloud_Agentic_AI_Services_Tutorial.md)**: Guide to using AWS, Azure, and GCP for agentic AI.
 
 *(Refer to `Appendix/README.md` for a detailed table of contents.)*
 
