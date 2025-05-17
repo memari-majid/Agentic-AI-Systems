@@ -1,5 +1,10 @@
 site_name: Agentic AI Systems
 site_url: https://memari-majid.github.io/Agentic-AI-Systems/
+repo_url: https://github.com/memari-majid/Agentic-AI-Systems
+repo_name: memari-majid/Agentic-AI-Systems
+edit_uri: edit/main/docs/
+
+# Theme configuration
 theme:
   name: material
   logo: logo.png
@@ -11,29 +16,57 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.indexes
+    - navigation.top
+    - toc.integrate
+    - content.code.copy
+    - content.action.edit
     - search.suggest
     - search.highlight
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
+    - scheme: default
+      primary: blue
       accent: indigo
       toggle:
-        icon: material/toggle-switch
+        icon: material/weather-night
         name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: indigo
+    - scheme: slate
+      primary: blue
       accent: indigo
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/weather-sunny
         name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  language: en
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/memari-majid
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/majidmemari/
+  generator: false
+  copyright: Copyright © 2024 Majid Memari
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
 
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
   - attr_list
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.keys
+  - pymdownx.emoji
 
 nav:
   - Home: index.md
