@@ -113,5 +113,27 @@ This course material is provided under the [MIT License](LICENSE.txt).
 
 We hope you find this course an enriching experience in your exploration of agentic artificial intelligence.
 
+## Further Reading and Textbooks
+
+For those looking to deepen their understanding of agentic AI systems and related technologies, the following textbooks are recommended:
+
+-   **AI Agents in Action**
+    -   By: Micheal Lanham
+    -   Publisher: Manning Publications
+    -   Publication Date: February 2025
+    -   [View on O'Reilly Learning](https://learning.oreilly.com/library/view/ai-agents-in/9781633436343/)
+
+-   **Building Applications with AI Agents**
+    -   By: Michael Albada
+    -   Publisher: O'Reilly Media, Inc.
+    -   Publication Date: October 2025
+    -   [View on O'Reilly Learning](https://learning.oreilly.com/library/view/building-applications-with/9781098176495/)
+
+-   **Building Agentic AI Systems**
+    -   By: Anjanava Biswas, Wrick Talukdar
+    -   Publisher: Packt Publishing
+    -   Publication Date: April 2025
+    -   [View on O'Reilly Learning](https://learning.oreilly.com/library/view/building-agentic-ai/9781803238753/)
+
 
 
