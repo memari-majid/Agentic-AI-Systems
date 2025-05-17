@@ -42,11 +42,12 @@ Lessons, labs, and appendix materials guide you through **LangChain** and **Lang
 
 The `Labs` directory offers practical exercises using **LangChain** and **LangGraph**, covering concepts like conversational agents, stateful booking systems, reflection loops, multi-agent collaboration, and tool integration. See `Labs/README.md` for detailed lab descriptions and instructions.
 
-## Appendix: Deep Dive Tutorial
+## Appendix: Deep Dive Tutorials
 
-The `Appendix` provides an in-depth tutorial:
+The `Appendix` provides in-depth tutorials:
 
 -   **[Agentic AI Design with LangChain and LangGraph](Appendix/Agentic_AI_Design_Tutorial.md)**: A comprehensive guide on using LangChain and LangGraph together to build sophisticated, stateful AI agents.
+-   **[Introduction to DSPy: Programming over Prompting](Appendix/DSPy_Introduction.md)**: An overview of DSPy for optimizing LM-driven pipelines.
 
 *(See `Appendix/README.md` for its own table of contents.)*
 
@@ -80,8 +81,8 @@ The `Appendix` provides an in-depth tutorial:
 -   **LangChain** (Core, Community, Integrations)
 -   **LangGraph**
 -   **LangSmith**
+-   **DSPy**: For algorithmic optimization of LM prompts and weights.
 -   LLM SDKs (OpenAI, Anthropic, Vertex AI, etc.)
--   **DSPy**
 -   Standard data science libraries (Pandas, NumPy, etc.)
 
 Refer to `requirements.txt` for a full list.
