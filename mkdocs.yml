@@ -1,0 +1,27 @@
+site_name: Building Agentic AI Systems
+site_url: https://memari-majid.github.io/Agentic-AI-Systems/
+theme:
+  name: material
+  logo: image.png
+  favicon: image.png
+nav:
+  - Home: index.md
+  - Lessons:
+      - Chapter 01: Lessons/Chapter01/1 Fundamentals of Generative AI.md
+      - Chapter 02: Lessons/Chapter02/2 Principles of Agentic Systems.md
+      - Chapter 03: Lessons/Chapter03/3 Essential Components of Intelligent Agents.md
+      - Chapter 04: Lessons/Chapter04/4 Reflection and Introspection in Agents.md
+      - Chapter 05: Lessons/Chapter05/5 Enabling Tool Use and Planning in Agents.md
+      - Chapter 06: Lessons/Chapter06/6 Exploring the Coordinator, Worker, and Delegator Approach.md
+      - Chapter 07: Lessons/Chapter07/7 Effective Agentic System Design Techniques.md
+      - Chapter 08: Lessons/Chapter08/8 Building Trust in Generative AI Systems.md
+      - Chapter 09: Lessons/Chapter09/9 Managing Safety and Ethical Considerations.md
+      - Chapter 10: Lessons/Chapter10/10 Common Use Cases and Applications.md
+      - Chapter 11: Lessons/Chapter11/11 Conclusion and Future Outlook.md
+  - Labs: Labs/README.md
+  - Appendix:
+      - Agentic AI Design: Appendix/Agentic_AI_Design_Tutorial.md
+      - DSPy Introduction: Appendix/DSPy_Introduction.md
+      - Cloud Services: Appendix/Cloud_Agentic_AI_Services_Tutorial.md
+      - More: Appendix/README.md
+  - About: README.md 

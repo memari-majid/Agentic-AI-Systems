@@ -50,4 +50,8 @@ openai>=1.0.0
 numpy>=1.24.0
 matplotlib>=3.7.0
 pandas>=2.0.0
-tqdm>=4.65.0 
+tqdm>=4.65.0
+
+# Documentation
+mkdocs>=1.5
+mkdocs-material>=9.0 
