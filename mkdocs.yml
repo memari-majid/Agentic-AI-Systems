@@ -117,7 +117,16 @@ nav:
       - Chapter 11: Lessons/Chapter11/11 Conclusion and Future Outlook.md
   - Labs: Labs/README.md
   - Appendix:
-      - Agentic AI Design: Appendix/Agentic_AI_Design_Tutorial.md
+      - Agentic AI Design:
+        - Introduction: Appendix/01_Introduction_Agentic_AI.md
+        - LangChain Foundation: Appendix/02_LangChain_Foundation.md
+        - LangGraph Orchestration: Appendix/03_LangGraph_Orchestration.md
+        - LangChain + LangGraph in Action: Appendix/04_LangChain_LangGraph_In_Action.md
+        - DSPy Optimization: Appendix/05_DSPy_Optimization.md
+        - State Management & Checkpointers: Appendix/06_State_Management_Checkpointers.md
+        - Debugging with LangSmith: Appendix/07_Debugging_LangSmith.md
+        - Conclusion: Appendix/08_Conclusion.md
+        - References: Appendix/09_References_and_Further_Reading.md
       - DSPy Introduction: Appendix/DSPy_Introduction.md
       - Cloud Services: Appendix/Cloud_Agentic_AI_Services_Tutorial.md
       - More: Appendix/README.md

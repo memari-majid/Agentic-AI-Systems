@@ -1,0 +1,98 @@
+## 7. Debugging and Tracing with LangSmith
+Building complex agentic systems with LangChain and LangGraph involves many moving parts. LangSmith is a platform designed to help you debug, trace, monitor, and evaluate your language model applications, making it an invaluable tool for developing robust agents.
+
+### 7.1. Why LangSmith?
+- **Visibility:** Get a clear view of what your agent is doing at each step. See the inputs and outputs of LLM calls, tool executions, and graph node transitions.
+- **Debugging:** Quickly identify errors, unexpected behavior, or inefficient paths in your agent's logic.
+- **Collaboration:** Share traces with team members to troubleshoot issues.
+- **Evaluation:** Log results, gather feedback, and run evaluations to measure and improve agent performance.
+- **Monitoring:** Keep an eye on your agents in production (though this tutorial focuses on development).
+
+### 7.2. Setting up LangSmith
+To get started with LangSmith, you typically need to: 
+1. Sign up at smith.langchain.com.
+2. Create an API key.
+3. Set a few environment variables in your development environment:
+
+```python
+import os
+import getpass # To securely get API key if not set as env var
+
+# Best practice: Set these in your shell environment (e.g., .env file or export commands)
+# os.environ["LANGCHAIN_TRACING_V2"] = "true"
+# os.environ["LANGCHAIN_API_KEY"] = "YOUR_LANGSMITH_API_KEY"
+# os.environ["LANGCHAIN_PROJECT"] = "My Agentic AI Project" # Optional: organize runs into projects
+
+# Example of setting them programmatically if not already set (useful for notebooks)
+def setup_langsmith_env():
+    if "LANGCHAIN_TRACING_V2" not in os.environ:
+        os.environ["LANGCHAIN_TRACING_V2"] = "true"
+        print("Set LANGCHAIN_TRACING_V2 to true")
+
+    if "LANGCHAIN_API_KEY" not in os.environ:
+        api_key = getpass.getpass("Enter your LangSmith API key: ")
+        os.environ["LANGCHAIN_API_KEY"] = api_key
+        print("LangSmith API key set from input.")
+    else:
+        print("LangSmith API key found in environment.")
+
+    if "LANGCHAIN_PROJECT" not in os.environ:
+        os.environ["LANGCHAIN_PROJECT"] = "Default Agentic Tutorial Project"
+        print(f"Using LangSmith project: {os.environ['LANGCHAIN_PROJECT']}")
+
+# Call this at the beginning of your script or notebook
+# setup_langsmith_env()
+```
+Once these environment variables are set, LangChain and LangGraph will automatically start sending trace data to your LangSmith project.
+
+### 7.3. Tracing LangChain Components and LangGraph Runs
+When you execute your LangGraph application (e.g., `research_app.invoke(...)` or `research_app.stream(...)` from our example), LangSmith captures:
+
+- **Overall Graph Execution:** The entry into the graph and its final output.
+- **Node Executions:** Each time a node in your `StateGraph` is run, LangSmith records its inputs (the part of the state it received) and its outputs (the state updates it returned).
+- **LangChain Component Calls:** If a node internally uses LangChain components (like an `AgentExecutor`, an LLM call, a specific chain, or a tool), these are also traced as nested operations.
+  - You'll see the exact prompts sent to LLMs.
+  - The arguments passed to tools and the data they returned.
+  - The flow within `create_openai_tools_agent` or other agent runnables.
+- **Visualizing Graphs:** LangSmith provides a visual representation of your LangGraph executions, making it much easier to understand the flow of control, especially with conditional edges and loops. You can see which path was taken through the graph for a given input.
+
+### 7.4. Example: Inspecting the Research Assistant in LangSmith
+If you run the Research Assistant agent (from Section 4) with LangSmith configured:
+
+1. Go to your LangSmith project.
+2. You will see a new trace for each invocation of `research_app.invoke()` or `research_app.stream()`.
+3. Clicking on a trace will show you:
+   - The initial input to the graph.
+   - A timeline of nodes executed (planner, tool_executor).
+   - For the `planner` node, you can expand it to see the internal call to your `planner_agent_runnable` (the `create_openai_tools_agent`). Further expanding this will show the LLM call, the prompt, and the model's response (including any tool calls it decided to make).
+   - For the `tool_executor` node, you'll see which tool was called (e.g., `web_search` or `summarize_text_tool`) and the arguments and output of that tool.
+   - If you used a checkpointer, the state at each step might also be visible or inferable from the inputs/outputs of the nodes.
+
+This detailed, hierarchical view is crucial for understanding why your agent made certain decisions, how tools performed, and where potential improvements can be made.
+
+### 7.5. Logging Feedback and Annotations
+LangSmith also allows you to programmatically or manually add feedback to runs.
+
+```python
+from langsmith import Client
+
+# client = Client() # Initialize if you need to interact with LangSmith API directly
+
+# Example: After a run, you might log feedback (this usually requires the run_id)
+# This is more for evaluation workflows, but shows the capability.
+
+# run_id = "some_run_id_from_a_trace" # You'd get this from a trace or programmatically
+# if client and run_id:
+#     try:
+#         client.create_feedback(
+#             run_id=run_id,
+#             key="user_satisfaction", # Arbitrary key for the feedback type
+#             score=0.8, # Numerical score (e.g., 0.0 to 1.0)
+#             comment="The summary was good but a bit too verbose."
+#         )
+#         print(f"Feedback added for run {run_id}")
+#     except Exception as e:
+#         print(f"Could not log feedback: {e}")
+```
+This feedback can be used to evaluate agent performance over time and identify areas for improvement.
+By integrating LangSmith into your development workflow from the start, you gain powerful observability that significantly speeds up the development and refinement of complex agentic AI systems. 
