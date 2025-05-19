@@ -116,8 +116,6 @@ nav:
       - Chapter 10: Lessons/Chapter10/10 Common Use Cases and Applications.md
       - Chapter 11: Lessons/Chapter11/11 Conclusion and Future Outlook.md
   - Labs: Labs/README.md
-  - Business & Strategy in AI:
-      - Strategic Development: Business_Strategy_AI/01_Strategic_Development_Agentic_AI_Products.md
   - Agentic AI in Action:
       - Agentic AI Design:
         - Introduction: Agentic_AI_in_Action/01_Introduction_Agentic_AI.md
