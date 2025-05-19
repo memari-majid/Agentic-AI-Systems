@@ -85,6 +85,44 @@ This chapter examines the critical importance of trust in generative AI systems 
 - **Handoff Protocols**: Designing smooth and unambiguous transitions of control and context between the AI and human operators.
 - **Shared Mental Models**: Ensuring human users and operators have an accurate understanding of the AI\'s capabilities, limitations, and current state.
 
+### Designing Agentic Architectures for Trust
+
+Beyond specific XAI techniques or post-hoc analyses, the fundamental architecture and software design of an agentic system play a crucial role in fostering trust. Proactive design choices can make a system inherently more transparent, explainable, reliable, and controllable:
+
+-   **Modular Design for Traceability**:
+    -   **Architectural Choice**: Decomposing the agent into distinct, well-defined modules (e.g., perception, specific reasoning skills, tool interfaces, planning, action execution) as discussed in earlier chapters.
+    -   **Trust Impact**: Enables easier tracing of how information flows and transforms through the system. If an error or unexpected output occurs, it's simpler to isolate which module might be responsible. LangGraph's node-based structure naturally supports this.
+
+-   **Explicit State Management for Transparency**:
+    -   **Architectural Choice**: Utilizing frameworks like LangGraph that make the agent's state explicit and track its evolution at each step.
+    -   **Trust Impact**: Allows developers and potentially users to inspect the agent's "mental state" or context at any point, understanding the basis for its current decisions. This is key for debugging and providing explanations.
+
+-   **Well-Defined Interfaces and Data Contracts Between Components**:
+    -   **Architectural Choice**: Ensuring that modules or agents (in a multi-agent system) communicate through clear, versioned APIs and data schemas (e.g., TypedDicts for state, Pydantic models for tool inputs/outputs).
+    -   **Trust Impact**: Improves predictability and reliability by reducing misunderstandings or data corruption between components. Makes the system easier to audit.
+
+-   **Separation of LLM Calls from Business Logic/Tool Execution**:
+    -   **Architectural Choice**: Designing the system so that LLM calls (for reasoning, planning, or generation) are distinct steps from the execution of tools or critical business logic. The LLM *proposes* actions or parameters, but a separate, auditable software component *executes* them after validation.
+    -   **Trust Impact**: Provides a control point for validation, sanitization, and applying safety checks to LLM outputs before they affect the real world or other systems. Reduces the risk of LLMs directly causing unintended actions.
+
+-   **Designing for Human-in-the-Loop (HITL) Control Points**:
+    -   **Architectural Choice**: Building explicit hooks or nodes in the agent's workflow (e.g., in a LangGraph) where human intervention, review, or approval can be seamlessly integrated, especially for critical or high-risk operations.
+    -   **Trust Impact**: Gives users a sense of control and ensures that human judgment can override or guide the agent when necessary, increasing confidence in its deployment.
+
+-   **Idempotent Tool and Action Design**:
+    -   **Architectural Choice**: Designing tools and agent actions to be idempotent where possible, meaning that executing them multiple times with the same input produces the same result without unintended side effects.
+    -   **Trust Impact**: Improves reliability and makes error recovery simpler and safer, as retrying a failed (but idempotent) action is less risky.
+
+-   **Standardized Logging and Auditing Framework**:
+    -   **Architectural Choice**: Implementing a consistent logging strategy across all components of the agent, capturing inputs, outputs, decisions, tool calls, and errors in a structured format.
+    -   **Trust Impact**: Essential for post-hoc analysis, debugging, providing explanations, and demonstrating compliance. Facilitates accountability.
+
+-   **Configurable Safety and Guardrail Mechanisms**:
+    -   **Architectural Choice**: Designing the agent with configurable guardrails, filters, or validation layers that can be updated without core code changes (e.g., content moderation filters, lists of disallowed actions, parameter validation rules).
+    -   **Trust Impact**: Allows the system to be adapted to evolving safety standards or to mitigate newly discovered risks more rapidly.
+
+By embedding these architectural considerations from the outset, developers can build agentic systems where trust is an emergent property of the design itself, rather than solely an add-on feature.
+
 ## Building Trustworthy Systems: Processes and Practices
 
 ### Ethical Design Principles and Frameworks

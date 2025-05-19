@@ -99,6 +99,8 @@ This chapter explores the foundational principles of agentic systems – artific
 - **Manufacturing**: Optimizing production processes and supply chain management
 - **Smart Environments**: Coordinating IoT devices and environmental controls
 
+These expanding applications are not only transforming industries but are also beginning to reshape the software engineering landscape itself, leading to new development paradigms, team structures, and specialized roles. (For a more detailed discussion on the evolving roles and engineering practices in the age of agentic AI, see Chapter 11).
+
 ## Implementation Considerations
 - **Design Methodology**: From requirements analysis to testing and deployment
 - **Technology Selection**: Choosing appropriate frameworks, models, and tools
