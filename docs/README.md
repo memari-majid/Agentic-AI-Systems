@@ -99,9 +99,9 @@ The `Labs` directory provides hands-on exercises for applying theoretical concep
 
 The `Appendix` offers in-depth guides and tutorials on specific technologies and advanced concepts relevant to agentic AI:
 
--   **[Agentic AI Design with LangChain and LangGraph](Appendix/Agentic_AI_Design_Tutorial.md)**: A comprehensive tutorial on leveraging specific frameworks for building sophisticated AI agents.
--   **[Introduction to DSPy: Programming over Prompting](Appendix/DSPy_Introduction.md)**: An overview of a programmatic approach to optimizing LM-driven pipelines.
--   **[Leveraging Cloud Services for Agentic AI Systems](Appendix/Cloud_Agentic_AI_Services_Tutorial.md)**: A guide to utilizing cloud platforms (AWS, Azure, GCP) for deploying and scaling agentic AI.
+-   **[Agentic AI Design with LangChain and LangGraph](Agentic_AI_in_Action/Agentic_AI_Design_Tutorial.md)**: A comprehensive tutorial on leveraging specific frameworks for building sophisticated AI agents.
+-   **[Introduction to DSPy: Programming over Prompting](Agentic_AI_in_Action/DSPy_Introduction.md)**: An overview of a programmatic approach to optimizing LM-driven pipelines.
+-   **[Leveraging Cloud Services for Agentic AI Systems](Agentic_AI_in_Action/Cloud_Agentic_AI_Services_Tutorial.md)**: A guide to utilizing cloud platforms (AWS, Azure, GCP) for deploying and scaling agentic AI.
 
 *(Refer to `Appendix/README.md` for a detailed table of contents for all supplementary materials.)*
 
