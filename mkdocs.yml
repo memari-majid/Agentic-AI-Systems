@@ -102,31 +102,54 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Lessons:
-      - Chapter 01: Lessons/Chapter01/1 Fundamentals of Generative AI.md
-      - Chapter 02: Lessons/Chapter02/2 Principles of Agentic Systems.md
-      - Chapter 03: Lessons/Chapter03/3 Essential Components of Intelligent Agents.md
-      - Chapter 04: Lessons/Chapter04/4 Reflection and Introspection in Agents.md
-      - Chapter 05: Lessons/Chapter05/5 Enabling Tool Use and Planning in Agents.md
-      - Chapter 06: Lessons/Chapter06/6 Exploring the Coordinator, Worker, and Delegator Approach.md
-      - Chapter 07: Lessons/Chapter07/7 Effective Agentic System Design Techniques.md
-      - Chapter 08: Lessons/Chapter08/8 Building Trust in Generative AI Systems.md
-      - Chapter 09: Lessons/Chapter09/9 Managing Safety and Ethical Considerations.md
-      - Chapter 10: Lessons/Chapter10/10 Common Use Cases and Applications.md
-      - Chapter 11: Lessons/Chapter11/11 Conclusion and Future Outlook.md
+  - AI Systems:
+      - Chapter 01: AI_Systems/Chapter01/1_Fundamentals_of_Generative_AI.md
+      - Chapter 02: AI_Systems/Chapter02/2_Principles_of_Agentic_Systems.md
+      - Chapter 03: AI_Systems/Chapter03/3_Essential_Components_of_Intelligent_Agents.md
+      - Chapter 04: AI_Systems/Chapter04/4_Reflection_and_Introspection_in_Agents.md
+      - Chapter 05: AI_Systems/Chapter05/5_Enabling_Tool_Use_and_Planning_in_Agents.md
+      - Chapter 06: AI_Systems/Chapter06/6_Exploring_the_Coordinator_Worker_and_Delegator_Approach.md
+      - Chapter 07: AI_Systems/Chapter07/7_Effective_Agentic_System_Design_Techniques.md
+      - Chapter 08: AI_Systems/Chapter08/8_Building_Trust_in_Generative_AI_Systems.md
+      - Chapter 09: AI_Systems/Chapter09/9_Managing_Safety_and_Ethical_Considerations.md
+      - Chapter 10: AI_Systems/Chapter10/10_Common_Use_Cases_and_Applications.md
+      - Chapter 11: AI_Systems/Chapter11/11_Conclusion_and_Future_Outlook.md
+  - AI_Strategies:
+      - 1_Why_Every_Company_Needs_a_Chief_AI_Officer: AI_Strategies/1_Why_Every_Company_Needs_a_Chief_AI_Officer.md
+      - 2: AI_Strategies/2.md
+      - 3: AI_Strategies/3.md
+      - 4: AI_Strategies/4.md
+      - 5: AI_Strategies/5.md
+      - 6: AI_Strategies/6.md
+      - 7: AI_Strategies/7.md
+      - 8: AI_Strategies/8.md
+      - 9: AI_Strategies/9.md
+      - 10: AI_Strategies/10.md
+      - 11: AI_Strategies/11.md
+      - 12: AI_Strategies/12.md
+      - 13: AI_Strategies/13.md
+      - 14: AI_Strategies/14.md
+      - 15: AI_Strategies/15.md
+      - 16: AI_Strategies/16.md
+      - 17: AI_Strategies/17.md
+      - Part_1_The_Role_and_Responsibilities_of_the_Chief_AI_Officer: AI_Strategies/Part_1_The_Role_and_Responsibilities_of_the_Chief_AI_Officer.md
+      - Part_2_Building_and_Implementing_AI_Systems: AI_Strategies/Part_2_Building_and_Implementing_AI_Systems.md
+      - Part_3_Governance_Ethics_Security_and_Compliance: AI_Strategies/Part_3_Governance_Ethics_Security_and_Compliance.md
+      - Part_4_Empowering_AI_Leadership_with_Practical_Tools_and_Insights: AI_Strategies/Part_4_Empowering_AI_Leadership_with_Practical_Tools_and_Insights.md
+      - README: AI_Strategies/README.md
   - Labs: Labs/README.md
-  - Agentic AI in Action:
-      - Agentic AI Design:
-        - Introduction: Agentic_AI_in_Action/01_Introduction_Agentic_AI.md
-        - LangChain Foundation: Agentic_AI_in_Action/02_LangChain_Foundation.md
-        - LangGraph Orchestration: Agentic_AI_in_Action/03_LangGraph_Orchestration.md
-        - LangChain + LangGraph in Action: Agentic_AI_in_Action/04_LangChain_LangGraph_In_Action.md
-        - DSPy Optimization: Agentic_AI_in_Action/05_DSPy_Optimization.md
-        - State Management & Checkpointers: Agentic_AI_in_Action/06_State_Management_Checkpointers.md
-        - Debugging with LangSmith: Agentic_AI_in_Action/07_Debugging_LangSmith.md
-        - Conclusion: Agentic_AI_in_Action/08_Conclusion.md
-        - References: Agentic_AI_in_Action/09_References_and_Further_Reading.md
-      - DSPy Introduction: Agentic_AI_in_Action/DSPy_Introduction.md
-      - Cloud Services: Agentic_AI_in_Action/Cloud_Agentic_AI_Services_Tutorial.md
+  - Agentic_AI_in_Action:
+      - Agentic_AI_Design:
+          - Introduction: Agentic_AI_in_Action/01_Introduction_Agentic_AI.md
+          - LangChain_Foundation: Agentic_AI_in_Action/02_LangChain_Foundation.md
+          - LangGraph_Orchestration: Agentic_AI_in_Action/03_LangGraph_Orchestration.md
+          - LangChain_LangGraph_in_Action: Agentic_AI_in_Action/04_LangChain_LangGraph_In_Action.md
+          - DSPy_Optimization: Agentic_AI_in_Action/05_DSPy_Optimization.md
+          - State_Management_and_Checkpointers: Agentic_AI_in_Action/06_State_Management_Checkpointers.md
+          - Debugging_with_LangSmith: Agentic_AI_in_Action/07_Debugging_LangSmith.md
+          - Conclusion: Agentic_AI_in_Action/08_Conclusion.md
+          - References: Agentic_AI_in_Action/09_References_and_Further_Reading.md
+      - DSPy_Introduction: Agentic_AI_in_Action/DSPy_Introduction.md
+      - Cloud_Services: Agentic_AI_in_Action/Cloud_Agentic_AI_Services_Tutorial.md
       - More: Agentic_AI_in_Action/README.md
   - About: about.md 
