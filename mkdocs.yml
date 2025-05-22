@@ -115,7 +115,7 @@ nav:
       - Chapter 10: AI_Systems/Chapter10/10.md
       - Chapter 11: AI_Systems/Chapter11/11.md
   - Agentic AI in Action:
-      - Agentic_AI_Design:
+      - Agent Design:
           - Chapter 1: Agentic_AI_in_Action/01_Introduction_Agentic_AI.md
           - Chapter 2: Agentic_AI_in_Action/02_LangChain_Foundation.md
           - Chapter 3: Agentic_AI_in_Action/03_LangGraph_Orchestration.md
