@@ -114,26 +114,6 @@ nav:
       - Chapter 09: AI_Systems/Chapter09/9 Managing Safety and Ethical Considerations.md
       - Chapter 10: AI_Systems/Chapter10/10 Common Use Cases and Applications.md
       - Chapter 11: AI_Systems/Chapter11/11 Conclusion and Future Outlook.md
-  - AI Strategies:
-      - Chapter 1: AI_Strategies/1.md
-      - Chapter 2: AI_Strategies/2.md
-      - Chapter 3: AI_Strategies/3.md
-      - Chapter 4: AI_Strategies/4.md
-      - Chapter 5: AI_Strategies/5.md
-      - Chapter 6: AI_Strategies/6.md
-      - Chapter 7: AI_Strategies/7.md
-      - Chapter 8: AI_Strategies/8.md
-      - Chapter 9: AI_Strategies/9.md
-      - Chapter 10: AI_Strategies/10.md
-      - Chapter 11: AI_Strategies/11.md
-      - Chapter 12: AI_Strategies/12.md
-      - Chapter 13: AI_Strategies/13.md
-      - Chapter 14: AI_Strategies/14.md
-      - Chapter 15: AI_Strategies/15.md
-      - Chapter 16: AI_Strategies/16.md
-      - Chapter 17: AI_Strategies/17.md
-      - README: AI_Strategies/README.md
-  - Labs: Labs/README.md
   - Agentic AI in Action:
       - Agentic_AI_Design:
           - Introduction: Agentic_AI_in_Action/01_Introduction_Agentic_AI.md
@@ -148,4 +128,23 @@ nav:
       - DSPy_Introduction: Agentic_AI_in_Action/DSPy_Introduction.md
       - Cloud_Services: Agentic_AI_in_Action/Cloud_Agentic_AI_Services_Tutorial.md
       - More: Agentic_AI_in_Action/README.md
-  - About: about.md 
+  - AI Strategies:
+    - Chapter 1: AI_Strategies/1.md
+    - Chapter 2: AI_Strategies/2.md
+    - Chapter 3: AI_Strategies/3.md
+    - Chapter 4: AI_Strategies/4.md
+    - Chapter 5: AI_Strategies/5.md
+    - Chapter 6: AI_Strategies/6.md
+    - Chapter 7: AI_Strategies/7.md
+    - Chapter 8: AI_Strategies/8.md
+    - Chapter 9: AI_Strategies/9.md
+    - Chapter 10: AI_Strategies/10.md
+    - Chapter 11: AI_Strategies/11.md
+    - Chapter 12: AI_Strategies/12.md
+    - Chapter 13: AI_Strategies/13.md
+    - Chapter 14: AI_Strategies/14.md
+    - Chapter 15: AI_Strategies/15.md
+    - Chapter 16: AI_Strategies/16.md
+    - Chapter 17: AI_Strategies/17.md
+    - README: AI_Strategies/README.md
+    - About: about.md 
