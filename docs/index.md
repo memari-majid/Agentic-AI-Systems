@@ -1,6 +1,8 @@
 # Welcome to Agentic AI Systems
 
-![Banner](./image.png)
+<div align="center">
+<img src="./banner.png" alt="Banner" width="600" height="auto" style="max-width: 100%; height: auto;">
+</div>
 
 **Master the Art of Building Intelligent AI Agents**
 
