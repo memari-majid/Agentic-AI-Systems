@@ -1,0 +1,1466 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://memari-majid.github.io/Agentic-AI-Systems/Lessons/Chapter05/5%20Enabling%20Tool%20Use%20and%20Planning%20in%20Agents/">
+      
+      
+        <link rel="prev" href="../../Chapter04/4%20Reflection%20and%20Introspection%20in%20Agents/">
+      
+      
+        <link rel="next" href="../../Chapter06/6%20Exploring%20the%20Coordinator%2C%20Worker%2C%20and%20Delegator%20Approach/">
+      
+      
+      <link rel="icon" href="../../../image.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Chapter 05 - Building Agentic AI Systems</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#enabling-tool-use-and-planning-in-agents" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Building Agentic AI Systems" class="md-header__button md-logo" aria-label="Building Agentic AI Systems" data-md-component="logo">
+      
+  <img src="../../../image.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Building Agentic AI Systems
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chapter 05
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Building Agentic AI Systems" class="md-nav__button md-logo" aria-label="Building Agentic AI Systems" data-md-component="logo">
+      
+  <img src="../../../image.png" alt="logo">
+
+    </a>
+    Building Agentic AI Systems
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Lessons
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Lessons
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter01/1%20Fundamentals%20of%20Generative%20AI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 01
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter02/2%20Principles%20of%20Agentic%20Systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 02
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter03/3%20Essential%20Components%20of%20Intelligent%20Agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 03
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter04/4%20Reflection%20and%20Introspection%20in%20Agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 04
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Chapter 05
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 05
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Concepts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-tool-use-in-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Tool Use in Agents
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defining-tools-for-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defining Tools for Agents
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#planning-algorithms-for-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Planning Algorithms for Agents
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#routerchain-in-langchain" class="md-nav__link">
+    <span class="md-ellipsis">
+      RouterChain in LangChain
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parallel-planner-in-langgraph" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parallel Planner in LangGraph
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-planning-and-tool-orchestration-with-langgraph" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Planning and Tool Orchestration with LangGraph
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integrating-dspy-for-tool-definition-planning-and-parameter-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integrating DSPy for Tool Definition, Planning, and Parameter Generation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter06/6%20Exploring%20the%20Coordinator%2C%20Worker%2C%20and%20Delegator%20Approach/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 06
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter07/7%20Effective%20Agentic%20System%20Design%20Techniques/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 07
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter08/8%20Building%20Trust%20in%20Generative%20AI%20Systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 08
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter09/9%20Managing%20Safety%20and%20Ethical%20Considerations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 09
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter10/10%20Common%20Use%20Cases%20and%20Applications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 10
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter11/11%20Conclusion%20and%20Future%20Outlook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 11
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Labs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Labs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Appendix
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Appendix
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Appendix/Agentic_AI_Design_Tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Agentic AI Design
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Appendix/DSPy_Introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DSPy Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Appendix/Cloud_Agentic_AI_Services_Tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cloud Services
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Appendix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    More
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../README.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Concepts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-tool-use-in-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Tool Use in Agents
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defining-tools-for-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defining Tools for Agents
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#planning-algorithms-for-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Planning Algorithms for Agents
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#routerchain-in-langchain" class="md-nav__link">
+    <span class="md-ellipsis">
+      RouterChain in LangChain
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parallel-planner-in-langgraph" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parallel Planner in LangGraph
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-planning-and-tool-orchestration-with-langgraph" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Planning and Tool Orchestration with LangGraph
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integrating-dspy-for-tool-definition-planning-and-parameter-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integrating DSPy for Tool Definition, Planning, and Parameter Generation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="enabling-tool-use-and-planning-in-agents">Enabling Tool Use and Planning in Agents</h1>
+<h2 id="overview">Overview</h2>
+<p>This chapter explores how intelligent agents use tools and planning algorithms to accomplish complex tasks. By combining robust planning strategies with the ability to access and utilize external tools, AI agents can extend their capabilities beyond their inherent knowledge limitations, allowing them to solve a wider range of problems more effectively. We will delve into the mechanisms of tool integration, various planning paradigms suitable for Large Language Model (LLM)-based agents, and practical implementations using LangChain and LangGraph.</p>
+<h2 id="key-concepts">Key Concepts</h2>
+<h3 id="understanding-tool-use-in-agents">Understanding Tool Use in Agents</h3>
+<ul>
+<li><strong>Definition</strong>: Tool usage refers to an agent\'s ability to identify the need for, select, and leverage external resources, software functions, or APIs to augment its functionality, gather information, or interact with the environment.</li>
+<li><strong>Tool Calling vs. Function Calling</strong>:</li>
+<li><strong>Function Calling</strong>: Typically refers to an LLM generating a structured request (e.g., JSON) that specifies a function to be executed <em>within the same application or runtime environment</em> as the agent. The agent\'s internal code directly handles this call. For example, an LLM might output a JSON object like <code>{"function": "calculator", "parameters": {"expression": "2+2"}}</code>, which the agent\'s code then parses and executes locally.</li>
+<li><strong>Tool Calling</strong>: A broader term that encompasses function calling but often implies interaction with <em>external</em> APIs, services, systems, or even physical hardware. The LLM still generates a structured request, but the agent controller might need to make network requests, interact with operating system utilities, or interface with other processes. For example, calling a weather API, a database, or a custom enterprise API.</li>
+<li><strong>Nuance</strong>: The line can be blurry. A "function" could be a wrapper around an external API call. The key distinction often lies in whether the execution stays within the agent\'s immediate process or involves external communication/systems. LangChain and other frameworks often use "tool" as the general term.</li>
+<li><strong>LLM Tool Calling Process</strong>:</li>
+<li><strong>Intent Recognition &amp; Tool Selection</strong>: The LLM, based on the user query and its current context, determines that a task requires an external tool. It selects the most appropriate tool from a predefined set.</li>
+<li><strong>Parameter Generation</strong>: The LLM generates the necessary parameters for the selected tool in a structured format (often JSON).</li>
+<li><strong>Agent Controller Execution</strong>: The agent\'s control logic (e.g., a LangGraph node) receives this structured request. It parses the tool name and parameters.</li>
+<li><strong>Tool Execution</strong>: The controller invokes the actual tool/function with the provided parameters. This might involve making an API call, querying a database, or running a local script.</li>
+<li><strong>Result Handling</strong>: The tool returns a result (data, success/failure status, error message).</li>
+<li><strong>Error Management</strong>: If the tool call fails, the agent might have retry logic, attempt a different tool, or inform the LLM/user of the failure.</li>
+<li><strong>Response Formulation</strong>: The result from the tool is passed back to the LLM.</li>
+<li><strong>Continuation</strong>: The LLM uses the tool\'s output to continue the conversation, generate a final answer, or decide on the next step (which might involve another tool call).
+  <em>(Conceptual Diagram: User Request -&gt; LLM (Selects Tool &amp; Params) -&gt; Agent Controller (Parses &amp; Executes) -&gt; External Tool -&gt; Result -&gt; Agent Controller -&gt; LLM (Processes Result) -&gt; User Response)</em></li>
+<li><strong>Security Considerations for Tool Use</strong>:<ul>
+<li><strong>Input Sanitization</strong>: Never trust LLM-generated parameters directly, especially if they are used in shell commands, database queries, or API calls that can have side effects. Sanitize and validate all inputs.</li>
+<li><strong>Least Privilege</strong>: Tools should operate with the minimum permissions necessary. If a tool reads from a database, it shouldn\'t have write access unless explicitly required.</li>
+<li><strong>API Key Management</strong>: Securely store and manage API keys and other credentials. Use environment variables or dedicated secret management services.</li>
+<li><strong>Rate Limiting &amp; Cost Control</strong>: Be mindful of API rate limits and potential costs associated with tool use. Implement safeguards.</li>
+<li><strong>Sandboxing</strong>: For tools that execute code (e.g., a Python interpreter tool), run them in a sandboxed environment to prevent malicious actions.</li>
+<li><strong>User Confirmation</strong>: For tools that perform critical actions (e.g., sending an email, modifying a file, making a purchase), consider adding a user confirmation step.</li>
+</ul>
+</li>
+</ul>
+<h3 id="defining-tools-for-agents">Defining Tools for Agents</h3>
+<ul>
+<li><strong>Framework Approach (e.g., LangChain, LlamaIndex)</strong>:</li>
+<li>Often involves defining a Python class or using decorators.</li>
+<li>Docstrings are crucial: They are often used by the LLM to understand the tool\'s purpose, when to use it, its required inputs (name, type, description), and expected outputs.</li>
+<li>
+<p>Example (Conceptual LangChain Tool):
+    ```python
+    from langchain_core.tools import tool</p>
+<p>@tool
+def get_weather(location: str, unit: str = "celsius") -&gt; str:
+    \"\"\"Returns the current weather for a specified location.
+    Args:
+        location: The city and state, e.g., "San Francisco, CA".
+        unit: Temperature unit, either "celsius" or "fahrenheit". Defaults to "celsius".
+    \"\"\"
+    # ... implementation to call a weather API ...
+    return f"The weather in {location} is..." 
+<code>``
+- **Direct LLM Integration (e.g., OpenAI API)**:
+  - Tools are defined using a JSON schema that describes the function name, description, and parameters (including their types and descriptions).
+  - This schema is provided to the LLM as part of the API call.
+- **Tool Types &amp; Examples**:
+  - **API tools**:
+- *Example*: A tool to search for academic papers on arXiv.
+- *Pseudo-code*:</code>arxiv_search(query: str) -&gt; List[PaperSummary]<code>- **Database tools**:
+- *Example*: A tool to query a SQL database for customer orders.
+- *Pseudo-code*:</code>query_customer_database(sql_query: str) -&gt; List[Row]<code>- **Utility functions**:
+- *Example*: A tool to perform complex mathematical calculations.
+- *Pseudo-code*:</code>advanced_calculator(expression: str) -&gt; float<code>- *Example*: A tool to summarize long text.
+- *Pseudo-code*:</code>summarize_text(text: str, length: int) -&gt; str<code>- **Integration tools**:
+- *Example*: A tool to create a new issue in a GitHub repository.
+- *Pseudo-code*:</code>create_github_issue(repo: str, title: str, body: str) -&gt; IssueLink<code>- **Hardware interface tools**:
+- *Example*: A tool to control a smart home device (e.g., turn on lights).
+- *Pseudo-code*:</code>set_light_status(light_id: str, status: bool) -&gt; Confirmation`</p>
+</li>
+</ul>
+<h3 id="planning-algorithms-for-agents">Planning Algorithms for Agents</h3>
+<p>Planning is the process by which an agent decides on a sequence of actions to achieve a goal.</p>
+<ul>
+<li><strong>Less Practical Algorithms for LLM Agents</strong>:</li>
+<li><strong>STRIPS (Stanford Research Institute Problem Solver)</strong>: Represents states as sets of logical propositions and actions by pre-conditions and post-conditions. <em>Why less practical for LLMs</em>: Too rigid and formal for the nuances of natural language; LLM interactions are not easily reducible to binary state propositions.</li>
+<li><strong>A* Planning</strong>: A graph traversal and path search algorithm, which finds the shortest path between a start node and a goal node. <em>Why less practical for LLMs</em>: Defining a meaningful "distance" or heuristic cost function (<code>h(n)</code>) in the vast, high-dimensional space of language and LLM-generated states is extremely challenging.</li>
+<li><strong>GraphPlan</strong>: Builds a planning graph and searches for a valid plan. <em>Why less practical for LLMs</em>: Assumes discrete states and actions, struggles with the open-ended and often unpredictable nature of LLM outputs and interactions.</li>
+<li><strong>Monte Carlo Tree Search (MCTS)</strong>: A heuristic search algorithm for some kinds of decision processes, most notably game playing. <em>Why less practical for LLMs</em>: Simulating numerous possible future states and LLM interactions is computationally very expensive and slow, making it impractical for real-time agent responses.</li>
+<li><strong>Moderately Practical</strong>:</li>
+<li><strong>Fast Forward (FF)</strong>: A heuristic search planner that uses a relaxed planning graph to guide its search. It\'s goal-oriented. <em>How it can be adapted</em>: The concept of identifying helpful actions towards a goal can be mimicked by prompting an LLM to break down a task and identify next steps. <em>Limitations</em>: Still relies on a more structured state/action representation than what LLMs naturally provide; defining heuristics can be tricky.</li>
+<li><strong>Most Practical Algorithms for LLM Agents</strong>:</li>
+<li><strong>LLM-based Planning</strong>: Leverages the LLM itself to generate plans.<ul>
+<li><strong>Strategies</strong>:<ul>
+<li><strong>ReAct (Reason and Act)</strong>: The LLM generates both a reasoning trace (thought) and an action for each step. The action can be a tool call or a final response. The observation from the action is fed back to the LLM for the next thought/action cycle.</li>
+<li><strong>Self-Ask</strong>: The LLM iteratively asks itself questions to break down a problem, answers them (often using tools), and then uses these intermediate answers to solve the main problem.</li>
+<li><strong>Plan-and-Execute</strong>: The LLM first generates a multi-step plan. Then, an agent controller executes each step of the plan, potentially calling tools and feeding results back to the LLM if the plan needs adjustment.</li>
+</ul>
+</li>
+<li><em>Conceptual Example (ReAct-like)</em>:
+    User: "What\'s the weather in Paris and can you book me a flight there for next week?"
+    LLM Thought 1: "I need to find the weather in Paris and then search for flights. I\'ll start with the weather."
+    LLM Action 1: <code>get_weather(location="Paris, FR")</code>
+    Tool Result: "The weather in Paris is 15°C and sunny."
+    LLM Thought 2: "Okay, weather is good. Now I need to find flights. I need the current date to determine 'next week'."
+    LLM Action 2: <code>get_current_date()</code>
+    Tool Result: "Today is 2023-10-26."
+    LLM Thought 3: "Next week starts around 2023-11-02. I need a destination (Paris) and origin. I should ask the user for the origin."
+    LLM Action 3: <code>ask_user(question="What is your departure city for the flight to Paris?")</code>
+    ...and so on.</li>
+</ul>
+</li>
+<li><strong>Hierarchical Task Network (HTN)</strong>: Decomposes complex tasks into smaller, manageable subtasks (methods) in a hierarchical manner until primitive actions (operators) are reached.<ul>
+<li><em>How it works with LLMs</em>: An LLM can be prompted to perform the task decomposition. For example, "Plan a vacation to Italy" might be decomposed into "Plan Travel," "Plan Accommodation," "Plan Activities." Each of_these can be further decomposed.</li>
+<li><em>Benefits</em>: Excellent for complex, multi-step tasks requiring structured organization. Allows for reuse of methods for common sub-problems.</li>
+<li><em>Illustrative Task Breakdown</em>:
+    Task: <code>Organize a Birthday Party</code>
+    Methods:
+        1. <code>GuestListAndInvitations</code>
+            - <code>CompileGuestList</code> (primitive)
+            - <code>DesignInvitation</code> (primitive, maybe using an image generation tool)
+            - <code>SendInvitations</code> (primitive, maybe using an email tool)
+        2. <code>VenueAndDecorations</code>
+            - <code>BookVenue</code> (primitive, tool call to a booking system)
+            - <code>PlanDecorations</code> (primitive)
+            - <code>BuyDecorations</code> (primitive, tool call to an e-commerce API)
+        3. <code>FoodAndCake</code>
+            - <code>OrderCatering</code> (primitive)
+            - <code>OrderCake</code> (primitive)</li>
+</ul>
+</li>
+<li><strong>Other Relevant Planning Concepts</strong>:<ul>
+<li><strong>Reconfigurable/Adaptive Planning</strong>: The ability of an agent to modify its plan during execution if unexpected events occur or if a step fails. LLMs can be prompted to re-plan based on new information.</li>
+<li><strong>Role of Memory in Planning</strong>: Short-term memory (scratchpad) is crucial for LLM-based planners like ReAct to maintain context across steps. Long-term memory can store successful (or failed) plans for future reuse or learning.</li>
+</ul>
+</li>
+</ul>
+<h3 id="routerchain-in-langchain">RouterChain in LangChain</h3>
+<p>One of the simplest planning approaches is to use a router pattern that selects the right tool or specialized chain for a given task. LangChain\'s LCEL (LangChain Expression Language) provides a <code>RouterChain</code> implementation.</p>
+<pre><code class="language-python">from langchain.chains.router import MultiPromptChain
+from langchain.chains.router.llm_router import LLMRouterChain, RouterOutputParser
+from langchain.prompts import PromptTemplate
+from langchain_openai import OpenAI # Assuming use of OpenAI LLM
+# Define placeholder chains for illustration
+from langchain.chains.llm import LLMChain
+
+# Define the different specialized chains (placeholders)
+# In a real scenario, these would be more complex chains, possibly involving tools
+llm = OpenAI() # Initialize your LLM
+prompt_travel = PromptTemplate.from_template(&quot;Handle travel query: {input}&quot;)
+travel_chain = LLMChain(llm=llm, prompt=prompt_travel)
+
+prompt_dining = PromptTemplate.from_template(&quot;Handle dining query: {input}&quot;)
+dining_chain = LLMChain(llm=llm, prompt=prompt_dining)
+
+prompt_activities = PromptTemplate.from_template(&quot;Handle activities query: {input}&quot;)
+activities_chain = LLMChain(llm=llm, prompt=prompt_activities)
+
+error_chain = LLMChain(llm=llm, prompt=PromptTemplate.from_template(&quot;Cannot route: {input}&quot;))
+
+
+# Define the routing logic
+# A more nuanced template could include examples or more specific instructions
+router_template = \&quot;\&quot;\&quot;Given a user request, classify it into one of the following categories: Travel, Dining, or Activities.
+If the request is about booking flights, hotels, or transportation, classify as Travel.
+If the request is about restaurant recommendations, reviews, or reservations, classify as Dining.
+If the request is about finding things to do, local attractions, or events, classify as Activities.
+If unsure, classify as Error.
+
+Request: {input}
+Classification:\&quot;\&quot;\&quot;
+
+router_prompt = PromptTemplate(
+    template=router_template,
+    input_variables=[\&quot;input\&quot;],
+    output_parser=RouterOutputParser(next_chains=[&quot;Travel&quot;, &quot;Dining&quot;, &quot;Activities&quot;]), # Inform parser of valid next chains
+)
+
+# Create the router chain
+router_chain = LLMRouterChain.from_llm(
+    llm=OpenAI(), # Or your chosen LLM
+    prompt=router_prompt,
+    # output_parser is implicitly handled by from_llm when prompt has an output_parser
+)
+
+# Create the multi-route chain
+chain = MultiPromptChain(
+    router_chain=router_chain,
+    destination_chains={
+        &quot;Travel&quot;: travel_chain,
+        &quot;Dining&quot;: dining_chain,
+        &quot;Activities&quot;: activities_chain,
+    },
+    default_chain=error_chain, # Chain to use if routing fails or LLM outputs an unknown destination
+    verbose=True
+)
+
+# Use the chain
+# response = chain.invoke({&quot;input&quot;: &quot;I need a hotel in Paris for next week&quot;})
+# print(response)
+# response = chain.invoke({&quot;input&quot;: &quot;Suggest some good Italian restaurants nearby.&quot;})
+# print(response)
+</code></pre>
+<p>The <code>RouterChain</code> directs requests to specialized sub-chains.
+- <strong><code>RouterOutputParser</code></strong>: This parser is crucial. It takes the raw output from the LLM (which is supposed to be the name of the destination chain, e.g., "Travel") and structures it into a dictionary that <code>MultiPromptChain</code> can use. This dictionary typically includes the <code>destination</code> (the name of the next chain) and <code>next_inputs</code> (the original input to be passed to that destination chain). It ensures the LLM's routing decision is correctly interpreted.
+- <strong>Limitations</strong>:
+    - <strong>Simple Logic</strong>: Primarily designed for selecting one path out of many based on a single classification.
+    - <strong>No Sequential Dependencies</strong>: Not inherently designed for tasks where Step B depends on the output of Step A, unless the destination chains themselves handle such logic internally.
+    - <strong>Limited Conditional Logic</strong>: Struggles with complex conditional branching beyond the initial route.</p>
+<h3 id="parallel-planner-in-langgraph">Parallel Planner in LangGraph</h3>
+<p>For more complex planning that involves multiple concurrent actions, LangGraph provides a parallel execution pattern that enables fan-out/fan-in workflows. This is particularly useful for travel planning where you might want to search for flights, hotels, and activities simultaneously. This pattern is exemplified in the <code>travel_booking_parallel_planner.py</code> lab.</p>
+<pre><code class="language-python">from typing import TypedDict, List, Dict, Optional
+
+# State typing for clarity and safety
+class PlannerState(TypedDict, total=False):
+    # total=False means not all keys need to be present in every state update.
+    # This is useful as different nodes might populate different parts of the state.
+    origin: Optional[str]
+    destination: str
+    date: Optional[str] # For flights
+    check_in: Optional[str] # For hotels
+    check_out: Optional[str] # For hotels
+    flights: Optional[List[Dict]]  
+    hotels: Optional[List[Dict]]
+    activities: Optional[List[Dict]]
+    itinerary: Optional[Dict]
+    error: Optional[str] # To capture errors from tool calls
+
+# Placeholder tool functions (in a real app, these would call APIs)
+def search_flights(origin: str, destination: str, date: str) -&gt; List[Dict]:
+    print(f&quot;Searching flights from {origin} to {destination} on {date}&quot;)
+    if not origin or not date: return [{&quot;error&quot;: &quot;Missing origin or date for flight search&quot;}]
+    return [{&quot;flight_id&quot;: &quot;FL123&quot;, &quot;price&quot;: 300, &quot;duration&quot;: &quot;6h&quot;}] 
+
+def find_hotels(destination: str, check_in: str, check_out: str) -&gt; List[Dict]:
+    print(f&quot;Finding hotels in {destination} from {check_in} to {check_out}&quot;)
+    if not check_in or not check_out: return [{&quot;error&quot;: &quot;Missing check-in or check-out date for hotel search&quot;}]
+    return [{&quot;hotel_id&quot;: &quot;H456&quot;, &quot;name&quot;: &quot;Grand Hotel&quot;, &quot;price&quot;: 150}]
+
+def find_activities(destination: str, date_range: str) -&gt; List[Dict]:
+    print(f&quot;Finding activities in {destination} for {date_range}&quot;)
+    return [{&quot;activity_id&quot;: &quot;A789&quot;, &quot;name&quot;: &quot;Museum Visit&quot;, &quot;type&quot;: &quot;Cultural&quot;}]
+
+# Separate nodes for different search operations
+def flight_node(state: PlannerState) -&gt; Partial[PlannerState]:
+    try:
+        flights = search_flights(
+            state.get(&quot;origin&quot;), state[&quot;destination&quot;], state.get(&quot;date&quot;)
+        )
+        return {&quot;flights&quot;: flights}
+    except Exception as e:
+        return {&quot;error&quot;: f&quot;Flight search failed: {e}&quot;, &quot;flights&quot;: []}
+
+
+def hotel_node(state: PlannerState) -&gt; Partial[PlannerState]:
+    try:
+        hotels = find_hotels(
+            state[&quot;destination&quot;], state.get(&quot;check_in&quot;), state.get(&quot;check_out&quot;)
+        )
+        return {&quot;hotels&quot;: hotels}
+    except Exception as e:
+        return {&quot;error&quot;: f&quot;Hotel search failed: {e}&quot;, &quot;hotels&quot;: []}
+
+def activity_node(state: PlannerState) -&gt; Partial[PlannerState]:
+    try:
+        date_range = f&quot;{state.get('check_in', 'N/A')} – {state.get('check_out', 'N/A')}&quot;
+        activities = find_activities(state[&quot;destination&quot;], date_range)
+        return {&quot;activities&quot;: activities}
+    except Exception as e:
+        return {&quot;error&quot;: f&quot;Activity search failed: {e}&quot;, &quot;activities&quot;: []}
+
+
+# A merge node that compiles results into a final itinerary
+# This node acts as the &quot;fan-in&quot; point after parallel execution.
+def merge_itinerary(state: PlannerState) -&gt; Partial[PlannerState]:
+    itinerary = {
+        &quot;flights&quot;: state.get(&quot;flights&quot;, []),
+        &quot;hotel&quot;: min(state.get(&quot;hotels&quot;, []), key=lambda h: h.get(&quot;price&quot;, float('inf')), default={&quot;error&quot;: &quot;No hotels found or hotel data incomplete&quot;}),
+        &quot;activities&quot;: state.get(&quot;activities&quot;, []),
+    }
+    # Consolidate errors
+    errors = []
+    if state.get(&quot;error&quot;): errors.append(state[&quot;error&quot;]) # General error
+    for flight_list in state.get(&quot;flights&quot;, []):
+        if isinstance(flight_list, list): # Check if it's a list of flights
+             for flight in flight_list:
+                if isinstance(flight, dict) and flight.get(&quot;error&quot;): errors.append(f&quot;Flight Error: {flight['error']}&quot;)
+        elif isinstance(flight_list, dict) and flight_list.get(&quot;error&quot;): # if search_flights itself returned a single error dict
+            errors.append(f&quot;Flight Error: {flight_list['error']}&quot;)
+
+    # Similar error checking for hotels and activities if their tool functions can return error dicts
+    # For simplicity, we assume hotels and activities lists don't contain error dicts themselves here,
+    # but a robust implementation would check.
+
+    final_state_update = {&quot;itinerary&quot;: itinerary}
+    if errors:
+        final_state_update[&quot;error&quot;] = &quot;; &quot;.join(errors) # Combine all errors
+    return final_state_update
+</code></pre>
+<p>The graph structure enables parallel execution:</p>
+<pre><code class="language-python">from langgraph.graph import StateGraph, END
+from typing import Partial # Required for LangGraph node return types
+
+def build_planner_graph() -&gt; StateGraph:
+    g = StateGraph(PlannerState)
+
+    # Entry point: &quot;start&quot; node. It doesn't do much, just passes the initial state.
+    # It acts as the initial &quot;fan-out&quot; point.
+    g.add_node(&quot;start&quot;, lambda s: s) 
+    g.set_entry_point(&quot;start&quot;)
+
+    # Add parallel branch nodes
+    g.add_node(&quot;flights&quot;, flight_node)
+    g.add_node(&quot;hotels&quot;, hotel_node)
+    g.add_node(&quot;activities&quot;, activity_node)
+
+    # All parallel branches lead from &quot;start&quot;
+    g.add_edge(&quot;start&quot;, &quot;flights&quot;)
+    g.add_edge(&quot;start&quot;, &quot;hotels&quot;)
+    g.add_edge(&quot;start&quot;, &quot;activities&quot;)
+
+    # Add the merge node
+    g.add_node(&quot;merge&quot;, merge_itinerary)
+
+    # After each parallel branch completes, it goes to the &quot;merge&quot; node.
+    # This creates the &quot;fan-in&quot; point.
+    # LangGraph handles waiting for all incoming edges to &quot;merge&quot; before executing it,
+    # if &quot;merge&quot; is configured as a barrier or if it's the natural convergence point.
+    # For simple fan-out/fan-in, we define conditional edges or a collector node.
+    # A more robust way to handle this join is by using a conditional edge from each
+    # parallel node that checks if all data is ready, or by having a dedicated collector node.
+
+    # For simplicity in this example, we'll route all to merge.
+    # In a real LangGraph setup for joining parallel branches, you'd typically have:
+    # 1. The parallel nodes (flights, hotels, activities).
+    # 2. A &quot;join&quot; node (our 'merge' node) that is only run after all parallel nodes complete.
+    # LangGraph implicitly handles this if 'merge' is the single successor to all parallel nodes
+    # and there are no other paths.
+    # To make the join explicit and robust, especially with conditional routing,
+    # one might use a counter or check for the presence of all required data in the state
+    # before proceeding to the merge node, often using conditional edges.
+
+    g.add_edge(&quot;flights&quot;, &quot;merge&quot;)
+    g.add_edge(&quot;hotels&quot;, &quot;merge&quot;)
+    g.add_edge(&quot;activities&quot;, &quot;merge&quot;)
+
+    # End after merging
+    g.add_edge(&quot;merge&quot;, END)
+
+    return g.compile()
+
+# Example Usage:
+# planner = build_planner_graph()
+# initial_state = {&quot;origin&quot;: &quot;NYC&quot;, &quot;destination&quot;: &quot;Paris&quot;, &quot;date&quot;: &quot;2024-12-01&quot;, &quot;check_in&quot;: &quot;2024-12-01&quot;, &quot;check_out&quot;: &quot;2024-12-08&quot;}
+# for event in planner.stream(initial_state):
+#     print(event)
+#     print(&quot;---&quot;)
+</code></pre>
+<ul>
+<li><strong><code>PlannerState</code> TypedDict</strong>: <code>total=False</code> is used because not all pieces of information (like <code>flights</code>, <code>hotels</code>) will be available at every step of the graph. Nodes update only parts of the state. Defining the state structure upfront helps with type checking and understanding data flow.</li>
+<li><strong>Fan-out/Fan-in</strong>:<ul>
+<li><strong>Fan-out</strong>: From the <code>start</code> node, the graph branches out to <code>flights</code>, <code>hotels</code>, and <code>activities</code> nodes. These can (conceptually and often practically, depending on the LangGraph executor) run in parallel if they don't have direct dependencies on each other's immediate output for <em>initiation</em>.</li>
+<li><strong>Fan-in</strong>: The <code>merge_itinerary</code> node acts as the convergence point. LangGraph ensures that this node runs only after all its prerequisite parallel branches (<code>flights</code>, <code>hotels</code>, <code>activities</code> in this setup) have completed and updated the state.</li>
+</ul>
+</li>
+<li><strong>Error Handling in Parallel Branches</strong>:<ul>
+<li>Each node (<code>flight_node</code>, <code>hotel_node</code>, <code>activity_node</code>) should ideally have its own try-except block.</li>
+<li>If a tool call fails, the node can update the <code>PlannerState</code> with an error message (e.g., <code>state["error"] = "Flight API unavailable"</code> or add to a list of errors <code>state["errors"].append(...)</code>).</li>
+<li>The <code>merge_itinerary</code> node (or a subsequent error handling node) can then inspect these error fields. It could decide to:<ul>
+<li>Proceed with partial results if some branches succeeded.</li>
+<li>Halt and report the errors.</li>
+<li>Trigger a retry mechanism for the failed branches (more advanced, might involve looping back in the graph).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Conditional Edges &amp; Complex Merging</strong>:<ul>
+<li>Instead of directly connecting all parallel nodes to <code>merge_itinerary</code>, you could have conditional edges. For example, after <code>flight_node</code>, an edge could check <code>if state.get("flights")</code>.</li>
+<li>A more complex merge node might:<ul>
+<li>Prioritize certain results (e.g., if flights are essential but activities are optional).</li>
+<li>Attempt to find alternatives if a primary option failed (e.g., search for trains if flights failed).</li>
+<li>Aggregate data in more sophisticated ways (e.g., calculate total cost).</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="advanced-planning-and-tool-orchestration-with-langgraph">Advanced Planning and Tool Orchestration with LangGraph</h3>
+<p>LangGraph's flexibility allows for more sophisticated planning beyond simple parallel execution.</p>
+<ul>
+<li><strong>Conditional Tool Execution</strong>:</li>
+<li>Use conditional edges to decide whether to run a tool based on the current state. For example, only call a <code>book_hotel</code> tool if <code>find_hotels</code> returned valid options and the user confirmed.
+  <code>python
+  # def should_book_hotel(state: PlannerState) -&gt; str:
+  #     if state.get("hotels") and not state.get("hotels")[0].get("error") and state.get("user_confirmation_for_hotel"):
+  #         return "book_hotel_node"
+  #     return "skip_hotel_booking_node" # or END
+  # g.add_conditional_edges("confirm_hotel_node", should_book_hotel, {"book_hotel_node": "book_hotel_node", "skip_hotel_booking_node": "some_other_node_or_END"})</code></li>
+<li><strong>Dynamic Tool Selection</strong>:</li>
+<li>An LLM node can act as a planner that, at each step, decides the <em>next</em> tool to use based on the overall goal and the current state. This is closer to the ReAct or Self-Ask paradigm implemented within a graph.</li>
+<li>The LLM's output would be parsed to determine the next node (tool) to route to.</li>
+<li><strong>Integrating Reflection/Self-Critique (from Chapter 4)</strong>:</li>
+<li>After a planning step or a tool execution, a "reflection node" can be added.</li>
+<li>This node (powered by an LLM) would:<ol>
+<li>Review the last action and its outcome.</li>
+<li>Assess if the outcome aligns with the goal.</li>
+<li>If not, suggest modifications:<ul>
+<li>Re-try a tool with different parameters.</li>
+<li>Choose an alternative tool.</li>
+<li>Revise the plan.</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>This creates a loop: Plan -&gt; Act -&gt; Observe -&gt; Reflect -&gt; Re-plan/Act.</li>
+<li>The <code>reflection_langgraph.py</code> lab from Chapter 4 provides a template for such a self-critique loop, which can be adapted for planning. For instance, if a <code>search_flights</code> tool returns no results, a reflection node could analyze why (e.g., "Maybe the date is too far in the future, or the origin/destination pair is uncommon") and suggest trying with adjusted dates or nearby airports.</li>
+<li><strong>Conceptual Link to <code>travel_booking_parallel_planner.py</code></strong>:</li>
+<li>While the lab focuses on parallel execution, it can be extended. Imagine after the <code>merge_itinerary</code> node, if the itinerary is incomplete or unsatisfactory (e.g., no flights found, or hotel price too high), a conditional edge could route the state to a "refine_plan_node". This node, using an LLM, would look at the <code>PlannerState</code> (including any errors) and decide what to do next:<ul>
+<li>Re-run <code>flight_node</code> with different dates.</li>
+<li>Add a new node, e.g., <code>alternative_transport_node</code> (search for trains).</li>
+<li>Ask the user for more flexible parameters.</li>
+</ul>
+</li>
+<li>This makes the planner adaptive.</li>
+</ul>
+<h3 id="integrating-dspy-for-tool-definition-planning-and-parameter-generation">Integrating DSPy for Tool Definition, Planning, and Parameter Generation</h3>
+<p>DSPy offers a programmatic way to define and optimize prompts, which can be highly beneficial for tool use and planning in agentic systems.</p>
+<ul>
+<li><strong>DSPy for Tool Selection &amp; Parameter Generation</strong>:</li>
+<li>
+<p><strong>Signatures for Tool Use</strong>: You can define a DSPy <code>Signature</code> where the input is the user query and current context, and the output fields are <code>tool_name: str</code> and <code>tool_parameters: Dict</code>.
+    ```python
+    # import dspy
+    # class SelectTool(dspy.Signature):
+    #     \"\"\"Given the user query and conversation history, select the best tool and generate its parameters.\"\"\"
+    #     user_query = dspy.InputField(desc="The user's latest request.")
+    #     available_tools = dspy.InputField(desc="List of available tools with their descriptions.")
+    #     # conversation_history = dspy.InputField(desc="The recent conversation history.") # Optional</p>
+<h1 id="tool_name-dspyoutputfielddescthe-name-of-the-selected-tool-eg-get_weather-search_flights">tool_name = dspy.OutputField(desc="The name of the selected tool (e.g., 'get_weather', 'search_flights').")</h1>
+<h1 id="tool_parameters-dspyoutputfielddesca-dictionary-of-parameters-for-the-selected-tool">tool_parameters = dspy.OutputField(desc="A dictionary of parameters for the selected tool.")</h1>
+<h1 id="this-signature-can-be-used-in-a-dspy-module"># This signature can be used in a DSPy module.</h1>
+<h1 id="class-toolselectormoduledspymodule">class ToolSelectorModule(dspy.Module):</h1>
+<h1 id="def-initself-tools_json_schema">def <strong>init</strong>(self, tools_json_schema):</h1>
+<h1 id="superinit">super().<strong>init</strong>()</h1>
+<h1 id="selftools_json_schema-tools_json_schema-stringified-json-schema-of-tools">self.tools_json_schema = tools_json_schema # Stringified JSON schema of tools</h1>
+<h1 id="selfselect_tool-dspypredictselecttool">self.select_tool = dspy.Predict(SelectTool)</h1>
+<h1 id="def-forwardself-user_query">def forward(self, user_query):</h1>
+<h1 id="prediction-selfselect_tooluser_queryuser_query-available_toolsselftools_json_schema">prediction = self.select_tool(user_query=user_query, available_tools=self.tools_json_schema)</h1>
+<h1 id="return-predictiontool_name-predictiontool_parameters">return prediction.tool_name, prediction.tool_parameters</h1>
+<p><code>- The `available_tools` input field in the signature would be a description of your tools (similar to what you'd pass to OpenAI's function calling API, or derived from LangChain tool docstrings).
+  - A DSPy teleprompter (optimizer like `BootstrapFewShot`) could then be used with examples of queries and desired tool/parameter outputs to generate and refine a few-shot prompt for the `SelectTool` predictor, making the LLM more reliable at choosing the correct tool and forming its parameters.
+- **DSPy for LLM-based Planning**:
+  - Similarly, a signature can be defined for generating a plan:</code>python</p>
+<h1 id="class-generateplandspysignature">class GeneratePlan(dspy.Signature):</h1>
+<h1 id="generate-a-step-by-step-plan-to-achieve-the-users-goal">\"\"\"Generate a step-by-step plan to achieve the user's goal.\"\"\"</h1>
+<h1 id="user_goal-dspyinputfielddescthe-users-overall-objective">user_goal = dspy.InputField(desc="The user's overall objective.")</h1>
+<h1 id="available_tools-dspyinputfielddesclist-of-available-tools-can-be-included"># available_tools = dspy.InputField(desc="List of available tools.") # Can be included</h1>
+<h1 id="plan-dspyoutputfielddesca-list-of-strings-where-each-string-is-a-step-in-the-plan">plan = dspy.OutputField(desc="A list of strings, where each string is a step in the plan.")</h1>
+<p><code>``
+  - The optimized DSPy module can then be a node in your LangGraph agent. The output</code>plan<code>(a list of steps) can be iterated over by subsequent LangGraph nodes, which might involve executing tools or further LLM calls for each step.
+- **Integration into a LangGraph Workflow**:
+  1.  **Initial Request**: User query comes in.
+  2.  **DSPy Planning Node**: A LangGraph node containing a DSPy module (e.g., using</code>GeneratePlan<code>signature) generates an initial plan.
+  3.  **DSPy Tool Selection/Parameter Node**: For each step in the plan that requires a tool, another LangGraph node with a DSPy module (e.g.,</code>ToolSelectorModule`) determines the specific tool and its parameters.
+  4.  <strong>Tool Execution Node</strong>: The selected tool is executed.
+  5.  <strong>Reflection/Update Node</strong>: Results are fed back. If the plan needs adjustment or a tool failed, a reflection node (potentially also using DSPy for optimized reflective prompts) can update the plan or re-trigger tool selection.
+- <strong>Benefits</strong>:
+- <strong>Systematic Prompt Engineering</strong>: DSPy provides a structured way to create and manage prompts for complex tasks like planning and tool use.
+- <strong>Optimization</strong>: Teleprompters can automatically find better prompts than manually crafted ones, leading to more robust and accurate agent behavior.
+- <strong>Modularity</strong>: DSPy modules can be developed and tested independently before being integrated into a larger LangGraph agent.</p>
+</li>
+</ul>
+<p>This chapter provides the foundational knowledge for building agents that can intelligently plan and utilize tools, significantly expanding their problem-solving capabilities. The combination of LangGraph's state management and execution flow with the LLM's reasoning, augmented by DSPy's optimization, offers a powerful toolkit for developing sophisticated agentic systems. The <code>travel_booking_parallel_planner.py</code> lab provides a practical starting point for implementing some of these concepts.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>

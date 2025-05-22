@@ -115,15 +115,15 @@ nav:
       - Chapter 10: AI_Systems/Chapter10/10.md
       - Chapter 11: AI_Systems/Chapter11/11.md
   - Agent Development:
-      - Chapter 1: Agentic_AI_in_Action/01_Introduction_Agentic_AI.md
-      - Chapter 2: Agentic_AI_in_Action/02_LangChain_Foundation.md
-      - Chapter 3: Agentic_AI_in_Action/03_LangGraph_Orchestration.md
-      - Chapter 4: Agentic_AI_in_Action/04_LangChain_LangGraph_In_Action.md
-      - Chapter 5: Agentic_AI_in_Action/05_DSPy_Optimization.md
-      - Chapter 6: Agentic_AI_in_Action/06_State_Management_Checkpointers.md
-      - Chapter 7: Agentic_AI_in_Action/07_Debugging_LangSmith.md
-      - Chapter 8: Agentic_AI_in_Action/08_Conclusion.md
-      - Chapter 9: Agentic_AI_in_Action/09_References_and_Further_Reading.md
+      - Chapter 1: Agentic_AI_in_Action/1.md
+      - Chapter 2: Agentic_AI_in_Action/2.md
+      - Chapter 3: Agentic_AI_in_Action/3.md
+      - Chapter 4: Agentic_AI_in_Action/4.md
+      - Chapter 5: Agentic_AI_in_Action/5.md
+      - Chapter 6: Agentic_AI_in_Action/6.md
+      - Chapter 7: Agentic_AI_in_Action/7.md
+      - Chapter 8: Agentic_AI_in_Action/8.md
+      - Chapter 9: Agentic_AI_in_Action/9.md
   - AI Strategies:
     - Chapter 1: AI_Strategies/1.md
     - Chapter 2: AI_Strategies/2.md

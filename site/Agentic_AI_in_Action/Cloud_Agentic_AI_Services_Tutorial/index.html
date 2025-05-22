@@ -1,0 +1,1390 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://memari-majid.github.io/Agentic-AI-Systems/Agentic_AI_in_Action/Cloud_Agentic_AI_Services_Tutorial/">
+      
+      
+        <link rel="prev" href="../DSPy_Introduction/">
+      
+      
+        <link rel="next" href="../">
+      
+      
+      <link rel="icon" href="../../image.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Cloud Services - Building Agentic AI Systems</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#leveraging-cloud-services-for-agentic-ai-systems" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Building Agentic AI Systems" class="md-header__button md-logo" aria-label="Building Agentic AI Systems" data-md-component="logo">
+      
+  <img src="../../image.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Building Agentic AI Systems
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Cloud Services
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Building Agentic AI Systems" class="md-nav__button md-logo" aria-label="Building Agentic AI Systems" data-md-component="logo">
+      
+  <img src="../../image.png" alt="logo">
+
+    </a>
+    Building Agentic AI Systems
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Lessons
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Lessons
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lessons/Chapter01/1%20Fundamentals%20of%20Generative%20AI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 01
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lessons/Chapter02/2%20Principles%20of%20Agentic%20Systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 02
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lessons/Chapter03/3%20Essential%20Components%20of%20Intelligent%20Agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 03
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lessons/Chapter04/4%20Reflection%20and%20Introspection%20in%20Agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 04
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lessons/Chapter05/5%20Enabling%20Tool%20Use%20and%20Planning%20in%20Agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 05
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lessons/Chapter06/6%20Exploring%20the%20Coordinator%2C%20Worker%2C%20and%20Delegator%20Approach/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 06
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lessons/Chapter07/7%20Effective%20Agentic%20System%20Design%20Techniques/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 07
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lessons/Chapter08/8%20Building%20Trust%20in%20Generative%20AI%20Systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 08
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lessons/Chapter09/9%20Managing%20Safety%20and%20Ethical%20Considerations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 09
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lessons/Chapter10/10%20Common%20Use%20Cases%20and%20Applications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 10
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lessons/Chapter11/11%20Conclusion%20and%20Future%20Outlook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 11
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Labs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Labs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Appendix
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Appendix
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Agentic_AI_Design_Tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Agentic AI Design
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DSPy_Introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DSPy Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Cloud Services
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cloud Services
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-common-architectural-patterns-for-agentic-ai-on-the-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Common Architectural Patterns for Agentic AI on the Cloud
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Common Architectural Patterns for Agentic AI on the Cloud">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-model-hosting-and-api-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      a. Model Hosting and API Endpoints
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-vector-stores-for-retrieval-augmented-generation-rag" class="md-nav__link">
+    <span class="md-ellipsis">
+      b. Vector Stores for Retrieval Augmented Generation (RAG)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-orchestration-of-agentic-flows" class="md-nav__link">
+    <span class="md-ellipsis">
+      c. Orchestration of Agentic Flows
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-state-management-and-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      d. State Management and Memory
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-logging-monitoring-and-observability" class="md-nav__link">
+    <span class="md-ellipsis">
+      e. Logging, Monitoring, and Observability
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-security-and-identity-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      f. Security and Identity Management
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-platform-specific-overviews" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Platform-Specific Overviews
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Platform-Specific Overviews">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-amazon-web-services-aws" class="md-nav__link">
+    <span class="md-ellipsis">
+      a. Amazon Web Services (AWS)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-microsoft-azure" class="md-nav__link">
+    <span class="md-ellipsis">
+      b. Microsoft Azure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-google-cloud-platform-gcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      c. Google Cloud Platform (GCP)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-considerations-for-choosing-a-cloud-provider" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Considerations for Choosing a Cloud Provider
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    More
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../README.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-common-architectural-patterns-for-agentic-ai-on-the-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Common Architectural Patterns for Agentic AI on the Cloud
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Common Architectural Patterns for Agentic AI on the Cloud">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-model-hosting-and-api-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      a. Model Hosting and API Endpoints
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-vector-stores-for-retrieval-augmented-generation-rag" class="md-nav__link">
+    <span class="md-ellipsis">
+      b. Vector Stores for Retrieval Augmented Generation (RAG)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-orchestration-of-agentic-flows" class="md-nav__link">
+    <span class="md-ellipsis">
+      c. Orchestration of Agentic Flows
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-state-management-and-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      d. State Management and Memory
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-logging-monitoring-and-observability" class="md-nav__link">
+    <span class="md-ellipsis">
+      e. Logging, Monitoring, and Observability
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-security-and-identity-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      f. Security and Identity Management
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-platform-specific-overviews" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Platform-Specific Overviews
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Platform-Specific Overviews">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-amazon-web-services-aws" class="md-nav__link">
+    <span class="md-ellipsis">
+      a. Amazon Web Services (AWS)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-microsoft-azure" class="md-nav__link">
+    <span class="md-ellipsis">
+      b. Microsoft Azure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-google-cloud-platform-gcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      c. Google Cloud Platform (GCP)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-considerations-for-choosing-a-cloud-provider" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Considerations for Choosing a Cloud Provider
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="leveraging-cloud-services-for-agentic-ai-systems">Leveraging Cloud Services for Agentic AI Systems</h1>
+<h2 id="1-introduction">1. Introduction</h2>
+<p>Deploying and scaling agentic AI systems often benefits significantly from the robust infrastructure and managed services offered by major cloud providers. Cloud platforms provide the scalability, reliability, access to powerful foundation models, and integration capabilities necessary for building production-grade agents.</p>
+<p>This tutorial provides a high-level overview of how services from Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP) can be utilized to host, orchestrate, and manage agentic AI systems, particularly those built with frameworks like LangChain and LangGraph.</p>
+<p><strong>Key benefits of using cloud services for agentic AI:</strong>
+-   <strong>Scalability:</strong> Easily scale compute resources, model inference endpoints, and data storage to handle varying loads.
+-   <strong>Managed Services:</strong> Reduce operational overhead by using managed databases, vector stores, model hosting, and orchestration tools.
+-   <strong>Access to Foundation Models:</strong> Cloud providers offer access to a wide array of proprietary and open-source large language models (LLMs) through their platforms (e.g., Amazon Bedrock, Azure OpenAI Service, Google Vertex AI Model Garden).
+-   <strong>Integration Ecosystem:</strong> Seamlessly integrate with other cloud services for data storage, analytics, security, and MLOps.
+-   <strong>MLOps Capabilities:</strong> Leverage mature MLOps tools for model deployment, monitoring, versioning, and lifecycle management.</p>
+<h2 id="2-common-architectural-patterns-for-agentic-ai-on-the-cloud">2. Common Architectural Patterns for Agentic AI on the Cloud</h2>
+<p>Regardless of the specific cloud provider, several common architectural patterns emerge when deploying agentic systems:</p>
+<h3 id="a-model-hosting-and-api-endpoints">a. Model Hosting and API Endpoints</h3>
+<ul>
+<li><strong>Concept:</strong> LLMs, whether foundation models or fine-tuned custom models, are often hosted as API endpoints.</li>
+<li><strong>Cloud Implementation:</strong> Services like Amazon SageMaker, Azure Machine Learning, Google Vertex AI Endpoints, or specialized services like Amazon Bedrock and Azure OpenAI Service allow you to deploy models or access them via API.</li>
+<li><strong>LangChain Integration:</strong> LangChain provides client libraries to easily interact with these model endpoints (e.g., <code>ChatBedrock</code>, <code>AzureChatOpenAI</code>, <code>ChatVertexAI</code>).</li>
+</ul>
+<h3 id="b-vector-stores-for-retrieval-augmented-generation-rag">b. Vector Stores for Retrieval Augmented Generation (RAG)</h3>
+<ul>
+<li><strong>Concept:</strong> Agents performing RAG need efficient vector databases to store and query embeddings.</li>
+<li><strong>Cloud Implementation:</strong> Managed vector database services (e.g., Amazon OpenSearch Service with k-NN, Amazon Kendra, Azure AI Search, Google Vertex AI Vector Search) or deploying open-source vector DBs (like Weaviate, Pinecone, Qdrant) on cloud compute.</li>
+<li><strong>LangChain Integration:</strong> LangChain has integrations for most popular vector stores, making it easy to connect your agent's retrieval mechanisms.</li>
+</ul>
+<h3 id="c-orchestration-of-agentic-flows">c. Orchestration of Agentic Flows</h3>
+<ul>
+<li><strong>Concept:</strong> Complex agentic workflows (like those designed with LangGraph) involve multiple steps, conditional logic, and tool calls that need orchestration.</li>
+<li><strong>Cloud Implementation:</strong><ul>
+<li><strong>Serverless Functions:</strong> (AWS Lambda, Azure Functions, Google Cloud Functions) can host individual nodes or tools within a LangGraph.</li>
+<li><strong>Workflow Engines:</strong> (AWS Step Functions, Azure Logic Apps, Google Cloud Workflows) can manage the overall state and transitions between serverless functions or other services, mirroring a LangGraph execution.</li>
+<li><strong>Containerization:</strong> (Amazon ECS/EKS, Azure Kubernetes Service (AKS), Google Kubernetes Engine (GKE)) for deploying more complex agent applications.</li>
+</ul>
+</li>
+</ul>
+<h3 id="d-state-management-and-memory">d. State Management and Memory</h3>
+<ul>
+<li><strong>Concept:</strong> Agents, especially stateful ones built with LangGraph, require persistent storage for conversation history, intermediate results, and check MLOps_capabilitiesointing.</li>
+<li><strong>Cloud Implementation:</strong> Managed NoSQL databases (Amazon DynamoDB, Azure Cosmos DB, Google Firestore), relational databases (Amazon RDS, Azure SQL Database, Google Cloud SQL), or in-memory caches (Amazon ElastiCache for Redis, Azure Cache for Redis, Google Memorystore).</li>
+<li><strong>LangGraph Integration:</strong> LangGraph checkpointers can be implemented to use these cloud databases for persistent state.</li>
+</ul>
+<h3 id="e-logging-monitoring-and-observability">e. Logging, Monitoring, and Observability</h3>
+<ul>
+<li><strong>Concept:</strong> Essential for debugging, understanding agent behavior, and ensuring reliability.</li>
+<li><strong>Cloud Implementation:</strong> Native cloud monitoring services (Amazon CloudWatch, Azure Monitor, Google Cloud Monitoring/Logging) combined with specialized platforms like LangSmith.</li>
+</ul>
+<h3 id="f-security-and-identity-management">f. Security and Identity Management</h3>
+<ul>
+<li><strong>Concept:</strong> Securely manage access to models, tools, data, and agent capabilities.</li>
+<li><strong>Cloud Implementation:</strong> Identity and Access Management (IAM) services (AWS IAM, Azure Active Directory, Google Cloud IAM), secrets management (AWS Secrets Manager, Azure Key Vault, Google Secret Manager).</li>
+</ul>
+<h2 id="3-platform-specific-overviews">3. Platform-Specific Overviews</h2>
+<p>Here, we'll briefly touch upon key services from AWS, Azure, and GCP that are particularly relevant for deploying agentic AI systems.</p>
+<h3 id="a-amazon-web-services-aws">a. Amazon Web Services (AWS)</h3>
+<p>AWS offers a mature and extensive suite of services for AI/ML development and deployment.</p>
+<ul>
+<li>
+<p><strong>Model Hosting &amp; Access:</strong></p>
+<ul>
+<li><strong>Amazon Bedrock:</strong> Provides API access to a range of foundation models from leading AI companies (e.g., Anthropic Claude, AI21 Labs Jurassic, Stability AI Stable Diffusion) and Amazon's own Titan models. LangChain offers <code>ChatBedrock</code> and <code>BedrockEmbeddings</code> for easy integration.</li>
+<li><strong>Amazon SageMaker:</strong> A comprehensive ML platform. You can use it to build, train, and deploy custom models (including LLMs) as endpoints. SageMaker Endpoints can be called by LangChain agents.</li>
+<li><strong>LangChain Integration:</strong> <code>langchain_aws</code> (formerly <code>langchain_community</code> for some AWS services) package provides direct integrations.</li>
+</ul>
+</li>
+<li>
+<p><strong>Vector Stores for RAG:</strong></p>
+<ul>
+<li><strong>Amazon OpenSearch Service:</strong> Can be configured with k-NN support for vector search. LangChain has an <code>OpenSearchVectorSearch</code> integration.</li>
+<li><strong>Amazon Kendra:</strong> An intelligent search service that can also act as a retriever for RAG, often with semantic search capabilities. LangChain offers <code>AmazonKendraRetriever</code>.</li>
+<li>Other vector databases can be deployed on EC2/EKS.</li>
+</ul>
+</li>
+<li>
+<p><strong>Orchestration &amp; Compute:</strong></p>
+<ul>
+<li><strong>AWS Lambda:</strong> Serverless compute ideal for hosting individual agent tools, LangGraph nodes, or simple LangChain chains as API endpoints (e.g., via API Gateway).</li>
+<li><strong>AWS Step Functions:</strong> A serverless workflow orchestrator. Can be used to define and manage the execution flow of a LangGraph, where each step might invoke a Lambda function representing a node.</li>
+<li><strong>Amazon ECS (Elastic Container Service) &amp; EKS (Elastic Kubernetes Service):</strong> For deploying containerized agent applications, including more complex LangGraph instances or agents requiring significant resources.</li>
+</ul>
+</li>
+<li>
+<p><strong>State Management &amp; Memory:</strong></p>
+<ul>
+<li><strong>Amazon DynamoDB:</strong> A scalable NoSQL database suitable for storing agent state, conversation history, or as a backend for LangGraph checkpointers.</li>
+<li><strong>Amazon RDS:</strong> For relational database needs.</li>
+<li><strong>Amazon ElastiCache (Redis/Memcached):</strong> For in-memory caching of frequently accessed data or short-term agent memory.</li>
+</ul>
+</li>
+<li>
+<p><strong>Logging &amp; Monitoring:</strong></p>
+<ul>
+<li><strong>Amazon CloudWatch:</strong> For logs, metrics, and alarms from Lambda, Step Functions, SageMaker, etc. Essential for observing agent behavior.</li>
+</ul>
+</li>
+<li>
+<p><strong>Conceptual AWS Deployment Sketch (LangGraph node as Lambda):</strong></p>
+<ol>
+<li>Define a LangGraph node (a Python function).</li>
+<li>Package this function with its dependencies (including LangChain/LangGraph) into a Lambda deployment package.</li>
+<li>Configure AWS Step Functions to call this Lambda (and others representing other nodes) based on state transitions defined in your Step Functions state machine (mirroring LangGraph logic).</li>
+<li>Use DynamoDB for the LangGraph checkpointer via a custom implementation or if a LangChain community checkpointer for DynamoDB becomes available.</li>
+</ol>
+</li>
+</ul>
+<h3 id="b-microsoft-azure">b. Microsoft Azure</h3>
+<p>Microsoft Azure provides a comprehensive set of AI services, with strong emphasis on OpenAI models and enterprise-grade solutions.</p>
+<ul>
+<li>
+<p><strong>Model Hosting &amp; Access:</strong></p>
+<ul>
+<li><strong>Azure OpenAI Service:</strong> Provides access to powerful OpenAI models like GPT-4, GPT-3.5-Turbo, and embeddings models, with enterprise features. LangChain has robust <code>AzureChatOpenAI</code> and <code>AzureOpenAIEmbeddings</code> integrations.</li>
+<li><strong>Azure Machine Learning (AzureML):</strong> A platform for the end-to-end ML lifecycle. You can deploy custom models (including LLMs) as managed endpoints or use models from its model catalog.</li>
+<li><strong>LangChain Integration:</strong> The <code>langchain_openai</code> package handles Azure OpenAI, and <code>langchain_community</code> often contains other Azure-specific integrations.</li>
+</ul>
+</li>
+<li>
+<p><strong>Vector Stores for RAG:</strong></p>
+<ul>
+<li><strong>Azure AI Search (formerly Azure Cognitive Search):</strong> A powerful search service that includes integrated vector search capabilities. LangChain offers <code>AzureSearch</code> for vector store functionality.</li>
+<li>Other vector databases can be deployed on Azure VMs or AKS.</li>
+</ul>
+</li>
+<li>
+<p><strong>Orchestration &amp; Compute:</strong></p>
+<ul>
+<li><strong>Azure Functions:</strong> Serverless compute for hosting agent tools, LangGraph nodes, or API backends for LangChain applications.</li>
+<li><strong>Azure Logic Apps:</strong> A serverless workflow automation service that can orchestrate calls to Azure Functions, APIs, and other services, suitable for managing LangGraph-like flows.</li>
+<li><strong>Azure Kubernetes Service (AKS):</strong> For deploying containerized, scalable agent applications.</li>
+<li><strong>Azure Container Apps:</strong> A serverless container service that can also host agent components.</li>
+</ul>
+</li>
+<li>
+<p><strong>State Management &amp; Memory:</strong></p>
+<ul>
+<li><strong>Azure Cosmos DB:</strong> A globally distributed, multi-model NoSQL database. Well-suited for storing agent state, conversation history, and as a backend for LangGraph checkpointers due to its scalability and flexibility.</li>
+<li><strong>Azure Cache for Redis:</strong> A managed Redis service for high-throughput, low-latency caching or short-term memory.</li>
+<li><strong>Azure SQL Database / Azure Database for PostgreSQL/MySQL:</strong> For relational data storage needs.</li>
+</ul>
+</li>
+<li>
+<p><strong>Logging &amp; Monitoring:</strong></p>
+<ul>
+<li><strong>Azure Monitor:</strong> Collects, analyzes, and acts on telemetry data from Azure resources, including Azure Functions, AKS, and AzureML. Application Insights (part of Azure Monitor) is particularly useful for application-level tracing.</li>
+</ul>
+</li>
+<li>
+<p><strong>Conceptual Azure Deployment Sketch (LangGraph with Azure Functions &amp; Cosmos DB):</strong></p>
+<ol>
+<li>Develop LangGraph nodes as individual Python Azure Functions.</li>
+<li>Use Azure Logic Apps to define the control flow between these functions, triggered by HTTP requests or other events, with conditions based on function outputs (state).</li>
+<li>Implement a LangGraph checkpointer using Azure Cosmos DB to persist the agent's state across function calls and workflow steps.</li>
+<li>Expose the initial trigger for the Logic App (and thus the agent) via Azure API Management or directly.</li>
+</ol>
+</li>
+</ul>
+<h3 id="c-google-cloud-platform-gcp">c. Google Cloud Platform (GCP)</h3>
+<p>GCP offers a strong suite of AI/ML services, particularly through its Vertex AI platform.</p>
+<ul>
+<li>
+<p><strong>Model Hosting &amp; Access:</strong></p>
+<ul>
+<li><strong>Vertex AI Model Garden:</strong> A gateway to discover and use a wide variety of foundation models (including Google's own like Gemini, PaLM 2, and Imagen, as well as third-party and open-source models).</li>
+<li><strong>Vertex AI Prediction:</strong> Deploy custom ML models and foundation models as scalable endpoints for online predictions. LangChain's <code>ChatVertexAI</code> and <code>VertexAIEmbeddings</code> integrate with these.</li>
+<li><strong>LangChain Integration:</strong> The <code>langchain_google_vertexai</code> package provides comprehensive integrations.</li>
+</ul>
+</li>
+<li>
+<p><strong>Vector Stores for RAG:</strong></p>
+<ul>
+<li><strong>Vertex AI Vector Search (formerly Matching Engine):</strong> A high-performance vector database service for similarity search at scale. LangChain integrates with this for RAG applications.</li>
+<li>Other vector databases can be deployed on Google Compute Engine (GCE) or Google Kubernetes Engine (GKE).</li>
+</ul>
+</li>
+<li>
+<p><strong>Orchestration &amp; Compute:</strong></p>
+<ul>
+<li><strong>Google Cloud Functions:</strong> Serverless compute for individual agent tasks, tools, or LangGraph nodes.</li>
+<li><strong>Google Cloud Workflows:</strong> A serverless orchestrator to define and automate sequences of HTTP-based services, including Cloud Functions. Suitable for managing LangGraph execution flows.</li>
+<li><strong>Google Kubernetes Engine (GKE):</strong> For deploying complex, containerized agent applications.</li>
+<li><strong>Cloud Run:</strong> A fully managed serverless platform for containerized applications, another good option for hosting agent services.</li>
+</ul>
+</li>
+<li>
+<p><strong>State Management &amp; Memory:</strong></p>
+<ul>
+<li><strong>Google Cloud Firestore:</strong> A scalable, serverless NoSQL document database. Excellent for storing agent state, conversation logs, and as a backend for LangGraph checkpointers.</li>
+<li><strong>Google Cloud Memorystore (Redis/Memcached):</strong> Managed in-memory data store services for caching and fast access to session data.</li>
+<li><strong>Google Cloud SQL:</strong> For relational database requirements.</li>
+</ul>
+</li>
+<li>
+<p><strong>Logging &amp; Monitoring:</strong></p>
+<ul>
+<li><strong>Google Cloud's operations suite (formerly Stackdriver):</strong> Includes Cloud Monitoring and Cloud Logging for comprehensive observability of applications running on GCP.</li>
+</ul>
+</li>
+<li>
+<p><strong>Conceptual GCP Deployment Sketch (LangGraph with Cloud Functions &amp; Firestore):</strong></p>
+<ol>
+<li>Implement LangGraph nodes as separate Python Google Cloud Functions.</li>
+<li>Utilize Google Cloud Workflows to define the state machine that orchestrates calls to these Cloud Functions, managing transitions based on the agent's state.</li>
+<li>Use Google Cloud Firestore as the persistent backend for a LangGraph checkpointer, saving and retrieving agent state for each <code>thread_id</code>.</li>
+<li>The initial invocation of the agent could be an HTTP trigger to a Cloud Function that starts the Cloud Workflow.</li>
+</ol>
+</li>
+</ul>
+<h2 id="4-considerations-for-choosing-a-cloud-provider">4. Considerations for Choosing a Cloud Provider</h2>
+<p>Selecting the right cloud provider for your agentic AI project depends on various factors specific to your needs and existing infrastructure. Here are some key considerations:</p>
+<ul>
+<li>
+<p><strong>Model Availability and Preference:</strong></p>
+<ul>
+<li>Does a provider offer exclusive or optimized access to specific foundation models you intend to use (e.g., Azure for certain OpenAI models, GCP for latest Google models, AWS Bedrock for a diverse marketplace)?</li>
+<li>How easy is it to deploy and manage your own fine-tuned models if needed?</li>
+</ul>
+</li>
+<li>
+<p><strong>Existing Infrastructure and Ecosystem:</strong></p>
+<ul>
+<li>If your organization already has a significant footprint on one cloud provider, leveraging existing infrastructure, IAM, billing, and support channels can be more efficient.</li>
+<li>Consider how well the AI services integrate with your existing data lakes, data warehouses, and other applications on that cloud.</li>
+</ul>
+</li>
+<li>
+<p><strong>Scalability and Performance Requirements:</strong></p>
+<ul>
+<li>Evaluate the scalability of model inference endpoints, vector databases, and orchestration services based on your expected load.</li>
+<li>Consider network latency if your agent components are geographically distributed or interact with on-premises systems.</li>
+</ul>
+</li>
+<li>
+<p><strong>Cost and Pricing Models:</strong></p>
+<ul>
+<li>Compare the pricing for model inference, data storage, compute, and networking across providers.</li>
+<li>Look for cost optimization features, reserved instances, or spot instances for compute-intensive tasks like model training or batch processing.</li>
+</ul>
+</li>
+<li>
+<p><strong>MLOps and Developer Tooling:</strong></p>
+<ul>
+<li>Assess the maturity and comprehensiveness of MLOps tools for model deployment, versioning, monitoring, and retraining.</li>
+<li>Consider the availability of SDKs, CLIs, and IDE integrations that fit your development workflow.</li>
+</ul>
+</li>
+<li>
+<p><strong>Specific Service Needs:</strong></p>
+<ul>
+<li>Do you have specific requirements for vector databases, orchestration engines, or data processing tools that are better met by one provider's offerings?</li>
+<li>For instance, if you need very specific features in a vector search or a particular type of workflow engine.</li>
+</ul>
+</li>
+<li>
+<p><strong>Security and Compliance:</strong></p>
+<ul>
+<li>Ensure the provider meets your organization's security standards and any industry-specific compliance requirements (e.g., HIPAA, GDPR).</li>
+<li>Evaluate their IAM capabilities, data encryption options, and network security features.</li>
+</ul>
+</li>
+<li>
+<p><strong>Team Familiarity and Skills:</strong></p>
+<ul>
+<li>The existing skillset and familiarity of your development team with a particular cloud platform can influence ramp-up time and productivity.</li>
+</ul>
+</li>
+<li>
+<p><strong>Vendor Lock-in vs. Portability:</strong></p>
+<ul>
+<li>While frameworks like LangChain promote some level of abstraction, deep integration with platform-specific services can lead to vendor lock-in.</li>
+<li>Assess your strategy for multi-cloud or hybrid-cloud deployments if portability is a major concern. Using containerization (e.g., Kubernetes) and open standards can help mitigate this.</li>
+</ul>
+</li>
+</ul>
+<p>Often, the choice isn't strictly about which platform is "best" overall, but which is the best fit for your specific project, team, and organizational context. It may also be feasible to use services from multiple clouds, though this adds complexity.</p>
+<h2 id="5-conclusion">5. Conclusion</h2>
+<p>Cloud platforms offer a powerful and flexible foundation for building, deploying, and scaling sophisticated agentic AI systems. By leveraging managed services for model hosting, data storage, vector search, orchestration, and MLOps, development teams can focus more on the unique logic and capabilities of their agents rather than on underlying infrastructure management.</p>
+<p>Key takeaways from this overview include:</p>
+<ul>
+<li><strong>Common Patterns:</strong> Architectural patterns for agentic AI are similar across clouds, involving model endpoints, vector stores, orchestration logic, state persistence, and robust monitoring.</li>
+<li><strong>Rich Ecosystems:</strong> AWS, Azure, and GCP each provide a comprehensive suite of services that can be tailored to support complex agentic workflows. LangChain and LangGraph can integrate with these services to provide a productive development experience.</li>
+<li><strong>Strategic Choices:</strong> The selection of a cloud provider (or a multi-cloud strategy) should be driven by factors such as model availability, existing infrastructure, cost, specific service features, and team expertise.</li>
+<li><strong>Abstraction Benefits:</strong> Frameworks like LangChain help abstract some cloud-specific details, but understanding the underlying cloud services is crucial for optimization, cost management, and robust deployment.</li>
+</ul>
+<p>As agentic AI systems become more prevalent and complex, the scalability, reliability, and advanced capabilities offered by cloud providers will continue to be essential for their successful implementation in real-world applications. Continuously explore the evolving service offerings from these platforms and refer to their official documentation for the most up-to-date information and best practices. </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>

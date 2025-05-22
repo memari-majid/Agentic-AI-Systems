@@ -1,0 +1,1290 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://memari-majid.github.io/Agentic-AI-Systems/Lessons/Chapter07/7%20Effective%20Agentic%20System%20Design%20Techniques/">
+      
+      
+        <link rel="prev" href="../../Chapter06/6%20Exploring%20the%20Coordinator%2C%20Worker%2C%20and%20Delegator%20Approach/">
+      
+      
+        <link rel="next" href="../../Chapter08/8%20Building%20Trust%20in%20Generative%20AI%20Systems/">
+      
+      
+      <link rel="icon" href="../../../image.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Chapter 07 - Building Agentic AI Systems</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#effective-agentic-system-design-techniques" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Building Agentic AI Systems" class="md-header__button md-logo" aria-label="Building Agentic AI Systems" data-md-component="logo">
+      
+  <img src="../../../image.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Building Agentic AI Systems
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chapter 07
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Building Agentic AI Systems" class="md-nav__button md-logo" aria-label="Building Agentic AI Systems" data-md-component="logo">
+      
+  <img src="../../../image.png" alt="logo">
+
+    </a>
+    Building Agentic AI Systems
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Lessons
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Lessons
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter01/1%20Fundamentals%20of%20Generative%20AI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 01
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter02/2%20Principles%20of%20Agentic%20Systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 02
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter03/3%20Essential%20Components%20of%20Intelligent%20Agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 03
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter04/4%20Reflection%20and%20Introspection%20in%20Agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 04
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter05/5%20Enabling%20Tool%20Use%20and%20Planning%20in%20Agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 05
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter06/6%20Exploring%20the%20Coordinator%2C%20Worker%2C%20and%20Delegator%20Approach/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 06
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Chapter 07
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 07
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-design-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Design Techniques
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Design Techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#state-management-in-agentic-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      State Management in Agentic Systems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memory-systems-for-intelligent-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Memory Systems for Intelligent Agents
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#context-management-for-llms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Context Management for LLMs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#robust-tool-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Robust Tool Integration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comprehensive-error-handling-and-recovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprehensive Error Handling and Recovery
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evaluation-and-testing-of-agentic-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Evaluation and Testing of Agentic Systems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-centered-design-for-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      User-Centered Design for Agents
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-implementation-patterns-system-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practical Implementation Patterns (System Level)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical Implementation Patterns (System Level)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#single-agent-systems-focused-task-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Single-Agent Systems (Focused Task Agents)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-agent-frameworks-eg-cwd-from-chapter-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multi-Agent Frameworks (e.g., CWD from Chapter 6)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hybrid-systems-combining-symbolic-ai-and-llms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hybrid Systems (Combining Symbolic AI and LLMs)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#case-studies-and-examples-conceptual-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case Studies and Examples (Conceptual Links)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter08/8%20Building%20Trust%20in%20Generative%20AI%20Systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 08
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter09/9%20Managing%20Safety%20and%20Ethical%20Considerations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 09
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter10/10%20Common%20Use%20Cases%20and%20Applications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 10
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter11/11%20Conclusion%20and%20Future%20Outlook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 11
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Labs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Labs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Appendix
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Appendix
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Appendix/Agentic_AI_Design_Tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Agentic AI Design
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Appendix/DSPy_Introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DSPy Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Appendix/Cloud_Agentic_AI_Services_Tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cloud Services
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Appendix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    More
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../README.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-design-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Design Techniques
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Design Techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#state-management-in-agentic-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      State Management in Agentic Systems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memory-systems-for-intelligent-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Memory Systems for Intelligent Agents
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#context-management-for-llms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Context Management for LLMs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#robust-tool-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Robust Tool Integration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comprehensive-error-handling-and-recovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprehensive Error Handling and Recovery
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evaluation-and-testing-of-agentic-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Evaluation and Testing of Agentic Systems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-centered-design-for-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      User-Centered Design for Agents
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-implementation-patterns-system-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practical Implementation Patterns (System Level)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical Implementation Patterns (System Level)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#single-agent-systems-focused-task-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Single-Agent Systems (Focused Task Agents)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-agent-frameworks-eg-cwd-from-chapter-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multi-Agent Frameworks (e.g., CWD from Chapter 6)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hybrid-systems-combining-symbolic-ai-and-llms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hybrid Systems (Combining Symbolic AI and LLMs)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#case-studies-and-examples-conceptual-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case Studies and Examples (Conceptual Links)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="effective-agentic-system-design-techniques">Effective Agentic System Design Techniques</h1>
+<h2 id="overview">Overview</h2>
+<p>This chapter explores practical design techniques for building robust, effective, and user-centered agentic systems. Moving beyond the theoretical foundations and architectural patterns discussed in previous chapters, it focuses on concrete implementation strategies and considerations that help developers create AI agents capable of solving real-world problems reliably and efficiently. The chapter addresses key design considerations including state management, memory systems, context handling within LLM limitations, robust tool integration, comprehensive error management, and thorough system evaluation. We will also touch upon how these techniques are reflected in labs like <code>memory_feedback_langgraph.py</code>.</p>
+<h2 id="key-design-techniques">Key Design Techniques</h2>
+<h3 id="state-management-in-agentic-systems">State Management in Agentic Systems</h3>
+<ul>
+<li><strong>Importance</strong>: Proper state management is the backbone of agent coherence, enabling them to maintain context, track progress, and make informed decisions across multiple turns of interaction or steps in a task.</li>
+<li><strong>Implementation Approaches in LangGraph</strong>:</li>
+<li><strong><code>TypedDict</code> for State</strong>: LangGraph heavily relies on Python's <code>TypedDict</code> to define a structured schema for the agent's state. This state object is passed between nodes, and each node can read from or write to it.<ul>
+<li><em>Example (<code>memory_feedback_langgraph.py</code>)</em>: The <code>AgentState</code> likely includes fields for <code>messages</code> (conversation history), <code>input</code> (current user query), <code>scratchpad</code> (intermediate thoughts/tool outputs), and any task-specific data.</li>
+</ul>
+</li>
+<li><strong>External State Storage</strong>: For persistence beyond a single session or for very large states, integrate with external systems:<ul>
+<li><em>Databases (SQL/NoSQL)</em>: Store structured agent data, user profiles, or long-term task progress.</li>
+<li><em>Vector Stores</em>: Essential for memory systems (see below), storing embeddings of past experiences or knowledge.</li>
+<li><em>Key-Value Stores (e.g., Redis)</em>: Useful for caching frequently accessed state components or session data for quick retrieval.</li>
+</ul>
+</li>
+<li><strong>Event-Driven State Updates</strong>: While LangGraph manages state flow directly, in broader systems, state can be updated based on external events (e.g., a new email arrives, triggering an agent process).</li>
+<li><strong>Best Practices for State Design</strong>:</li>
+<li><strong>Clear State Schemas</strong>: Define all possible fields in your <code>TypedDict</code> state, their types, and whether they are optional (<code>total=False</code> or <code>Optional[type]</code>). This improves clarity and helps prevent runtime errors.</li>
+<li><strong>Immutability (where practical)</strong>: Nodes in LangGraph typically return a <em>new</em> dictionary representing the <em>changes</em> to the state, rather than modifying the state in place. LangGraph then merges this into the overall state. This functional approach helps in tracking changes and debugging.</li>
+<li><strong>Consistent State Transitions</strong>: Ensure that nodes update the state in a predictable manner. Validate data before writing it to the state.</li>
+<li><strong>Granularity</strong>: Decide whether to have one large state dictionary or break it down if certain parts are only relevant to specific sub-graphs or agent roles.</li>
+</ul>
+<h3 id="memory-systems-for-intelligent-agents">Memory Systems for Intelligent Agents</h3>
+<ul>
+<li><strong>Types of Memory &amp; Their Purpose</strong>:</li>
+<li><strong>Short-Term (Working) Memory</strong>: Holds information relevant to the current interaction or task execution. In LLM agents, this is often managed via a "scratchpad" or by including recent conversation turns directly in the prompt.<ul>
+<li><em>LangGraph Implementation</em>: The <code>AgentState</code> itself, particularly fields like <code>messages</code> (using <code>add_messages</code> for accumulation) or a dedicated <code>scratchpad</code> field, serves as working memory.</li>
+</ul>
+</li>
+<li><strong>Long-Term Memory</strong>: Stores persistent knowledge, past experiences, user preferences, or learned information that the agent can retrieve and use across different sessions or tasks.<ul>
+<li><em>Implementation</em>: Often involves vector databases (e.g., Chroma, FAISS, Pinecone) storing embeddings of text chunks. The <code>memory_feedback_langgraph.py</code> lab likely demonstrates retrieving relevant past interactions or documents to inform current decisions.</li>
+</ul>
+</li>
+<li><strong>Episodic Memory</strong>: Records specific past events or interactions (episodes) and their outcomes. Useful for learning from past successes/failures or recalling specific details of previous conversations.</li>
+<li><strong>Semantic Memory</strong>: General knowledge about the world, concepts, and relationships. LLMs have this inherently from their training, but it can be augmented with custom knowledge graphs.</li>
+<li><strong>Implementation Strategies for Long-Term Memory</strong>:</li>
+<li><strong>Vector Databases</strong>: Store text embeddings. When the agent needs to recall information, its query is embedded, and a similarity search (e.g., cosine similarity) retrieves the most relevant stored chunks.</li>
+<li><strong>Knowledge Graphs (e.g., Neo4j)</strong>: Store information as nodes and relationships. Useful for complex, structured knowledge where relationships are key. Can be queried using graph query languages.</li>
+<li><strong>Document Stores (e.g., Elasticsearch, MongoDB)</strong>: Store and index unstructured or semi-structured documents. Can be combined with keyword and semantic search.</li>
+<li><strong>Cache Hierarchies</strong>: Use in-memory caches (like Redis) for frequently accessed long-term memory items to improve retrieval speed, with fallback to slower persistent stores.</li>
+<li><strong>Retrieval Mechanisms</strong>:</li>
+<li><strong>Semantic Search (Vector Search)</strong>: Find information based on conceptual similarity, not just keyword matches.</li>
+<li><strong>Recency-Weighted Retrieval</strong>: Prioritize more recent information, as it might be more relevant to the current context.</li>
+<li><strong>Relevance Scoring &amp; Filtering</strong>: Use LLMs or other models to score the relevance of retrieved items before presenting them to the main reasoning LLM, to avoid cluttering the context window.</li>
+<li><strong>Hybrid Search</strong>: Combine keyword search with semantic search for more robust retrieval.</li>
+</ul>
+<h3 id="context-management-for-llms">Context Management for LLMs</h3>
+<ul>
+<li><strong>The Challenge of Limited Context Windows</strong>: LLMs have a finite limit on the amount of text (tokens) they can process at once. Effective context management is crucial for performance and avoiding information loss.</li>
+<li><strong>Techniques</strong>:</li>
+<li><strong>Context Compression/Summarization</strong>: <ul>
+<li><em>Abstractive Summarization</em>: Use an LLM to summarize longer pieces of text (e.g., previous conversation turns, retrieved documents) before adding them to the prompt.</li>
+<li><em>Selective Inclusion</em>: Only include the most relevant parts of the conversation history or retrieved documents.</li>
+</ul>
+</li>
+<li><strong>Dynamic Retrieval (RAG - Retrieval Augmented Generation)</strong>: Instead of stuffing all information into the prompt, retrieve only the most relevant snippets from a memory store (e.g., vector database) based on the current query, and add those to the prompt.</li>
+<li><strong>Hierarchical Context</strong>: Organize information at different levels of detail. Provide a summary first, and allow the LLM to request more details if needed (requires multi-step prompting).</li>
+<li><strong>Sliding Window for Conversations</strong>: Keep only the N most recent turns of a conversation, possibly with a summary of earlier turns.</li>
+<li><strong>Strategies for Efficient Context Utilization</strong>:</li>
+<li><strong>Prompt Engineering</strong>: Craft prompts carefully to make the best use of the available space. Use clear delimiters and instructions.</li>
+<li><strong>Optimizing Data Representation</strong>: For structured data, use concise formats like JSON or even more compact representations if the LLM can be trained/prompted to understand them.</li>
+<li><strong>Fine-tuning</strong>: Fine-tune smaller LLMs to perform well with less context or to understand specific compressed formats.</li>
+</ul>
+<h3 id="robust-tool-integration">Robust Tool Integration</h3>
+<ul>
+<li><strong>Types of Tools (Recap)</strong>: Information retrieval, computational, external APIs, action execution.</li>
+<li><strong>Design Patterns for Tool Integration in Agents</strong>:</li>
+<li><strong>Tool Registry/Toolkit</strong>: Maintain a collection of available tools, often with descriptions, schemas for inputs/outputs, and invocation methods. LangChain provides <code>Tool</code> objects and agent toolkits.</li>
+<li><strong>Declarative Tool Specifications</strong>: Define tools using a schema (e.g., JSON Schema, Pydantic models, Python function signatures with docstrings) that the LLM can understand to select the right tool and generate its parameters.</li>
+<li><strong>Tool Verification and Validation</strong>: Before executing a tool, validate the parameters generated by the LLM. After execution, validate the output.</li>
+<li><strong>Fallback and Retry Strategies</strong>: If a tool call fails (e.g., API timeout, invalid parameters), have logic to retry (perhaps with backoff), try an alternative tool, or report the failure gracefully.</li>
+<li><strong>Tool Usage Permissions/Guardrails</strong>: Implement checks to ensure the agent only uses tools it\'s authorized for and in appropriate ways (see Chapter 9).</li>
+<li><strong>Best Practices</strong>:</li>
+<li><strong>Clear Docstrings/Descriptions</strong>: Crucial for LLM-based tool selection. The description should clearly state what the tool does, when to use it, and what parameters it expects.</li>
+<li><strong>Consistent Error Handling</strong>: Tools should return errors in a standardized way so the agent can parse and react to them.</li>
+<li><strong>Performance Monitoring</strong>: Track tool execution times and failure rates to identify bottlenecks or unreliable tools.</li>
+<li><strong>Idempotency</strong>: Design tools to be idempotent where possible (i.e., calling them multiple times with the same input produces the same result without unintended side effects).</li>
+</ul>
+<h3 id="comprehensive-error-handling-and-recovery">Comprehensive Error Handling and Recovery</h3>
+<ul>
+<li><strong>Types of Errors in Agentic Systems</strong>:</li>
+<li><strong>LLM Errors</strong>: Hallucinations, generating incorrect information, refusing to answer, producing malformed outputs (e.g., invalid JSON for tool calls).</li>
+<li><strong>Tool Errors</strong>: API failures, network issues, tools returning unexpected data or errors.</li>
+<li><strong>System Errors</strong>: Bugs in the agent\'s own code, resource exhaustion, infrastructure problems.</li>
+<li><strong>Integration Errors</strong>: Mismatches between components, e.g., an agent expecting data in one format but a tool providing it in another.</li>
+<li><strong>User Interaction Errors</strong>: Agent misinterpreting ambiguous user requests, or user providing insufficient information.</li>
+<li><strong>Strategies for Robustness</strong>:</li>
+<li><strong>Graceful Degradation</strong>: If a component or tool fails, the system should still try to provide partial functionality or a helpful message rather than crashing.</li>
+<li><strong>Fallback Mechanisms</strong>: If the primary LLM for a task fails, switch to a smaller, more reliable (though perhaps less capable) model for a simpler response. If a preferred tool fails, try an alternative.</li>
+<li><strong>Explicit Uncertainty Communication</strong>: If the agent is unsure about an answer or action, it should communicate this uncertainty to the user rather than presenting a guess as fact.</li>
+<li><strong>Self-Correction &amp; Reflection Loops (Chapter 4)</strong>: Implement mechanisms where the agent can review its own outputs or tool results, identify potential errors, and attempt to correct them. The <code>reflection_langgraph.py</code> lab is a key example.</li>
+<li><strong>Recovery Patterns</strong>:</li>
+<li><strong>Retry with Backoff</strong>: For transient errors (e.g., network glitches), retry the operation after a delay, possibly with an increasing backoff period.</li>
+<li><strong>Parameter Modification</strong>: If a tool call fails due to bad parameters, an LLM-driven reflection step might try to adjust the parameters and retry.</li>
+<li><strong>Alternative Approach Selection</strong>: If one plan or tool fails consistently, the agent should be able to switch to a different strategy.</li>
+<li><strong>Human Escalation/Intervention Points</strong>: For critical failures or situations the agent cannot resolve, provide a clear path to escalate to a human operator.</li>
+<li><strong>Learning from Errors</strong>: Log errors and their resolutions to identify patterns and improve the agent\'s design or training data over time.</li>
+</ul>
+<h3 id="evaluation-and-testing-of-agentic-systems">Evaluation and Testing of Agentic Systems</h3>
+<ul>
+<li><strong>Key Metrics</strong>:</li>
+<li><strong>Task Completion Rate (Success Rate)</strong>: Did the agent achieve the intended goal?</li>
+<li><strong>Response Quality</strong>: Accuracy, relevance, coherence, helpfulness of LLM outputs.</li>
+<li><strong>Tool Use Correctness</strong>: Did the agent select the right tool? Were parameters correct? Was the tool output interpreted correctly?</li>
+<li><strong>Efficiency</strong>: Latency (response time), computational resources used (e.g., LLM tokens, API calls).</li>
+<li><strong>Robustness/Error Rate</strong>: How often do errors occur? How well does the system recover?</li>
+<li><strong>User Satisfaction</strong>: Measured via surveys, feedback forms, or implicit signals (e.g., task abandonment).</li>
+<li><strong>Testing Approaches</strong>:</li>
+<li><strong>Unit Testing</strong>: Test individual components (e.g., specific tools, prompt templates, state update logic) in isolation.</li>
+<li><strong>Integration Testing</strong>: Test the interaction between components (e.g., LLM calling a tool, data flow through a LangGraph).</li>
+<li><strong>End-to-End Testing</strong>: Test the entire agent workflow with realistic user scenarios.</li>
+<li><strong>Regression Testing</strong>: Ensure that new changes haven\'t broken existing functionality.</li>
+<li><strong>Adversarial Testing &amp; Red Teaming</strong>: Actively try to find inputs or scenarios that make the agent fail, behave unexpectedly, or produce harmful outputs.</li>
+<li><strong>Human Evaluation</strong>: Often essential for assessing nuanced aspects of LLM-based agents, like response quality, coherence, and safety.</li>
+<li><strong>Continuous Improvement Cycle</strong>:</li>
+<li><strong>Analytics &amp; Monitoring</strong>: Implement logging and monitoring to track key metrics in production.</li>
+<li><strong>Feedback Loops</strong>: Collect explicit (surveys) and implicit (usage patterns) user feedback.</li>
+<li><strong>A/B Testing</strong>: Compare different versions of prompts, models, or agent logic to see which performs better.</li>
+<li><strong>Iterative Refinement</strong>: Use evaluation results and feedback to continuously improve the agent.</li>
+</ul>
+<h3 id="user-centered-design-for-agents">User-Centered Design for Agents</h3>
+<ul>
+<li><strong>Core Principles</strong>:</li>
+<li><strong>Transparency (Explainability)</strong>: Users should have some understanding of why the agent is making certain decisions or giving certain responses. Not a fully solved problem, but techniques like showing reasoning steps (Chain-of-Thought) help.</li>
+<li><strong>Controllability</strong>: Users should feel in control. Allow them to guide the agent, correct its mistakes, and override its decisions if necessary.</li>
+<li><strong>Predictability</strong>: Agent behavior should be reasonably consistent and predictable for similar inputs.</li>
+<li><strong>Adaptability &amp; Personalization</strong>: Agents should be able to adapt to individual user preferences, history, and context over time.</li>
+<li><strong>Feedback Mechanisms</strong>: Provide clear feedback to the user about what the agent is doing, if it understood the request, and when it encounters problems.</li>
+<li><strong>Implementation Techniques</strong>:</li>
+<li><strong>Clear Mental Models</strong>: Design interactions that help users build an accurate understanding of the agent\'s capabilities and limitations.</li>
+<li><strong>Progressive Disclosure</strong>: Don\'t overwhelm users with too much information at once. Reveal complexity gradually.</li>
+<li><strong>Affordances for Correction</strong>: Make it easy for users to correct the agent (e.g., "No, I meant X," or providing options to choose from).</li>
+<li><strong>User Profiles &amp; Memory</strong>: Store user preferences and past interactions (with consent) to personalize future interactions.</li>
+</ul>
+<h2 id="practical-implementation-patterns-system-level">Practical Implementation Patterns (System Level)</h2>
+<h3 id="single-agent-systems-focused-task-agents">Single-Agent Systems (Focused Task Agents)</h3>
+<ul>
+<li><strong>Architecture</strong>: A single, often sophisticated, agent handles the complete interaction flow for a specific, well-bounded task (e.g., a customer service FAQ bot, a simple document summarizer).</li>
+<li><strong>When to Use</strong>: For specialized tasks with clear boundaries where the complexity doesn\'t warrant a multi-agent setup.</li>
+<li><strong>Design Considerations</strong>: The single agent needs comprehensive capabilities for its domain, robust error handling (as there\'s no other agent to delegate to), and clear task boundaries.</li>
+</ul>
+<h3 id="multi-agent-frameworks-eg-cwd-from-chapter-6">Multi-Agent Frameworks (e.g., CWD from Chapter 6)</h3>
+<ul>
+<li><strong>Architecture</strong>: Multiple specialized agents collaborate. This includes patterns like Coordinator-Worker-Delegator, hierarchical agents, or swarms.</li>
+<li><strong>When to Use</strong>: For complex tasks requiring diverse expertise, parallel processing, or breaking down a problem into manageable sub-problems.</li>
+<li><strong>Design Considerations</strong>: Clear role definition, effective communication protocols, robust coordination mechanisms, and strategies for result aggregation and conflict resolution.</li>
+</ul>
+<h3 id="hybrid-systems-combining-symbolic-ai-and-llms">Hybrid Systems (Combining Symbolic AI and LLMs)</h3>
+<ul>
+<li><strong>Architecture</strong>: Integrates rule-based systems, knowledge graphs, or other symbolic AI components with LLM-based agents.</li>
+<li><strong>When to Use</strong>: For applications requiring both the creativity and natural language understanding of LLMs and the precision, reliability, or domain-specific knowledge of symbolic systems (e.g., a medical diagnostic assistant might use an LLM for patient interaction and a knowledge graph/expert system for diagnostic reasoning).</li>
+<li><strong>Design Considerations</strong>: Clear interfaces between components, appropriate task allocation (LLM for NLU and generation, symbolic system for logic/facts), and ensuring a consistent user experience across the hybrid architecture.</li>
+</ul>
+<h2 id="case-studies-and-examples-conceptual-links">Case Studies and Examples (Conceptual Links)</h2>
+<ul>
+<li><strong>Virtual Research Assistant (<code>memory_feedback_langgraph.py</code> inspired)</strong>: Demonstrates advanced memory systems (retrieving from past interactions or documents), dynamic context management, and potentially reflection to refine search queries or synthesize information.</li>
+<li><strong>Customer Support Agent (Multi-Agent)</strong>: A coordinator agent routes queries to specialized worker agents (e.g., billing, technical support, product info). Showcases error handling (escalation to human), user interaction patterns, and potentially tool use (querying customer databases).</li>
+<li><strong>Content Creation System (Hybrid)</strong>: An LLM agent generates draft content, a rule-based system checks for factual accuracy or brand guidelines, and another LLM agent refines the style. Illustrates multi-agent collaboration and hybrid architectures.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>Effective agentic system design is an iterative process that balances advanced AI capabilities with practical engineering principles. Careful attention to state management (especially within frameworks like LangGraph), sophisticated memory systems, efficient context handling for LLMs, robust tool integration, comprehensive error management, and continuous evaluation are paramount. By applying these techniques with a user-centered mindset, developers can create AI agents that are not only technically powerful but also provide valuable, reliable, and trustworthy experiences. The <code>memory_feedback_langgraph.py</code> lab provides a practical example of how memory and feedback loops can be integrated, which is a core component of many of these design techniques.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>

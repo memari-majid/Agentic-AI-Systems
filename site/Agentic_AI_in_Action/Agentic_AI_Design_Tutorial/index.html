@@ -1,0 +1,2614 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://memari-majid.github.io/Agentic-AI-Systems/Agentic_AI_in_Action/Agentic_AI_Design_Tutorial/">
+      
+      
+        <link rel="prev" href="../../Labs/">
+      
+      
+        <link rel="next" href="../DSPy_Introduction/">
+      
+      
+      <link rel="icon" href="../../image.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Agentic AI Design - Building Agentic AI Systems</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#agentic-ai-design-with-langchain-and-langgraph" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Building Agentic AI Systems" class="md-header__button md-logo" aria-label="Building Agentic AI Systems" data-md-component="logo">
+      
+  <img src="../../image.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Building Agentic AI Systems
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Agentic AI Design
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Building Agentic AI Systems" class="md-nav__button md-logo" aria-label="Building Agentic AI Systems" data-md-component="logo">
+      
+  <img src="../../image.png" alt="logo">
+
+    </a>
+    Building Agentic AI Systems
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Lessons
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Lessons
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lessons/Chapter01/1%20Fundamentals%20of%20Generative%20AI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 01
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lessons/Chapter02/2%20Principles%20of%20Agentic%20Systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 02
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lessons/Chapter03/3%20Essential%20Components%20of%20Intelligent%20Agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 03
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lessons/Chapter04/4%20Reflection%20and%20Introspection%20in%20Agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 04
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lessons/Chapter05/5%20Enabling%20Tool%20Use%20and%20Planning%20in%20Agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 05
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lessons/Chapter06/6%20Exploring%20the%20Coordinator%2C%20Worker%2C%20and%20Delegator%20Approach/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 06
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lessons/Chapter07/7%20Effective%20Agentic%20System%20Design%20Techniques/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 07
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lessons/Chapter08/8%20Building%20Trust%20in%20Generative%20AI%20Systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 08
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lessons/Chapter09/9%20Managing%20Safety%20and%20Ethical%20Considerations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 09
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lessons/Chapter10/10%20Common%20Use%20Cases%20and%20Applications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 10
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lessons/Chapter11/11%20Conclusion%20and%20Future%20Outlook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 11
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Labs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Labs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Appendix
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Appendix
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Agentic AI Design
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Agentic AI Design
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduction-to-agentic-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Introduction to Agentic AI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-langchain-the-foundation-for-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. LangChain: The Foundation for Agents
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. LangChain: The Foundation for Agents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-core-idea-building-with-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1. Core Idea: Building with Components
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2. Models
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3. Prompts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-tools-enabling-agents-to-act" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4. Tools: Enabling Agents to Act
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-output-parsers" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5. Output Parsers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-memory-brief-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6. Memory (Brief Overview)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-basic-agent-construction-with-langchain" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7. Basic Agent Construction with LangChain
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-langgraph-orchestrating-complex-agentic-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. LangGraph: Orchestrating Complex Agentic Behavior
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. LangGraph: Orchestrating Complex Agentic Behavior">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-why-langgraph" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1. Why LangGraph?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-core-langgraph-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2. Core LangGraph Concepts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-building-a-basic-graph-with-langgraph" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3. Building a Basic Graph with LangGraph
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-designing-an-agentic-system-langchain-langgraph-in-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Designing an Agentic System: LangChain + LangGraph in Action
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Designing an Agentic System: LangChain + LangGraph in Action">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-step-1-define-the-agents-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1. Step 1: Define the Agent's State
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-step-2-define-agent-components-langchain" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2. Step 2: Define Agent Components (LangChain)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-step-3-define-graph-nodes-langgraph" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3. Step 3: Define Graph Nodes (LangGraph)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-step-4-define-graph-edges-langgraph" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4. Step 4: Define Graph Edges (LangGraph)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-step-5-run-the-agentic-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5. Step 5: Run the Agentic System
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-advanced-agentic-patterns-with-langgraph" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Advanced Agentic Patterns with LangGraph
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Advanced Agentic Patterns with LangGraph">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-cycles-and-self-correction-iterative-refinement" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1. Cycles and Self-Correction / Iterative Refinement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-human-in-the-loop-hitl" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2. Human-in-the-Loop (HITL)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-multi-agent-collaboration-brief-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3. Multi-Agent Collaboration (Brief Overview)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-state-management-and-persistence-with-checkpointers" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. State Management and Persistence with Checkpointers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. State Management and Persistence with Checkpointers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-why-persistence" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1. Why Persistence?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-langgraph-checkpointers" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2. LangGraph Checkpointers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-using-a-checkpointer-conceptual-example-with-memorysaver" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3. Using a Checkpointer (Conceptual Example with MemorySaver)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-time-travel-and-state-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.4. Time Travel and State Inspection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-debugging-and-tracing-with-langsmith" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Debugging and Tracing with LangSmith
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Debugging and Tracing with LangSmith">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-why-langsmith" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1. Why LangSmith?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-setting-up-langsmith" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2. Setting up LangSmith
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-tracing-langchain-components-and-langgraph-runs" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3. Tracing LangChain Components and LangGraph Runs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-example-inspecting-the-research-assistant-in-langsmith" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4. Example: Inspecting the Research Assistant in LangSmith
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#75-logging-feedback-and-annotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.5. Logging Feedback and Annotations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-references-and-further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. References and Further Reading
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DSPy_Introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DSPy Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cloud_Agentic_AI_Services_Tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cloud Services
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    More
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../README.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduction-to-agentic-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Introduction to Agentic AI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-langchain-the-foundation-for-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. LangChain: The Foundation for Agents
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. LangChain: The Foundation for Agents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-core-idea-building-with-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1. Core Idea: Building with Components
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2. Models
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3. Prompts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-tools-enabling-agents-to-act" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4. Tools: Enabling Agents to Act
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-output-parsers" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5. Output Parsers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-memory-brief-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6. Memory (Brief Overview)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-basic-agent-construction-with-langchain" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7. Basic Agent Construction with LangChain
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-langgraph-orchestrating-complex-agentic-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. LangGraph: Orchestrating Complex Agentic Behavior
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. LangGraph: Orchestrating Complex Agentic Behavior">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-why-langgraph" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1. Why LangGraph?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-core-langgraph-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2. Core LangGraph Concepts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-building-a-basic-graph-with-langgraph" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3. Building a Basic Graph with LangGraph
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-designing-an-agentic-system-langchain-langgraph-in-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Designing an Agentic System: LangChain + LangGraph in Action
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Designing an Agentic System: LangChain + LangGraph in Action">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-step-1-define-the-agents-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1. Step 1: Define the Agent's State
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-step-2-define-agent-components-langchain" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2. Step 2: Define Agent Components (LangChain)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-step-3-define-graph-nodes-langgraph" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3. Step 3: Define Graph Nodes (LangGraph)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-step-4-define-graph-edges-langgraph" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4. Step 4: Define Graph Edges (LangGraph)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-step-5-run-the-agentic-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5. Step 5: Run the Agentic System
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-advanced-agentic-patterns-with-langgraph" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Advanced Agentic Patterns with LangGraph
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Advanced Agentic Patterns with LangGraph">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-cycles-and-self-correction-iterative-refinement" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1. Cycles and Self-Correction / Iterative Refinement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-human-in-the-loop-hitl" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2. Human-in-the-Loop (HITL)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-multi-agent-collaboration-brief-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3. Multi-Agent Collaboration (Brief Overview)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-state-management-and-persistence-with-checkpointers" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. State Management and Persistence with Checkpointers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. State Management and Persistence with Checkpointers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-why-persistence" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1. Why Persistence?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-langgraph-checkpointers" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2. LangGraph Checkpointers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-using-a-checkpointer-conceptual-example-with-memorysaver" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3. Using a Checkpointer (Conceptual Example with MemorySaver)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-time-travel-and-state-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.4. Time Travel and State Inspection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-debugging-and-tracing-with-langsmith" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Debugging and Tracing with LangSmith
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Debugging and Tracing with LangSmith">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-why-langsmith" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1. Why LangSmith?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-setting-up-langsmith" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2. Setting up LangSmith
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-tracing-langchain-components-and-langgraph-runs" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3. Tracing LangChain Components and LangGraph Runs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-example-inspecting-the-research-assistant-in-langsmith" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4. Example: Inspecting the Research Assistant in LangSmith
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#75-logging-feedback-and-annotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.5. Logging Feedback and Annotations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-references-and-further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. References and Further Reading
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="agentic-ai-design-with-langchain-and-langgraph">Agentic AI Design with LangChain and LangGraph</h1>
+<h2 id="1-introduction-to-agentic-ai">1. Introduction to Agentic AI</h2>
+<p>Agentic AI systems are applications that can perceive their environment, make decisions, and take actions to achieve specific goals. Unlike traditional programs that follow a fixed set of instructions, agentic systems exhibit a degree of autonomy and can adapt their behavior based on interactions and new information.</p>
+<p>Key characteristics of agentic AI systems include:
+- <strong>Goal-Oriented:</strong> They are designed to achieve specific objectives.
+- <strong>Interactive:</strong> They can communicate with users or other systems and respond to inputs.
+- <strong>Autonomous:</strong> They can operate without constant human intervention, making decisions and taking actions independently.
+- <strong>Perceptive:</strong> They can process information from their environment (e.g., user queries, tool outputs, data sources).
+- <strong>Adaptive:</strong> They can learn from interactions and modify their behavior over time (though this tutorial focuses more on explicit state management for adaptability).</p>
+<p>Building robust agentic AI requires a combination of powerful language models, tools to interact with the external world, and a framework to orchestrate complex workflows. This is where LangChain and LangGraph come into play.</p>
+<ul>
+<li><strong>LangChain</strong> provides the foundational building blocks for creating applications powered by language models. It offers components for managing models, prompts, tools, memory, and creating chains of operations. We'll use LangChain to define the individual capabilities of our agent (e.g., what tools it can use, how it processes information).</li>
+<li><strong>LangGraph</strong> is built on top of LangChain and allows you to construct sophisticated, stateful agentic systems as graphs. It excels at managing complex flows of control, enabling cycles, human-in-the-loop interactions, and persistent state. We'll use LangGraph to define the overall decision-making process and workflow of our agent.</li>
+</ul>
+<p>This tutorial will guide you through designing agentic AI systems by leveraging the strengths of both LangChain and LangGraph.</p>
+<h2 id="2-langchain-the-foundation-for-agents">2. LangChain: The Foundation for Agents</h2>
+<p>LangChain helps create the core components that an agent will use. Think of these as the agent's skills or tools.</p>
+<h3 id="21-core-idea-building-with-components">2.1. Core Idea: Building with Components</h3>
+<p>LangChain is designed around modular components that can be combined to create powerful applications. For agentic systems, the key components are:</p>
+<h3 id="22-models">2.2. Models</h3>
+<p>Language models are the brain of an agent. LangChain provides interfaces for various types:
+- <strong>LLMs (Large Language Models):</strong> Take text in, return text out.
+- <strong>Chat Models:</strong> More structured, take a list of messages, return a message. These are commonly used for agents.
+- <strong>Text Embedding Models:</strong> Convert text to numerical representations for semantic search.</p>
+<pre><code class="language-python">from langchain_openai import OpenAI, ChatOpenAI
+from langchain_community.embeddings import HuggingFaceEmbeddings
+
+# Initialize a Chat Model (commonly used for agents)
+chat_model = ChatOpenAI(model=&quot;gpt-4&quot;, temperature=0)
+
+# Example of an LLM
+llm = OpenAI(temperature=0.7)
+
+# Example of an Embedding Model
+embeddings = HuggingFaceEmbeddings()
+</code></pre>
+<h3 id="23-prompts">2.3. Prompts</h3>
+<p>Prompts are how we instruct the model. For agents, prompts often define the agent's persona, its objectives, and how it should use tools.</p>
+<pre><code class="language-python">from langchain_core.prompts import PromptTemplate, ChatPromptTemplate
+
+# Chat prompt template for an agent
+agent_prompt = ChatPromptTemplate.from_messages([
+    (&quot;system&quot;, &quot;You are a helpful assistant. You have access to tools. Use them when necessary.&quot;),
+    (&quot;user&quot;, &quot;{input}&quot;)
+])
+
+# Example of a simpler prompt
+prompt_template = PromptTemplate.from_template(&quot;Tell me about {topic}.&quot;)
+</code></pre>
+<h3 id="24-tools-enabling-agents-to-act">2.4. Tools: Enabling Agents to Act</h3>
+<p>Tools are interfaces that allow agents to interact with the outside world (e.g., search the web, run code, access databases). LangChain makes it easy to define and use tools.</p>
+<p>The <code>@tool</code> decorator is a convenient way to create tools from functions:</p>
+<pre><code class="language-python">from langchain_core.tools import tool
+
+@tool
+def search_wikipedia(query: str) -&gt; str:
+    &quot;&quot;&quot;Searches Wikipedia for the given query and returns the summary of the first result.&quot;&quot;&quot;
+    # In a real scenario, you would use the Wikipedia API
+    # from wikipediaapi import Wikipedia
+    # wiki_wiki = Wikipedia('MyAgent/1.0 (myemail@example.com)', 'en')
+    # page = wiki_wiki.page(query)
+    # if page.exists():
+    #     return page.summary[0:500] # Return first 500 chars of summary
+    # return f&quot;Could not find information on Wikipedia for '{query}'.&quot;
+    return f&quot;Simulated Wikipedia search for '{query}': LangChain is a framework for developing applications powered by language models.&quot;
+
+@tool
+def calculator(expression: str) -&gt; str:
+    &quot;&quot;&quot;Evaluates a mathematical expression.&quot;&quot;&quot;
+    try:
+        return str(eval(expression))
+    except Exception as e:
+        return f&quot;Error: {str(e)}&quot;
+
+# List of tools for an agent
+agent_tools = [search_wikipedia, calculator]
+</code></pre>
+<h3 id="25-output-parsers">2.5. Output Parsers</h3>
+<p>Output parsers convert the raw output from an LLM into a more structured format (e.g., JSON, a specific object). This is crucial for agents to reliably extract information or decide on actions.</p>
+<pre><code class="language-python">from langchain_core.output_parsers import StrOutputParser, JsonOutputParser
+from langchain_core.pydantic_v1 import BaseModel, Field
+
+# Simple string output
+string_parser = StrOutputParser()
+
+# For structured output (e.g., an agent deciding which tool to call)
+class AgentAction(BaseModel):
+    tool_name: str = Field(description=&quot;The name of the tool to use.&quot;)
+    tool_input: str = Field(description=&quot;The input for the tool.&quot;)
+
+json_parser = JsonOutputParser(pydantic_object=AgentAction)
+</code></pre>
+<p>While <code>JsonOutputParser</code> can be used, agents created with functions like <code>create_openai_tools_agent</code> often handle tool invocation structures internally.</p>
+<h3 id="26-memory-brief-overview">2.6. Memory (Brief Overview)</h3>
+<p>Memory allows agents to remember past interactions. While LangChain offers various memory modules, LangGraph's state management provides a more explicit and flexible way to handle memory and state for complex agents, as we'll see later.</p>
+<p>LangChain memory types include:
+- <code>ConversationBufferMemory</code>: Remembers all past messages.
+- <code>ConversationBufferWindowMemory</code>: Remembers the last K messages.
+- <code>ConversationSummaryMemory</code>: Creates a summary of the conversation.</p>
+<p>We will primarily use LangGraph's state for managing memory in our agentic designs.</p>
+<h3 id="27-basic-agent-construction-with-langchain">2.7. Basic Agent Construction with LangChain</h3>
+<p>LangChain provides functions to quickly create agents. <code>create_openai_tools_agent</code> (and similar functions for other model providers) are recommended for building agents that can use tools. These agents are designed to work with models that support tool calling (like newer OpenAI models).</p>
+<pre><code class="language-python">from langchain.agents import AgentExecutor, create_openai_tools_agent
+from langchain_openai import ChatOpenAI
+from langchain_core.prompts import ChatPromptTemplate
+
+# Re-define tools if not in scope
+# @tool
+# def search_wikipedia(query: str) -&gt; str: ...
+# @tool
+# def calculator(expression: str) -&gt; str: ...
+# agent_tools = [search_wikipedia, calculator]
+
+# Initialize the Chat Model
+llm = ChatOpenAI(model=&quot;gpt-4&quot;, temperature=0) # Using a specific model known for good tool use
+
+# Define the prompt for the agent
+# This prompt template expects 'input' and 'agent_scratchpad' (for intermediate steps)
+# and also includes messages for chat history if needed.
+# For tool calling agents, the prompt structure can be simpler as the model handles much of the reasoning.
+AGENT_PROMPT = ChatPromptTemplate.from_messages(
+    [
+        (&quot;system&quot;, &quot;You are a helpful assistant. You have access to the following tools: search_wikipedia, calculator. Only use these tools when necessary to answer the user's question. Respond directly if you know the answer or the tools are not helpful.&quot;),
+        (&quot;user&quot;, &quot;{input}&quot;),
+        # MessagesPlaceholder(variable_name=&quot;agent_scratchpad&quot;), # create_openai_tools_agent handles this
+    ]
+)
+
+# Create the agent
+# This binds the LLM, tools, and prompt together.
+# The agent runnable itself decides which tool to call, or to respond directly.
+agent_runnable = create_openai_tools_agent(llm, agent_tools, AGENT_PROMPT)
+
+# The AgentExecutor runs the agent, executes tools, and feeds results back to the agent
+# until a final answer is produced.
+agent_executor = AgentExecutor(agent=agent_runnable, tools=agent_tools, verbose=True)
+
+# Example usage
+# response = agent_executor.invoke({&quot;input&quot;: &quot;What is the capital of France and what is 2 + 2?&quot;})
+# print(response[&quot;output&quot;])
+
+# response_wikipedia = agent_executor.invoke({&quot;input&quot;: &quot;What is LangChain?&quot;})
+# print(response_wikipedia[&quot;output&quot;])
+</code></pre>
+<p>While this <code>AgentExecutor</code> is powerful, managing more complex sequences of actions, conditional logic based on multi-step history, explicit state tracking beyond chat history, or incorporating human feedback loops can become challenging. This is where LangGraph provides a more robust framework for orchestration.</p>
+<p>Next, we will explore LangGraph and how it allows us to build more sophisticated agentic workflows.</p>
+<h2 id="3-langgraph-orchestrating-complex-agentic-behavior">3. LangGraph: Orchestrating Complex Agentic Behavior</h2>
+<p>While LangChain provides the tools to build agents, LangGraph provides the framework to orchestrate them, especially when the agent's behavior involves multiple steps, conditional logic, loops, or requires explicit state management beyond simple chat history.</p>
+<h3 id="31-why-langgraph">3.1. Why LangGraph?</h3>
+<p>Simple agent loops, like the <code>AgentExecutor</code> shown previously, are excellent for many tasks. However, as agentic systems become more complex, you might need:</p>
+<ul>
+<li><strong>Explicit State Management:</strong> To track not just conversation history, but also intermediate results, confidence scores, available resources, or any custom data relevant to the agent's task.</li>
+<li><strong>Complex Control Flow:</strong> To define workflows with branches (if-else logic), loops (for retries or iterative refinement), and the ability to jump between different stages of processing.</li>
+<li><strong>Human-in-the-Loop:</strong> To pause the agent at critical junctures for human review, approval, or input.</li>
+<li><strong>Modularity at a Higher Level:</strong> To define an agent's overall behavior as a graph of interconnected components, where each component (node) can itself be a LangChain chain or agent.</li>
+<li><strong>Cycles and Self-Correction:</strong> To allow an agent to review its own work or a tool's output and decide to retry or refine its approach.</li>
+<li><strong>Multi-Agent Systems:</strong> To coordinate multiple specialized agents working together on a larger task (though we'll only touch on this briefly).</li>
+</ul>
+<p>LangGraph addresses these needs by allowing you to define agent workflows as <strong>state machines</strong> or <strong>graphs</strong>.</p>
+<h3 id="32-core-langgraph-concepts">3.2. Core LangGraph Concepts</h3>
+<p>At its heart, LangGraph helps you build and run directed graphs where nodes represent computation steps and edges represent the flow of control and data.</p>
+<p><strong>a) State (<code>StatefulGraph</code>)</strong></p>
+<p>Every LangGraph workflow operates on a <strong>state</strong> object. This state is passed between nodes, and nodes can update it. You define the structure of this state, typically using Python's <code>TypedDict</code> or a Pydantic <code>BaseModel</code> for more complex states.</p>
+<ul>
+<li>The state holds all the information the agent needs to make decisions and carry out its task. This can include:<ul>
+<li>Conversation history (e.g., <code>messages</code>)</li>
+<li>The current task or input (e.g., <code>input</code>)</li>
+<li>Intermediate results from tools or chains (e.g., <code>search_results</code>, <code>draft_document</code>)</li>
+<li>Control flags (e.g., <code>needs_revision</code>, <code>tool_to_call</code>)</li>
+<li>Any other data relevant to your agent's logic.</li>
+</ul>
+</li>
+</ul>
+<p><strong>b) Nodes</strong></p>
+<p>Nodes are the building blocks of your graph. Each node is a function or a LangChain Runnable (like a chain or an agent component) that takes the current state as input and returns a dictionary representing updates to the state.</p>
+<ul>
+<li>A node might:<ul>
+<li>Call an LLM to decide the next action.</li>
+<li>Execute a tool.</li>
+<li>Process data.</li>
+<li>Prepare output for a user.</li>
+</ul>
+</li>
+</ul>
+<p><strong>c) Edges</strong></p>
+<p>Edges define how the agent transitions from one node to another.</p>
+<ul>
+<li><strong>Standard Edges:</strong> Unconditionally go from one node to the next.</li>
+<li><strong>Conditional Edges:</strong> Route to different nodes based on the current state. This is how you implement branching logic (e.g., "if the agent decided to use a tool, go to the tool execution node; otherwise, go to the response node").</li>
+<li><strong>Entry Point:</strong> You define a starting node for the graph.</li>
+<li><strong><code>END</code>:</strong> A special node name indicating the workflow should terminate.</li>
+</ul>
+<h3 id="33-building-a-basic-graph-with-langgraph">3.3. Building a Basic Graph with LangGraph</h3>
+<p>Let's illustrate with a conceptual example. Imagine an agent that can either call a tool or respond directly.</p>
+<p>First, define the state. The state will hold the input messages and what the next step should be.</p>
+<pre><code class="language-python">from typing import TypedDict, Sequence, Annotated
+from langchain_core.messages import BaseMessage
+import operator
+
+class BasicAgentState(TypedDict):
+    # messages will be appended to by each node
+    messages: Annotated[Sequence[BaseMessage], operator.add]
+    # next_node will be set by a node to determine the next step
+    next_node: str | None
+</code></pre>
+<p>Next, define the nodes. One node will represent the agent deciding what to do, another for calling a tool (if decided), and one for generating a final response.</p>
+<pre><code class="language-python"># (Conceptual: Full implementation of these nodes will integrate LangChain components)
+from langchain_core.messages import AIMessage, HumanMessage, ToolMessage
+
+# Dummy model and tool for illustration
+class FakeChatModel:
+    def invoke(self, messages):
+        last_message_content = messages[-1].content.lower()
+        if &quot;tool&quot; in last_message_content:
+            # Simulate model deciding to use a tool
+            return AIMessage(content=&quot;&quot;, tool_calls=[{&quot;name&quot;: &quot;my_tool&quot;, &quot;args&quot;: {&quot;query&quot;: &quot;example&quot;}, &quot;id&quot;: &quot;tool_abc123&quot;}])
+        return AIMessage(content=f&quot;Responding to: {messages[-1].content}&quot;)
+
+class FakeTool:
+    def invoke(self, tool_input):
+        return f&quot;Tool executed with input: {tool_input}&quot;
+
+llm = FakeChatModel() # Replace with a real LangChain model
+my_tool = FakeTool()  # Replace with a real LangChain tool
+
+def agent_node(state: BasicAgentState) -&gt; dict:
+    print(&quot;--- Executing Agent Node ---&quot;)
+    # Call our LangChain agent/model
+    response_message = llm.invoke(state[&quot;messages&quot;])
+
+    if response_message.tool_calls:
+        print(f&quot;Agent decided to call tool: {response_message.tool_calls[0]['name']}&quot;)
+        # Store the tool call and set next node to tool execution
+        return {&quot;messages&quot;: [response_message], &quot;next_node&quot;: &quot;tool_executor&quot;}
+    else:
+        print(&quot;Agent decided to respond directly.&quot;)
+        # No tool call, respond directly
+        return {&quot;messages&quot;: [response_message], &quot;next_node&quot;: &quot;responder&quot;}
+
+def tool_executor_node(state: BasicAgentState) -&gt; dict:
+    print(&quot;--- Executing Tool Executor Node ---&quot;)
+    last_message = state[&quot;messages&quot;][-1]
+    tool_call = last_message.tool_calls[0]
+    tool_output = my_tool.invoke(tool_call[&quot;args&quot;])
+    print(f&quot;Tool output: {tool_output}&quot;)
+    # Return a ToolMessage to feed back to the agent
+    tool_message = ToolMessage(content=str(tool_output), tool_call_id=tool_call[&quot;id&quot;])
+    # After tool execution, typically you'd go back to the agent to process the tool's output
+    return {&quot;messages&quot;: [tool_message], &quot;next_node&quot;: &quot;agent&quot;} 
+
+def responder_node(state: BasicAgentState) -&gt; dict:
+    print(&quot;--- Executing Responder Node ---&quot;)
+    # This node would typically take the last AIMessage and present it
+    # For this basic example, we just signal the end.
+    # In a more complex graph, it might format the final response.
+    print(f&quot;Final response would be: {state['messages'][-1].content}&quot;)
+    return {&quot;next_node&quot;: &quot;__end__&quot;} # Using __end__ to signify termination for conditional edges
+
+</code></pre>
+<p>Now, construct the graph:</p>
+<pre><code class="language-python">from langgraph.graph import StateGraph, END
+
+# Create the graph instance
+workflow = StateGraph(BasicAgentState)
+
+# Add the nodes
+workflow.add_node(&quot;agent&quot;, agent_node)
+workflow.add_node(&quot;tool_executor&quot;, tool_executor_node)
+workflow.add_node(&quot;responder&quot;, responder_node)
+
+# Define the entry point
+workflow.set_entry_point(&quot;agent&quot;)
+
+# Add edges. We need conditional logic after the 'agent' node.
+# LangGraph provides conditional edges for this.
+
+def decide_next_node(state: BasicAgentState):
+    # This function inspects the state and returns the name of the next node to execute.
+    return state[&quot;next_node&quot;]
+
+# Conditional routing: after agent_node, go to tool_executor, responder, or end.
+workflow.add_conditional_edges(
+    &quot;agent&quot;,
+    decide_next_node, # The function that returns the key for the path to take
+    {
+        &quot;tool_executor&quot;: &quot;tool_executor&quot;,
+        &quot;responder&quot;: &quot;responder&quot;,
+        &quot;__end__&quot;: END # If next_node is __end__, terminate.
+    }
+)
+
+# After tool_executor, if it decided to go back to agent, it will set next_node=&quot;agent&quot;
+workflow.add_conditional_edges(
+    &quot;tool_executor&quot;,
+    decide_next_node,
+    {
+        &quot;agent&quot;: &quot;agent&quot;,
+        &quot;__end__&quot;: END
+    }
+)
+
+# After responder, end the graph
+workflow.add_edge(&quot;responder&quot;, END) # Could also use conditional edge if responder could loop
+
+# Compile the graph into a runnable LangChain object
+app = workflow.compile()
+
+# Run the graph
+# initial_state_tool = {&quot;messages&quot;: [HumanMessage(content=&quot;Tell me something that requires a tool.&quot;)]}
+# for s in app.stream(initial_state_tool):
+#     print(s)
+# print(&quot;-----&quot;)
+# initial_state_direct = {&quot;messages&quot;: [HumanMessage(content=&quot;Hello!&quot;)]}
+# for s in app.stream(initial_state_direct):
+#     print(s)
+</code></pre>
+<p>This example demonstrates:
+- Defining a state (<code>BasicAgentState</code>).
+- Creating nodes that modify this state.
+- Using <code>add_conditional_edges</code> to control the flow based on the state.
+- Compiling the graph into a runnable application.</p>
+<p>This graph structure is much more explicit and controllable than a single <code>AgentExecutor</code> loop, especially as logic becomes more intricate. We are using <code>next_node</code> in the state to explicitly control transitions, which is a common pattern.</p>
+<p>In the next section, we'll combine LangChain's agent components with LangGraph to build a more concrete agentic system.</p>
+<h2 id="4-designing-an-agentic-system-langchain-langgraph-in-action">4. Designing an Agentic System: LangChain + LangGraph in Action</h2>
+<p>Now, let's build a more practical agent that combines the strengths of LangChain for component creation and LangGraph for orchestration. We'll create a "Research Assistant" agent that can:
+1. Take a research question.
+2. Use a search tool to find relevant information.
+3. Summarize the findings.
+4. Present the summary.</p>
+<p>This example will use a more realistic setup with LangChain agents and tools integrated into LangGraph nodes.</p>
+<h3 id="41-step-1-define-the-agents-state">4.1. Step 1: Define the Agent's State</h3>
+<p>Our agent needs to keep track of several pieces of information as it works through the research task. We'll define a state object using <code>TypedDict</code>.</p>
+<pre><code class="language-python">from typing import TypedDict, Annotated, Sequence, List, Optional
+from langchain_core.messages import BaseMessage, HumanMessage, AIMessage, ToolMessage
+import operator
+
+class ResearchAgentState(TypedDict):
+    # Input question from the user
+    input_question: str
+
+    # Messages form the conversation history. operator.add appends to this list.
+    messages: Annotated[Sequence[BaseMessage], operator.add]
+
+    # The most recent search query generated by the agent
+    search_query: Optional[str]
+
+    # List of documents found by the search tool (simplified as strings for this example)
+    search_results: Optional[List[str]]
+
+    # The final summary of the research
+    summary: Optional[str]
+
+    # To control flow: which node to go to next?
+    next_node: Optional[str]
+</code></pre>
+<h3 id="42-step-2-define-agent-components-langchain">4.2. Step 2: Define Agent Components (LangChain)</h3>
+<p>We need:
+- An LLM and tools.
+- An agent runnable (built with <code>create_openai_tools_agent</code>) that decides what to do (search or summarize).
+- A tool executor to run the chosen tools.</p>
+<p><strong>a) Tools</strong></p>
+<p>We'll use a real search tool (<code>TavilySearchResults</code>) and create a custom LangChain chain for summarization, which we'll wrap as a tool.</p>
+<pre><code class="language-python">import os
+from langchain_openai import ChatOpenAI
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.tools import tool
+from langchain_community.tools.tavily_search import TavilySearchResults
+from langchain_core.output_parsers import StrOutputParser
+
+# Ensure you have TAVILY_API_KEY set in your environment variables for TavilySearchResults
+# os.environ[&quot;TAVILY_API_KEY&quot;] = &quot;your_tavily_api_key&quot;
+# os.environ[&quot;OPENAI_API_KEY&quot;] = &quot;your_openai_api_key&quot;
+
+# Initialize the LLM for the agent and summarizer
+llm = ChatOpenAI(model=&quot;gpt-4o&quot;, temperature=0)
+
+# 1. Search Tool
+# Tavily Search is a good general-purpose search tool.
+# Make sure to install: pip install langchain-community tavily-python
+search_tool = TavilySearchResults(max_results=3) # Get top 3 results
+search_tool.name = &quot;web_search&quot; # Give it a clear name for the agent
+search_tool.description = &quot;Searches the web for up-to-date information on a given query. Use this for recent events or general knowledge questions.&quot;
+
+# 2. Summarization Tool (as a LangChain chain)
+@tool
+def summarize_text_tool(text_to_summarize: str, query: str) -&gt; str:
+    &quot;&quot;&quot;Summarizes the provided text to answer the specific query. 
+    Use this after performing a web search to extract relevant information from the search results based on the original query.
+    Args:
+        text_to_summarize: The text content retrieved from a web search (or part of it).
+        query: The original user query to focus the summary on.
+    &quot;&quot;&quot;
+    summarizer_prompt = ChatPromptTemplate.from_messages([
+        (&quot;system&quot;, &quot;You are an expert summarizer. Your goal is to create a concise summary of the provided text, specifically focusing on answering the given query. Extract key information relevant to the query.&quot;),
+        (&quot;user&quot;, &quot;Please summarize the following text:\n\n{text_to_summarize}\n\nBased on this query: {query}&quot;)
+    ])
+    summarization_chain = summarizer_prompt | llm | StrOutputParser()
+    return summarization_chain.invoke({&quot;text_to_summarize&quot;: text_to_summarize, &quot;query&quot;: query})
+
+research_assistant_tools = [search_tool, summarize_text_tool]
+</code></pre>
+<p><strong>b) Agent Runnable</strong></p>
+<p>This LangChain agent will be the "brain" in one of our LangGraph nodes. It takes the current state (especially messages) and decides whether to call <code>web_search</code>, <code>summarize_text_tool</code>, or if it has enough information to respond.</p>
+<pre><code class="language-python">from langchain.agents import create_openai_tools_agent
+
+# Prompt for the agent that decides the next step
+# Note: The system message is crucial for guiding the agent's behavior with LangGraph.
+# It needs to understand it's part of a larger process.
+PLANNER_AGENT_PROMPT = ChatPromptTemplate.from_messages([
+    (&quot;system&quot;,
+     &quot;You are a research assistant planner. Your goal is to answer the user's question by orchestrating a sequence of actions: searching the web and then summarizing the results.
+&quot;
+     &quot;Based on the current conversation and state, decide the next action. You have two tools available: 'web_search' and 'summarize_text_tool'.
+&quot;
+     &quot;1. If you need to find information, call 'web_search' with a relevant search query.
+&quot;
+     &quot;2. If you have search results and need to summarize them to answer the user's original question, call 'summarize_text_tool'. Provide the concatenated search results as 'text_to_summarize' and the original user question as 'query'.
+&quot;
+     &quot;3. If you have already summarized the information and have a final answer, or if the question can be answered directly without tools, respond to the user directly without calling any tools.
+&quot;
+     &quot;Consider the user's input question and the current messages to understand the context and what has been done so far.&quot;
+    ),
+    # MessagesPlaceholder(variable_name=&quot;messages&quot;), # create_openai_tools_agent will add this
+    (&quot;user&quot;, &quot;{input_question}&quot;) # The initial question is the main input
+])
+
+# Create the LangChain agent runnable
+# This agent will output AIMessage objects, possibly with tool_calls
+planner_agent_runnable = create_openai_tools_agent(llm, research_assistant_tools, PLANNER_AGENT_PROMPT)
+</code></pre>
+<h3 id="43-step-3-define-graph-nodes-langgraph">4.3. Step 3: Define Graph Nodes (LangGraph)</h3>
+<p>Each node in our LangGraph will perform a specific part of the research task. Nodes take the current <code>ResearchAgentState</code> and return a dictionary of state updates.</p>
+<p><strong>a) <code>planner_node</code></strong></p>
+<p>This node hosts our LangChain agent. It decides the next action (search, summarize, or finish).</p>
+<pre><code class="language-python">def planner_node(state: ResearchAgentState) -&gt; dict:
+    print(&quot;--- Planner Node ---&quot;)
+    # Call the LangChain agent runnable
+    # We pass the current messages and the input_question
+    # The agent decides if it needs to call a tool or can respond directly
+    agent_response: AIMessage = planner_agent_runnable.invoke(
+        {&quot;input_question&quot;: state[&quot;input_question&quot;], &quot;messages&quot;: state[&quot;messages&quot;]}
+    )
+
+    updates = {&quot;messages&quot;: [agent_response]} # Always update messages
+
+    if agent_response.tool_calls:
+        print(f&quot;Planner agent decided to call tool(s): {agent_response.tool_calls}&quot;)
+        # If the agent wants to call a tool, set next_node to tool_executor
+        updates[&quot;next_node&quot;] = &quot;tool_executor&quot;
+    else:
+        print(&quot;Planner agent decided to respond directly or has finished.&quot;)
+        # If no tool call, it means the agent is ready to provide the final answer (or an intermediate one)
+        # For this example, we'll assume it means the process is done or leads to a final response node.
+        updates[&quot;next_node&quot;] = &quot;__end__&quot; # Or route to a dedicated final response node
+        updates[&quot;summary&quot;] = agent_response.content # Assume direct response is the summary
+
+    return updates
+</code></pre>
+<p><strong>b) <code>tool_executor_node</code></strong></p>
+<p>This node executes the tool chosen by the <code>planner_node</code>.</p>
+<pre><code class="language-python">from langchain_core.tools import BaseTool # For type hinting
+
+# A simple tool executor that calls the LangChain tools
+# In more complex scenarios, LangGraph offers a prebuilt ToolNode or ToolExecutor.
+
+def tool_executor_node(state: ResearchAgentState) -&gt; dict:
+    print(&quot;--- Tool Executor Node ---&quot;)
+    last_message = state[&quot;messages&quot;][-1]
+    if not isinstance(last_message, AIMessage) or not last_message.tool_calls:
+        print(&quot; Error: No tool call found in the last message.&quot;)
+        return {&quot;next_node&quot;: &quot;planner&quot;, &quot;messages&quot;: [AIMessage(content=&quot;Error: No tool call found&quot;)]}
+
+    tool_call = last_message.tool_calls[0] # Assuming one tool call for simplicity
+    tool_name = tool_call[&quot;name&quot;]
+    tool_args = tool_call[&quot;args&quot;]
+
+    print(f&quot; Executing tool: {tool_name} with args: {tool_args}&quot;)
+
+    executed_tool: Optional[BaseTool] = None
+    if tool_name == &quot;web_search&quot;:
+        executed_tool = search_tool
+    elif tool_name == &quot;summarize_text_tool&quot;:
+        executed_tool = summarize_text_tool
+    else:
+        error_msg = f&quot;Error: Unknown tool '{tool_name}' requested.&quot;
+        print(error_msg)
+        return {&quot;messages&quot;: [ToolMessage(content=error_msg, tool_call_id=tool_call[&quot;id&quot;])], &quot;next_node&quot;: &quot;planner&quot;}
+
+    try:
+        # Invoke the tool
+        if tool_name == &quot;web_search&quot;:
+            # Tavily tool expects a single string argument for the query
+            tool_output = executed_tool.invoke(tool_args.get(&quot;query&quot;) or tool_args) 
+        elif tool_name == &quot;summarize_text_tool&quot;:
+            # Our custom summarize tool takes specific arguments
+            tool_output = executed_tool.invoke(tool_args)
+        else: # Should not happen due to check above
+            raise ValueError(f&quot;Tool {tool_name} invocation not handled correctly.&quot;)
+
+        print(f&quot; Tool '{tool_name}' output received.&quot;)
+        # Create a ToolMessage with the output
+        tool_message = ToolMessage(content=str(tool_output), tool_call_id=tool_call[&quot;id&quot;])
+
+        updates = {&quot;messages&quot;: [tool_message], &quot;next_node&quot;: &quot;planner&quot;} # Go back to planner to process tool output
+
+        # Update state based on tool executed
+        if tool_name == &quot;web_search&quot;:
+            # The output of TavilySearchResults is a list of dicts, or a string on error.
+            # For simplicity, let's assume it's a list of strings (page contents or snippets)
+            if isinstance(tool_output, list):
+                # Extract content from search results (Tavily returns dicts with 'content')
+                contents = [res.get(&quot;content&quot;, &quot;&quot;) for res in tool_output if isinstance(res, dict)]
+                updates[&quot;search_results&quot;] = contents
+            else: # If it's a string (e.g. error message or single result)
+                 updates[&quot;search_results&quot;] = [str(tool_output)]
+        elif tool_name == &quot;summarize_text_tool&quot;:
+            updates[&quot;summary&quot;] = str(tool_output)
+            updates[&quot;next_node&quot;] = &quot;__end__&quot; # Summarization is the last step in this simple flow
+
+        return updates
+
+    except Exception as e:
+        print(f&quot; Error executing tool {tool_name}: {e}&quot;)
+        error_message = ToolMessage(content=f&quot;Error executing tool {tool_name}: {e}&quot;, tool_call_id=tool_call[&quot;id&quot;])
+        return {&quot;messages&quot;: [error_message], &quot;next_node&quot;: &quot;planner&quot;}
+</code></pre>
+<h3 id="44-step-4-define-graph-edges-langgraph">4.4. Step 4: Define Graph Edges (LangGraph)</h3>
+<p>Now we connect the nodes to define the workflow.</p>
+<pre><code class="language-python">from langgraph.graph import StateGraph, END
+
+workflow = StateGraph(ResearchAgentState)
+
+# Add nodes
+workflow.add_node(&quot;planner&quot;, planner_node)
+workflow.add_node(&quot;tool_executor&quot;, tool_executor_node)
+
+# Set entry point
+workflow.set_entry_point(&quot;planner&quot;)
+
+# Define conditional edges
+def route_after_planner(state: ResearchAgentState):
+    # Based on the 'next_node' field updated by planner_node or tool_executor_node
+    if state.get(&quot;next_node&quot;) == &quot;tool_executor&quot;:
+        return &quot;tool_executor&quot;
+    # If summary is present and no specific next node, or next_node is __end__
+    if state.get(&quot;summary&quot;) or state.get(&quot;next_node&quot;) == &quot;__end__&quot;:
+        return END
+    return &quot;planner&quot; # Default fallback or if planner needs to re-evaluate
+
+def route_after_tool_executor(state: ResearchAgentState):
+    # After tool execution, always go back to the planner to decide the next step
+    # unless the tool executor itself (like summarize_text_tool) decided to end.
+    if state.get(&quot;next_node&quot;) == &quot;__end__&quot;:
+         return END
+    return &quot;planner&quot;
+
+workflow.add_conditional_edges(
+    &quot;planner&quot;,
+    route_after_planner,
+    {
+        &quot;tool_executor&quot;: &quot;tool_executor&quot;,
+        END: END
+        # Implicitly, if route_after_planner returns &quot;planner&quot;, it stays or re-evaluates (not ideal, ensure explicit routing)
+        # Better: ensure planner always sets a clear next_node or leads to END
+    }
+)
+
+workflow.add_conditional_edges(
+    &quot;tool_executor&quot;,
+    route_after_tool_executor,
+    {
+        &quot;planner&quot;: &quot;planner&quot;,
+        END: END
+    }
+)
+
+# Compile the graph
+research_app = workflow.compile()
+</code></pre>
+<h3 id="45-step-5-run-the-agentic-system">4.5. Step 5: Run the Agentic System</h3>
+<p>Let's test our research assistant!</p>
+<pre><code class="language-python"># Example Run
+if __name__ == '__main__':
+    initial_input = &quot;What are the recent advancements in Large Language Models in 2024?&quot;
+    initial_state = {
+        &quot;input_question&quot;: initial_input,
+        &quot;messages&quot;: [HumanMessage(content=initial_input)]
+        # Other fields (search_query, search_results, summary, next_node) will be populated by the graph
+    }
+
+    print(f&quot;Starting research for: '{initial_input}'\n&quot;)
+    # Stream the execution to see the flow. research_app.invoke can also be used.
+    for event in research_app.stream(initial_state, {&quot;recursion_limit&quot;: 10}): # recursion_limit to prevent infinite loops
+        for node_name, output_state in event.items():
+            print(f&quot;--- Output from Node: {node_name} ---&quot;)
+            # Print relevant parts of the state updated by this node
+            if output_state.get(&quot;messages&quot;):
+                print(f&quot;  Messages: {output_state['messages'][-1]}&quot;) # Last message from this step
+            if output_state.get(&quot;search_query&quot;):
+                print(f&quot;  Search Query: {output_state['search_query']}&quot;)
+            if output_state.get(&quot;search_results&quot;):
+                print(f&quot;  Search Results (first one): {output_state['search_results'][0] if output_state['search_results'] else 'N/A'}&quot;)
+            if output_state.get(&quot;summary&quot;):
+                print(f&quot;  Summary: {output_state['summary']}&quot;)
+            if output_state.get(&quot;next_node&quot;):
+                print(f&quot;  Next Node: {output_state['next_node']}&quot;)
+            print(&quot;--------------------------------------\n&quot;)
+
+    final_state = research_app.invoke(initial_state, {&quot;recursion_limit&quot;: 10})
+    print(&quot;\n--- Final Research Result ---&quot;)
+    if final_state.get(&quot;summary&quot;):
+        print(f&quot;Summary: {final_state['summary']}&quot;)
+    else:
+        # If no summary, print the last AI message if available
+        last_ai_message = next((m for m in reversed(final_state.get(&quot;messages&quot;, [])) if isinstance(m, AIMessage) and not m.tool_calls), None)
+        if last_ai_message:
+            print(f&quot;Final Output: {last_ai_message.content}&quot;)
+        else:
+            print(&quot;No summary or direct answer found in the final state.&quot;)
+
+</code></pre>
+<p>This research assistant example demonstrates how LangChain components (agents, tools, chains) can be plugged into a LangGraph structure for more controlled, stateful, and observable agentic behavior. You can extend this by adding more tools, more complex routing logic, human-in-the-loop steps, or cycles for refinement.</p>
+<h2 id="5-advanced-agentic-patterns-with-langgraph">5. Advanced Agentic Patterns with LangGraph</h2>
+<p>LangGraph's structure allows for more sophisticated agentic behaviors beyond simple linear flows or basic branching. Here are a few key patterns:</p>
+<h3 id="51-cycles-and-self-correction-iterative-refinement">5.1. Cycles and Self-Correction / Iterative Refinement</h3>
+<p>One of the powerful features of LangGraph is the ability to create cycles, allowing an agent to iteratively refine its work or attempt to recover from errors.</p>
+<p>Imagine an agent that drafts a response, then has another component (or itself, with a different prompt) evaluate that draft. If the draft isn't good enough, it can loop back to the drafting stage with feedback.</p>
+<p><strong>Conceptual Example: Self-Improving Agent</strong></p>
+<p>This adapts the "Cyclic Graphs and Self-Improvement" concept from the original LangGraph tutorial.</p>
+<p><strong>a) State Definition for Iteration</strong></p>
+<pre><code class="language-python">from typing import TypedDict, Annotated, Sequence, Optional
+from langchain_core.messages import BaseMessage, HumanMessage, AIMessage
+import operator
+
+class IterativeAgentState(TypedDict):
+    messages: Annotated[Sequence[BaseMessage], operator.add]
+    current_draft: Optional[str]
+    review_feedback: Optional[str]
+    iteration_count: int
+    max_iterations: int
+    is_good_enough: bool # Flag to break the loop
+</code></pre>
+<p><strong>b) Nodes for Drafting and Reviewing</strong></p>
+<pre><code class="language-python"># Assume llm is an initialized ChatOpenAI model
+# from langchain_openai import ChatOpenAI
+# llm = ChatOpenAI(model=&quot;gpt-4o&quot;, temperature=0.7)
+
+def draft_node(state: IterativeAgentState) -&gt; dict:
+    print(f&quot;--- Iteration {state['iteration_count']}: Drafting Node ---&quot;)
+    user_input = next(m.content for m in state[&quot;messages&quot;] if isinstance(m, HumanMessage))
+    feedback = state.get(&quot;review_feedback&quot;)
+
+    prompt_text = f&quot;Original request: {user_input}\n&quot;
+    if feedback:
+        prompt_text += f&quot;Previous attempt was not sufficient. Reviewer feedback: {feedback}\nPlease try again, incorporating this feedback to generate a better draft.\n&quot;
+    else:
+        prompt_text += &quot;Please generate the initial draft.\n&quot;
+
+    draft_message = llm.invoke([HumanMessage(content=prompt_text)])
+    print(f&quot; Draft generated: {draft_message.content[:100]}...&quot;)
+    return {&quot;messages&quot;: [draft_message], &quot;current_draft&quot;: draft_message.content, &quot;iteration_count&quot;: state[&quot;iteration_count&quot;] + 1}
+
+def review_node(state: IterativeAgentState) -&gt; dict:
+    print(f&quot;--- Iteration {state['iteration_count']-1}: Reviewing Node ---&quot;)
+    draft_to_review = state[&quot;current_draft&quot;]
+
+    if not draft_to_review:
+        # Should not happen if logic is correct
+        return {&quot;review_feedback&quot;: &quot;Error: No draft to review.&quot;, &quot;is_good_enough&quot;: False}
+
+    # In a real scenario, this could be another LLM call, a set of heuristics, or human input.
+    # For this example, a simplified LLM call or rule.
+    review_prompt = f&quot;Review the following draft. Is it good enough? If not, provide brief feedback for improvement.\nDraft: {draft_to_review}&quot;
+    review_response = llm.invoke([HumanMessage(content=review_prompt)]) # Simplified review
+
+    # Simple check for demonstration, a real system would parse this more robustly
+    if &quot;good enough&quot; in review_response.content.lower() or &quot;looks good&quot; in review_response.content.lower():
+        print(&quot; Review: Draft is good enough.&quot;)
+        return {&quot;messages&quot;: [AIMessage(content=f&quot;Review: {review_response.content}&quot;)], &quot;is_good_enough&quot;: True, &quot;review_feedback&quot;: None}
+    else:
+        print(f&quot; Review: Draft needs improvement. Feedback: {review_response.content}&quot;)
+        return {&quot;messages&quot;: [AIMessage(content=f&quot;Review: {review_response.content}&quot;)], &quot;review_feedback&quot;: review_response.content, &quot;is_good_enough&quot;: False}
+</code></pre>
+<p><strong>c) Graph Construction with a Loop</strong></p>
+<pre><code class="language-python">from langgraph.graph import StateGraph, END
+
+iterative_workflow = StateGraph(IterativeAgentState)
+
+iterative_workflow.add_node(&quot;draft&quot;, draft_node)
+iterative_workflow.add_node(&quot;review&quot;, review_node)
+
+iterative_workflow.set_entry_point(&quot;draft&quot;)
+
+iterative_workflow.add_edge(&quot;draft&quot;, &quot;review&quot;)
+
+def decide_loop_or_end(state: IterativeAgentState):
+    if state[&quot;is_good_enough&quot;] or state[&quot;iteration_count&quot;] &gt;= state[&quot;max_iterations&quot;]:
+        print(&quot;Loop condition: ENDING&quot;)
+        return END
+    else:
+        print(&quot;Loop condition: CONTINUE to DRAFT&quot;)
+        return &quot;draft&quot; # Loop back to drafting
+
+iterative_workflow.add_conditional_edges(
+    &quot;review&quot;,
+    decide_loop_or_end,
+    {
+        &quot;draft&quot;: &quot;draft&quot;,
+        END: END
+    }
+)
+
+iterative_app = iterative_workflow.compile()
+
+# Example run (uncomment to try)
+# initial_iterative_state = {
+#     &quot;messages&quot;: [HumanMessage(content=&quot;Explain quantum entanglement in simple terms.&quot;)],
+#     &quot;iteration_count&quot;: 0,
+#     &quot;max_iterations&quot;: 3,
+#     &quot;is_good_enough&quot;: False
+# }
+# for event in iterative_app.stream(initial_iterative_state, {&quot;recursion_limit&quot;: 10}):
+#     print(event)
+</code></pre>
+<p>This pattern allows the agent to refine its output based on critique, leading to higher quality results.</p>
+<h3 id="52-human-in-the-loop-hitl">5.2. Human-in-the-Loop (HITL)</h3>
+<p>For critical decisions or when the agent is uncertain, you can pause the graph and wait for human input. LangGraph supports this by allowing a node to essentially halt execution until an external event (like a human providing input through an API call or UI) resumes the flow, often with updated state information.</p>
+<p>The key idea is to have a node that prepares information for human review. The graph then waits. An external process (e.g., a web server handling user interactions) would:
+1. Retrieve the current state (often using a checkpointer).
+2. Present information to the human.
+3. Receive human feedback.
+4. Update the state with this feedback.
+5. Resume the graph execution (invoke the graph again with the updated state and the specific thread ID).</p>
+<p><strong>Conceptual HITL Node:</strong></p>
+<pre><code class="language-python"># (Conceptual - does not fully run without external interaction framework)
+
+class HITLState(TypedDict):
+    messages: Annotated[Sequence[BaseMessage], operator.add]
+    data_for_review: Optional[str]
+    human_feedback: Optional[str]
+    needs_human_review: bool
+    current_task_id: Optional[str] # To correlate with external system
+
+# Node that prepares for human review
+def prepare_for_hitl_node(state: HITLState) -&gt; dict:
+    print(&quot;--- Preparing for Human Review ---&quot;)
+    # Agent logic decides it needs human input
+    data_to_review = &quot;Sensitive action: Transfer $10,000 to Acme Corp. Requires approval.&quot;
+    print(f&quot; Data for review: {data_to_review}&quot;)
+    # The graph will typically pause here or transition to a waiting state.
+    # An external system would pick up `data_for_review` using the `current_task_id`.
+    return {&quot;messages&quot;: [AIMessage(content=f&quot;Action requires review: {data_to_review}&quot;)], &quot;data_for_review&quot;: data_to_review, &quot;needs_human_review&quot;: True}
+
+# Node that processes human feedback (called after external system provides it)
+# This node would typically be an entry point for resuming a graph.
+def process_human_feedback_node(state: HITLState) -&gt; dict:
+    print(&quot;--- Processing Human Feedback ---&quot;)
+    if state.get(&quot;human_feedback&quot;):
+        print(f&quot; Human feedback received: {state['human_feedback']}&quot;)
+        # Continue workflow based on feedback
+        return {&quot;messages&quot;: [HumanMessage(content=f&quot;Feedback: {state['human_feedback']}&quot;)], &quot;needs_human_review&quot;: False, &quot;data_for_review&quot;: None}
+    else:
+        print(&quot; No human feedback provided yet.&quot;)
+        # Potentially wait or re-prompt
+        return {}
+
+# Graph construction for HITL involves conditional edges that might point to END 
+# or specific nodes if waiting for external input. 
+# Checkpointers (see Section 6) are crucial for persisting state while waiting.
+
+# hitl_workflow = StateGraph(HITLState)
+# hitl_workflow.add_node(&quot;prepare_hitl&quot;, prepare_for_hitl_node)
+# hitl_workflow.add_node(&quot;process_feedback&quot;, process_human_feedback_node)
+# # ... edges would manage flow, potentially pausing the graph ...
+# # hitl_app = hitl_workflow.compile(checkpointer=...) # Checkpointer needed
+</code></pre>
+<p>LangGraph's documentation on <a href="https://langchain-ai.github.io/langgraph/docs/how-tos/human-in-the-loop">Human-in-the-loop</a> provides more concrete examples using checkpointers to manage these waiting states effectively.</p>
+<h3 id="53-multi-agent-collaboration-brief-overview">5.3. Multi-Agent Collaboration (Brief Overview)</h3>
+<p>LangGraph can also orchestrate multiple specialized agents. Each agent could be its own graph, or a node within a larger supervisory graph. The state object would manage the shared context and handoffs between these agents.</p>
+<p>For example, a research task could be broken down:
+1.  <strong>Planner Agent (Graph/Node):</strong> Decomposes the main research question into sub-tasks.
+2.  <strong>Search Agent(s) (Graph/Node):</strong> Each tackles a sub-task by searching and gathering initial data.
+3.  <strong>Synthesizer Agent (Graph/Node):</strong> Consolidates information from multiple search agents.
+4.  <strong>Writer Agent (Graph/Node):</strong> Drafts the final report based on synthesized information.
+5.  <strong>Reviewer Agent (Graph/Node):</strong> Critiques the draft, potentially sending it back to the writer or synthesizer for revisions (a cycle!).</p>
+<p>This pattern is an extension of the ideas presented: defining clear roles (nodes), managing shared information (state), and controlling the flow of work (edges).</p>
+<p>The "Multi-Agent Systems" section in the original <code>LangGraph_Tutorial.md</code> (which you can find in the <code>Appendix</code> of this project) provides a code example of a team of agents (Researcher, Writer, Reviewer, Finalizer) collaborating on a task. This showcases how different nodes can represent different agentic responsibilities, all coordinated by LangGraph.</p>
+<h2 id="6-state-management-and-persistence-with-checkpointers">6. State Management and Persistence with Checkpointers</h2>
+<p>For many agentic systems, especially those that are long-running, involve human-in-the-loop, or need to recover from interruptions, it's crucial to save and restore the agent's state. LangGraph provides <strong>checkpointers</strong> for this purpose.</p>
+<h3 id="61-why-persistence">6.1. Why Persistence?</h3>
+<ul>
+<li><strong>Long-Running Tasks:</strong> If an agent takes hours or days to complete a task, you don't want to lose all progress if the system restarts.</li>
+<li><strong>Human-in-the-Loop (HITL):</strong> When an agent pauses for human input, its current state must be saved so it can be resumed later, potentially on a different server or after a delay.</li>
+<li><strong>Resilience:</strong> Recover from crashes or unexpected interruptions.</li>
+<li><strong>Debugging and Analysis ("Time Travel"):</strong> Load a past state to understand why an agent behaved a certain way or to explore alternative execution paths from a specific point.</li>
+</ul>
+<h3 id="62-langgraph-checkpointers">6.2. LangGraph Checkpointers</h3>
+<p>A checkpointer in LangGraph automatically saves the state of your graph at specified points (typically after each node execution or as configured). When you run a graph compiled with a checkpointer, you provide a <code>configurable</code> dictionary, often including a <code>thread_id</code>. This <code>thread_id</code> acts as a key to save and load the conversation or task state.</p>
+<p>LangGraph offers several checkpointer backends:
+- <strong><code>MemorySaver</code>:</strong> Stores checkpoints in memory. Useful for testing and simple cases, but state is lost when the process ends.
+- <strong><code>SqliteSaver</code>:</strong> Stores checkpoints in a SQLite database file. Good for local persistence.
+- <strong><code>RedisSaver</code>:</strong> Stores checkpoints in a Redis instance. Suitable for distributed systems.
+- Other backends can be implemented for different databases or storage systems.</p>
+<h3 id="63-using-a-checkpointer-conceptual-example-with-memorysaver">6.3. Using a Checkpointer (Conceptual Example with <code>MemorySaver</code>)</h3>
+<p>Let's adapt our basic research assistant graph from Section 4 to use <code>MemorySaver</code>.</p>
+<pre><code class="language-python">from langgraph.checkpoint.memory import MemorySaver
+
+# Assume ResearchAgentState, planner_node, tool_executor_node, 
+# route_after_planner, route_after_tool_executor are defined as in Section 4.
+
+# 1. Initialize a checkpointer
+memory_saver = MemorySaver()
+
+# 2. Create the graph (same structure as before)
+workflow_with_checkpoint = StateGraph(ResearchAgentState)
+workflow_with_checkpoint.add_node(&quot;planner&quot;, planner_node)
+workflow_with_checkpoint.add_node(&quot;tool_executor&quot;, tool_executor_node)
+workflow_with_checkpoint.set_entry_point(&quot;planner&quot;)
+workflow_with_checkpoint.add_conditional_edges(&quot;planner&quot;, route_after_planner, {&quot;tool_executor&quot;: &quot;tool_executor&quot;, END: END})
+workflow_with_checkpoint.add_conditional_edges(&quot;tool_executor&quot;, route_after_tool_executor, {&quot;planner&quot;: &quot;planner&quot;, END: END})
+
+# 3. Compile the graph with the checkpointer
+# The checkpointer will save the state after each step for a given thread_id.
+research_app_persistent = workflow_with_checkpoint.compile(checkpointer=memory_saver)
+
+# 4. Invoke the graph with a configurable thread_id
+if __name__ == '__main__':
+    thread_id_1 = &quot;my_research_task_123&quot; # Unique ID for this conversation/task
+    initial_input_persistent = &quot;What is LangGraph and how does it help with agent memory?&quot;
+    initial_state_persistent = {
+        &quot;input_question&quot;: initial_input_persistent,
+        &quot;messages&quot;: [HumanMessage(content=initial_input_persistent)]
+    }
+
+    print(f&quot;Starting persistent research for: '{initial_input_persistent}' with Thread ID: {thread_id_1}\n&quot;)
+
+    # First invocation - graph runs and state is saved under thread_id_1
+    # for event in research_app_persistent.stream(initial_state_persistent, {&quot;configurable&quot;: {&quot;thread_id&quot;: thread_id_1}, &quot;recursion_limit&quot;: 10}):
+    #     # print(event) # Print events to see flow
+    #     pass # Simplified for brevity
+    # final_state_run1 = research_app_persistent.invoke(initial_state_persistent, {&quot;configurable&quot;: {&quot;thread_id&quot;: thread_id_1}, &quot;recursion_limit&quot;: 10})
+    # print(f&quot;\n--- Final Result (Run 1, Thread ID: {thread_id_1}) ---&quot;)
+    # print(f&quot; Summary: {final_state_run1.get('summary', 'N/A')}&quot;)
+
+    # Imagine some time passes, or another user interacts with the same thread.
+    # The graph can be invoked again with the same thread_id. It will resume from the last saved state.
+    # For MemorySaver, this only works if the Python process is still running.
+    # For persistent savers (SQLite, Redis), it works across process restarts.
+
+    # follow_up_input = &quot;Can you elaborate on its checkpointer system?&quot;
+    # # Note: We don't pass the full initial_state again for subsequent calls on the same thread.
+    # # We just pass the new input that should be added to the message history.
+    # # The checkpointer handles loading the previous state for this thread_id.
+    # current_state_before_follow_up = research_app_persistent.get_state({&quot;configurable&quot;: {&quot;thread_id&quot;: thread_id_1}})
+    # follow_up_messages = current_state_before_follow_up.values[&quot;messages&quot;] + [HumanMessage(content=follow_up_input)]
+
+    # follow_up_state_input = {
+    #     &quot;input_question&quot;: follow_up_input, # Update input question if relevant for planner
+    #     &quot;messages&quot;: [HumanMessage(content=follow_up_input)] # Only the new message to be appended
+    # }
+
+    # print(f&quot;\n--- Invoking with Follow-up (Thread ID: {thread_id_1}) ---&quot;)
+    # # When invoking with a checkpointer and an existing thread_id,
+    # # LangGraph appends the new messages to the history and continues.
+    # for event in research_app_persistent.stream(follow_up_state_input, {&quot;configurable&quot;: {&quot;thread_id&quot;: thread_id_1}, &quot;recursion_limit&quot;: 10}):
+    #     # print(event)
+    #     pass
+    # final_state_run2 = research_app_persistent.invoke(follow_up_state_input, {&quot;configurable&quot;: {&quot;thread_id&quot;: thread_id_1}, &quot;recursion_limit&quot;: 10})
+    # print(f&quot;\n--- Final Result (Run 2, Thread ID: {thread_id_1}) ---&quot;)
+    # print(f&quot; Summary: {final_state_run2.get('summary', 'N/A')}&quot;)
+    # print(f&quot; Full message history for thread {thread_id_1}:&quot;)
+    # final_thread_state = research_app_persistent.get_state({&quot;configurable&quot;: {&quot;thread_id&quot;: thread_id_1}})
+    # for msg in final_thread_state.values[&quot;messages&quot;]:
+    #     print(f&quot;  {msg.type}: {msg.content[:100]}...&quot;)
+</code></pre>
+<p><strong>Key points for using checkpointers:</strong>
+- When compiling, pass the <code>checkpointer</code> instance.
+- When invoking (<code>.invoke()</code>, <code>.stream()</code>), pass a <code>configurable</code> dictionary containing a <code>thread_id</code>. This ID groups all states for a single, continuous interaction or task.
+- For follow-up interactions on the same <code>thread_id</code>, you usually just provide the new input (e.g., new messages). LangGraph, using the checkpointer, will load the prior state for that thread and continue.</p>
+<h3 id="64-time-travel-and-state-inspection">6.4. Time Travel and State Inspection</h3>
+<p>Checkpointers also enable powerful debugging and analytical capabilities:</p>
+<ul>
+<li><strong><code>get_state(config)</code>:</strong> Retrieve the latest state for a given <code>thread_id</code>.</li>
+<li><strong><code>list_states(config)</code> (or similar, e.g., <code>list_checkpoints</code> for some savers):</strong> Get a history of all saved states (checkpoints) for a <code>thread_id</code>.</li>
+<li><strong><code>update_state(config, values)</code>:</strong> Manually update the state for a <code>thread_id</code>. Useful for correcting errors or injecting information.</li>
+<li><strong>Invoking from a past checkpoint:</strong> Some checkpointers allow you to get a specific checkpoint and then invoke the graph <em>from that point in the past</em>, potentially with modified input, to explore different paths. This is invaluable for debugging complex agent behaviors or for A/B testing different responses from a certain state.</li>
+</ul>
+<pre><code class="language-python"># Conceptual: Time Travel / Inspection
+# if __name__ == '__main__' and memory_saver: # Assuming research_app_persistent is compiled with memory_saver
+#     thread_id_inspect = &quot;my_research_task_123&quot; # Use an existing thread_id
+
+#     # Get the current state
+#     current_state = research_app_persistent.get_state({&quot;configurable&quot;: {&quot;thread_id&quot;: thread_id_inspect}})
+#     if current_state:
+#         print(f&quot;\n--- Current State for Thread ID: {thread_id_inspect} ---&quot;)
+#         # print(current_state.values) # The actual state dictionary
+#         print(f&quot;  Current messages: {len(current_state.values['messages'])} total&quot;)
+#         print(f&quot;  Next node was to be: {current_state.values.get('next_node')}&quot;)
+
+    # List all checkpoints (MemorySaver might require specific methods or may not fully support listing all historical checkpoints easily without a persistent backend like SQLite)
+    # For SQLiteSaver, it would be like: checkpoints = memory_saver.list(configurable={&quot;thread_id&quot;: thread_id_inspect})
+    # And then you could pick a checkpoint from the list to resume from.
+    # Refer to specific checkpointer documentation for exact methods.
+</code></pre>
+<p>Using a persistent checkpointer like <code>SqliteSaver</code> is highly recommended for any agent that needs to maintain state beyond a single in-memory session. You would replace <code>MemorySaver()</code> with <code>SqliteSaver.from_conn_string(":memory:")</code> (for in-memory SQLite) or <code>SqliteSaver.from_conn_string("my_agent_db.sqlite")</code> (for a file-based database).</p>
+<h2 id="7-debugging-and-tracing-with-langsmith">7. Debugging and Tracing with LangSmith</h2>
+<p>Building complex agentic systems with LangChain and LangGraph involves many moving parts. LangSmith is a platform designed to help you debug, trace, monitor, and evaluate your language model applications, making it an invaluable tool for developing robust agents.</p>
+<h3 id="71-why-langsmith">7.1. Why LangSmith?</h3>
+<ul>
+<li><strong>Visibility:</strong> Get a clear view of what your agent is doing at each step. See the inputs and outputs of LLM calls, tool executions, and graph node transitions.</li>
+<li><strong>Debugging:</strong> Quickly identify errors, unexpected behavior, or inefficient paths in your agent's logic.</li>
+<li><strong>Collaboration:</strong> Share traces with team members to troubleshoot issues.</li>
+<li><strong>Evaluation:</strong> Log results, gather feedback, and run evaluations to measure and improve agent performance.</li>
+<li><strong>Monitoring:</strong> Keep an eye on your agents in production (though this tutorial focuses on development).</li>
+</ul>
+<h3 id="72-setting-up-langsmith">7.2. Setting up LangSmith</h3>
+<p>To get started with LangSmith, you typically need to:
+1.  Sign up at <a href="https://smith.langchain.com/">smith.langchain.com</a>.
+2.  Create an API key.
+3.  Set a few environment variables in your development environment:</p>
+<pre><code class="language-python">import os
+import getpass # To securely get API key if not set as env var
+
+# Best practice: Set these in your shell environment (e.g., .env file or export commands)
+# os.environ[&quot;LANGCHAIN_TRACING_V2&quot;] = &quot;true&quot;
+# os.environ[&quot;LANGCHAIN_API_KEY&quot;] = &quot;YOUR_LANGSMITH_API_KEY&quot;
+# os.environ[&quot;LANGCHAIN_PROJECT&quot;] = &quot;My Agentic AI Project&quot; # Optional: organize runs into projects
+
+# Example of setting them programmatically if not already set (useful for notebooks)
+def setup_langsmith_env():
+    if &quot;LANGCHAIN_TRACING_V2&quot; not in os.environ:
+        os.environ[&quot;LANGCHAIN_TRACING_V2&quot;] = &quot;true&quot;
+        print(&quot;Set LANGCHAIN_TRACING_V2 to true&quot;)
+
+    if &quot;LANGCHAIN_API_KEY&quot; not in os.environ:
+        api_key = getpass.getpass(&quot;Enter your LangSmith API key: &quot;)
+        os.environ[&quot;LANGCHAIN_API_KEY&quot;] = api_key
+        print(&quot;LangSmith API key set from input.&quot;)
+    else:
+        print(&quot;LangSmith API key found in environment.&quot;)
+
+    if &quot;LANGCHAIN_PROJECT&quot; not in os.environ:
+        os.environ[&quot;LANGCHAIN_PROJECT&quot;] = &quot;Default Agentic Tutorial Project&quot;
+        print(f&quot;Using LangSmith project: {os.environ['LANGCHAIN_PROJECT']}&quot;)
+
+# Call this at the beginning of your script or notebook
+# setup_langsmith_env()
+</code></pre>
+<p>Once these environment variables are set, LangChain and LangGraph will automatically start sending trace data to your LangSmith project.</p>
+<h3 id="73-tracing-langchain-components-and-langgraph-runs">7.3. Tracing LangChain Components and LangGraph Runs</h3>
+<p>When you execute your LangGraph application (e.g., <code>research_app.invoke(...)</code> or <code>research_app.stream(...)</code> from our example), LangSmith captures:</p>
+<ul>
+<li><strong>Overall Graph Execution:</strong> The entry into the graph and its final output.</li>
+<li><strong>Node Executions:</strong> Each time a node in your <code>StateGraph</code> is run, LangSmith records its inputs (the part of the state it received) and its outputs (the state updates it returned).</li>
+<li><strong>LangChain Component Calls:</strong> If a node internally uses LangChain components (like an <code>AgentExecutor</code>, an LLM call, a specific chain, or a tool), these are also traced as nested operations.<ul>
+<li>You'll see the exact prompts sent to LLMs.</li>
+<li>The arguments passed to tools and the data they returned.</li>
+<li>The flow within <code>create_openai_tools_agent</code> or other agent runnables.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Visualizing Graphs:</strong>
+LangSmith provides a visual representation of your LangGraph executions, making it much easier to understand the flow of control, especially with conditional edges and loops. You can see which path was taken through the graph for a given input.</p>
+<h3 id="74-example-inspecting-the-research-assistant-in-langsmith">7.4. Example: Inspecting the Research Assistant in LangSmith</h3>
+<p>If you run the Research Assistant agent (from Section 4) with LangSmith configured:</p>
+<ol>
+<li>Go to your LangSmith project.</li>
+<li>You will see a new trace for each invocation of <code>research_app.invoke()</code> or <code>research_app.stream()</code>.</li>
+<li>Clicking on a trace will show you:<ul>
+<li>The initial input to the graph.</li>
+<li>A timeline of nodes executed (<code>planner</code>, <code>tool_executor</code>).</li>
+<li>For the <code>planner</code> node, you can expand it to see the internal call to your <code>planner_agent_runnable</code> (the <code>create_openai_tools_agent</code>). Further expanding this will show the LLM call, the prompt, and the model's response (including any tool calls it decided to make).</li>
+<li>For the <code>tool_executor</code> node, you'll see which tool was called (e.g., <code>web_search</code> or <code>summarize_text_tool</code>) and the arguments and output of that tool.</li>
+<li>If you used a checkpointer, the state at each step might also be visible or inferable from the inputs/outputs of the nodes.</li>
+</ul>
+</li>
+</ol>
+<p>This detailed, hierarchical view is crucial for understanding why your agent made certain decisions, how tools performed, and where potential improvements can be made.</p>
+<h3 id="75-logging-feedback-and-annotations">7.5. Logging Feedback and Annotations</h3>
+<p>LangSmith also allows you to programmatically or manually add feedback to runs.</p>
+<pre><code class="language-python">from langsmith import Client
+
+# client = Client() # Initialize if you need to interact with LangSmith API directly
+
+# Example: After a run, you might log feedback (this usually requires the run_id)
+# This is more for evaluation workflows, but shows the capability.
+
+# run_id = &quot;some_run_id_from_a_trace&quot; # You'd get this from a trace or programmatically
+# if client and run_id:
+#     try:
+#         client.create_feedback(
+#             run_id=run_id,
+#             key=&quot;user_satisfaction&quot;, # Arbitrary key for the feedback type
+#             score=0.8, # Numerical score (e.g., 0.0 to 1.0)
+#             comment=&quot;The summary was good but a bit too verbose.&quot;
+#         )
+#         print(f&quot;Feedback added for run {run_id}&quot;)
+#     except Exception as e:
+#         print(f&quot;Could not log feedback: {e}&quot;)
+</code></pre>
+<p>This feedback can be used to evaluate agent performance over time and identify areas for improvement.</p>
+<p>By integrating LangSmith into your development workflow from the start, you gain powerful observability that significantly speeds up the development and refinement of complex agentic AI systems.</p>
+<h2 id="8-conclusion">8. Conclusion</h2>
+<p>Throughout this tutorial, we've explored how to design and build agentic AI systems by leveraging the complementary strengths of LangChain and LangGraph.</p>
+<p><strong>Key Takeaways:</strong></p>
+<ol>
+<li>
+<p><strong>Agentic AI Principles:</strong> We started by understanding that agentic AI systems are goal-oriented, interactive, autonomous, and perceptive. They require careful design to manage their decision-making processes and interactions with the external world.</p>
+</li>
+<li>
+<p><strong>LangChain for Core Components:</strong> LangChain provides the essential building blocks for agents:</p>
+<ul>
+<li><strong>Models:</strong> The underlying intelligence (LLMs, Chat Models).</li>
+<li><strong>Prompts:</strong> How we instruct and guide the models.</li>
+<li><strong>Tools:</strong> Enabling agents to interact with external systems and data sources (e.g., web search, calculators, custom functions).</li>
+<li><strong>Agent Runnables (<code>create_openai_tools_agent</code>):</strong> Encapsulating the logic for an LLM to decide when and how to use tools, or respond directly.</li>
+</ul>
+</li>
+<li>
+<p><strong>LangGraph for Orchestration and State Management:</strong> When agentic workflows become complex, LangGraph provides a robust framework for:</p>
+<ul>
+<li><strong>Explicit State Management:</strong> Defining and tracking the agent's state (beyond simple chat history) using <code>TypedDict</code> or Pydantic models.</li>
+<li><strong>Complex Control Flow:</strong> Implementing sophisticated logic with nodes (processing units) and edges (transitions), including conditional branching and cycles.</li>
+<li><strong>Modularity:</strong> Structuring the agent's overall behavior as a graph, where each node can contain a LangChain component (like an agent or a chain).</li>
+</ul>
+</li>
+<li>
+<p><strong>Synergistic Design:</strong> The true power comes from combining these two libraries:</p>
+<ul>
+<li>Use LangChain to create powerful, self-contained tools and agentic "skills."</li>
+<li>Use LangGraph to define the overarching state machine that orchestrates these skills, manages the flow of information, and implements higher-level logic like iteration, human intervention, and error handling.</li>
+</ul>
+</li>
+<li>
+<p><strong>Advanced Patterns:</strong> LangGraph enables advanced agentic patterns such as:</p>
+<ul>
+<li><strong>Iterative Refinement:</strong> Agents that can review and improve their own work through cycles.</li>
+<li><strong>Human-in-the-Loop:</strong> Integrating human oversight and decision-making into the agent's workflow.</li>
+<li><strong>Multi-Agent Collaboration:</strong> Designing systems where multiple specialized agents work together.</li>
+</ul>
+</li>
+<li>
+<p><strong>Persistence and Debugging:</strong></p>
+<ul>
+<li><strong>Checkpointers (<code>MemorySaver</code>, <code>SqliteSaver</code>, etc.):</strong> Essential for saving and resuming agent state, enabling long-running tasks, HITL, and resilience.</li>
+<li><strong>LangSmith:</strong> Provides invaluable tracing and visualization capabilities to understand, debug, and monitor the intricate workings of your agents.</li>
+</ul>
+</li>
+</ol>
+<p>Building effective agentic AI is an iterative process. By starting with clear definitions of your agent's goals, state, and available tools (using LangChain), and then orchestrating its behavior with a well-designed graph (using LangGraph), you can create highly capable and controllable AI systems.</p>
+<p>The examples provided, from basic agent construction to a more complete research assistant and advanced patterns, serve as a starting point. The principles of modularity, explicit state management, and controlled execution flow are key to scaling the complexity and reliability of your agentic applications.</p>
+<p>We encourage you to explore the official LangChain and LangGraph documentation further (see Section 9) and experiment with building your own agentic AI systems.</p>
+<h2 id="9-references-and-further-reading">9. References and Further Reading</h2>
+<p>For more detailed information, please refer to the official documentation:</p>
+<p><strong>LangChain:</strong>
+- <a href="https://python.langchain.com/docs/">LangChain Python Documentation</a>
+- <a href="https://github.com/langchain-ai/langchain">LangChain GitHub Repository</a></p>
+<p><strong>LangGraph:</strong>
+- <a href="https://langchain-ai.github.io/langgraph/">LangGraph Documentation</a>
+- <a href="https://github.com/langchain-ai/langgraph">LangGraph GitHub Repository</a></p>
+<p><strong>Debugging and Monitoring:</strong>
+- <a href="https://smith.langchain.com/">LangSmith</a> </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1324 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://memari-majid.github.io/Agentic-AI-Systems/Lessons/Chapter02/2%20Principles%20of%20Agentic%20Systems/">
+      
+      
+        <link rel="prev" href="../../Chapter01/1%20Fundamentals%20of%20Generative%20AI/">
+      
+      
+        <link rel="next" href="../../Chapter03/3%20Essential%20Components%20of%20Intelligent%20Agents/">
+      
+      
+      <link rel="icon" href="../../../image.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Chapter 02 - Building Agentic AI Systems</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#principles-of-agentic-systems" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Building Agentic AI Systems" class="md-header__button md-logo" aria-label="Building Agentic AI Systems" data-md-component="logo">
+      
+  <img src="../../../image.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Building Agentic AI Systems
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chapter 02
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Building Agentic AI Systems" class="md-nav__button md-logo" aria-label="Building Agentic AI Systems" data-md-component="logo">
+      
+  <img src="../../../image.png" alt="logo">
+
+    </a>
+    Building Agentic AI Systems
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Lessons
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Lessons
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter01/1%20Fundamentals%20of%20Generative%20AI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 01
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Chapter 02
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 02
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Concepts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-agency-in-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Agency in AI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#components-of-agentic-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Components of Agentic Systems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types-of-ai-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of AI Agents
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fundamental-properties-of-intelligent-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fundamental Properties of Intelligent Agents
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agent-architecture-design-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agent Architecture Design Patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-agent-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multi-agent Systems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ethical-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ethical Considerations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-world-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-world Applications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementation Considerations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-agency-as-a-state-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 Agency as a State Graph
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4 Agency as a State Graph">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reflection-question" class="md-nav__link">
+    <span class="md-ellipsis">
+      🤔 Reflection Question
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-sidebar-agency-as-a-state-graph-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Advanced Sidebar – Agency as a State Graph (optional)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter03/3%20Essential%20Components%20of%20Intelligent%20Agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 03
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter04/4%20Reflection%20and%20Introspection%20in%20Agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 04
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter05/5%20Enabling%20Tool%20Use%20and%20Planning%20in%20Agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 05
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter06/6%20Exploring%20the%20Coordinator%2C%20Worker%2C%20and%20Delegator%20Approach/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 06
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter07/7%20Effective%20Agentic%20System%20Design%20Techniques/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 07
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter08/8%20Building%20Trust%20in%20Generative%20AI%20Systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 08
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter09/9%20Managing%20Safety%20and%20Ethical%20Considerations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 09
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter10/10%20Common%20Use%20Cases%20and%20Applications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 10
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapter11/11%20Conclusion%20and%20Future%20Outlook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 11
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Labs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Labs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Appendix
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Appendix
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Appendix/Agentic_AI_Design_Tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Agentic AI Design
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Appendix/DSPy_Introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DSPy Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Appendix/Cloud_Agentic_AI_Services_Tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cloud Services
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Appendix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    More
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../README.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Concepts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-agency-in-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Agency in AI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#components-of-agentic-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Components of Agentic Systems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types-of-ai-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of AI Agents
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fundamental-properties-of-intelligent-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fundamental Properties of Intelligent Agents
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agent-architecture-design-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agent Architecture Design Patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-agent-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multi-agent Systems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ethical-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ethical Considerations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-world-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-world Applications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementation Considerations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-agency-as-a-state-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 Agency as a State Graph
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4 Agency as a State Graph">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reflection-question" class="md-nav__link">
+    <span class="md-ellipsis">
+      🤔 Reflection Question
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-sidebar-agency-as-a-state-graph-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Advanced Sidebar – Agency as a State Graph (optional)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="principles-of-agentic-systems">Principles of Agentic Systems</h1>
+<h2 id="overview">Overview</h2>
+<p>This chapter explores the foundational principles of agentic systems – artificial intelligence systems that can operate with autonomy, pursue goals, and interact with their environment. Understanding these principles is crucial for developing effective AI agents that can solve complex problems, make decisions, and collaborate with humans and other agents.</p>
+<h2 id="key-concepts">Key Concepts</h2>
+<h3 id="understanding-agency-in-ai">Understanding Agency in AI</h3>
+<ul>
+<li><strong>Definition</strong>: Agency refers to an entity's capacity to act independently, make decisions, and affect its environment. In AI, it signifies systems that are not merely passive tools but active participants in achieving goals.</li>
+<li><strong>Philosophical and Cognitive Science Roots</strong>: The concept of agency has deep roots in philosophy (e.g., discussions of free will, intentionality) and cognitive science (e.g., theories of mind, decision-making processes in humans and animals). Early AI researchers like Newell and Simon explored concepts like "means-ends analysis" which are foundational to goal-directed behavior in agents.</li>
+<li><strong>Formal Definitions of Agency (Wooldridge &amp; Jennings)</strong>: Michael Wooldridge and Nick Jennings, prominent researchers in multi-agent systems, define an agent as a computer system situated in some environment that is capable of autonomous action in this environment in order to meet its design objectives. They often characterize agents by properties like:<ul>
+<li><strong>Autonomy</strong>: Agents operate without the direct intervention of humans or other agents, and have some kind of control over their actions and internal state.</li>
+<li><strong>Social ability</strong>: Agents interact with other agents (and possibly humans) via some kind of agent-communication language.</li>
+<li><strong>Reactivity</strong>: Agents perceive their environment and respond in a timely fashion to changes that occur in it.</li>
+<li><strong>Pro-activeness</strong>: Agents do not simply act in response to their environment, they are able to exhibit goal-directed behavior by taking the initiative.</li>
+</ul>
+</li>
+</ul>
+<h3 id="components-of-agentic-systems">Components of Agentic Systems</h3>
+<ul>
+<li><strong>Perception Module</strong>: <ul>
+<li><strong>Interaction Flow</strong>: Receives raw sensory data (e.g., text from user, pixels from a camera, sensor readings). Pre-processes this data (e.g., tokenization for text, feature extraction for images). Outputs a structured representation of the environment relevant to the agent's task (e.g., user intent, identified objects).</li>
+</ul>
+</li>
+<li><strong>Knowledge Base</strong>: <ul>
+<li><strong>Interaction Flow</strong>: Stores facts, rules, learned associations, and potentially ontologies. The Reasoning Engine queries the KB to retrieve relevant information for decision-making. The Learning Component can update the KB with new knowledge.</li>
+</ul>
+</li>
+<li><strong>Reasoning Engine</strong>: <ul>
+<li><strong>Interaction Flow</strong>: Takes perceived environmental state and goals as input. Queries the KB for relevant knowledge. Applies inference rules or decision-making algorithms (e.g., logical deduction, probabilistic reasoning, utility calculation). Outputs a chosen action or a plan.</li>
+</ul>
+</li>
+<li><strong>Action Module</strong>: <ul>
+<li><strong>Interaction Flow</strong>: Receives the chosen action from the Reasoning Engine. Translates this abstract action into concrete commands for actuators or API calls. Executes the action in the environment.</li>
+</ul>
+</li>
+<li><strong>Learning Component</strong>: <ul>
+<li><strong>Interaction Flow</strong>: Receives feedback from the environment (e.g., rewards, errors) or from self-reflection. Updates the KB, refines parameters in the Reasoning Engine, or improves the Perception Module.</li>
+</ul>
+</li>
+<li><strong>Self-reflection Capability</strong>: <ul>
+<li><strong>Interaction Flow</strong>: Monitors the agent's own performance, decisions, and internal states. Can trigger re-evaluation of goals, plans, or knowledge by interacting with the Reasoning Engine and Learning Component.</li>
+</ul>
+</li>
+</ul>
+<p><strong>(Conceptual Diagram: A high-level flowchart showing these components with arrows indicating primary data/control flow between them. E.g., Environment -&gt; Perception -&gt; Reasoning Engine (with KB access) -&gt; Action -&gt; Environment. Learning and Self-Reflection can be shown as meta-layers influencing other components.)</strong></p>
+<h3 id="types-of-ai-agents">Types of AI Agents</h3>
+<ul>
+<li><strong>Reactive Agents</strong>: Direct mapping from inputs to actions without maintaining internal state</li>
+<li><strong>Model-based Agents</strong>: Maintain internal representations of their environment</li>
+<li><strong>Goal-based Agents</strong>: Make decisions to achieve specific objectives</li>
+<li><strong>Utility-based Agents</strong>: Maximize a utility function representing preferences</li>
+<li><strong>Learning Agents</strong>: Improve performance over time through experience</li>
+<li><strong>Multi-agent Systems</strong>: Multiple agents interacting and collaborating</li>
+</ul>
+<h3 id="fundamental-properties-of-intelligent-agents">Fundamental Properties of Intelligent Agents</h3>
+<ul>
+<li><strong>Autonomy</strong>: Operating independently with minimal human intervention</li>
+<li><strong>Reactivity</strong>: Responding appropriately to environmental changes</li>
+<li><strong>Proactivity</strong>: Taking initiative to achieve goals</li>
+<li><strong>Social ability</strong>: Interacting with humans and other agents</li>
+<li><strong>Adaptability</strong>: Modifying behavior based on experience</li>
+<li><strong>Resource management</strong>: Operating within computational and time constraints</li>
+</ul>
+<h3 id="agent-architecture-design-patterns">Agent Architecture Design Patterns</h3>
+<ul>
+<li><strong>BDI (Belief-Desire-Intention)</strong>: <ul>
+<li><strong>Detailed Explanation</strong>: Agents explicitly represent: <ul>
+<li><em>Beliefs</em>: Information the agent has about the environment (which may be incomplete or incorrect).</li>
+<li><em>Desires</em>: States of the world the agent wants to achieve (goals).</li>
+<li><em>Intentions</em>: Desires that the agent has committed to achieving, forming the basis of its plans.</li>
+</ul>
+</li>
+<li><strong>Process</strong>: The agent perceives the world, updates its beliefs. Based on beliefs and desires, it forms intentions. It then develops plans to achieve these intentions and executes them. </li>
+<li><strong>Strengths</strong>: Provides a rational, deliberative reasoning process. Good for complex, dynamic environments where agents need to manage multiple goals and adapt plans.</li>
+<li><strong>Weaknesses</strong>: Can be computationally intensive. Defining appropriate beliefs, desires, and intention-formation rules can be challenging.</li>
+<li><strong>Typical Use Cases</strong>: Robotics, complex simulation, air traffic control.</li>
+</ul>
+</li>
+<li><strong>Layered Architectures (e.g., Brooks' Subsumption Architecture)</strong>: <ul>
+<li><strong>Detailed Explanation</strong>: Organizes agent capabilities into hierarchical layers. Lower layers handle basic, reactive behaviors (e.g., obstacle avoidance). Higher layers manage more abstract, goal-oriented behaviors (e.g., navigation to a point). Higher layers can subsume or inhibit lower layers.</li>
+<li><strong>Strengths</strong>: Robustness, reactivity, incremental development.</li>
+<li><strong>Weaknesses</strong>: Can be difficult to design complex, coordinated behaviors across many layers. Less emphasis on explicit reasoning or planning.</li>
+<li><strong>Typical Use Cases</strong>: Mobile robotics, autonomous vehicles (historically).</li>
+</ul>
+</li>
+<li><strong>Cognitive Architectures (e.g., SOAR, ACT-R)</strong>: <ul>
+<li><strong>Detailed Explanation</strong>: Aim to model human cognition, incorporating theories of memory, learning, problem-solving, and decision-making. Often include components like working memory, long-term memory, production systems (rule-based reasoning), and learning mechanisms.</li>
+<li><strong>Strengths</strong>: Can lead to more human-like intelligence and learning capabilities. Provide unified theories of cognition.</li>
+<li><strong>Weaknesses</strong>: Very complex to develop and configure. Can be computationally expensive.</li>
+<li><strong>Typical Use Cases</strong>: Psychological modeling, advanced AI research, intelligent tutoring systems.</li>
+</ul>
+</li>
+<li><strong>LLM-based Architectures</strong>: <ul>
+<li><strong>Comparison</strong>: While the above are more traditional, LLM-based architectures often use the LLM as a central reasoning engine or knowledge source, augmented by external tools, memory, and perception modules. They might implicitly perform BDI-like reasoning through prompting or use LLMs to generate plans that are then executed by other components. The explicit modularity of traditional architectures is sometimes replaced by the LLM's emergent capabilities, though structured approaches (like ReAct or agent frameworks) are re-introducing modularity.</li>
+</ul>
+</li>
+</ul>
+<h3 id="multi-agent-systems">Multi-agent Systems</h3>
+<ul>
+<li><strong>Collaborative Agents</strong>: Work together to achieve shared goals</li>
+<li><strong>Competitive Agents</strong>: Pursue individual objectives, sometimes at others' expense</li>
+<li><strong>Mixed-motive Agents</strong>: Balance cooperation and competition</li>
+<li><strong>Agent Communication</strong>: Protocols and languages for inter-agent communication</li>
+<li><strong>Coordination Mechanisms</strong>: <ul>
+<li><strong>Explicit Coordination</strong>: Agents use predefined protocols or a central coordinator to manage joint activities (e.g., distributed planning, auctions for task allocation).</li>
+<li><strong>Implicit Coordination</strong>: Agents coordinate through observing each other's behavior or modifying the shared environment (e.g., stigmergy, like ants leaving pheromone trails).</li>
+</ul>
+</li>
+<li><strong>Communication Languages (ACLs)</strong>: <ul>
+<li><strong>FIPA-ACL (Foundation for Intelligent Physical Agents - Agent Communication Language)</strong>: A standard ACL specifying message types (performatives like <code>request</code>, <code>inform</code>, <code>propose</code>) and content language (e.g., SL - Semantic Language). Enables interoperability between agents developed by different parties.</li>
+<li><strong>KQML (Knowledge Query and Manipulation Language)</strong>: Another influential ACL.</li>
+</ul>
+</li>
+<li><strong>Negotiation Protocols</strong>: Standardized procedures for agents to reach agreements (e.g., Contract Net Protocol for task allocation, iterative bidding).</li>
+<li><strong>Emergent Behavior</strong>: In MAS, complex global patterns can arise from the local interactions of many individual agents, even if not explicitly programmed. This can be both a powerful feature (e.g., swarm intelligence) and a challenge (e.g., unintended consequences).</li>
+</ul>
+<h3 id="ethical-considerations">Ethical Considerations</h3>
+<ul>
+<li><strong>Alignment</strong>: Ensuring agent goals match human values</li>
+<li><strong>Transparency</strong>: Making agent decision-making processes understandable</li>
+<li><strong>Accountability</strong>: Establishing responsibility for agent actions</li>
+<li><strong>Fairness</strong>: Preventing biased decision-making</li>
+<li><strong>Privacy</strong>: Protecting sensitive information</li>
+<li><strong>Control</strong>: Maintaining human oversight of agent systems</li>
+</ul>
+<h2 id="real-world-applications">Real-world Applications</h2>
+<ul>
+<li><strong>Virtual Assistants</strong>: Personal agents managing schedules, communications, and information retrieval</li>
+<li><strong>Customer Service</strong>: Handling inquiries and solving problems autonomously</li>
+<li><strong>Healthcare</strong>: Diagnosis assistance, treatment recommendations, and patient monitoring</li>
+<li><strong>Financial Services</strong>: Portfolio management, fraud detection, and risk assessment</li>
+<li><strong>Manufacturing</strong>: Optimizing production processes and supply chain management</li>
+<li><strong>Smart Environments</strong>: Coordinating IoT devices and environmental controls</li>
+</ul>
+<h2 id="implementation-considerations">Implementation Considerations</h2>
+<ul>
+<li><strong>Design Methodology</strong>: From requirements analysis to testing and deployment</li>
+<li><strong>Technology Selection</strong>: Choosing appropriate frameworks, models, and tools</li>
+<li><strong>Integration</strong>: Connecting agents with existing systems and data sources</li>
+<li><strong>Evaluation Metrics</strong>: Measuring performance, reliability, and alignment</li>
+<li><strong>Scalability</strong>: Managing resources as agent systems grow</li>
+<li><strong>Maintenance</strong>: Updating and improving agents over time</li>
+</ul>
+<h2 id="24-agency-as-a-state-graph">2.4 Agency as a State Graph</h2>
+<p>Traditional agent implementations often mix state management, business logic, and error handling in a single codebase. Modern orchestration frameworks like LangGraph separate these concerns by modeling agency as an explicit state graph where:</p>
+<ol>
+<li><strong>State</strong> is modeled as a typed data structure (e.g., Python's <code>TypedDict</code>). This makes the agent's current understanding and context explicit and verifiable.</li>
+<li><strong>Operations (Nodes)</strong> are pure functions or methods that take the current state as input and return an updated state. This promotes modularity and testability.</li>
+<li><strong>Flow control (Edges)</strong> is defined by graph edges connecting nodes and conditional branches that direct the flow based on the current state. This makes the agent's decision-making logic explicit and visualizable.</li>
+</ol>
+<p>The example below, <code>travel_booking_langgraph.py</code> (found in this chapter's directory), implements a travel booking agent using LangGraph's <code>StateGraph</code> abstraction. It consists of three key nodes:</p>
+<ul>
+<li><code>search_flights_node</code>: Takes origin and destination, retrieves flight options, and updates the state with these options.</li>
+<li><code>select_flight_node</code>: Examines <code>flight_options</code> in the state, applies some criteria (e.g., cheapest, fastest), and updates the state with the <code>selected_flight</code>.</li>
+<li><code>book_flight_node</code>: Takes the <code>selected_flight</code> from the state, simulates a booking, and updates the state with a <code>booking_confirmation</code>.</li>
+</ul>
+<p><strong>(The chapter should then walk through key snippets of <code>travel_booking_langgraph.py</code>, explaining how <code>AgentState</code> is defined, how each node function modifies the state, how <code>add_node</code> and <code>add_edge</code> are used, and how <code>set_entry_point</code> and <code>set_finish_point</code> define the graph's execution.)</strong></p>
+<p>For instance, the state might be defined as:</p>
+<pre><code class="language-python"># State definition with TypedDict for type safety
+class AgentState(TypedDict, total=False):
+    origin: str
+    destination: str
+    flight_options: List[Dict]  # List of flight details
+    selected_flight: Dict       # The flight chosen by the agent
+    booking_confirmation: str   # Confirmation message after booking
+    error_message: str          # To store any errors encountered
+</code></pre>
+<p>A node function like <code>search_flights_node</code> would look something like this (conceptual):</p>
+<pre><code class="language-python">def search_flights_node(state: AgentState) -&gt; AgentState:
+    print(f&quot;Searching flights from {state['origin']} to {state['destination']}&quot;)
+    # In a real scenario, this would call an API (e.g., travel_provider.py)
+    try:
+        options = travel_provider.search_flights(state[&quot;origin&quot;], state[&quot;destination&quot;])
+        state[&quot;flight_options&quot;] = options
+        if not options:
+            state[&quot;error_message&quot;] = &quot;No flights found.&quot;
+    except Exception as e:
+        state[&quot;error_message&quot;] = f&quot;Error during flight search: {str(e)}&quot;
+    return state
+</code></pre>
+<p>The graph construction would then link these nodes sequentially or conditionally based on outcomes (e.g., if <code>error_message</code> is present, go to an error handling node).</p>
+<p>To run the example:</p>
+<pre><code class="language-bash">cd Chapter02
+python travel_booking_langgraph.py --origin SAN --destination SEA
+</code></pre>
+<h3 id="reflection-question">🤔 Reflection Question</h3>
+<p><strong>How does explicit state typing improve agent autonomy?</strong> Consider how TypedDict definitions make hidden assumptions explicit and reduce the chance of unexpected behavior. How might this increase the reliability of autonomous systems that need to operate without human supervision?</p>
+<h2 id="advanced-sidebar-agency-as-a-state-graph-optional">🔧 Advanced Sidebar – Agency as a State Graph <em>(optional)</em></h2>
+<p>The classic <code>TravelAgent</code> class above is imperative.  Below you will find a <strong>LangGraph</strong> equivalent that exposes the same behaviour as an explicit <em>state graph</em>.</p>
+<pre><code class="language-bash">cd Chapter02
+python travel_booking_langgraph.py --origin SAN --destination SEA
+</code></pre>
+<p>Key take-aways
+1. <strong>Typed state</strong> (<code>TypedDict</code>) makes hidden assumptions explicit.<br />
+2. Each node is a pure function → easier unit-test &amp; retry.<br />
+3. Orchestration engine handles retries/back-off, so you write less boilerplate.</p>
+<p>See <code>travel_booking_langgraph.py</code> in this folder for full source.</p>
+<h2 id="summary">Summary</h2>
+<p>Agentic systems represent a powerful paradigm for creating AI applications that can act independently, adapt to changing circumstances, and collaborate effectively with humans and other agents. By understanding the principles outlined in this chapter, developers can create more capable, reliable, and beneficial AI systems that address complex real-world problems while adhering to ethical standards and human values.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>
