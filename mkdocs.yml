@@ -115,23 +115,23 @@ nav:
       - Chapter 10: AI_Systems/Chapter10/10 Common Use Cases and Applications.md
       - Chapter 11: AI_Systems/Chapter11/11 Conclusion and Future Outlook.md
   - AI_Strategies:
-      - 1_Why_Every_Company_Needs_a_Chief_AI_Officer: AI_Strategies/1.md
-      - 2: AI_Strategies/2.md
-      - 3: AI_Strategies/3.md
-      - 4: AI_Strategies/4.md
-      - 5: AI_Strategies/5.md
-      - 6: AI_Strategies/6.md
-      - 7: AI_Strategies/7.md
-      - 8: AI_Strategies/8.md
-      - 9: AI_Strategies/9.md
-      - 10: AI_Strategies/10.md
-      - 11: AI_Strategies/11.md
-      - 12: AI_Strategies/12.md
-      - 13: AI_Strategies/13.md
-      - 14: AI_Strategies/14.md
-      - 15: AI_Strategies/15.md
-      - 16: AI_Strategies/16.md
-      - 17: AI_Strategies/17.md
+      - Chapter 1: AI_Strategies/1.md
+      - Chapter 2: AI_Strategies/2.md
+      - Chapter 3: AI_Strategies/3.md
+      - Chapter 4: AI_Strategies/4.md
+      - Chapter 5: AI_Strategies/5.md
+      - Chapter 6: AI_Strategies/6.md
+      - Chapter 7: AI_Strategies/7.md
+      - Chapter 8: AI_Strategies/8.md
+      - Chapter 9: AI_Strategies/9.md
+      - Chapter 10: AI_Strategies/10.md
+      - Chapter 11: AI_Strategies/11.md
+      - Chapter 12: AI_Strategies/12.md
+      - Chapter 13: AI_Strategies/13.md
+      - Chapter 14: AI_Strategies/14.md
+      - Chapter 15: AI_Strategies/15.md
+      - Chapter 16: AI_Strategies/16.md
+      - Chapter 17: AI_Strategies/17.md
       - README: AI_Strategies/README.md
   - Labs: Labs/README.md
   - Agentic_AI_in_Action:
