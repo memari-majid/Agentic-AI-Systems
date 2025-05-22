@@ -103,17 +103,17 @@ markdown_extensions:
 nav:
   - Home: index.md
   - AI Systems:
-      - Chapter 01: AI_Systems/Chapter01/1 Fundamentals of Generative AI.md
-      - Chapter 02: AI_Systems/Chapter02/2 Principles of Agentic Systems.md
-      - Chapter 03: AI_Systems/Chapter03/3 Essential Components of Intelligent Agents.md
-      - Chapter 04: AI_Systems/Chapter04/4 Reflection and Introspection in Agents.md
-      - Chapter 05: AI_Systems/Chapter05/5 Enabling Tool Use and Planning in Agents.md
-      - Chapter 06: AI_Systems/Chapter06/6 Exploring the Coordinator, Worker, and Delegator Approach.md
-      - Chapter 07: AI_Systems/Chapter07/7 Effective Agentic System Design Techniques.md
-      - Chapter 08: AI_Systems/Chapter08/8 Building Trust in Generative AI Systems.md
-      - Chapter 09: AI_Systems/Chapter09/9 Managing Safety and Ethical Considerations.md
-      - Chapter 10: AI_Systems/Chapter10/10 Common Use Cases and Applications.md
-      - Chapter 11: AI_Systems/Chapter11/11 Conclusion and Future Outlook.md
+      - Chapter 01: AI_Systems/Chapter01/1.md
+      - Chapter 02: AI_Systems/Chapter02/2.md
+      - Chapter 03: AI_Systems/Chapter03/3.md
+      - Chapter 04: AI_Systems/Chapter04/4.md
+      - Chapter 05: AI_Systems/Chapter05/5.md
+      - Chapter 06: AI_Systems/Chapter06/6.md
+      - Chapter 07: AI_Systems/Chapter07/7.md
+      - Chapter 08: AI_Systems/Chapter08/8.md
+      - Chapter 09: AI_Systems/Chapter09/9.md
+      - Chapter 10: AI_Systems/Chapter10/10.md
+      - Chapter 11: AI_Systems/Chapter11/11.md
   - Agentic AI in Action:
       - Agentic_AI_Design:
           - Introduction: Agentic_AI_in_Action/01_Introduction_Agentic_AI.md
