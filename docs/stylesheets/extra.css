@@ -1,7 +1,41 @@
-/* Modern gradient header */
+/* UVU Branding Colors */
+:root {
+  --uvu-green: #275D38;
+  --uvu-black: #000000;
+  --uvu-white: #FFFFFF;
+  --uvu-green-light: #3a7d50;
+  --uvu-green-dark: #1a4026;
+}
+
+/* Override Material theme colors with UVU branding */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #275D38;
+  --md-primary-fg-color--light: #3a7d50;
+  --md-primary-fg-color--dark: #1a4026;
+  --md-primary-bg-color: #FFFFFF;
+  --md-primary-bg-color--light: #F5F5F5;
+  
+  --md-accent-fg-color: #FFA726;
+  --md-accent-fg-color--transparent: rgba(255, 167, 38, 0.1);
+  --md-accent-bg-color: #FFFFFF;
+  --md-accent-bg-color--light: #FFFFFF;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #3a7d50;
+  --md-primary-fg-color--light: #4a9d60;
+  --md-primary-fg-color--dark: #275D38;
+  --md-primary-bg-color: #1a1a1a;
+  --md-primary-bg-color--light: #2a2a2a;
+  
+  --md-accent-fg-color: #C6FF00;
+  --md-accent-fg-color--transparent: rgba(198, 255, 0, 0.1);
+}
+
+/* Modern gradient header with UVU colors */
 .md-header {
-  background: linear-gradient(135deg, var(--md-primary-fg-color) 0%, var(--md-accent-fg-color) 100%);
-  box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+  background: linear-gradient(135deg, var(--uvu-green) 0%, var(--uvu-green-light) 100%);
+  box-shadow: 0 2px 20px rgba(39, 93, 56, 0.2);
 }
 
 /* Smooth transitions */
@@ -15,21 +49,21 @@
   color: var(--md-accent-fg-color);
 }
 
-/* Card-like sections */
+/* Card-like sections with UVU styling */
 .md-typeset h2 {
   margin-top: 2em;
   padding: 1em;
-  background: linear-gradient(to right, var(--md-primary-bg-color--light), transparent);
-  border-left: 4px solid var(--md-accent-fg-color);
+  background: linear-gradient(to right, rgba(39, 93, 56, 0.1), transparent);
+  border-left: 4px solid var(--uvu-green);
   border-radius: 0 8px 8px 0;
 }
 
-/* Enhanced code blocks */
+/* Enhanced code blocks with UVU colors */
 .highlight {
   position: relative;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(39, 93, 56, 0.1);
 }
 
 .highlight:before {
@@ -39,7 +73,7 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--md-primary-fg-color), var(--md-accent-fg-color));
+  background: linear-gradient(90deg, var(--uvu-green), var(--md-accent-fg-color));
 }
 
 /* Floating action buttons */
@@ -61,7 +95,7 @@
   border-radius: 50px;
 }
 
-/* Tab hover effects */
+/* Tab hover effects with UVU colors */
 .md-tabs__link {
   position: relative;
   transition: color 0.3s ease;
@@ -74,7 +108,7 @@
   left: 50%;
   width: 0;
   height: 3px;
-  background: var(--md-accent-fg-color);
+  background: var(--uvu-green);
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
@@ -88,40 +122,49 @@
 .md-typeset a {
   position: relative;
   text-decoration: none;
+  color: var(--uvu-green);
 }
 
 .md-typeset a:hover {
-  text-shadow: 0 0 8px var(--md-accent-fg-color--transparent);
+  text-shadow: 0 0 8px rgba(39, 93, 56, 0.3);
+  color: var(--uvu-green-light);
 }
 
 /* Pulse animation for important elements */
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(var(--md-accent-fg-color-rgb), 0.4);
+    box-shadow: 0 0 0 0 rgba(39, 93, 56, 0.4);
   }
   70% {
-    box-shadow: 0 0 0 10px rgba(var(--md-accent-fg-color-rgb), 0);
+    box-shadow: 0 0 0 10px rgba(39, 93, 56, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(var(--md-accent-fg-color-rgb), 0);
+    box-shadow: 0 0 0 0 rgba(39, 93, 56, 0);
   }
 }
 
 .md-button--primary {
   animation: pulse 2s infinite;
+  background-color: var(--uvu-green);
+  border-color: var(--uvu-green);
+}
+
+.md-button--primary:hover {
+  background-color: var(--uvu-green-light);
+  border-color: var(--uvu-green-light);
 }
 
 /* Modern cards for content sections */
 .md-typeset .admonition {
   border-radius: 12px;
   border: none;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 16px rgba(39, 93, 56, 0.1);
   overflow: hidden;
 }
 
-/* Gradient text for headings */
+/* Gradient text for headings with UVU colors */
 .md-typeset h1 {
-  background: linear-gradient(135deg, var(--md-primary-fg-color), var(--md-accent-fg-color));
+  background: linear-gradient(135deg, var(--uvu-green), var(--uvu-green-light));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -134,7 +177,26 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Enhanced footer */
+/* Enhanced footer with UVU colors */
 .md-footer {
-  background: linear-gradient(135deg, var(--md-primary-fg-color) 0%, var(--md-primary-fg-color--dark) 100%);
+  background: linear-gradient(135deg, var(--uvu-green) 0%, var(--uvu-green-dark) 100%);
+}
+
+/* UVU branded info boxes */
+.md-typeset .admonition.info,
+.md-typeset details.info {
+  border-left-color: var(--uvu-green);
+}
+
+.md-typeset .info > .admonition-title,
+.md-typeset .info > summary {
+  background-color: rgba(39, 93, 56, 0.1);
+  border-left-color: var(--uvu-green);
+}
+
+/* UVU branded badges in homepage */
+img[alt*="Course Status"],
+img[alt*="Last Updated"],
+img[alt*="License"] {
+  filter: hue-rotate(90deg) saturate(0.8);
 } 

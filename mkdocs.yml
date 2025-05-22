@@ -35,7 +35,7 @@ theme:
     # Palette for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: deep purple
+      primary: green
       accent: amber
       toggle:
         icon: material/brightness-7
@@ -43,8 +43,8 @@ theme:
     # Palette for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: teal
+      primary: green
+      accent: lime
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
