@@ -114,7 +114,7 @@ nav:
       - Chapter 09: AI_Systems/Chapter09/9 Managing Safety and Ethical Considerations.md
       - Chapter 10: AI_Systems/Chapter10/10 Common Use Cases and Applications.md
       - Chapter 11: AI_Systems/Chapter11/11 Conclusion and Future Outlook.md
-  - AI_Strategies:
+  - AI Strategies:
       - Chapter 1: AI_Strategies/1.md
       - Chapter 2: AI_Strategies/2.md
       - Chapter 3: AI_Strategies/3.md
@@ -134,7 +134,7 @@ nav:
       - Chapter 17: AI_Strategies/17.md
       - README: AI_Strategies/README.md
   - Labs: Labs/README.md
-  - Agentic_AI_in_Action:
+  - Agentic AI in Action:
       - Agentic_AI_Design:
           - Introduction: Agentic_AI_in_Action/01_Introduction_Agentic_AI.md
           - LangChain_Foundation: Agentic_AI_in_Action/02_LangChain_Foundation.md
