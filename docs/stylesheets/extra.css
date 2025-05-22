@@ -1,0 +1,140 @@
+/* Modern gradient header */
+.md-header {
+  background: linear-gradient(135deg, var(--md-primary-fg-color) 0%, var(--md-accent-fg-color) 100%);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Animated hover effects for navigation */
+.md-nav__link:hover {
+  transform: translateX(5px);
+  color: var(--md-accent-fg-color);
+}
+
+/* Card-like sections */
+.md-typeset h2 {
+  margin-top: 2em;
+  padding: 1em;
+  background: linear-gradient(to right, var(--md-primary-bg-color--light), transparent);
+  border-left: 4px solid var(--md-accent-fg-color);
+  border-radius: 0 8px 8px 0;
+}
+
+/* Enhanced code blocks */
+.highlight {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.highlight:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--md-primary-fg-color), var(--md-accent-fg-color));
+}
+
+/* Floating action buttons */
+.md-content__button {
+  transition: transform 0.3s ease;
+}
+
+.md-content__button:hover {
+  transform: scale(1.1);
+}
+
+/* Enhanced search */
+.md-search__form {
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.md-search__input {
+  border-radius: 50px;
+}
+
+/* Tab hover effects */
+.md-tabs__link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.md-tabs__link:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: var(--md-accent-fg-color);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.md-tabs__link:hover:after,
+.md-tabs__link--active:after {
+  width: 100%;
+}
+
+/* Glowing links */
+.md-typeset a {
+  position: relative;
+  text-decoration: none;
+}
+
+.md-typeset a:hover {
+  text-shadow: 0 0 8px var(--md-accent-fg-color--transparent);
+}
+
+/* Pulse animation for important elements */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(var(--md-accent-fg-color-rgb), 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(var(--md-accent-fg-color-rgb), 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(var(--md-accent-fg-color-rgb), 0);
+  }
+}
+
+.md-button--primary {
+  animation: pulse 2s infinite;
+}
+
+/* Modern cards for content sections */
+.md-typeset .admonition {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+/* Gradient text for headings */
+.md-typeset h1 {
+  background: linear-gradient(135deg, var(--md-primary-fg-color), var(--md-accent-fg-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  font-weight: 800;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Enhanced footer */
+.md-footer {
+  background: linear-gradient(135deg, var(--md-primary-fg-color) 0%, var(--md-primary-fg-color--dark) 100%);
+} 

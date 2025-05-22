@@ -9,41 +9,49 @@ theme:
   name: material
   logo: logo.png
   favicon: logo.png
+  custom_dir: overrides
   features:
     - navigation.instant
     - navigation.tracking
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
+    - navigation.path
     - navigation.indexes
     - navigation.top
+    - navigation.footer
+    - toc.follow
     - toc.integrate
     - content.code.copy
     - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
     - search.suggest
     - search.highlight
+    - search.share
     - header.autohide
     - announce.dismiss
   palette:
     # Palette for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: blue grey
-      accent: purple
+      primary: deep purple
+      accent: amber
       toggle:
-        icon: material/weather-night
+        icon: material/brightness-7
         name: Switch to dark mode
     # Palette for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: black
-      accent: deep-purple
+      primary: indigo
+      accent: teal
       toggle:
-        icon: material/weather-sunny
+        icon: material/brightness-4
         name: Switch to light mode
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: Inter
+    code: JetBrains Mono
   language: en
   icon:
     repo: fontawesome/brands/github
