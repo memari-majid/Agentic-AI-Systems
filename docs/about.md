@@ -1,7 +1,7 @@
 # About the Author
 
 <div style="text-align: center; margin-bottom: 20px;">
-  <img src="majid_memari_profile.png" alt="Dr. Majid Memari" width="300" style="border-radius: 10px;">
+  <img src="./majid_memari_profile.png" alt="Dr. Majid Memari" width="300" style="border-radius: 10px;">
 </div>
 
 Dr. Majid Memari is an AI researcher, educator, and solution architect passionate about advancing the design and application of high-impact artificial intelligence systems.
