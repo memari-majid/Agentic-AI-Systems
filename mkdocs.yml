@@ -116,17 +116,17 @@ nav:
       - Chapter 11: AI_Systems/Chapter11/11.md
   - Agentic AI in Action:
       - Agentic_AI_Design:
-          - Introduction: Agentic_AI_in_Action/01_Introduction_Agentic_AI.md
-          - LangChain_Foundation: Agentic_AI_in_Action/02_LangChain_Foundation.md
-          - LangGraph_Orchestration: Agentic_AI_in_Action/03_LangGraph_Orchestration.md
-          - LangChain_LangGraph_in_Action: Agentic_AI_in_Action/04_LangChain_LangGraph_In_Action.md
-          - DSPy_Optimization: Agentic_AI_in_Action/05_DSPy_Optimization.md
-          - State_Management_and_Checkpointers: Agentic_AI_in_Action/06_State_Management_Checkpointers.md
-          - Debugging_with_LangSmith: Agentic_AI_in_Action/07_Debugging_LangSmith.md
-          - Conclusion: Agentic_AI_in_Action/08_Conclusion.md
-          - References: Agentic_AI_in_Action/09_References_and_Further_Reading.md
-      - DSPy_Introduction: Agentic_AI_in_Action/DSPy_Introduction.md
-      - Cloud_Services: Agentic_AI_in_Action/Cloud_Agentic_AI_Services_Tutorial.md
+          - Chapter 1: Agentic_AI_in_Action/01_Introduction_Agentic_AI.md
+          - Chapter 2: Agentic_AI_in_Action/02_LangChain_Foundation.md
+          - Chapter 3: Agentic_AI_in_Action/03_LangGraph_Orchestration.md
+          - Chapter 4: Agentic_AI_in_Action/04_LangChain_LangGraph_In_Action.md
+          - Chapter 5: Agentic_AI_in_Action/05_DSPy_Optimization.md
+          - Chapter 6: Agentic_AI_in_Action/06_State_Management_Checkpointers.md
+          - Chapter 7: Agentic_AI_in_Action/07_Debugging_LangSmith.md
+          - Chapter 8: Agentic_AI_in_Action/08_Conclusion.md
+          - Chapter 9: Agentic_AI_in_Action/09_References_and_Further_Reading.md
+      - DSPy Overview: Agentic_AI_in_Action/DSPy_Introduction.md
+      - Cloud Services: Agentic_AI_in_Action/Cloud_Agentic_AI_Services_Tutorial.md
   - AI Strategies:
     - Chapter 1: AI_Strategies/1.md
     - Chapter 2: AI_Strategies/2.md
