@@ -9,7 +9,6 @@ theme:
   name: material
   logo: logo.png
   favicon: logo.png
-  custom_dir: overrides
   features:
     - navigation.instant
     - navigation.tracking
