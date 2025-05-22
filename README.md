@@ -119,9 +119,7 @@ This course is developed by **Majid Memari**, an AI researcher, educator, and so
 
 Dr. Memari combines academic rigor with practical industry insights to foster innovation in real-world AI applications.
 
-## Textbooks
-
-For learners seeking to further deepen their understanding of agentic AI systems and related technologies, the following textbooks are recommended as supplementary resources:
+## References
 
 -   **AI Agents in Action**
     -   By: Micheal Lanham
@@ -140,6 +138,12 @@ For learners seeking to further deepen their understanding of agentic AI systems
     -   Publisher: Packt Publishing
     -   Publication Date: April 2025
     -   [View on O'Reilly Learning](https://learning.oreilly.com/library/view/building-agentic-ai/9781803238753/)
+
+-   **The Chief AI Officer's Handbook**
+    -   By: Jarrod Anderson
+    -   Publisher: O'Reilly Media, Inc.
+    -   Publication Date: January 2025
+    -   [View on O'Reilly Learning](https://learning.oreilly.com/library/view/the-chief-ai/9781836200857/)
 
 ## Contributing
 
