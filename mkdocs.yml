@@ -110,44 +110,46 @@ markdown_extensions:
 nav:
   - Home: index.md
   - AI Systems:
-      - Chapter 01: AI_Systems/1.md
-      - Chapter 02: AI_Systems/2.md
-      - Chapter 03: AI_Systems/3.md
-      - Chapter 04: AI_Systems/4.md
-      - Chapter 05: AI_Systems/5.md
-      - Chapter 06: AI_Systems/6.md
-      - Chapter 07: AI_Systems/7.md
-      - Chapter 08: AI_Systems/8.md
-      - Chapter 09: AI_Systems/9.md
-      - Chapter 10: AI_Systems/10.md
-      - Chapter 11: AI_Systems/11.md
+      - Overview: AI_Systems/index.md
+      - Fundamentals of Generative AI: AI_Systems/1.md
+      - Principles of Agentic Systems: AI_Systems/2.md
+      - Essential Components of Intelligent Agents: AI_Systems/3.md
+      - Reflection and Introspection in Agents: AI_Systems/4.md
+      - Enabling Tool Use and Planning in Agents: AI_Systems/5.md
+      - Coordinator, Worker, and Delegator Approach: AI_Systems/6.md
+      - Effective Agentic System Design Techniques: AI_Systems/7.md
+      - Building Trust in Generative AI Systems: AI_Systems/8.md
+      - Managing Safety and Ethical Considerations: AI_Systems/9.md
+      - Common Use Cases and Applications: AI_Systems/10.md
+      - Conclusion and Future Outlook: AI_Systems/11.md
   - Agent Development:
-      - Chapter 1: Agentic_AI_in_Action/1.md
-      - Chapter 2: Agentic_AI_in_Action/2.md
-      - Chapter 3: Agentic_AI_in_Action/3.md
-      - Chapter 4: Agentic_AI_in_Action/4.md
-      - Chapter 5: Agentic_AI_in_Action/5.md
-      - Chapter 6: Agentic_AI_in_Action/6.md
-      - Chapter 7: Agentic_AI_in_Action/7.md
-      - Chapter 8: Agentic_AI_in_Action/8.md
-      - Chapter 9: Agentic_AI_in_Action/9.md
+      - Overview: Agentic_AI_in_Action/index.md
+      - Introduction to Agentic AI: Agentic_AI_in_Action/1.md
+      - LangChain - The Foundation for Agents: Agentic_AI_in_Action/2.md
+      - LangGraph - Orchestrating Complex Behavior: Agentic_AI_in_Action/3.md
+      - LangChain + LangGraph in Action: Agentic_AI_in_Action/4.md
+      - Advanced Agent Optimization with DSPy: Agentic_AI_in_Action/5.md
+      - State Management and Persistence: Agentic_AI_in_Action/6.md
+      - Debugging and Tracing with LangSmith: Agentic_AI_in_Action/7.md
+      - Conclusion: Agentic_AI_in_Action/8.md
+      - References and Further Reading: Agentic_AI_in_Action/9.md
   - AI Strategies:
-    - Chapter 1: AI_Strategies/1.md
-    - Chapter 2: AI_Strategies/2.md
-    - Chapter 3: AI_Strategies/3.md
-    - Chapter 4: AI_Strategies/4.md
-    - Chapter 5: AI_Strategies/5.md
-    - Chapter 6: AI_Strategies/6.md
-    - Chapter 7: AI_Strategies/7.md
-    - Chapter 8: AI_Strategies/8.md
-    - Chapter 9: AI_Strategies/9.md
-    - Chapter 10: AI_Strategies/10.md
-    - Chapter 11: AI_Strategies/11.md
-    - Chapter 12: AI_Strategies/12.md
-    - Chapter 13: AI_Strategies/13.md
-    - Chapter 14: AI_Strategies/14.md
-    - Chapter 15: AI_Strategies/15.md
-    - Chapter 16: AI_Strategies/16.md
-    - Chapter 17: AI_Strategies/17.md
-    - README: AI_Strategies/README.md
+      - Overview: AI_Strategies/index.md
+      - Why Every Company Needs a Chief AI Officer: AI_Strategies/1.md
+      - Key Responsibilities of a Chief AI Officer: AI_Strategies/2.md
+      - Crafting a Winning AI Strategy: AI_Strategies/3.md
+      - Building High-Performing AI Teams: AI_Strategies/4.md
+      - Data – The Lifeblood of AI: AI_Strategies/5.md
+      - AI Project Management: AI_Strategies/6.md
+      - Change Management for AI Adoption: AI_Strategies/7.md
+      - AI Ethics and Governance: AI_Strategies/8.md
+      - Measuring AI Success and ROI: AI_Strategies/9.md
+      - AI Risk Management: AI_Strategies/10.md
+      - Building AI Culture: AI_Strategies/11.md
+      - AI Vendor Management: AI_Strategies/12.md
+      - Scaling AI Across the Organization: AI_Strategies/13.md
+      - AI in Different Industries: AI_Strategies/14.md
+      - Future of AI Leadership: AI_Strategies/15.md
+      - Case Studies in AI Transformation: AI_Strategies/16.md
+      - Building Your AI Roadmap: AI_Strategies/17.md
   - About: about.md 
