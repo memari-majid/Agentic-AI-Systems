@@ -109,7 +109,7 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - AI Systems:
+  - Agentic Systems:
       - Overview: AI_Systems/index.md
       - Fundamentals of Generative AI: AI_Systems/1.md
       - Principles of Agentic Systems: AI_Systems/2.md
