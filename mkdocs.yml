@@ -83,6 +83,9 @@ extra:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/progress.js
+
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -152,4 +155,12 @@ nav:
       - Future of AI Leadership: AI_Strategies/15.md
       - Case Studies in AI Transformation: AI_Strategies/16.md
       - Building Your AI Roadmap: AI_Strategies/17.md
-  - About: about.md 
+  - About: about.md
+
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+      lang: en
+      indexing: 'full'
+      prebuild_index: true
+  - offline 

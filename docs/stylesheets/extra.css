@@ -85,14 +85,83 @@
   transform: scale(1.1);
 }
 
-/* Enhanced search */
+/* Enhanced Search Functionality */
 .md-search__form {
-  border-radius: 50px;
-  overflow: hidden;
+  border-radius: 8px;
+  background: linear-gradient(to right, var(--md-primary-bg-color--light), var(--md-primary-bg-color));
+  border: 1px solid var(--md-accent-fg-color);
+  transition: all 0.3s ease;
+}
+
+.md-search__form:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-1px);
 }
 
 .md-search__input {
-  border-radius: 50px;
+  color: var(--md-primary-fg-color);
+  font-weight: 500;
+}
+
+.md-search__input::placeholder {
+  color: var(--md-primary-fg-color--light);
+  opacity: 0.7;
+}
+
+/* Search Results Styling */
+.md-search-result {
+  border-radius: 6px;
+  margin-bottom: 0.5em;
+  transition: all 0.2s ease;
+}
+
+.md-search-result:hover {
+  background: var(--md-accent-fg-color--transparent);
+  transform: translateX(4px);
+}
+
+.md-search-result__title {
+  font-weight: 600;
+  color: var(--md-primary-fg-color);
+}
+
+.md-search-result__article {
+  font-size: 0.8em;
+  color: var(--md-accent-fg-color);
+  font-weight: 500;
+}
+
+/* Highlight search terms */
+.md-search-result mark {
+  background: var(--md-accent-fg-color);
+  color: var(--md-primary-bg-color);
+  padding: 0.1em 0.2em;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+/* Search suggestions */
+.md-search__suggest {
+  color: var(--md-primary-fg-color--light);
+  font-style: italic;
+}
+
+/* Progress indicator for search */
+.md-search__form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--md-accent-fg-color), var(--md-primary-fg-color));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.md-search__form:focus-within::before {
+  transform: scaleX(1);
 }
 
 /* Tab hover effects with UVU colors */
@@ -199,4 +268,306 @@ img[alt*="Course Status"],
 img[alt*="Last Updated"],
 img[alt*="License"] {
   filter: hue-rotate(90deg) saturate(0.8);
+}
+
+/* Reading Progress Indicators */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--md-accent-fg-color), var(--md-primary-fg-color));
+  z-index: 1000;
+  transition: width 0.3s ease;
+}
+
+/* Chapter progress in TOC */
+.md-nav__item--active .md-nav__link::after {
+  content: '📖';
+  margin-left: auto;
+  opacity: 0.7;
+}
+
+.md-nav__item--completed .md-nav__link::after {
+  content: '✓';
+  margin-left: auto;
+  color: var(--md-accent-fg-color);
+  font-weight: bold;
+}
+
+/* Section progress indicators */
+.md-typeset h2, .md-typeset h3 {
+  position: relative;
+  scroll-margin-top: 4rem;
+}
+
+.md-typeset h2::before, .md-typeset h3::before {
+  content: '';
+  position: absolute;
+  left: -1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 60%;
+  background: var(--md-primary-fg-color--light);
+  opacity: 0.3;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.md-typeset h2.in-view::before, .md-typeset h3.in-view::before {
+  background: var(--md-accent-fg-color);
+  opacity: 1;
+  box-shadow: 0 0 8px var(--md-accent-fg-color);
+}
+
+/* Chapter completion tracking */
+.chapter-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  padding: 0.75rem;
+  background: var(--md-primary-bg-color--light);
+  border-radius: 6px;
+  font-size: 0.9em;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 6px;
+  background: var(--md-primary-fg-color--light);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--md-accent-fg-color), var(--md-primary-fg-color));
+  border-radius: 3px;
+  transition: width 0.3s ease;
+  width: 0%;
+}
+
+/* Estimated reading time styling */
+.reading-time {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.85em;
+  color: var(--md-primary-fg-color--light);
+  font-weight: 500;
+  margin-bottom: 1rem;
+  padding: 0.4rem 0.8rem;
+  background: var(--md-primary-bg-color--light);
+  border-radius: 20px;
+  border-left: 3px solid var(--md-accent-fg-color);
+}
+
+.reading-time::before {
+  content: '⏱️';
+}
+
+/* Interactive Chapter Navigation */
+.chapter-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+  padding: 1rem;
+  background: linear-gradient(135deg, var(--md-primary-bg-color--light), var(--md-primary-bg-color));
+  border-radius: 12px;
+  border: 1px solid var(--md-primary-fg-color--light);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--md-accent-fg-color);
+  color: var(--md-primary-bg-color);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.nav-button:hover {
+  background: var(--md-primary-fg-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  color: var(--md-primary-bg-color);
+}
+
+.nav-button:active {
+  transform: translateY(0);
+}
+
+.nav-button.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.nav-button--prev::before {
+  content: '←';
+  font-size: 1.2em;
+}
+
+.nav-button--next::after {
+  content: '→';
+  font-size: 1.2em;
+}
+
+/* Chapter overview widget */
+.chapter-overview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  flex: 1;
+  margin: 0 1rem;
+}
+
+.chapter-title {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: var(--md-primary-fg-color);
+}
+
+.chapter-progress-mini {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+.progress-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--md-primary-fg-color--light);
+  transition: all 0.2s ease;
+}
+
+.progress-dot.completed {
+  background: var(--md-accent-fg-color);
+  box-shadow: 0 0 6px var(--md-accent-fg-color);
+}
+
+.progress-dot.current {
+  background: var(--md-primary-fg-color);
+  transform: scale(1.3);
+}
+
+/* Quick chapter selector */
+.quick-nav {
+  position: fixed;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.quick-nav:hover {
+  opacity: 1;
+}
+
+.quick-nav-button {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--md-primary-fg-color--light);
+  margin: 6px 0;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.quick-nav-button:hover {
+  background: var(--md-accent-fg-color);
+  transform: scale(1.3);
+}
+
+.quick-nav-button.active {
+  background: var(--md-primary-fg-color);
+  transform: scale(1.5);
+}
+
+/* Table of Contents enhancements */
+.md-nav--primary .md-nav__item {
+  position: relative;
+}
+
+.md-nav--primary .md-nav__item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: transparent;
+  transition: background 0.3s ease;
+}
+
+.md-nav--primary .md-nav__item--active::before {
+  background: var(--md-accent-fg-color);
+}
+
+.md-nav--primary .md-nav__item.completed::before {
+  background: linear-gradient(to bottom, var(--md-accent-fg-color), var(--md-primary-fg-color));
+}
+
+/* Chapter breadcrumb */
+.chapter-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+  font-size: 0.9em;
+  color: var(--md-primary-fg-color--light);
+}
+
+.breadcrumb-separator {
+  color: var(--md-accent-fg-color);
+  font-weight: bold;
+}
+
+.breadcrumb-link {
+  color: var(--md-primary-fg-color--light);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb-link:hover {
+  color: var(--md-accent-fg-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .chapter-navigation {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .chapter-overview {
+    margin: 0;
+    order: -1;
+  }
+  
+  .nav-button {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .quick-nav {
+    display: none;
+  }
 } 
