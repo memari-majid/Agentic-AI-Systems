@@ -1,5 +1,7 @@
 # AI Systems - Foundation Track
 
+⏱️ **Estimated reading time: 3 minutes**
+
 This track covers the theoretical underpinnings of agentic systems, providing you with the conceptual foundation needed to understand and design intelligent agents.
 
 ## Table of Contents

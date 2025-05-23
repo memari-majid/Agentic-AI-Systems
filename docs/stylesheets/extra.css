@@ -350,8 +350,8 @@ img[alt*="License"] {
   width: 0%;
 }
 
-/* Estimated reading time styling */
-.reading-time {
+/* Enhanced reading time styling for consistency */
+.md-typeset h1 + p strong:first-child {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
@@ -365,8 +365,34 @@ img[alt*="License"] {
   border-left: 3px solid var(--md-accent-fg-color);
 }
 
-.reading-time::before {
-  content: '⏱️';
+/* Ensure reading time estimates are easily scannable */
+p:has(strong:contains("Estimated reading time")) {
+  margin: 1rem 0 2rem 0;
+}
+
+/* Special styling for overview pages */
+.md-typeset h1:contains("Track") + p,
+.md-typeset h1:contains("Overview") + p,
+.md-typeset h1:contains("Labs") + p {
+  font-size: 0.9em;
+  margin-bottom: 2rem;
+}
+
+/* Progress tracking for all content pages */
+.md-content article {
+  position: relative;
+}
+
+.md-content article::before {
+  content: '';
+  position: absolute;
+  left: -2rem;
+  top: 2rem;
+  bottom: 2rem;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--md-accent-fg-color), transparent);
+  opacity: 0.3;
+  z-index: -1;
 }
 
 /* Interactive Chapter Navigation */

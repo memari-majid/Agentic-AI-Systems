@@ -155,6 +155,8 @@ nav:
       - Future of AI Leadership: AI_Strategies/15.md
       - Case Studies in AI Transformation: AI_Strategies/16.md
       - Building Your AI Roadmap: AI_Strategies/17.md
+  - Labs:
+      - Overview: Labs/README.md
   - About: about.md
 
 plugins:

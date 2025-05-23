@@ -1,5 +1,7 @@
 # AI Strategies - Leadership Track
 
+⏱️ **Estimated reading time: 3 minutes**
+
 This track explores the strategic, organizational, and leadership aspects of AI implementation. Learn how to drive successful AI transformation, build teams, and manage AI initiatives across different business contexts.
 
 ## Table of Contents

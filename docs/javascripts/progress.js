@@ -158,7 +158,9 @@ document.addEventListener('DOMContentLoaded', function() {
             'Agentic_AI_in_Action/1.md', 'Agentic_AI_in_Action/2.md', 'Agentic_AI_in_Action/3.md', 'Agentic_AI_in_Action/4.md',
             'Agentic_AI_in_Action/5.md', 'Agentic_AI_in_Action/6.md', 'Agentic_AI_in_Action/7.md', 'Agentic_AI_in_Action/8.md', 'Agentic_AI_in_Action/9.md',
             // AI Strategies  
-            'AI_Strategies/1.md', 'AI_Strategies/2.md', 'AI_Strategies/3.md', 'AI_Strategies/4.md', 'AI_Strategies/5.md', 'AI_Strategies/6.md'
+            'AI_Strategies/1.md', 'AI_Strategies/2.md', 'AI_Strategies/3.md', 'AI_Strategies/4.md', 'AI_Strategies/5.md', 'AI_Strategies/6.md',
+            'AI_Strategies/7.md', 'AI_Strategies/8.md', 'AI_Strategies/9.md', 'AI_Strategies/10.md', 'AI_Strategies/11.md', 'AI_Strategies/12.md',
+            'AI_Strategies/13.md', 'AI_Strategies/14.md', 'AI_Strategies/15.md', 'AI_Strategies/16.md', 'AI_Strategies/17.md'
         ];
 
         const currentPath = window.location.pathname.replace(/^\//, '').replace(/\/$/, '');

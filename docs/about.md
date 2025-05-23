@@ -1,5 +1,7 @@
 # About the Author
 
+⏱️ **Estimated reading time: 2 minutes**
+
 Dr. Majid Memari is an AI researcher, educator, and solution architect passionate about advancing the design and application of high-impact artificial intelligence systems.
 
 ### Academic Credentials

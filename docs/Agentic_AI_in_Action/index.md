@@ -1,5 +1,7 @@
 # Agent Development - Implementation Track
 
+⏱️ **Estimated reading time: 3 minutes**
+
 This track provides hands-on guidance for building sophisticated agentic AI systems using modern frameworks and tools. You'll learn to implement, optimize, and deploy production-ready AI agents.
 
 ## Table of Contents

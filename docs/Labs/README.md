@@ -1,5 +1,7 @@
 # Building Agentic AI Systems - Practical Labs
 
+⏱️ **Estimated reading time: 4 minutes**
+
 This directory contains hands-on exercises and example implementations that demonstrate key concepts from the course. These labs provide practical experience with agentic AI systems, focusing on implementation patterns using frameworks like LangGraph and LangChain.
 
 ## Setup
