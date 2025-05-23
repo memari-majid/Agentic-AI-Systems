@@ -159,10 +159,10 @@ nav:
       - Building Your AI Roadmap: AI_Strategies/17.md
   - Labs:
       - Overview: Labs/README.md
-      - Hello Graph - LangGraph Basics: Labs/01_hello_graph.py
-      - Travel Booking Agent: Labs/02_travel_booking_graph.py
-      - Parallel Utility Scoring: Labs/03_parallel_scoring.py
-      - Self-Critique Loops: Labs/04_reflection_loops.py
+      - Hello Graph - LangGraph Basics: Labs/01_hello_graph.md
+      - Travel Booking Agent: Labs/02_travel_booking_graph.md
+      - Parallel Utility Scoring: Labs/03_parallel_scoring.md
+      - Self-Critique Loops: Labs/04_reflection_loops.md
       - Parallel Tool Planning: Labs/05_parallel_planning.py
       - Nested Agent Graphs: Labs/06_nested_graphs.py
       - Memory & Feedback Systems: Labs/07_memory_feedback.py
