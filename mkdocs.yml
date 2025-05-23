@@ -163,14 +163,14 @@ nav:
       - Travel Booking Agent: Labs/02_travel_booking_graph.md
       - Parallel Utility Scoring: Labs/03_parallel_scoring.md
       - Self-Critique Loops: Labs/04_reflection_loops.md
-      - Parallel Tool Planning: Labs/05_parallel_planning.py
-      - Nested Agent Graphs: Labs/06_nested_graphs.py
-      - Memory & Feedback Systems: Labs/07_memory_feedback.py
-      - Tool Protocol Comparison: Labs/08_tool_protocols.py
-      - Safety Guardrails: Labs/09_guardrails.py
-      - DSPy Prompt Optimization: Labs/10_dspy_optimization.py
-      - Agent Fine-tuning: Labs/11_agent_finetuning.py
-      - Multi-Agent Systems: Labs/12_multi_agent_systems.py
+      - Parallel Tool Planning: Labs/05_parallel_planning.md
+      - Nested Agent Graphs: Labs/06_nested_graphs.md
+      - Memory & Feedback Systems: Labs/07_memory_feedback.md
+      - Tool Protocol Comparison: Labs/08_tool_protocols.md
+      - Safety Guardrails: Labs/09_guardrails.md
+      - DSPy Prompt Optimization: Labs/10_dspy_optimization.md
+      - Agent Fine-tuning: Labs/11_agent_finetuning.md
+      - Multi-Agent Systems: Labs/12_multi_agent_systems.md
   - About: about.md
 
 plugins:
