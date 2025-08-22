@@ -38,8 +38,8 @@
 
 </div>
 
-!!! info "🆕 **Latest Update: Modern AI Frameworks (2024-2025)**"
-    **7 Brand New Chapters** covering the hottest technologies in AI agent development
+!!! info "**Modern AI Frameworks (2024-2025)**"
+    **7 Comprehensive Chapters** covering the latest technologies in AI agent development
     
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1rem 0;">
     
@@ -111,10 +111,10 @@
 </div>
 
 <div style="border: 2px solid #43e97b; border-radius: 16px; padding: 2rem; position: relative; background: linear-gradient(135deg, rgba(67, 233, 123, 0.1), rgba(56, 249, 215, 0.1));">
-<div style="position: absolute; top: -12px; left: 20px; background: linear-gradient(45deg, #FF6B6B, #4ECDC4); color: white; padding: 4px 12px; border-radius: 12px; font-size: 0.8rem; font-weight: bold;">🆕 NEW</div>
+<div style="position: absolute; top: -12px; left: 20px; background: #43e97b; color: white; padding: 4px 12px; border-radius: 12px; font-size: 0.8rem; font-weight: bold;">ADVANCED</div>
 <h3 style="color: #43e97b; margin: 0.5rem 0 1rem 0;">🚀 Modern AI Frameworks</h3>
 <div style="background: #43e97b; color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; margin-bottom: 1rem; display: inline-block;">7 Chapters</div>
-<p style="margin-bottom: 1.5rem; color: #666;">Master cutting-edge 2024-2025 technologies</p>
+<p style="margin-bottom: 1.5rem; color: #666;">Master advanced modern technologies</p>
 <ul style="margin-bottom: 2rem; color: #666;">
 <li>Pydantic AI & MCP protocol</li>
 <li>OpenAI Swarm & CrewAI</li>
@@ -122,7 +122,7 @@
 <li>Enterprise platforms</li>
 </ul>
 <div style="text-align: center;">
-<a href="Modern_AI_Frameworks/index.md" style="display: inline-block; padding: 10px 20px; background: linear-gradient(45deg, #43e97b, #38f9d7); color: white; text-decoration: none; border-radius: 20px; font-weight: bold;">Explore Latest →</a>
+<a href="Modern_AI_Frameworks/index.md" style="display: inline-block; padding: 10px 20px; background: linear-gradient(45deg, #43e97b, #38f9d7); color: white; text-decoration: none; border-radius: 20px; font-weight: bold;">Explore Advanced →</a>
 </div>
 </div>
 
@@ -221,8 +221,8 @@
 </div>
 
 <div style="text-align: center; padding: 1.5rem; border-radius: 12px; background: linear-gradient(135deg, #f093fb, #f5576c); color: white;">
-<div style="font-size: 2rem; margin-bottom: 0.5rem;">🆕</div>
-<h4 style="margin: 0.5rem 0; color: white;">Latest 2025 Tech</h4>
+<div style="font-size: 2rem; margin-bottom: 0.5rem;">🔧</div>
+<h4 style="margin: 0.5rem 0; color: white;">Modern Frameworks</h4>
 <p style="margin: 0; opacity: 0.9; font-size: 0.9rem;">Pydantic AI, MCP, OpenAI Swarm & more</p>
 </div>
 
@@ -241,7 +241,7 @@
 <div style="text-align: center; padding: 1.5rem; border-radius: 12px; background: linear-gradient(135deg, #fa709a, #fee140); color: white;">
 <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔄</div>
 <h4 style="margin: 0.5rem 0; color: white;">Always Current</h4>
-<p style="margin: 0; opacity: 0.9; font-size: 0.9rem;">Continuously updated with latest trends</p>
+<p style="margin: 0; opacity: 0.9; font-size: 0.9rem;">Continuously updated content</p>
 </div>
 
 <div style="text-align: center; padding: 1.5rem; border-radius: 12px; background: linear-gradient(135deg, #a8edea, #fed6e3); color: #333;">
@@ -267,7 +267,7 @@
     </div>
     
     <div style="padding: 1rem; border-radius: 8px; background: linear-gradient(135deg, #43e97b20, #38f9d720); border-left: 4px solid #43e97b;">
-    <h4 style="margin: 0 0 0.5rem 0; color: #43e97b;">🆕 Modern Frameworks</h4>
+    <h4 style="margin: 0 0 0.5rem 0; color: #43e97b;">🔧 Modern Frameworks</h4>
     <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
     <span style="background: #43e97b; color: white; padding: 2px 8px; border-radius: 12px; font-size: 0.8rem;">Pydantic AI</span>
     <span style="background: #43e97b; color: white; padding: 2px 8px; border-radius: 12px; font-size: 0.8rem;">MCP</span>
@@ -304,7 +304,7 @@
 <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
 <a href="AI_Systems/1.md" style="padding: 10px 20px; background: rgba(255,255,255,0.2); color: white; text-decoration: none; border-radius: 20px; font-weight: bold; backdrop-filter: blur(10px);">🧠 Theory First</a>
 <a href="Agentic_AI_in_Action/1.md" style="padding: 10px 20px; background: rgba(255,255,255,0.2); color: white; text-decoration: none; border-radius: 20px; font-weight: bold; backdrop-filter: blur(10px);">⚡ Jump to Code</a>
-<a href="Modern_AI_Frameworks/index.md" style="padding: 10px 20px; background: rgba(255,255,255,0.2); color: white; text-decoration: none; border-radius: 20px; font-weight: bold; backdrop-filter: blur(10px);">🆕 Latest Tech</a>
+<a href="Modern_AI_Frameworks/index.md" style="padding: 10px 20px; background: rgba(255,255,255,0.2); color: white; text-decoration: none; border-radius: 20px; font-weight: bold; backdrop-filter: blur(10px);">🔧 Modern Tech</a>
 </div>
 </div>
 </div>
