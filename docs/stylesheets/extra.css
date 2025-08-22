@@ -596,4 +596,203 @@ p:has(strong:contains("Estimated reading time")) {
   .quick-nav {
     display: none;
   }
+}
+
+/* Enhanced UX for online learning */
+.learning-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  border-left: 4px solid var(--md-accent-fg-color);
+}
+
+.learning-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Interactive progress indicators */
+.progress-indicator {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.progress-bar-interactive {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 0.5rem 0;
+}
+
+.progress-fill-interactive {
+  height: 100%;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  border-radius: 4px;
+  transition: width 0.6s ease;
+  position: relative;
+}
+
+.progress-fill-interactive::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* Course completion tracking */
+.completion-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  background: var(--md-accent-fg-color);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.completion-status.completed {
+  background: #28a745;
+}
+
+.completion-status.in-progress {
+  background: #ffc107;
+  color: #333;
+}
+
+/* Enhanced visual hierarchy for course structure */
+.course-section {
+  margin: 2rem 0;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--md-accent-fg-color);
+}
+
+.section-icon {
+  font-size: 2rem;
+  color: var(--md-accent-fg-color);
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--md-primary-fg-color);
+  margin: 0;
+}
+
+.section-subtitle {
+  font-size: 0.9rem;
+  color: var(--md-primary-fg-color--light);
+  margin: 0;
+}
+
+/* Interactive chapter cards */
+.chapter-card {
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  background: var(--md-primary-bg-color--light);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.chapter-card:hover {
+  border-color: var(--md-accent-fg-color);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.chapter-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--md-accent-fg-color), var(--md-primary-fg-color));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.chapter-card:hover::before {
+  opacity: 1;
+}
+
+.chapter-number {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: var(--md-accent-fg-color);
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.chapter-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--md-primary-fg-color);
+  margin-bottom: 0.5rem;
+}
+
+.chapter-description {
+  color: var(--md-primary-fg-color--light);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Mobile-friendly improvements */
+@media (max-width: 768px) {
+  .learning-card {
+    margin: 1rem 0.5rem;
+  }
+  
+  .course-section {
+    margin: 1.5rem 0;
+  }
+  
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .chapter-card {
+    padding: 1rem;
+  }
+  
+  .chapter-number {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 0.9rem;
+  }
 } 
