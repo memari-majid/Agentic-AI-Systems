@@ -2,7 +2,7 @@
 
 ⏱️ **Estimated reading time: 3 minutes**
 
-This track explores the strategic, organizational, and leadership aspects of AI implementation. Learn how to drive successful AI transformation, build teams, and manage AI initiatives across different business contexts.
+This track explores the strategic, organizational, and leadership aspects of AI implementation. Learn how to drive successful AI transformation, build teams, and manage AI initiatives across different business contexts. While focusing on strategic considerations, this track complements the technical implementations covered in [Modern AI Frameworks](../Modern_AI_Frameworks/index.md) including enterprise platforms like AWS Bedrock, Google Vertex AI, and autonomous agent solutions.
 
 ## Table of Contents
 

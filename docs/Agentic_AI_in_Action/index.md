@@ -2,7 +2,7 @@
 
 ⏱️ **Estimated reading time: 3 minutes**
 
-This track provides hands-on guidance for building sophisticated agentic AI systems using modern frameworks and tools. You'll learn to implement, optimize, and deploy production-ready AI agents.
+This track provides hands-on guidance for building sophisticated agentic AI systems using LangChain and LangGraph. You'll learn to implement, optimize, and deploy production-ready AI agents. For the latest technologies like Pydantic AI, MCP, and OpenAI Swarm, see our [Modern AI Frameworks](../Modern_AI_Frameworks/index.md) track.
 
 ## Table of Contents
 
@@ -36,6 +36,23 @@ This track is designed for hands-on learning. Start with **Chapter 1** for an ov
 - **DSPy**: Prompt optimization and evaluation
 - **LangSmith**: Debugging and monitoring
 - **Python**: Primary development language
+
+## What's Next?
+
+After mastering LangChain and LangGraph fundamentals, explore:
+
+- **[Modern AI Frameworks](../Modern_AI_Frameworks/index.md)**: Latest 2024-2025 technologies including Pydantic AI for type-safe development, Model Context Protocol for standardized integrations, and autonomous agents like AutoGPT
+- **[AI Systems](../AI_Systems/index.md)**: Theoretical foundations for deeper understanding
+- **[AI Strategies](../AI_Strategies/index.md)**: Strategic implementation and organizational transformation
+
+## Alternative Modern Approaches
+
+While this track focuses on LangChain/LangGraph, consider these modern alternatives covered in other sections:
+
+- **Pydantic AI**: For type-safe, production-ready agents with structured outputs
+- **OpenAI Swarm**: For lightweight multi-agent coordination
+- **CrewAI**: For role-based agent teams
+- **Enterprise Platforms**: AWS Bedrock, Google Vertex AI, Azure AI for production deployment
 
 ---
 

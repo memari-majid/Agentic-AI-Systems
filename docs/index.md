@@ -62,7 +62,20 @@ Master practical agent development with modern tools:
 - Debugging with LangSmith
 - Production deployment strategies
 
-### 3. AI Strategies
+### 3. Modern AI Frameworks 🆕
+**Latest Technologies Track · 7 Chapters**
+
+[Explore Modern Frameworks →](Modern_AI_Frameworks/index.md)
+
+Master the newest agent technologies (2024-2025):
+- Pydantic AI for type-safe development
+- Model Context Protocol (MCP) standard
+- OpenAI Swarm, CrewAI, AutoGen orchestration
+- AutoGPT and autonomous agents
+- AWS Bedrock, Google Vertex, Azure AI platforms
+- Comprehensive technology comparison
+
+### 4. AI Strategies
 **Leadership Track · 17 Chapters**
 
 [Start AI Strategies →](AI_Strategies/1.md)
@@ -90,7 +103,8 @@ Lead successful AI transformation:
 ### Recommended Learning Path
 1. **Start with Theory** → Begin with [AI Systems](AI_Systems/1.md) to build a solid foundation
 2. **Apply in Practice** → Move to [Agent Development](Agentic_AI_in_Action/1.md) for hands-on experience  
-3. **Lead with Strategy** → Explore [AI Strategies](AI_Strategies/1.md) for organizational impact
+3. **Explore Latest Tech** → Discover [Modern AI Frameworks](Modern_AI_Frameworks/index.md) for cutting-edge solutions
+4. **Lead with Strategy** → Explore [AI Strategies](AI_Strategies/1.md) for organizational impact
 
 Each track is designed to be self-contained, so you can also jump directly to your area of interest!
 

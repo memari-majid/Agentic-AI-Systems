@@ -2,7 +2,7 @@
 
 ⏱️ **Estimated reading time: 3 minutes**
 
-This track covers the theoretical underpinnings of agentic systems, providing you with the conceptual foundation needed to understand and design intelligent agents.
+This track covers the theoretical underpinnings of agentic systems, providing you with the conceptual foundation needed to understand and design intelligent agents. These principles form the basis for working with modern frameworks like Pydantic AI, OpenAI Swarm, and enterprise platforms covered in our [Modern AI Frameworks](../Modern_AI_Frameworks/index.md) track.
 
 ## Table of Contents
 
@@ -29,6 +29,14 @@ Start with **Chapter 1** to build foundational knowledge of generative AI, then 
 - Basic understanding of machine learning concepts
 - Familiarity with artificial intelligence fundamentals
 - Programming experience (helpful but not required for theoretical understanding)
+
+## What's Next?
+
+After completing the AI Systems foundation track, you can:
+
+- Apply these concepts practically in [Agent Development](../Agentic_AI_in_Action/index.md) with LangChain and LangGraph
+- Explore cutting-edge implementations in [Modern AI Frameworks](../Modern_AI_Frameworks/index.md) with Pydantic AI, MCP, and autonomous agents
+- Learn strategic implementation in [AI Strategies](../AI_Strategies/index.md) for organizational transformation
 
 ---
 
