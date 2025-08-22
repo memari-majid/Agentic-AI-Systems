@@ -71,7 +71,7 @@
     </div>
     
     <div align="center" style="margin: 1.5rem 0;">
-    <a href="Modern_AI_Frameworks/index.md" style="display: inline-block; padding: 12px 24px; background: linear-gradient(45deg, #FF6B6B, #4ECDC4); color: white; text-decoration: none; border-radius: 25px; font-weight: bold;">🚀 Explore Latest Technologies</a>
+    <a href="Modern_AI_Frameworks/index.md" style="display: inline-block; padding: 12px 24px; background: linear-gradient(45deg, #FF6B6B, #4ECDC4); color: white; text-decoration: none; border-radius: 25px; font-weight: bold;">🚀 Explore Advanced Technologies</a>
     </div>
 
 ## 📚 Choose Your Learning Path
@@ -90,7 +90,7 @@
 <li>Safety and ethics</li>
 </ul>
 <div style="text-align: center;">
-<a href="AI_Systems/1.md" style="display: inline-block; padding: 10px 20px; background: #667eea; color: white; text-decoration: none; border-radius: 20px; font-weight: bold;">Start Learning →</a>
+<a href="AI_Systems/index.md" style="display: inline-block; padding: 10px 20px; background: #667eea; color: white; text-decoration: none; border-radius: 20px; font-weight: bold;">Start Learning →</a>
 </div>
 </div>
 
@@ -106,7 +106,7 @@
 <li>Production deployment</li>
 </ul>
 <div style="text-align: center;">
-<a href="Agentic_AI_in_Action/1.md" style="display: inline-block; padding: 10px 20px; background: #f093fb; color: white; text-decoration: none; border-radius: 20px; font-weight: bold;">Start Building →</a>
+<a href="Agentic_AI_in_Action/index.md" style="display: inline-block; padding: 10px 20px; background: #f093fb; color: white; text-decoration: none; border-radius: 20px; font-weight: bold;">Start Building →</a>
 </div>
 </div>
 
@@ -138,7 +138,7 @@
 <li>Enterprise transformation</li>
 </ul>
 <div style="text-align: center;">
-<a href="AI_Strategies/1.md" style="display: inline-block; padding: 10px 20px; background: #4facfe; color: white; text-decoration: none; border-radius: 20px; font-weight: bold;">Lead Change →</a>
+<a href="AI_Strategies/index.md" style="display: inline-block; padding: 10px 20px; background: #4facfe; color: white; text-decoration: none; border-radius: 20px; font-weight: bold;">Lead Change →</a>
 </div>
 </div>
 
@@ -181,14 +181,14 @@
     
     <div style="display: flex; align-items: center; gap: 0.5rem;">
     <div style="width: 30px; height: 30px; border-radius: 50%; background: #667eea; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold;">1</div>
-    <a href="AI_Systems/1.md" style="text-decoration: none; color: #667eea; font-weight: bold;">Theory</a>
+    <a href="AI_Systems/index.md" style="text-decoration: none; color: #667eea; font-weight: bold;">Theory</a>
     </div>
     
     <div style="color: #ccc; font-size: 1.5rem;">→</div>
     
     <div style="display: flex; align-items: center; gap: 0.5rem;">
     <div style="width: 30px; height: 30px; border-radius: 50%; background: #f093fb; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold;">2</div>
-    <a href="Agentic_AI_in_Action/1.md" style="text-decoration: none; color: #f093fb; font-weight: bold;">Practice</a>
+    <a href="Agentic_AI_in_Action/index.md" style="text-decoration: none; color: #f093fb; font-weight: bold;">Practice</a>
     </div>
     
     <div style="color: #ccc; font-size: 1.5rem;">→</div>
@@ -202,7 +202,7 @@
     
     <div style="display: flex; align-items: center; gap: 0.5rem;">
     <div style="width: 30px; height: 30px; border-radius: 50%; background: #4facfe; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold;">4</div>
-    <a href="AI_Strategies/1.md" style="text-decoration: none; color: #4facfe; font-weight: bold;">Strategy</a>
+    <a href="AI_Strategies/index.md" style="text-decoration: none; color: #4facfe; font-weight: bold;">Strategy</a>
     </div>
     
     </div>
@@ -302,8 +302,8 @@
 <h3 style="margin: 0 0 1rem 0; color: white;">🎯 Start Your AI Agent Journey</h3>
 <p style="margin: 0 0 1.5rem 0; opacity: 0.9;">Choose your path and begin mastering the future of AI</p>
 <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-<a href="AI_Systems/1.md" style="padding: 10px 20px; background: rgba(255,255,255,0.2); color: white; text-decoration: none; border-radius: 20px; font-weight: bold; backdrop-filter: blur(10px);">🧠 Theory First</a>
-<a href="Agentic_AI_in_Action/1.md" style="padding: 10px 20px; background: rgba(255,255,255,0.2); color: white; text-decoration: none; border-radius: 20px; font-weight: bold; backdrop-filter: blur(10px);">⚡ Jump to Code</a>
+<a href="AI_Systems/index.md" style="padding: 10px 20px; background: rgba(255,255,255,0.2); color: white; text-decoration: none; border-radius: 20px; font-weight: bold; backdrop-filter: blur(10px);">🧠 Theory First</a>
+<a href="Agentic_AI_in_Action/index.md" style="padding: 10px 20px; background: rgba(255,255,255,0.2); color: white; text-decoration: none; border-radius: 20px; font-weight: bold; backdrop-filter: blur(10px);">⚡ Jump to Code</a>
 <a href="Modern_AI_Frameworks/index.md" style="padding: 10px 20px; background: rgba(255,255,255,0.2); color: white; text-decoration: none; border-radius: 20px; font-weight: bold; backdrop-filter: blur(10px);">🔧 Modern Tech</a>
 </div>
 </div>
