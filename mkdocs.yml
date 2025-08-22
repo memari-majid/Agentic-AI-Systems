@@ -138,6 +138,14 @@ nav:
       - Debugging and Tracing with LangSmith: Agentic_AI_in_Action/7.md
       - Conclusion: Agentic_AI_in_Action/8.md
       - References and Further Reading: Agentic_AI_in_Action/9.md
+  - Modern AI Frameworks:
+      - Overview: Modern_AI_Frameworks/index.md
+      - Pydantic AI - Type-Safe Agents: Modern_AI_Frameworks/pydantic_ai.md
+      - Model Context Protocol (MCP): Modern_AI_Frameworks/mcp.md
+      - Orchestration Frameworks: Modern_AI_Frameworks/orchestration.md
+      - Autonomous Agent Platforms: Modern_AI_Frameworks/autonomous_agents.md
+      - Enterprise AI Platforms: Modern_AI_Frameworks/enterprise_platforms.md
+      - Technology Comparison Guide: Modern_AI_Frameworks/technology_comparison.md
   - AI Strategies:
       - Overview: AI_Strategies/index.md
       - Why Every Company Needs a Chief AI Officer: AI_Strategies/1.md
