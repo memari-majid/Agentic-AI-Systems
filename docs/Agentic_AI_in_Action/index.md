@@ -15,8 +15,9 @@ This track provides hands-on guidance for building sophisticated agentic AI syst
 | [Chapter 5](5.md) | Advanced Agent Optimization with DSPy | Optimizing agent performance and prompt engineering |
 | [Chapter 6](6.md) | State Management and Persistence with Checkpointers | Managing agent memory and state across sessions |
 | [Chapter 7](7.md) | Debugging and Tracing with LangSmith | Monitoring, debugging, and improving agent performance |
-| [Chapter 8](8.md) | Conclusion | Best practices and deployment considerations |
-| [Chapter 9](9.md) | References and Further Reading | Additional resources and advanced topics |
+| [Chapter 8](8.md) | Leveraging Unstructured Data with LLMs | Practical implementation guide for RAG, fine-tuning, and hybrid approaches |
+| [Chapter 9](9.md) | Conclusion | Best practices and deployment considerations |
+| [Chapter 10](10.md) | References and Further Reading | Additional resources and advanced topics |
 
 ## Learning Path
 

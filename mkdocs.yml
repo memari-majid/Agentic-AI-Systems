@@ -137,8 +137,9 @@ nav:
       - Advanced Agent Optimization with DSPy: Agentic_AI_in_Action/5.md
       - State Management and Persistence: Agentic_AI_in_Action/6.md
       - Debugging and Tracing with LangSmith: Agentic_AI_in_Action/7.md
-      - Conclusion: Agentic_AI_in_Action/8.md
-      - References and Further Reading: Agentic_AI_in_Action/9.md
+      - Leveraging Unstructured Data with LLMs: Agentic_AI_in_Action/8.md
+      - Conclusion: Agentic_AI_in_Action/9.md
+      - References and Further Reading: Agentic_AI_in_Action/10.md
   - Modern AI Frameworks:
       - Overview: Modern_AI_Frameworks/index.md
       - Pydantic AI - Type-Safe Agents: Modern_AI_Frameworks/pydantic_ai.md
@@ -147,6 +148,17 @@ nav:
       - Autonomous Agent Platforms: Modern_AI_Frameworks/autonomous_agents.md
       - Enterprise AI Platforms: Modern_AI_Frameworks/enterprise_platforms.md
       - Technology Comparison Guide: Modern_AI_Frameworks/technology_comparison.md
+  - Unstructured Data & LLMs:
+      - Overview: Unstructured_Data_LLMs/index.md
+      - Foundation Concepts: Unstructured_Data_LLMs/1-foundations.md
+      - RAG vs Fine-tuning Strategy: Unstructured_Data_LLMs/2-strategy-comparison.md
+      - Advanced RAG Techniques: Unstructured_Data_LLMs/3-advanced-rag.md
+      - Hybrid Implementation Approaches: Unstructured_Data_LLMs/4-hybrid-approaches.md
+      - Evaluation & Benchmarking: Unstructured_Data_LLMs/5-evaluation-metrics.md
+      - Data Governance & Privacy: Unstructured_Data_LLMs/6-governance-privacy.md
+      - Enterprise Tooling & AWS: Unstructured_Data_LLMs/7-enterprise-aws.md
+      - Industry Case Studies: Unstructured_Data_LLMs/8-case-studies.md
+      - Future Directions: Unstructured_Data_LLMs/9-future-trends.md
   - AI Strategies:
       - Overview: AI_Strategies/index.md
       - Why Every Company Needs a Chief AI Officer: AI_Strategies/1.md
@@ -180,6 +192,7 @@ nav:
       - DSPy Prompt Optimization: Labs/10_dspy_optimization.md
       - Agent Fine-tuning: Labs/11_agent_finetuning.md
       - Multi-Agent Systems: Labs/12_multi_agent_systems.md
+      - Document RAG with Agents: Labs/13_document_rag_agents.md
   - About: about.md
 
 plugins:
