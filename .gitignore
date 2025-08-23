@@ -38,6 +38,7 @@ venv.bak/
 # IDEs
 .vscode/
 .idea/
+.cursor/
 *.swp
 *.swo
 *~
@@ -57,3 +58,7 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+# Hidden files and directories (dotfiles)
+.*
+!.gitignore
