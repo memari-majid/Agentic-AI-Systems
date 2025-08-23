@@ -151,6 +151,9 @@ nav:
       - Autonomous Agent Platforms: Modern_AI_Frameworks/autonomous_agents.md
       - Enterprise AI Platforms: Modern_AI_Frameworks/enterprise_platforms.md
       - Technology Comparison Guide: Modern_AI_Frameworks/technology_comparison.md
+  - Frontier Research:
+      - Overview: Frontier_Research/index.md
+      - Leveraging Unstructured Data with LLMs: Frontier_Research/leveraging_unstructured_data_llms.md
   - AI Strategies:
       - Overview: AI_Strategies/index.md
       - Why Every Company Needs a Chief AI Officer: AI_Strategies/1.md

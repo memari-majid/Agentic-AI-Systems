@@ -19,7 +19,7 @@
     <div class="stat-label">Hands-on Labs</div>
   </div>
   <div class="stat-item">
-    <div class="stat-number">4</div>
+    <div class="stat-number">5</div>
     <div class="stat-label">Learning Tracks</div>
   </div>
   <div class="stat-item">
@@ -71,6 +71,19 @@ This course provides a rigorous exploration of the theoretical underpinnings and
       <li>Model Control Protocol</li>
       <li>Enterprise Platforms</li>
       <li>Technology Comparison</li>
+    </ul>
+  </div>
+
+  <div class="path-card">
+    <div class="path-icon">🔬</div>
+    <h3>Frontier Research</h3>
+    <div class="path-chapters">Advanced Topics</div>
+    <p>Explore cutting-edge research and advanced methodologies including comprehensive analyses of RAG vs Fine-tuning.</p>
+    <ul>
+      <li>Unstructured Data with LLMs</li>
+      <li>Comparative Analysis & Case Studies</li>
+      <li>Implementation Strategies</li>
+      <li>Future Directions</li>
     </ul>
   </div>
 
