@@ -4,6 +4,9 @@ repo_url: https://github.com/memari-majid/Agentic-AI-Systems
 repo_name: memari-majid/Agentic-AI-Systems
 # edit_uri removed to disable "Edit this page" links
 
+# Source directory for course content
+docs_dir: course
+
 # Theme configuration
 theme:
   name: material

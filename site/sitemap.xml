@@ -1,71 +1,263 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://memari-majid.github.io/Agentic-AI-Systems/</loc>
-         <lastmod>2025-05-17</lastmod>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/index.html</loc>
+         <lastmod>2025-08-23</lastmod>
     </url>
     <url>
-         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Appendix/</loc>
-         <lastmod>2025-05-17</lastmod>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/about.html</loc>
+         <lastmod>2025-08-23</lastmod>
     </url>
     <url>
-         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Appendix/Agentic_AI_Design_Tutorial/</loc>
-         <lastmod>2025-05-17</lastmod>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Strategies/index.html</loc>
+         <lastmod>2025-08-23</lastmod>
     </url>
     <url>
-         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Appendix/Cloud_Agentic_AI_Services_Tutorial/</loc>
-         <lastmod>2025-05-17</lastmod>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Strategies/1.html</loc>
+         <lastmod>2025-08-23</lastmod>
     </url>
     <url>
-         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Appendix/DSPy_Introduction/</loc>
-         <lastmod>2025-05-17</lastmod>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Strategies/10.html</loc>
+         <lastmod>2025-08-23</lastmod>
     </url>
     <url>
-         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Labs/</loc>
-         <lastmod>2025-05-17</lastmod>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Strategies/11.html</loc>
+         <lastmod>2025-08-23</lastmod>
     </url>
     <url>
-         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Lessons/Chapter01/1%20Fundamentals%20of%20Generative%20AI/</loc>
-         <lastmod>2025-05-17</lastmod>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Strategies/12.html</loc>
+         <lastmod>2025-08-23</lastmod>
     </url>
     <url>
-         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Lessons/Chapter02/2%20Principles%20of%20Agentic%20Systems/</loc>
-         <lastmod>2025-05-17</lastmod>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Strategies/13.html</loc>
+         <lastmod>2025-08-23</lastmod>
     </url>
     <url>
-         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Lessons/Chapter03/3%20Essential%20Components%20of%20Intelligent%20Agents/</loc>
-         <lastmod>2025-05-17</lastmod>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Strategies/14.html</loc>
+         <lastmod>2025-08-23</lastmod>
     </url>
     <url>
-         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Lessons/Chapter04/4%20Reflection%20and%20Introspection%20in%20Agents/</loc>
-         <lastmod>2025-05-17</lastmod>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Strategies/15.html</loc>
+         <lastmod>2025-08-23</lastmod>
     </url>
     <url>
-         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Lessons/Chapter05/5%20Enabling%20Tool%20Use%20and%20Planning%20in%20Agents/</loc>
-         <lastmod>2025-05-17</lastmod>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Strategies/16.html</loc>
+         <lastmod>2025-08-23</lastmod>
     </url>
     <url>
-         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Lessons/Chapter06/6%20Exploring%20the%20Coordinator%2C%20Worker%2C%20and%20Delegator%20Approach/</loc>
-         <lastmod>2025-05-17</lastmod>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Strategies/17.html</loc>
+         <lastmod>2025-08-23</lastmod>
     </url>
     <url>
-         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Lessons/Chapter07/7%20Effective%20Agentic%20System%20Design%20Techniques/</loc>
-         <lastmod>2025-05-17</lastmod>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Strategies/2.html</loc>
+         <lastmod>2025-08-23</lastmod>
     </url>
     <url>
-         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Lessons/Chapter08/8%20Building%20Trust%20in%20Generative%20AI%20Systems/</loc>
-         <lastmod>2025-05-17</lastmod>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Strategies/3.html</loc>
+         <lastmod>2025-08-23</lastmod>
     </url>
     <url>
-         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Lessons/Chapter09/9%20Managing%20Safety%20and%20Ethical%20Considerations/</loc>
-         <lastmod>2025-05-17</lastmod>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Strategies/4.html</loc>
+         <lastmod>2025-08-23</lastmod>
     </url>
     <url>
-         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Lessons/Chapter10/10%20Common%20Use%20Cases%20and%20Applications/</loc>
-         <lastmod>2025-05-17</lastmod>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Strategies/5.html</loc>
+         <lastmod>2025-08-23</lastmod>
     </url>
     <url>
-         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Lessons/Chapter11/11%20Conclusion%20and%20Future%20Outlook/</loc>
-         <lastmod>2025-05-17</lastmod>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Strategies/6.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Strategies/7.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Strategies/8.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Strategies/9.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Systems/index.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Systems/1.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Systems/10.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Systems/11.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Systems/2.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Systems/3.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Systems/4.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Systems/5.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Systems/6.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Systems/7.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Systems/8.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/AI_Systems/9.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Agentic_AI_in_Action/index.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Agentic_AI_in_Action/1.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Agentic_AI_in_Action/10.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Agentic_AI_in_Action/2.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Agentic_AI_in_Action/3.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Agentic_AI_in_Action/4.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Agentic_AI_in_Action/5.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Agentic_AI_in_Action/6.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Agentic_AI_in_Action/7.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Agentic_AI_in_Action/8.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Agentic_AI_in_Action/9.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Labs/index.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Labs/01_hello_graph.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Labs/02_travel_booking_graph.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Labs/03_parallel_scoring.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Labs/04_reflection_loops.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Labs/05_parallel_planning.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Labs/06_nested_graphs.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Labs/07_memory_feedback.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Labs/08_tool_protocols.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Labs/09_guardrails.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Labs/10_dspy_optimization.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Labs/11_agent_finetuning.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Labs/12_multi_agent_systems.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Labs/13_document_rag_agents.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Labs/13_document_rag_pipeline.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Modern_AI_Frameworks/index.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Modern_AI_Frameworks/autonomous_agents.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Modern_AI_Frameworks/enterprise_platforms.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Modern_AI_Frameworks/mcp.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Modern_AI_Frameworks/orchestration.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Modern_AI_Frameworks/pydantic_ai.html</loc>
+         <lastmod>2025-08-23</lastmod>
+    </url>
+    <url>
+         <loc>https://memari-majid.github.io/Agentic-AI-Systems/Modern_AI_Frameworks/technology_comparison.html</loc>
+         <lastmod>2025-08-23</lastmod>
     </url>
 </urlset>
