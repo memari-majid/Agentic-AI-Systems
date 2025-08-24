@@ -13,14 +13,7 @@ theme:
   logo: logo.png
   favicon: logo.png
   features:
-    - navigation.instant
-    - navigation.tracking
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.sections
-    - navigation.indexes
-    - navigation.top
-    - navigation.footer
+    - toc.follow
     - content.code.copy
     - content.code.annotate
     - search.suggest
@@ -110,76 +103,6 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Agentic Systems:
-      - Overview: AI_Systems/index.md
-      - Generative AI: AI_Systems/1.md
-      - Agentic Principles: AI_Systems/2.md
-      - Agent Components: AI_Systems/3.md
-      - Reflection: AI_Systems/4.md
-      - Tools & Planning: AI_Systems/5.md
-      - Multi-Agent: AI_Systems/6.md
-      - Design Techniques: AI_Systems/7.md
-      - Trust & Safety: AI_Systems/8.md
-      - Ethics: AI_Systems/9.md
-      - Use Cases: AI_Systems/10.md
-      - Future: AI_Systems/11.md
-  - Agent Development:
-      - Overview: Agentic_AI_in_Action/index.md
-      - Introduction: Agentic_AI_in_Action/1.md
-      - LangChain: Agentic_AI_in_Action/2.md
-      - LangGraph: Agentic_AI_in_Action/3.md
-      - Combined Approach: Agentic_AI_in_Action/4.md
-      - DSPy: Agentic_AI_in_Action/5.md
-      - State Management: Agentic_AI_in_Action/6.md
-      - Debugging: Agentic_AI_in_Action/7.md
-      - Unstructured Data: Agentic_AI_in_Action/8.md
-      - Conclusion: Agentic_AI_in_Action/9.md
-      - References: Agentic_AI_in_Action/10.md
-  - Modern AI Frameworks:
-      - Overview: Modern_AI_Frameworks/index.md
-      - Pydantic AI: Modern_AI_Frameworks/pydantic_ai.md
-      - MCP: Modern_AI_Frameworks/mcp.md
-      - Orchestration: Modern_AI_Frameworks/orchestration.md
-      - Autonomous Agents: Modern_AI_Frameworks/autonomous_agents.md
-      - Enterprise: Modern_AI_Frameworks/enterprise_platforms.md
-      - Comparison: Modern_AI_Frameworks/technology_comparison.md
-  - Frontier Research:
-      - Overview: Frontier_Research/index.md
-      - RAG vs Fine-tuning: Frontier_Research/leveraging_unstructured_data_llms.md
-  - AI Strategies:
-      - Overview: AI_Strategies/index.md
-      - Chief AI Officer: AI_Strategies/1.md
-      - Responsibilities: AI_Strategies/2.md
-      - Strategy Planning: AI_Strategies/3.md
-      - AI Teams: AI_Strategies/4.md
-      - Data Strategy: AI_Strategies/5.md
-      - Project Management: AI_Strategies/6.md
-      - Change Management: AI_Strategies/7.md
-      - Ethics: AI_Strategies/8.md
-      - Success & ROI: AI_Strategies/9.md
-      - Risk Management: AI_Strategies/10.md
-      - AI Culture: AI_Strategies/11.md
-      - Vendor Management: AI_Strategies/12.md
-      - Scaling: AI_Strategies/13.md
-      - Industry Apps: AI_Strategies/14.md
-      - Future Leadership: AI_Strategies/15.md
-      - Case Studies: AI_Strategies/16.md
-      - Roadmap: AI_Strategies/17.md
-  - Labs:
-      - Overview: Labs/README.md
-      - Hello Graph: Labs/01_hello_graph.md
-      - Travel Booking: Labs/02_travel_booking_graph.md
-      - Parallel Scoring: Labs/03_parallel_scoring.md
-      - Self-Critique: Labs/04_reflection_loops.md
-      - Parallel Planning: Labs/05_parallel_planning.md
-      - Nested Graphs: Labs/06_nested_graphs.md
-      - Memory Systems: Labs/07_memory_feedback.md
-      - Tool Protocols: Labs/08_tool_protocols.md
-      - Safety Guardrails: Labs/09_guardrails.md
-      - DSPy Optimization: Labs/10_dspy_optimization.md
-      - Agent Fine-tuning: Labs/11_agent_finetuning.md
-      - Multi-Agent Systems: Labs/12_multi_agent_systems.md
-      - Document RAG: Labs/13_document_rag_agents.md
   - About: about.md
 
 plugins:
