@@ -8,16 +8,16 @@ This track provides hands-on guidance for building sophisticated agentic AI syst
 
 | Chapter | Title | Description |
 |---------|-------|-------------|
-| [Chapter 1](1.md) | Introduction to Agentic AI | Overview of agentic systems and development frameworks |
-| [Chapter 2](2.md) | LangChain: The Foundation for Agents | Building agent foundations with LangChain framework |
-| [Chapter 3](3.md) | LangGraph: Orchestrating Complex Agentic Behavior | State management and complex workflow orchestration |
-| [Chapter 4](4.md) | Designing an Agentic System: LangChain + LangGraph in Action | Integrated approach to building complete agent systems |
-| [Chapter 5](5.md) | Advanced Agent Optimization with DSPy | Optimizing agent performance and prompt engineering |
-| [Chapter 6](6.md) | State Management and Persistence with Checkpointers | Managing agent memory and state across sessions |
-| [Chapter 7](7.md) | Debugging and Tracing with LangSmith | Monitoring, debugging, and improving agent performance |
-| [Chapter 8](8.md) | Leveraging Unstructured Data with LLMs | Practical implementation guide for RAG, fine-tuning, and hybrid approaches |
-| [Chapter 9](9.md) | Conclusion | Best practices and deployment considerations |
-| [Chapter 10](10.md) | References and Further Reading | Additional resources and advanced topics |
+| [Chapter 1](1.md) | Introduction | Overview of agentic systems and frameworks |
+| [Chapter 2](2.md) | LangChain | Building agent foundations |
+| [Chapter 3](3.md) | LangGraph | State management and workflow orchestration |
+| [Chapter 4](4.md) | Combined Approach | Integrated LangChain + LangGraph systems |
+| [Chapter 5](5.md) | DSPy | Agent optimization and prompt engineering |
+| [Chapter 6](6.md) | State Management | Memory and state persistence |
+| [Chapter 7](7.md) | Debugging | Monitoring and tracing with LangSmith |
+| [Chapter 8](8.md) | Unstructured Data | RAG, fine-tuning, and hybrid approaches |
+| [Chapter 9](9.md) | Conclusion | Best practices and deployment |
+| [Chapter 10](10.md) | References | Additional resources and topics |
 
 ## Learning Path
 

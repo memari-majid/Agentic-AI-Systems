@@ -8,17 +8,17 @@ This track covers the theoretical underpinnings of agentic systems, providing yo
 
 | Chapter | Title | Description |
 |---------|-------|-------------|
-| [Chapter 1](1.md) | Fundamentals of Generative AI | Core principles, models, and applications of generative AI |
-| [Chapter 2](2.md) | Principles of Agentic Systems | Understanding agency, architectures, and system design |
-| [Chapter 3](3.md) | Essential Components of Intelligent Agents | Core components: perception, memory, reasoning, and action |
-| [Chapter 4](4.md) | Reflection and Introspection in Agents | Meta-cognitive capabilities and self-improvement mechanisms |
-| [Chapter 5](5.md) | Enabling Tool Use and Planning in Agents | Integration of external tools and planning capabilities |
-| [Chapter 6](6.md) | Exploring the Coordinator, Worker, and Delegator Approach | Multi-agent coordination patterns and architectures |
-| [Chapter 7](7.md) | Effective Agentic System Design Techniques | Best practices for designing robust agent systems |
-| [Chapter 8](8.md) | Building Trust in Generative AI Systems | Transparency, explainability, and trust-building strategies |
-| [Chapter 9](9.md) | Managing Safety and Ethical Considerations | Safety frameworks and ethical AI development |
-| [Chapter 10](10.md) | Common Use Cases and Applications | Real-world applications and case studies |
-| [Chapter 11](11.md) | Conclusion and Future Outlook | Synthesis and future directions in agentic AI |
+| [Chapter 1](1.md) | Generative AI Fundamentals | Core principles, models, and applications |
+| [Chapter 2](2.md) | Agentic System Principles | Understanding agency and system design |
+| [Chapter 3](3.md) | Intelligent Agent Components | Perception, memory, reasoning, and action |
+| [Chapter 4](4.md) | Reflection & Introspection | Meta-cognitive capabilities and self-improvement |
+| [Chapter 5](5.md) | Tool Use & Planning | Integration of external tools and planning |
+| [Chapter 6](6.md) | Multi-Agent Coordination | Coordination patterns and architectures |
+| [Chapter 7](7.md) | System Design Techniques | Best practices for robust agent systems |
+| [Chapter 8](8.md) | Building Trust & Safety | Transparency and trust-building strategies |
+| [Chapter 9](9.md) | Ethics & Considerations | Safety frameworks and ethical AI development |
+| [Chapter 10](10.md) | Use Cases & Applications | Real-world applications and case studies |
+| [Chapter 11](11.md) | Future Outlook | Future directions in agentic AI |
 
 ## Learning Path
 

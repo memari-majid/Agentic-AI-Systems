@@ -21,7 +21,6 @@ theme:
     - navigation.indexes
     - navigation.top
     - navigation.footer
-    - toc.follow
     - content.code.copy
     - content.code.annotate
     - search.suggest
@@ -113,59 +112,59 @@ nav:
   - Home: index.md
   - Agentic Systems:
       - Overview: AI_Systems/index.md
-      - Generative AI Fundamentals: AI_Systems/1.md
-      - Agentic System Principles: AI_Systems/2.md
-      - Intelligent Agent Components: AI_Systems/3.md
-      - Reflection & Introspection: AI_Systems/4.md
-      - Tool Use & Planning: AI_Systems/5.md
-      - Multi-Agent Coordination: AI_Systems/6.md
-      - System Design Techniques: AI_Systems/7.md
-      - Building Trust & Safety: AI_Systems/8.md
-      - Ethics & Considerations: AI_Systems/9.md
-      - Use Cases & Applications: AI_Systems/10.md
-      - Future Outlook: AI_Systems/11.md
+      - Generative AI: AI_Systems/1.md
+      - Agentic Principles: AI_Systems/2.md
+      - Agent Components: AI_Systems/3.md
+      - Reflection: AI_Systems/4.md
+      - Tools & Planning: AI_Systems/5.md
+      - Multi-Agent: AI_Systems/6.md
+      - Design Techniques: AI_Systems/7.md
+      - Trust & Safety: AI_Systems/8.md
+      - Ethics: AI_Systems/9.md
+      - Use Cases: AI_Systems/10.md
+      - Future: AI_Systems/11.md
   - Agent Development:
       - Overview: Agentic_AI_in_Action/index.md
-      - Agentic AI Introduction: Agentic_AI_in_Action/1.md
-      - LangChain Foundation: Agentic_AI_in_Action/2.md
-      - LangGraph Orchestration: Agentic_AI_in_Action/3.md
-      - LangChain + LangGraph: Agentic_AI_in_Action/4.md
-      - DSPy Optimization: Agentic_AI_in_Action/5.md
+      - Introduction: Agentic_AI_in_Action/1.md
+      - LangChain: Agentic_AI_in_Action/2.md
+      - LangGraph: Agentic_AI_in_Action/3.md
+      - Combined Approach: Agentic_AI_in_Action/4.md
+      - DSPy: Agentic_AI_in_Action/5.md
       - State Management: Agentic_AI_in_Action/6.md
-      - Debugging with LangSmith: Agentic_AI_in_Action/7.md
-      - Unstructured Data & LLMs: Agentic_AI_in_Action/8.md
+      - Debugging: Agentic_AI_in_Action/7.md
+      - Unstructured Data: Agentic_AI_in_Action/8.md
       - Conclusion: Agentic_AI_in_Action/9.md
       - References: Agentic_AI_in_Action/10.md
   - Modern AI Frameworks:
       - Overview: Modern_AI_Frameworks/index.md
       - Pydantic AI: Modern_AI_Frameworks/pydantic_ai.md
-      - Model Context Protocol: Modern_AI_Frameworks/mcp.md
-      - Orchestration Frameworks: Modern_AI_Frameworks/orchestration.md
+      - MCP: Modern_AI_Frameworks/mcp.md
+      - Orchestration: Modern_AI_Frameworks/orchestration.md
       - Autonomous Agents: Modern_AI_Frameworks/autonomous_agents.md
-      - Enterprise Platforms: Modern_AI_Frameworks/enterprise_platforms.md
-      - Technology Comparison: Modern_AI_Frameworks/technology_comparison.md
+      - Enterprise: Modern_AI_Frameworks/enterprise_platforms.md
+      - Comparison: Modern_AI_Frameworks/technology_comparison.md
   - Frontier Research:
       - Overview: Frontier_Research/index.md
       - RAG vs Fine-tuning: Frontier_Research/leveraging_unstructured_data_llms.md
   - AI Strategies:
       - Overview: AI_Strategies/index.md
-      - Chief AI Officer Role: AI_Strategies/1.md
-      - Key Responsibilities: AI_Strategies/2.md
-      - AI Strategy Planning: AI_Strategies/3.md
-      - Building AI Teams: AI_Strategies/4.md
+      - Chief AI Officer: AI_Strategies/1.md
+      - Responsibilities: AI_Strategies/2.md
+      - Strategy Planning: AI_Strategies/3.md
+      - AI Teams: AI_Strategies/4.md
       - Data Strategy: AI_Strategies/5.md
       - Project Management: AI_Strategies/6.md
       - Change Management: AI_Strategies/7.md
-      - Ethics & Governance: AI_Strategies/8.md
+      - Ethics: AI_Strategies/8.md
       - Success & ROI: AI_Strategies/9.md
       - Risk Management: AI_Strategies/10.md
-      - Building AI Culture: AI_Strategies/11.md
+      - AI Culture: AI_Strategies/11.md
       - Vendor Management: AI_Strategies/12.md
-      - Scaling AI: AI_Strategies/13.md
-      - Industry Applications: AI_Strategies/14.md
-      - Future of AI Leadership: AI_Strategies/15.md
-      - Transformation Case Studies: AI_Strategies/16.md
-      - Building Your Roadmap: AI_Strategies/17.md
+      - Scaling: AI_Strategies/13.md
+      - Industry Apps: AI_Strategies/14.md
+      - Future Leadership: AI_Strategies/15.md
+      - Case Studies: AI_Strategies/16.md
+      - Roadmap: AI_Strategies/17.md
   - Labs:
       - Overview: Labs/README.md
       - Hello Graph: Labs/01_hello_graph.md
