@@ -34,6 +34,9 @@ Standards for agent-to-agent communication including NLIP and modern approaches.
 ### 8. [Security & Observability](security_observability.md)
 Tools and practices for monitoring, securing, and debugging agent systems.
 
+### 9. [Agentic AI (2025): Latest Advancements and Tools](agentic_ai_2025.md)
+A research-based overview of 2025 advancements across AWS, Microsoft, Google, open-source frameworks, RL for agents, and personal assistants.
+
 ## Quick Comparison
 
 | Framework/Tool | Category | Key Strength | Best For |

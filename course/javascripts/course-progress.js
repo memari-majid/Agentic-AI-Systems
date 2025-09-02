@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         'Modern_AI_Frameworks': {
             name: 'Modern AI Frameworks',
-            chapters: 7,
+            chapters: 8,
             color: '#43e97b',
             icon: '🚀'
         },
