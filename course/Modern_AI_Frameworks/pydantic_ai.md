@@ -2,6 +2,8 @@
 
 ⏱️ **Estimated reading time: 20 minutes**
 
+Tags: #pydantic-ai #type-safety #modern-frameworks #production-ready #structured-outputs #validation #python
+
 ## Introduction
 
 [Pydantic AI](https://ai.pydantic.dev/) is a Python framework for building production-ready AI agents with a focus on type safety, structured outputs, and robust validation. Built by the team behind Pydantic (Python's most popular data validation library), it brings the same principles of type safety and developer experience to AI agent development.

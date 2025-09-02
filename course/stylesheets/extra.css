@@ -598,6 +598,208 @@ p:has(strong:contains("Estimated reading time")) {
   }
 }
 
+/* Enhanced Navigation Bar */
+.md-tabs {
+  background: linear-gradient(135deg, var(--uvu-green) 0%, var(--uvu-green-light) 100%);
+  box-shadow: 0 2px 8px rgba(39, 93, 56, 0.15);
+}
+
+.md-tabs__list {
+  margin: 0;
+  padding: 0;
+}
+
+.md-tabs__item {
+  position: relative;
+}
+
+.md-tabs__link {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+  padding: 1rem 1.5rem;
+  border-radius: 0;
+}
+
+.md-tabs__link:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
+}
+
+.md-tabs__link--active {
+  color: white;
+  background: rgba(255, 255, 255, 0.15);
+  border-bottom: 3px solid var(--md-accent-fg-color);
+}
+
+/* Course Category Icons in Navigation */
+.md-nav__item--section .md-nav__link {
+  font-weight: 600;
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.md-nav__item--section .md-nav__link::before {
+  content: '';
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: var(--md-accent-fg-color);
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+/* Learning Path Tabs Styling */
+.tabbed-set {
+  margin: 2rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(39, 93, 56, 0.1);
+}
+
+.tabbed-labels {
+  display: flex;
+  background: linear-gradient(135deg, rgba(39, 93, 56, 0.05), rgba(58, 125, 80, 0.1));
+  border-bottom: 1px solid rgba(39, 93, 56, 0.2);
+}
+
+.tabbed-labels > label {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  color: var(--uvu-green);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+  text-align: center;
+}
+
+.tabbed-labels > label:hover {
+  background: rgba(39, 93, 56, 0.1);
+  color: var(--uvu-green-dark);
+}
+
+.tabbed-labels > label[for]:checked {
+  background: var(--uvu-green);
+  color: white;
+  border-bottom-color: var(--md-accent-fg-color);
+}
+
+.tabbed-content {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+/* Topic Discovery Cards */
+.topic-discovery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.topic-card {
+  background: linear-gradient(135deg, rgba(39, 93, 56, 0.05), rgba(58, 125, 80, 0.1));
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(39, 93, 56, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.topic-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--uvu-green), var(--md-accent-fg-color));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.topic-card:hover::before {
+  transform: scaleX(1);
+}
+
+.topic-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(39, 93, 56, 0.15);
+  border-color: var(--uvu-green-light);
+}
+
+.topic-card h3 {
+  color: var(--uvu-green);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.topic-card p {
+  color: var(--md-primary-fg-color--light);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Enhanced Search Interface */
+.md-search__form {
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85));
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.md-search__form:hover,
+.md-search__form:focus-within {
+  border-color: var(--uvu-green);
+  box-shadow: 0 4px 20px rgba(39, 93, 56, 0.2);
+  transform: translateY(-2px);
+}
+
+.md-search__input {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--uvu-green-dark);
+}
+
+.md-search__input::placeholder {
+  color: var(--uvu-green-light);
+  opacity: 0.8;
+}
+
+/* Progress Indicators in Navigation */
+.md-nav__item.completed .md-nav__link::after {
+  content: '✓';
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #28a745;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.md-nav__item.in-progress .md-nav__link::after {
+  content: '▶';
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--md-accent-fg-color);
+  font-weight: bold;
+  animation: pulse 2s infinite;
+}
+
 /* Enhanced UX for online learning */
 .learning-card {
   background: white;
