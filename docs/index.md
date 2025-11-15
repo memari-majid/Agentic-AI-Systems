@@ -5,7 +5,7 @@
 A comprehensive review paper presenting a unified framework for understanding, designing, and implementing agentic AI systems—from theoretical foundations to production deployment.
 
 [![Read Paper](https://img.shields.io/badge/Read%20Paper-HTML-blue.svg)](paper/)
-[![PDF Download](https://img.shields.io/badge/Download-PDF-red.svg)](../arxiv-paper/paper.pdf)
+[![PDF Download](https://img.shields.io/badge/Download-PDF-red.svg)](paper.pdf)
 [![Citation](https://img.shields.io/badge/Cite-This%20Paper-green.svg)](CITING.md)
 
 ---
