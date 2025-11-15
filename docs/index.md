@@ -1,7 +1,3 @@
----
-template: home.html
----
-
 # Agentic AI Systems: A Comprehensive Framework
 
 **Building Autonomous Intelligent Agents**
