@@ -120,7 +120,7 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
-  - Paper Home: paper/index.md
+  - Home: paper/index.md
   - 1. Introduction: paper/01-introduction.md
   - 2. Related Work: paper/02-related-work.md
   - 3. Foundations & Architecture: paper/03-foundations.md
