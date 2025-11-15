@@ -122,81 +122,17 @@ extra_javascript:
 nav:
   - Home: index.md
   - 📄 Review Paper:
-      - Overview: arxiv-paper/overview.md
-      - Download PDF: paper.pdf
+      - Paper Home: paper/index.md
+      - 1. Introduction: paper/01-introduction.md
+      - 2. Related Work: paper/02-related-work.md
+      - 3. Foundations & Architecture: paper/03-foundations.md
+      - 4. Implementation & Deployment: paper/04-implementation.md
+      - 5. Knowledge Integration: paper/05-knowledge-integration.md
+      - 6. Organizational & Ethical: paper/06-organizational.md
+      - 7. Conclusion: paper/07-conclusion.md
+      - References: paper/08-references.md
+      - Download PDF: arxiv-paper/overview.md
       - How to Cite: arxiv-paper/citation.md
-  - 🧠 Foundations:
-      - 01-foundations/README.md
-      - Generative AI Fundamentals: 01-foundations/01-generative-ai-fundamentals.md
-      - Agentic System Principles: 01-foundations/02-agentic-system-principles.md
-      - Intelligent Agent Components: 01-foundations/03-intelligent-agent-components.md
-      - Reflection & Introspection: 01-foundations/04-reflection-introspection.md
-      - Tool Use & Planning: 01-foundations/05-tool-use-planning.md
-      - Multi-Agent Coordination: 01-foundations/06-multi-agent-coordination.md
-      - System Design Techniques: 01-foundations/07-system-design-techniques.md
-      - Building Trust & Safety: 01-foundations/08-building-trust-safety.md
-      - Ethics & Considerations: 01-foundations/09-ethics-considerations.md
-      - Use Cases & Applications: 01-foundations/10-use-cases-applications.md
-      - Future Outlook: 01-foundations/11-future-outlook.md
-  - ⚡ Implementation:
-      - 02-implementation/index.md
-      - Introduction: 02-implementation/01-introduction.md
-      - LangChain Foundations: 02-implementation/02-langchain-foundations.md
-      - LangGraph Workflows: 02-implementation/03-langgraph-workflows.md
-      - Combined Approach: 02-implementation/04-combined-approach.md
-      - DSPy Optimization: 02-implementation/05-dspy-optimization.md
-      - State Management: 02-implementation/06-state-management.md
-      - Debugging & Monitoring: 02-implementation/07-debugging-monitoring.md
-      - Unstructured Data: 02-implementation/08-unstructured-data.md
-      - Best Practices: 02-implementation/09-best-practices.md
-      - References: 02-implementation/10-references.md
-  - 🚀 Modern Frameworks:
-      - 03-modern-frameworks/index.md
-      - Pydantic AI: 03-modern-frameworks/pydantic-ai.md
-      - Model Context Protocol: 03-modern-frameworks/model-context-protocol.md
-      - Autonomous Agents: 03-modern-frameworks/autonomous-agents.md
-      - Multi-Agent Systems: 03-modern-frameworks/multi-agent-systems.md
-      - Communication Protocols: 03-modern-frameworks/communication-protocols.md
-      - Orchestration Frameworks: 03-modern-frameworks/orchestration-frameworks.md
-      - Security & Observability: 03-modern-frameworks/security-observability.md
-      - Enterprise Platforms: 03-modern-frameworks/enterprise-platforms.md
-      - Technology Comparison: 03-modern-frameworks/technology-comparison.md
-      - 2025 Advancements: 03-modern-frameworks/agentic-ai-2025.md
-  - 📈 Strategy:
-      - 04-strategy/index.md
-      - Strategic Planning: 04-strategy/01-strategic-planning.md
-      - Team Building: 04-strategy/02-team-building.md
-      - Technology Selection: 04-strategy/03-technology-selection.md
-      - Implementation Roadmap: 04-strategy/04-implementation-roadmap.md
-      - Change Management: 04-strategy/05-change-management.md
-      - Risk Assessment: 04-strategy/06-risk-assessment.md
-      - Performance Metrics: 04-strategy/07-performance-metrics.md
-      - Stakeholder Alignment: 04-strategy/08-stakeholder-alignment.md
-      - Budget & Resources: 04-strategy/09-budget-resources.md
-      - Governance & Ethics: 04-strategy/10-governance-ethics.md
-      - Scaling Strategies: 04-strategy/11-scaling-strategies.md
-      - Future Planning: 04-strategy/12-future-planning.md
-      - Case Studies: 04-strategy/13-case-studies.md
-      - Industry Applications: 04-strategy/14-industry-applications.md
-      - ROI Measurement: 04-strategy/15-roi-measurement.md
-      - Continuous Improvement: 04-strategy/16-continuous-improvement.md
-      - Advanced Topics: 04-strategy/17-advanced-topics.md
-  - 🔬 Research:
-      - 05-research/index.md
-      - Leveraging Unstructured Data: 05-research/leveraging-unstructured-data-llms.md
-  - 🧪 Labs:
-      - 06-labs/index.md
-      - Lab 01 - Hello Graph: 06-labs/01-hello-graph.md
-      - Lab 02 - Travel Booking: 06-labs/02-travel-booking-graph.md
-      - Lab 03 - Parallel Scoring: 06-labs/03-parallel-scoring.md
-      - Lab 04 - Reflection Loops: 06-labs/04-reflection-loops.md
-      - Lab 05 - Parallel Planning: 06-labs/05-parallel-planning.md
-      - Lab 06 - Nested Graphs: 06-labs/06-nested-graphs.md
-      - Lab 07 - Memory & Feedback: 06-labs/07-memory-feedback.md
-      - Lab 08 - Tool Protocols: 06-labs/08-tool-protocols.md
-      - Lab 09 - Guardrails: 06-labs/09-guardrails.md
-      - Lab 10 - DSPy Optimization: 06-labs/10-dspy-optimization.md
-      - Lab 11 - Agent Fine-Tuning: 06-labs/11-agent-finetuning.md
-      - Lab 12 - Multi-Agent Systems: 06-labs/12-multi-agent-systems.md
-      - Lab 13 - Document RAG: 06-labs/13-document-rag-agents.md
+  - 🤖 Automation:
+      - automation/index.md
 

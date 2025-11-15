@@ -1,310 +1,194 @@
-# Agentic AI Systems - Knowledge Base
+# Agentic AI Systems
 
-> **A comprehensive knowledge base for building intelligent AI agent systems**  
-> From foundational theory to production deployment - all in easy-to-read Markdown files
+Welcome to the comprehensive knowledge base for building autonomous intelligent agents!
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/memari-majid/Agentic-AI-Systems/blob/main/LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/memari-majid/Agentic-AI-Systems?style=social)](https://github.com/memari-majid/Agentic-AI-Systems)
+[![GitHub](https://img.shields.io/github/stars/memari-majid/Agentic-AI-Systems?style=social)](https://github.com/memari-majid/Agentic-AI-Systems)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ---
 
-## 📄 New: Comprehensive Review Paper
+## 📄 Review Paper
 
-**Agentic AI Systems: A Comprehensive Framework for Building Autonomous Intelligent Agents**
-
-A 43-page peer-reviewed academic paper synthesizing the entire field with 99 verified references.
+Read the complete **43-page review paper** in HTML format on this website!
 
 <div class="grid cards" markdown>
 
--   :material-file-pdf-box:{ .lg .middle } __Download Paper__
+-   :material-book-open-variant:{ .lg .middle } __Read the Paper Online__
 
     ---
 
-    Complete 43-page review with professional academic writing
+    **Agentic AI Systems: A Comprehensive Framework**
+    
+    43 pages | 104 peer-reviewed references | 15 code examples
 
-    [:octicons-download-24: Get PDF](paper.pdf){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Start Reading](paper/index.md)
 
--   :material-information:{ .lg .middle } __Learn More__
+-   :material-download:{ .lg .middle } __Download PDF__
 
     ---
 
-    Paper overview, structure, and citation information
+    Download the complete paper in PDF format
 
-    [:octicons-arrow-right-24: Paper Overview](arxiv-paper/overview.md){ .md-button }
+    [:octicons-download-24: Get PDF](arxiv-paper/overview.md)
 
 </div>
 
 ---
 
-## 🚀 What You'll Learn
+## 🎯 What's Inside
 
-This knowledge base provides everything you need to master agentic AI systems:
+This repository provides a complete framework for understanding and implementing agentic AI systems, from theoretical foundations to production deployment.
 
-- **🧠 Foundations** - Core concepts and theoretical underpinnings (11 chapters)
-- **⚡ Implementation** - Hands-on development with modern frameworks (10 chapters)
-- **🚀 Modern Frameworks** - Latest technologies 2024-2025 (10 topics)
-- **📈 Strategy** - Leadership and organizational transformation (17 chapters)
-- **🔬 Research** - Frontier topics and emerging developments (1+ papers)
-- **🧪 Labs** - Hands-on coding exercises with full implementations (13 labs)
+### Key Topics
 
----
+=== "Theory"
+    - **Agency & Autonomy**: Formal definitions and spectrum
+    - **Cognitive Architectures**: Perception, memory, reasoning, action
+    - **Design Principles**: 7 core principles for agentic systems
 
-## 🎯 Learning Paths
+=== "Implementation"
+    - **Frameworks**: LangChain, LangGraph, Pydantic AI, DSPy
+    - **Patterns**: ReAct, Reflection, Hierarchical Planning
+    - **Multi-Agent**: Coordination patterns and protocols
 
-### 🎓 For Beginners
-**Foundations → Implementation → Labs (beginner)**
+=== "Knowledge"
+    - **RAG**: Retrieval-Augmented Generation
+    - **Fine-Tuning**: LoRA, RLHF, instruction tuning
+    - **Hybrid**: Combining approaches for optimal results
 
-Build theoretical foundation, learn practical skills, practice with code.
-
-[Start with Foundations](01-foundations/01-generative-ai-fundamentals.md){ .md-button .md-button--primary }
-
-### 👨‍💻 For Developers
-**Implementation → Modern Frameworks → Labs (advanced)**
-
-Jump into coding, explore latest tools, master advanced patterns.
-
-[Start Coding](02-implementation/01-introduction.md){ .md-button .md-button--primary }
-
-### 📊 For Leaders
-**Strategy → Foundations → Modern Frameworks**
-
-Understand strategy, gain technical context, evaluate technologies.
-
-[View Strategy](04-strategy/01-strategic-planning.md){ .md-button .md-button--primary }
-
-### 🔬 For Researchers
-**Research → Modern Frameworks → Labs (advanced)**
-
-Explore frontier topics, understand state-of-art, implement research.
-
-[Explore Research](05-research/leveraging-unstructured-data-llms.md){ .md-button .md-button--primary }
+=== "Production"
+    - **Monitoring**: LangSmith, observability
+    - **Safety**: Guardrails, Constitutional AI
+    - **Testing**: Unit, integration, adversarial
+    - **Scalability**: Caching, rate limiting, load balancing
 
 ---
 
-## 📚 Content Overview
+## 📚 Paper Sections
 
-### [01 - Foundations](01-foundations/README.md)
-Core concepts and theoretical underpinnings
+Explore the complete paper section by section:
 
-- Generative AI fundamentals
-- Agentic system principles
-- Intelligent agent components
-- Reflection & introspection
-- Tool use & planning
-- Multi-agent coordination
-- System design techniques
-- Trust & safety
-- Ethics & considerations
-
-**11 chapters** | Beginner-Intermediate | ~4 hours
+1. **[Introduction](paper/01-introduction.md)** - Motivation, scope, and key contributions
+2. **[Related Work](paper/02-related-work.md)** - Survey of foundations, LLMs, and multi-agent systems
+3. **[Foundations & Architecture](paper/03-foundations.md)** - Agency definition, autonomy spectrum, core components
+4. **[Implementation & Deployment](paper/04-implementation.md)** - Frameworks, patterns, and coordination
+5. **[Knowledge Integration](paper/05-knowledge-integration.md)** - RAG vs Fine-Tuning strategies
+6. **[Organizational & Ethical](paper/06-organizational.md)** - Strategic adoption and responsible AI
+7. **[Conclusion](paper/07-conclusion.md)** - Key findings and future directions
+8. **[References](paper/08-references.md)** - 104 peer-reviewed sources
 
 ---
 
-### [02 - Implementation](02-implementation/README.md)
-Hands-on development with modern frameworks
+## 🚀 Quick Start
 
-- LangChain foundations
-- LangGraph workflows
-- DSPy optimization
-- State management
-- Debugging & monitoring
-- Unstructured data (RAG)
-- Best practices
+<div class="grid cards" markdown>
 
-**10 chapters** | Intermediate-Advanced | ~5 hours
+-   :material-book:{ .lg .middle } __Read the Paper__
 
----
+    ---
 
-### [03 - Modern Frameworks](03-modern-frameworks/README.md)
-Cutting-edge technologies (2024-2025)
+    Start with the introduction and explore section by section
 
-- Pydantic AI (type-safe)
-- Model Context Protocol (MCP)
-- Autonomous agents
-- Multi-agent systems
-- Communication protocols
-- Orchestration frameworks
-- Security & observability
-- Enterprise platforms
+    [:octicons-arrow-right-24: Begin Reading](paper/index.md)
 
-**10 topics** | Advanced | ~3-4 hours
+-   :material-github:{ .lg .middle } __Clone Repository__
 
----
+    ---
 
-### [04 - Strategy](04-strategy/README.md)
-Leadership and organizational transformation
+    ```bash
+    git clone https://github.com/memari-majid/Agentic-AI-Systems.git
+    ```
 
-- Strategic planning
-- Team building
-- Technology selection
-- Implementation roadmap
-- Change management
-- Risk assessment
-- Performance metrics
-- Governance & ethics
+-   :material-robot:{ .lg .middle } __Explore Automation__
 
-**17 chapters** | Advanced | ~5-6 hours
+    ---
+
+    Automated paper discovery and update workflows
+
+    [:octicons-arrow-right-24: Learn More](automation/index.md)
+
+-   :material-citation:{ .lg .middle } __Cite This Work__
+
+    ---
+
+    Use this framework in your research
+
+    [:octicons-arrow-right-24: Citation Guide](arxiv-paper/citation.md)
+
+</div>
 
 ---
 
-### [05 - Research](05-research/README.md)
-Frontier topics and emerging developments
+## 📊 Paper Statistics
 
-- Leveraging unstructured data with LLMs
-- RAG vs fine-tuning
-- Future research directions
-
-**1+ papers** | Advanced-Research | ~5-10 hours
-
----
-
-### [06 - Labs](06-labs/README.md)
-Hands-on coding exercises with full implementations
-
-**Beginner Labs:**
-- Hello Graph (basics)
-- Travel Booking Graph (workflows)
-- Parallel Scoring (concurrency)
-
-**Intermediate Labs:**
-- Reflection Loops (self-improvement)
-- Parallel Planning (advanced planning)
-- Nested Graphs (hierarchical systems)
-- Memory & Feedback (persistent memory)
-
-**Advanced Labs:**
-- Tool Protocols (standardized integration)
-- Guardrails (safety systems)
-- DSPy Optimization (prompt tuning)
-- Agent Fine-Tuning (model customization)
-- Multi-Agent Systems (coordination)
-- Document RAG Agents (retrieval-augmented)
-
-**13 labs** | Beginner-Advanced | ~30-40 hours
+| Metric | Value |
+|--------|-------|
+| **Pages** | 43 |
+| **Words** | ~21,000 |
+| **References** | 104 (peer-reviewed) |
+| **Code Examples** | 15 complete implementations |
+| **Tables** | 4 comparison tables |
+| **Equations** | 3 formal equations |
 
 ---
 
-## 🛠️ Technologies Covered
+## 🎓 Key Contributions
 
-### Frameworks
-- **LangChain** - Agent development framework
-- **LangGraph** - State management & orchestration
-- **Pydantic AI** - Type-safe agent development
-- **DSPy** - Automatic prompt optimization
-- **OpenAI Swarm** - Lightweight multi-agent coordination
-- **CrewAI** - Role-based agent teams
-- **AutoGPT** - Autonomous agent systems
-
-### Protocols & Standards
-- **Model Context Protocol (MCP)** - Standardized tool integration
-- **OpenAI Function Calling** - Tool use patterns
-- **Agent Communication Protocols** - Inter-agent messaging
-
-### Platforms
-- **AWS Bedrock** - Enterprise AI platform
-- **Google Vertex AI** - Cloud AI services
-- **Azure AI** - Microsoft AI platform
-- **LangSmith** - Debugging & monitoring
-
----
-
-## 📊 Content Statistics
-
-| Section | Chapters | Files | Est. Time |
-|---------|----------|-------|-----------|
-| Foundations | 11 | 12 | 15-20 hours |
-| Implementation | 10 | 11 | 25-30 hours |
-| Modern Frameworks | 10 | 11 | 12-15 hours |
-| Strategy | 17 | 18 | 20-25 hours |
-| Research | 1 | 2 | 5-10 hours |
-| Labs | 13 | 26 | 30-40 hours |
-| **Total** | **62** | **80** | **~110 hours** |
+1. **Unified Framework**: First comprehensive synthesis from theory to production
+2. **Autonomy Spectrum**: Novel 5-level classification
+3. **7 Core Principles**: Essential design patterns
+4. **Pattern Library**: 15+ implementation patterns with code
+5. **RAG vs Fine-Tuning**: Empirical decision framework
+6. **Production Playbook**: Complete deployment guide
+7. **Strategic Framework**: Organizational adoption methodology
 
 ---
 
 ## 🌟 Highlights
 
-- ✨ **80 files total** - 62 Markdown chapters + 13 Python labs + READMEs
-- 🐍 **13 Python labs** - Complete implementations with tutorials
-- 📖 **~110 hours** - Comprehensive content across all sections
-- 🎯 **4 learning paths** - For different roles
-- 🚀 **Latest tech** - 2024-2025 frameworks
-- 🧪 **Hands-on labs** - Practical experience
-- 📊 **Real examples** - Production patterns
-- 🔒 **No dependencies** - Just read and learn
+!!! success "What Makes This Unique"
+    - **Comprehensive**: Covers theory, implementation, and strategy
+    - **Practical**: 15 code examples with modern frameworks
+    - **Evidence-Based**: 104 peer-reviewed references
+    - **Production-Ready**: Real-world deployment practices
+    - **Accessible**: Now available in HTML format online!
+
+---
+
+## 📧 Contact
+
+**Author**: Majid Memari  
+**Institution**: Utah Valley University  
+**Email**: [mmemari@uvu.edu](mailto:mmemari@uvu.edu)  
+**ORCID**: [0000-0001-5654-4996](https://orcid.org/0000-0001-5654-4996)
 
 ---
 
 ## 📖 Citation
 
-If you use this knowledge base in your work, please cite it:
+If you use this work in your research:
 
 ```bibtex
-@misc{memari2025agenticai,
-  author = {Memari, Majid},
-  title = {Agentic AI Systems: A Comprehensive Knowledge Base},
-  year = {2025},
-  publisher = {GitHub},
-  url = {https://github.com/memari-majid/Agentic-AI-Systems},
-  note = {Available at: https://memari-majid.github.io/Agentic-AI-Systems/}
+@article{memari2025agentic,
+  title={Agentic AI Systems: A Comprehensive Framework for Building Autonomous Intelligent Agents},
+  author={Memari, Majid},
+  journal={arXiv preprint arXiv:XXXX.XXXXX},
+  year={2025},
+  institution={Utah Valley University}
 }
 ```
 
 ---
 
-## 👤 Author
-
-**Majid Memari**
-
-- 🌐 Website: [memari-majid.github.io](https://memari-majid.github.io/Agentic-AI-Systems/)
-- 💼 LinkedIn: [majid-memari](https://www.linkedin.com/in/majid-memari/)
-- 🐙 GitHub: [@memari-majid](https://github.com/memari-majid)
-
----
-
-## 📜 License
-
-This work is licensed under the MIT License. See [LICENSE](https://github.com/memari-majid/Agentic-AI-Systems/blob/main/LICENSE) file for details.
-
----
-
 ## 🚀 Get Started
 
-Choose your learning path and dive in!
+Ready to dive in? Start reading the paper online:
 
-<div class="grid cards" markdown>
+[Begin with Introduction →](paper/01-introduction.md){ .md-button .md-button--primary }
+[View Paper Index](paper/index.md){ .md-button }
+[Download PDF](arxiv-paper/overview.md){ .md-button }
 
--   :material-brain:{ .lg .middle } __Foundations__
+---
 
-    ---
-
-    Master the theoretical underpinnings of agentic AI systems
-
-    [:octicons-arrow-right-24: Start learning](01-foundations/01-generative-ai-fundamentals.md)
-
--   :material-code-braces:{ .lg .middle } __Implementation__
-
-    ---
-
-    Build practical skills with modern frameworks
-
-    [:octicons-arrow-right-24: Start coding](02-implementation/01-introduction.md)
-
--   :material-rocket-launch:{ .lg .middle } __Modern Frameworks__
-
-    ---
-
-    Explore cutting-edge technologies and tools
-
-    [:octicons-arrow-right-24: Explore tech](03-modern-frameworks/pydantic-ai.md)
-
--   :material-chart-line:{ .lg .middle } __Strategy__
-
-    ---
-
-    Lead organizational AI transformation
-
-    [:octicons-arrow-right-24: View strategy](04-strategy/01-strategic-planning.md)
-
-</div>
-
+**Last Updated**: November 15, 2025  
+**Status**: Live & Ready to Read 🎉
