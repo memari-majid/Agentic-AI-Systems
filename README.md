@@ -4,7 +4,7 @@
 
 A comprehensive review paper presenting a unified framework for understanding, designing, and implementing agentic AI systems—from theoretical foundations to production deployment.
 
-[![Documentation](https://img.shields.io/badge/paper-HTML-blue.svg)](https://memari-majid.github.io/Agentic-AI-Systems/)
+[![Read Paper](https://img.shields.io/badge/Read%20Paper-HTML-blue.svg)](https://memari-majid.github.io/Agentic-AI-Systems/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ---
@@ -14,6 +14,8 @@ A comprehensive review paper presenting a unified framework for understanding, d
 **👉 [Read the complete paper in HTML format →](https://memari-majid.github.io/Agentic-AI-Systems/)**
 
 The paper is available online with full navigation, search, and mobile-responsive design.
+
+**Direct URL**: https://memari-majid.github.io/Agentic-AI-Systems/
 
 ---
 
@@ -48,7 +50,7 @@ The paper is available online with full navigation, search, and mobile-responsiv
 
 ## 📚 Paper Sections
 
-The paper is organized into 8 comprehensive sections:
+The paper is organized into 8 comprehensive sections, all available in HTML format:
 
 1. **[Introduction](https://memari-majid.github.io/Agentic-AI-Systems/paper/01-introduction/)** - Motivation, scope, and key contributions
 2. **[Related Work](https://memari-majid.github.io/Agentic-AI-Systems/paper/02-related-work/)** - Survey of foundations, LLMs, and multi-agent systems
@@ -86,6 +88,20 @@ The paper is organized into 8 comprehensive sections:
 
 ---
 
+## 🌐 Access the Paper
+
+**HTML Version (Recommended)**:  
+👉 [https://memari-majid.github.io/Agentic-AI-Systems/](https://memari-majid.github.io/Agentic-AI-Systems/)
+
+**Features**:
+- ✅ Full-text search
+- ✅ Mobile-responsive design
+- ✅ Dark/Light mode
+- ✅ Easy navigation between sections
+- ✅ Always up-to-date
+
+---
+
 ## 📖 Citation
 
 If you use this work in your research, please cite:
@@ -99,20 +115,6 @@ If you use this work in your research, please cite:
   institution={Utah Valley University}
 }
 ```
-
----
-
-## 🌐 Access the Paper
-
-**HTML Version (Recommended)**:  
-👉 [https://memari-majid.github.io/Agentic-AI-Systems/](https://memari-majid.github.io/Agentic-AI-Systems/)
-
-**Features**:
-- ✅ Full-text search
-- ✅ Mobile-responsive design
-- ✅ Dark/Light mode
-- ✅ Easy navigation between sections
-- ✅ Always up-to-date
 
 ---
 
