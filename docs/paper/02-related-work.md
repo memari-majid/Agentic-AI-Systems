@@ -1,3 +1,9 @@
+---
+version: 2025.11.15
+last_updated: 2025-11-15
+last_updated_display: November 15, 2025
+---
+
 # 2. Related Work
 
 This section surveys foundational and contemporary research that informs our framework for agentic AI systems.

@@ -1,3 +1,9 @@
+---
+version: 2025.11.15
+last_updated: 2025-11-15
+last_updated_display: November 15, 2025
+---
+
 # 5. Knowledge Integration Strategies
 
 Integrating domain-specific knowledge with LLMs requires choosing between **Retrieval-Augmented Generation (RAG)** and **Fine-Tuning** approaches, or hybrid combinations.

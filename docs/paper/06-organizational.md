@@ -1,3 +1,9 @@
+---
+version: 2025.11.15
+last_updated: 2025-11-15
+last_updated_display: November 15, 2025
+---
+
 # 6. Organizational Adoption and Ethical Governance
 
 Successful organizational adoption requires strategic planning across technology, people, and processes, while addressing ethical considerations for responsible development.

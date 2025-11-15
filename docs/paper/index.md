@@ -1,3 +1,9 @@
+---
+version: 2025.11.15
+last_updated: 2025-11-15
+last_updated_display: November 15, 2025
+---
+
 # Agentic AI Systems: A Comprehensive Framework
 
 **Building Autonomous Intelligent Agents**
@@ -9,7 +15,13 @@
     **ORCID**: [0000-0001-5654-4996](https://orcid.org/0000-0001-5654-4996)  
     **Date**: January 2025  
     **Pages**: 43  
-    **References**: 104 peer-reviewed sources  
+    **References**: 104 peer-reviewed sources
+
+!!! success "Version Information"
+    **Version**: 2025.11.15  
+    **Last Updated**: November 15, 2025
+    **Status**: Automatically updated weekly  
+    **Update Schedule**: Every Monday at 9:00 AM UTC  
 
 [📄 Download PDF](../../arxiv-paper/paper.pdf){ .md-button .md-button--primary }
 

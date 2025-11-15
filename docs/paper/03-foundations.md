@@ -1,3 +1,9 @@
+---
+version: 2025.11.15
+last_updated: 2025-11-15
+last_updated_display: November 15, 2025
+---
+
 # 3. Foundations and Architecture of Agentic Systems
 
 This section establishes the theoretical foundations and core architectural components that enable agentic behavior.

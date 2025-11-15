@@ -1,3 +1,9 @@
+---
+version: 2025.11.15
+last_updated: 2025-11-15
+last_updated_display: November 15, 2025
+---
+
 # 7. Conclusion and Future Directions
 
 This paper has presented a comprehensive framework for understanding and building agentic AI systems, synthesizing theoretical foundations with practical implementation strategies.

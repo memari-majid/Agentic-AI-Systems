@@ -1,3 +1,9 @@
+---
+version: 2025.11.15
+last_updated: 2025-11-15
+last_updated_display: November 15, 2025
+---
+
 # 1. Introduction
 
 The field of artificial intelligence is experiencing a fundamental transformation from reactive systems that respond to inputs toward autonomous agents that pursue goals, plan actions, and adapt to dynamic environments. This shift has been enabled by advances in large language models (LLMs) which provide unprecedented natural language understanding and generation capabilities.

@@ -1,3 +1,9 @@
+---
+version: 2025.11.15
+last_updated: 2025-11-15
+last_updated_display: November 15, 2025
+---
+
 # 4. Implementation, Coordination, and Deployment
 
 This section examines practical considerations for building agentic systems, including frameworks, implementation patterns, multi-agent coordination, and production deployment.

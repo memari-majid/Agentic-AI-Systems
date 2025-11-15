@@ -1,3 +1,9 @@
+---
+version: 2025.11.15
+last_updated: 2025-11-15
+last_updated_display: November 15, 2025
+---
+
 # References
 
 This paper draws on 104 peer-reviewed sources from top-tier conferences and journals.
