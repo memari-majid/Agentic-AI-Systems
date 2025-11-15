@@ -120,13 +120,15 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
-  - Home: paper/index.md
-  - 1. Introduction: paper/01-introduction.md
-  - 2. Related Work: paper/02-related-work.md
-  - 3. Foundations & Architecture: paper/03-foundations.md
-  - 4. Implementation & Deployment: paper/04-implementation.md
-  - 5. Knowledge Integration: paper/05-knowledge-integration.md
-  - 6. Organizational & Ethical: paper/06-organizational.md
-  - 7. Conclusion: paper/07-conclusion.md
-  - References: paper/08-references.md
+  - Home: index.md
+  - Paper:
+      - Paper Home: paper/index.md
+      - 1. Introduction: paper/01-introduction.md
+      - 2. Related Work: paper/02-related-work.md
+      - 3. Foundations & Architecture: paper/03-foundations.md
+      - 4. Implementation & Deployment: paper/04-implementation.md
+      - 5. Knowledge Integration: paper/05-knowledge-integration.md
+      - 6. Organizational & Ethical: paper/06-organizational.md
+      - 7. Conclusion: paper/07-conclusion.md
+      - References: paper/08-references.md
 
