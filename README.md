@@ -9,13 +9,28 @@ A comprehensive review paper presenting a unified framework for understanding, d
 
 ---
 
-## 📄 Read the Paper Online
+## 📄 Read the Paper Online (HTML Version)
 
-**👉 [Read the complete paper in HTML format →](https://memari-majid.github.io/Agentic-AI-Systems/)**
+**👉 [CLICK HERE TO READ THE PAPER IN HTML FORMAT →](https://memari-majid.github.io/Agentic-AI-Systems/)**
 
-The paper is available online with full navigation, search, and mobile-responsive design.
+The complete 43-page paper is available as a **full HTML website** (not PDF) with:
+- Full-text search
+- Mobile-responsive design  
+- Dark/Light mode
+- Easy navigation between sections
+- Professional web page format
 
 **Direct URL**: https://memari-majid.github.io/Agentic-AI-Systems/
+
+**All Paper Sections (HTML)**:
+- [Introduction](https://memari-majid.github.io/Agentic-AI-Systems/paper/01-introduction/)
+- [Related Work](https://memari-majid.github.io/Agentic-AI-Systems/paper/02-related-work/)
+- [Foundations](https://memari-majid.github.io/Agentic-AI-Systems/paper/03-foundations/)
+- [Implementation](https://memari-majid.github.io/Agentic-AI-Systems/paper/04-implementation/)
+- [Knowledge Integration](https://memari-majid.github.io/Agentic-AI-Systems/paper/05-knowledge-integration/)
+- [Organizational](https://memari-majid.github.io/Agentic-AI-Systems/paper/06-organizational/)
+- [Conclusion](https://memari-majid.github.io/Agentic-AI-Systems/paper/07-conclusion/)
+- [References](https://memari-majid.github.io/Agentic-AI-Systems/paper/08-references/)
 
 ---
 
