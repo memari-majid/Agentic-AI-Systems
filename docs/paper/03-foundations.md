@@ -12,25 +12,7 @@ This section establishes the theoretical foundations and core architectural comp
 
 ## 3.1 Defining Agency in AI Systems
 
-We adopt a pragmatic definition of agency that synthesizes classical AI concepts with modern capabilities. An AI system exhibits **agency** when it possesses four fundamental characteristics:
-
-### The Four Pillars of Agency
-
-1. **Autonomy**  
-   Ability to operate without continuous human intervention while making independent decisions within defined boundaries
-
-2. **Goal-Orientation**  
-   Capacity to pursue explicit or implicit objectives across multiple interactions, adapting strategies dynamically
-
-3. **Environmental Interaction**  
-   - Perceive environmental state accurately
-   - Execute actions that modify the environment
-   - Respond appropriately to feedback
-
-4. **Adaptivity**  
-   Capacity to adjust behavior based on experience, feedback, and changing circumstances
-
-Together, these four characteristics distinguish truly agentic systems from reactive or purely generative AI systems.
+We adopt a pragmatic definition of agency that synthesizes classical AI concepts with modern capabilities. An AI system exhibits agency when it possesses four fundamental characteristics that work together to enable autonomous and goal-directed behavior. First, the system must demonstrate autonomy, which encompasses the ability to operate without continuous human intervention while making independent decisions within defined boundaries. Second, the system must exhibit goal-orientation, possessing the capacity to pursue explicit or implicit objectives across multiple interactions and adapting its strategies dynamically to achieve desired outcomes. Third, the system must engage in environmental interaction, which includes the ability to perceive environmental state accurately, execute actions that modify the environment in meaningful ways, and respond appropriately to feedback received from the environment. Fourth, the system must display adaptivity, demonstrating the capacity to adjust its behavior based on accumulated experience, received feedback, and changing circumstances in its operational context. Together, these four characteristics distinguish truly agentic systems from reactive or purely generative AI systems.
 
 ---
 
@@ -57,14 +39,7 @@ Drawing from cognitive architectures and modern AI systems, we identify **seven 
 
 ### 3.3.1 Explicit State Management
 
-LLMs are fundamentally stateless. Agentic systems must implement explicit state management:
-
-- **Environmental State**: Current understanding of the world
-- **Goal State**: Objectives, constraints, success criteria
-- **Progress State**: Completed actions and remaining steps
-- **Memory State**: Relevant historical information
-
-**Implementation**: Key-value stores, graph databases, or structured conversation history
+Large language models are fundamentally stateless, with each inference being independent. Agentic systems must therefore implement explicit state management encompassing environmental state, which represents the current understanding of the world; goal state, which captures objectives, constraints, and success criteria; progress state, which tracks completed actions and remaining steps; and memory state, which maintains relevant historical information. State management can be implemented through various mechanisms including key-value stores, graph databases, or structured conversation history.
 
 ### 3.3.2 Perception-Action Loops
 
@@ -78,48 +53,23 @@ This mirrors the sense-plan-act cycle from robotics, adapted to language-based a
 
 ### 3.3.3 Memory Hierarchies
 
-Inspired by cognitive science, implement analogous memory structures:
-
-- **Working Memory**: Current conversation context and immediate observations
-- **Episodic Memory**: Specific past experiences and interactions
-- **Semantic Memory**: General knowledge and learned patterns
-- **Procedural Memory**: Encoded skills and action strategies
+Cognitive science distinguishes between working memory, short-term memory, and long-term memory. Agentic systems benefit from implementing analogous memory structures that mirror these human cognitive capabilities. Working memory maintains the current conversation context and immediate observations, providing the agent with awareness of its present situation. Episodic memory stores specific past experiences and interactions, enabling the agent to recall and learn from previous encounters. Semantic memory encodes general knowledge and learned patterns that can be applied across different contexts. Finally, procedural memory captures encoded skills and action strategies that the agent has developed through experience, allowing it to execute complex behaviors efficiently without explicit reasoning about each step.
 
 ### 3.3.4 Tool Integration
 
-Effective agents leverage external tools to overcome LLM limitations:
-
-1. **Tool Discovery**: Identify available tools and understand capabilities
-2. **Tool Selection**: Choose most appropriate tools for current tasks
-3. **Parameter Binding**: Map task requirements to tool parameters
-4. **Error Handling**: Recover gracefully from tool failures
+Effective agents leverage external tools to overcome inherent LLM limitations. Successful tool integration requires mastery of four interconnected capabilities. First, agents must perform tool discovery by systematically identifying available tools and understanding their specific capabilities and constraints. Second, agents must engage in intelligent tool selection, choosing the most appropriate tools for their current tasks based on task requirements, tool capabilities, and contextual factors. Third, agents must accomplish parameter binding by accurately mapping task-specific requirements to the appropriate tool parameters, ensuring that tools receive correctly formatted inputs. Fourth, agents must implement robust error handling mechanisms that enable them to recover gracefully from tool failures, either by retrying with adjusted parameters, selecting alternative tools, or escalating to human intervention when necessary.
 
 ### 3.3.5 Decomposition and Planning
 
-Complex tasks must be decomposed into manageable subtasks:
-
-- **Hierarchical Planning**: Recursive breakdown into sub-goals
-- **Sequential Planning**: Ordering steps by dependencies
-- **Parallel Planning**: Identifying independent subtasks
-- **Contingent Planning**: Preparing for multiple possible outcomes
+Complex tasks must be systematically decomposed into manageable subtasks to enable effective execution. Agents employ several complementary decomposition strategies depending on task characteristics. Hierarchical planning involves recursively breaking down high-level goals into increasingly specific sub-goals until reaching primitive actions that can be executed directly. Sequential planning focuses on ordering steps according to their dependencies, ensuring that prerequisite actions are completed before dependent steps are attempted. Parallel planning identifies independent subtasks that can be pursued simultaneously, enabling efficient resource utilization and reduced overall execution time. Contingent planning prepares the agent for multiple possible outcomes by developing alternative action sequences that can be activated based on observed results, providing robustness in uncertain environments.
 
 ### 3.3.6 Reflection and Self-Correction
 
-Advanced agents implement meta-cognitive capabilities:
-
-- **Output Verification**: Check results against expectations
-- **Consistency Checking**: Ensure reasoning chains remain coherent
-- **Confidence Estimation**: Assess uncertainty in decisions
-- **Alternative Generation**: Explore different approaches when needed
+Advanced agents implement meta-cognitive capabilities that enable sophisticated error detection and self-correction. These reflection mechanisms operate at multiple levels of abstraction. Output verification involves systematically checking generated results against established expectations and known constraints to identify potential errors before they propagate. Consistency checking ensures that reasoning chains remain coherent throughout multi-step processes, detecting logical contradictions or inconsistencies that might indicate flawed reasoning. Confidence estimation assesses the degree of uncertainty inherent in decisions and predictions, enabling the agent to recognize when additional information or alternative approaches may be needed. When initial attempts fail or produce unsatisfactory results, alternative generation explores different problem-solving approaches, leveraging the agent's ability to reason about its own reasoning process to identify and pursue more promising strategies.
 
 ### 3.3.7 Grounding and Verification
 
-Agents must ground outputs in verifiable information:
-
-- **Citation**: Reference specific source materials
-- **Retrieval-Augmented Generation**: Consult external knowledge
-- **External Validation**: Use tools/APIs to verify claims
-- **Human Verification**: Request confirmation for critical decisions
+Agents must ground their outputs in verifiable information to mitigate the persistent challenge of hallucination in large language models. Several complementary grounding strategies work together to ensure output reliability. Citation mechanisms require agents to reference specific source materials when making factual claims, providing transparency and enabling verification. Retrieval-augmented generation extends this by actively consulting external knowledge bases during the generation process, ensuring that responses are grounded in current, authoritative information. External validation employs tools and APIs to independently verify factual claims, cross-referencing agent outputs against trusted data sources. For decisions with significant consequences, human verification provides an essential safeguard by requesting explicit human confirmation before proceeding, maintaining appropriate human oversight in critical situations.
 
 ---
 

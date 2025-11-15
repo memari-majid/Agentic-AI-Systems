@@ -109,46 +109,7 @@ Several frameworks have emerged for building agentic systems:
 
 ### Major Frameworks
 
-=== "LangChain"
-    **Modular framework** for LLM applications
-    
-    - Chains, agents, memory
-    - Extensive tool library
-    - Active community
-    - **Strength**: Ecosystem breadth
-    - **Challenge**: Complexity
-
-=== "LangGraph"
-    **Graph-based state management**
-    
-    - Explicit state machines
-    - Checkpointing
-    - Visualization
-    - Time-travel debugging
-    - **Strength**: State tracking
-    - **Use**: Complex workflows
-
-=== "Pydantic AI"
-    **Type-safe development**
-    
-    - Pydantic models
-    - Built-in validation
-    - IDE support
-    - **Strength**: Type safety
-    - **Use**: Production systems
-
-=== "DSPy"
-    **Automatic prompt optimization**
-    
-    - Declarative programming
-    - Automatic optimization
-    - Scientific approach
-    - **Strength**: Performance
-    - **Use**: High accuracy needs
-
-=== "Others"
-    - **AutoGPT**: Fully autonomous execution
-    - **CrewAI**: Role-based teams
+Several frameworks have emerged for building agentic systems, each addressing different aspects of agent development and deployment. LangChain provides a modular framework for LLM applications, offering comprehensive support for chains, agents, and memory components that can be composed to create complex agent behaviors. Building upon this foundation, LangGraph introduces a graph-based state machine framework specifically designed for managing complex workflows with explicit state transitions and checkpoint capabilities. For developers prioritizing type safety and structured outputs, Pydantic AI offers a production-ready approach to agent development with built-in validation and error handling. DSPy takes a different approach by providing a programming model that optimizes LM prompts and weights through systematic compilation and evaluation. AutoGPT explores fully autonomous agent capabilities with self-directed task execution, while CrewAI focuses on role-based multi-agent collaboration with specialized agent teams working together to accomplish complex objectives.
 
 ---
 

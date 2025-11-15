@@ -22,41 +22,11 @@ This paradigm shift has profound implications across industries, from customer s
 
 ## 1.2 Key Contributions
 
-This paper makes several key contributions to the field of agentic AI systems:
+This paper makes several key contributions to the field of agentic AI systems. First, we synthesize concepts from cognitive science, multi-agent systems, and modern AI to establish a unified theoretical framework grounded in formal definitions of agency and autonomy. Second, we identify and formalize comprehensive architectural patterns for the four core components—perception, memory, reasoning, and action—providing design principles validated through 13 practical implementations.
 
-### Theoretical Framework
-We synthesize concepts from cognitive science, multi-agent systems, and modern AI to establish a unified theoretical framework grounded in formal definitions of agency and autonomy.
+Our implementation methodology offers detailed guidance for building agentic systems using modern frameworks, including LangChain for modular LLM applications, LangGraph for graph-based state management, Pydantic AI for type-safe agent development, and DSPy for automatic prompt optimization, with comparative analysis of their strengths and appropriate use cases. We formalize multi-agent coordination patterns spanning hierarchical coordination, peer-to-peer coordination, and blackboard architectures, analyzing their trade-offs to guide architectural decisions.
 
-### Architectural Patterns
-We identify and formalize comprehensive architectural patterns for the four core components—**perception, memory, reasoning, and action**—providing design principles validated through 13 practical implementations.
-
-### Implementation Methodology  
-Our implementation methodology offers detailed guidance for building agentic systems using modern frameworks including:
-
-- **LangChain**: Modular framework for LLM applications
-- **LangGraph**: Graph-based state management
-- **Pydantic AI**: Type-safe agent development
-- **DSPy**: Automatic prompt optimization
-
-With comparative analysis of their strengths and appropriate use cases.
-
-### Multi-Agent Coordination
-We formalize multi-agent coordination patterns spanning:
-
-- Hierarchical coordination
-- Peer-to-peer coordination  
-- Blackboard architecture
-
-Analyzing their trade-offs to guide architectural decisions.
-
-### Knowledge Integration
-Through empirical analysis, we compare retrieval-augmented generation and fine-tuning approaches for knowledge integration, demonstrating optimal application scenarios and the benefits of hybrid strategies.
-
-### Production Deployment
-We establish comprehensive production deployment practices addressing monitoring, safety, and scaling challenges.
-
-### Organizational Frameworks
-We provide organizational frameworks for strategic technology adoption, team building, and ethical governance, ensuring responsible development and deployment of agentic systems.
+Through empirical analysis, we compare retrieval-augmented generation and fine-tuning approaches for knowledge integration, demonstrating optimal application scenarios and the benefits of hybrid strategies. We establish comprehensive production deployment practices addressing monitoring, safety, and scaling challenges. Finally, we provide organizational frameworks for strategic technology adoption, team building, and ethical governance, ensuring responsible development and deployment of agentic systems.
 
 ---
 

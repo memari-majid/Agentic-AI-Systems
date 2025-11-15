@@ -16,32 +16,11 @@ RAG enhances LLM responses by retrieving relevant information from external know
 
 ### 5.1.1 RAG Architecture
 
-The RAG pipeline consists of three phases:
+The RAG pipeline consists of three distinct phases that work together to enhance language model responses with external knowledge. The indexing phase begins with document chunking, typically segmenting documents into chunks of 200-1000 tokens to balance context preservation with retrieval efficiency. Embedding generation transforms these chunks into high-dimensional vector representations using models such as OpenAI Ada, Cohere embeddings, or sentence-transformers, capturing semantic meaning in a form suitable for similarity search. These embeddings are then stored in vector databases including FAISS for efficient similarity search, Pinecone for managed vector storage, Weaviate for graph-enhanced retrieval, or Chroma for lightweight deployments.
 
-**1. Indexing Phase**:
+The retrieval phase processes user queries by generating query embeddings and performing similarity search using distance metrics such as cosine similarity, dot product, or Euclidean distance to identify the most relevant document chunks. Advanced systems employ re-ranking using cross-encoders or hybrid methods to refine initial retrieval results, improving precision by considering query-document interactions more deeply than initial similarity scores.
 
-- Document chunking (typically 200-1000 tokens)
-- Embedding generation using models like:
-    - OpenAI Ada
-    - Cohere embeddings
-    - Sentence-transformers
-- Vector storage in:
-    - FAISS (Facebook AI Similarity Search)
-    - Pinecone
-    - Weaviate
-    - Chroma
-
-**2. Retrieval Phase**:
-
-- Query embedding
-- Similarity search (cosine, dot product, or Euclidean)
-- Re-ranking using cross-encoders or hybrid methods
-
-**3. Generation Phase**:
-
-- Context assembly with retrieved documents
-- Prompt construction
-- LLM generation with citations
+The generation phase assembles retrieved documents into context, constructs prompts that incorporate both the query and retrieved information, and generates responses using the language model with explicit citations to source materials, ensuring that generated content is grounded in the retrieved knowledge base.
 
 ---
 
@@ -81,28 +60,13 @@ The RAG pipeline consists of three phases:
 
 ### 5.1.3 RAG Advantages
 
-| Advantage | Description |
-|-----------|-------------|
-| **Currency** | Immediately reflects updated information without retraining |
-| **Transparency** | Explicit source attribution and citations |
-| **Scalability** | Handles large knowledge bases efficiently |
-| **Flexibility** | Easy to add/remove knowledge sources |
-| **Cost-Effective** | Lower cost than fine-tuning for dynamic data |
-| **Reduces Hallucination** | Grounds responses in retrieved factual content |
-
-!!! success "Primary Benefit"
-    RAG enables **verifiable, up-to-date responses** with clear source attribution, making it ideal for knowledge-intensive applications.
+Retrieval-augmented generation offers several compelling advantages for knowledge integration in agentic systems. The approach ensures currency by immediately reflecting updated information without requiring model retraining, making it ideal for domains where knowledge evolves rapidly. Transparency is enhanced through explicit source attribution and citations, enabling users to verify claims and understand the provenance of agent responses. The approach demonstrates excellent scalability, handling large knowledge bases efficiently through optimized vector search and retrieval mechanisms. Flexibility is maintained through the ease of adding or removing knowledge sources, allowing systems to adapt to changing information needs without architectural modifications. From an economic perspective, RAG incurs lower costs than fine-tuning when dealing with frequently changing data, as updates require only index modifications rather than expensive model retraining. Perhaps most significantly, RAG substantially reduces hallucination by grounding agent responses in retrieved factual content, dramatically improving reliability in knowledge-intensive applications.
 
 ---
 
 ### 5.1.4 RAG Limitations
 
-| Limitation | Impact |
-|------------|--------|
-| **Latency** | Retrieval overhead before generation |
-| **Retrieval Quality Dependency** | Poor search → poor outputs |
-| **Context Window Limits** | Cannot retrieve unlimited information |
-| **Surface-Level Integration** | Doesn't deeply integrate domain reasoning patterns |
+Despite its advantages, retrieval-augmented generation faces several inherent limitations that must be carefully considered. Latency increases due to the additional retrieval overhead required before generation can begin, as the system must first query vector databases and rank results before providing context to the language model. System performance becomes critically dependent on retrieval quality, as poor search results directly compromise the accuracy and relevance of generated outputs regardless of model capabilities. The approach remains constrained by context window limitations, as even efficient retrieval cannot circumvent the fundamental token limits of underlying language models, potentially requiring multiple retrieval-generation cycles for comprehensive answers. Finally, while RAG excels at providing factual information, it does not deeply integrate domain-specific reasoning patterns into the model itself, potentially limiting performance on tasks requiring complex domain-specific inference beyond simple fact retrieval.
 
 ---
 
