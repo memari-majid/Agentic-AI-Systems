@@ -1,7 +1,7 @@
-site_name: Agentic AI Systems
+site_name: Agentic AI Systems - Review Paper
 site_url: https://memari-majid.github.io/Agentic-AI-Systems/
 site_author: Majid Memari
-site_description: A comprehensive knowledge base for building intelligent AI agent systems from theory to production
+site_description: "Agentic AI Systems: A Comprehensive Framework for Building Autonomous Intelligent Agents"
 
 repo_name: memari-majid/Agentic-AI-Systems
 repo_url: https://github.com/memari-majid/Agentic-AI-Systems
@@ -120,19 +120,13 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
-  - Home: index.md
-  - 📄 Review Paper:
-      - Paper Home: paper/index.md
-      - 1. Introduction: paper/01-introduction.md
-      - 2. Related Work: paper/02-related-work.md
-      - 3. Foundations & Architecture: paper/03-foundations.md
-      - 4. Implementation & Deployment: paper/04-implementation.md
-      - 5. Knowledge Integration: paper/05-knowledge-integration.md
-      - 6. Organizational & Ethical: paper/06-organizational.md
-      - 7. Conclusion: paper/07-conclusion.md
-      - References: paper/08-references.md
-      - Download PDF: arxiv-paper/overview.md
-      - How to Cite: arxiv-paper/citation.md
-  - 🤖 Automation:
-      - automation/index.md
+  - Paper Home: paper/index.md
+  - 1. Introduction: paper/01-introduction.md
+  - 2. Related Work: paper/02-related-work.md
+  - 3. Foundations & Architecture: paper/03-foundations.md
+  - 4. Implementation & Deployment: paper/04-implementation.md
+  - 5. Knowledge Integration: paper/05-knowledge-integration.md
+  - 6. Organizational & Ethical: paper/06-organizational.md
+  - 7. Conclusion: paper/07-conclusion.md
+  - References: paper/08-references.md
 
