@@ -74,7 +74,7 @@ https://github.com/memari-majid/Agentic-AI-Systems
 ## 🔗 Access the Paper
 
 - **HTML Version**: https://memari-majid.github.io/Agentic-AI-Systems/
-- **PDF Version**: [Download PDF](arxiv-paper/paper.pdf)
+- **PDF Version**: [Download PDF](https://memari-majid.github.io/Agentic-AI-Systems/paper.pdf) - [GitHub Source](arxiv-paper/paper.pdf)
 - **GitHub Repository**: https://github.com/memari-majid/Agentic-AI-Systems
 - **BibTeX File**: [references.bib](arxiv-paper/references.bib)
 

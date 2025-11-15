@@ -23,7 +23,7 @@ The complete 43-page paper is available as a **full HTML website** with:
 
 **Direct Links**:
 - **HTML Version**: [paper/](paper/)
-- **PDF Download**: [paper.pdf](../arxiv-paper/paper.pdf)
+- **PDF Download**: [paper.pdf](paper.pdf) - [Direct Link](https://memari-majid.github.io/Agentic-AI-Systems/paper.pdf)
 - **Citation Guide**: [CITING.md](../CITING.md)
 
 ---
