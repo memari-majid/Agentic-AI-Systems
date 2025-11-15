@@ -94,8 +94,8 @@ sequenceDiagram
 ## Next Steps
 
 - Implement shared vocabulary with [`agentic-ai-schema`](https://github.com) or internal schema registry.
-- Explore [Modern Multi-Agent Systems](multi_agent_systems.md) for orchestration patterns.
-- Integrate [Security & Observability](security_observability.md) practices to complete the communication stack.
+- Explore [Modern Multi-Agent Systems](multi-agent-systems.md) for orchestration patterns.
+- Integrate [Security & Observability](security-observability.md) practices to complete the communication stack.
 
 ---
 

@@ -408,6 +408,6 @@ Pydantic AI represents a significant advancement in making AI agents more reliab
 
 ## Next Steps
 
-- Explore [Model Context Protocol](mcp.md) for standardized tool integration
-- Learn about [Orchestration Frameworks](orchestration.md) for complex workflows
-- Check out [Enterprise Platforms](enterprise_platforms.md) for production deployment
+- Explore [Model Context Protocol](model-context-protocol.md) for standardized tool integration
+- Learn about [Orchestration Frameworks](orchestration-frameworks.md) for complex workflows
+- Check out [Enterprise Platforms](enterprise-platforms.md) for production deployment

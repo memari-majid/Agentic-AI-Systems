@@ -126,4 +126,4 @@ graph LR
 
 ---
 
-*Continue exploring the Modern AI Frameworks track with [Enterprise Platforms](enterprise_platforms.md) or revisit [Agent Communication Protocols](communication_protocols.md) to refine message handling policies.*
+*Continue exploring the Modern AI Frameworks track with [Enterprise Platforms](enterprise-platforms.md) or revisit [Agent Communication Protocols](communication-protocols.md) to refine message handling policies.*

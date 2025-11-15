@@ -573,6 +573,6 @@ The Model Context Protocol represents a crucial step toward standardizing how AI
 
 ## Next Steps
 
-- Explore [Orchestration Frameworks](orchestration.md) that support MCP
-- Learn about [Autonomous Agents](autonomous_agents.md) using MCP tools
-- Check out [Enterprise Platforms](enterprise_platforms.md) with MCP integration
+- Explore [Orchestration Frameworks](orchestration-frameworks.md) that support MCP
+- Learn about [Autonomous Agents](autonomous-agents.md) using MCP tools
+- Check out [Enterprise Platforms](enterprise-platforms.md) with MCP integration

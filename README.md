@@ -138,4 +138,29 @@ cat 01-generative-ai-fundamentals.md  # Start reading
 
 ---
 
+## 🤖 Keep Content Updated
+
+Run the AI agent to automatically check for updates:
+
+```bash
+# Install dependencies
+pip install openai requests
+
+# Set your API key
+export OPENAI_API_KEY="your-key"
+
+# Run the agent
+python update-agent.py
+```
+
+**The agent will:**
+- ✅ Check for framework version updates
+- ✅ Verify all internal links
+- ✅ Suggest content improvements
+- ✅ Generate maintenance recommendations
+
+**For automation**, see [AUTOMATION-GUIDE.md](AUTOMATION-GUIDE.md) for GitHub Actions setup.
+
+---
+
 **Ready to learn? Pick a section above and start reading! 📚**

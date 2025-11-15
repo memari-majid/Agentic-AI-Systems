@@ -765,6 +765,6 @@ Enterprise AI agent platforms provide the infrastructure, security, and scalabil
 
 ## Next Steps
 
-- Review [Security & Observability](security_observability.md) for production safety
-- Explore [Multi-Agent Systems](multi_agent_systems.md) for complex deployments
-- Study [Communication Protocols](communication_protocols.md) for agent interoperability
+- Review [Security & Observability](security-observability.md) for production safety
+- Explore [Multi-Agent Systems](multi-agent-systems.md) for complex deployments
+- Study [Communication Protocols](communication-protocols.md) for agent interoperability

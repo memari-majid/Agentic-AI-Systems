@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+title: "Agentic AI Systems: A Comprehensive Knowledge Base"
+message: "If you use this knowledge base in your research or work, please cite it using the metadata from this file."
+type: software
+authors:
+  - family-names: "Memari"
+    given-names: "Majid"
+    email: majid.memari@example.com
+    affiliation: "Independent Researcher"
+identifiers:
+  - type: url
+    value: "https://github.com/memari-majid/Agentic-AI-Systems"
+    description: "GitHub Repository"
+  - type: url
+    value: "https://memari-majid.github.io/Agentic-AI-Systems/"
+    description: "Documentation Website"
+repository-code: "https://github.com/memari-majid/Agentic-AI-Systems"
+url: "https://memari-majid.github.io/Agentic-AI-Systems/"
+abstract: "A comprehensive knowledge base for building intelligent AI agent systems, covering foundational theory, practical implementation, modern frameworks, strategic considerations, research directions, and hands-on labs. This repository provides ~110 hours of content across 62 chapters and 13 Python labs."
+keywords:
+  - agentic-ai
+  - artificial-intelligence
+  - multi-agent-systems
+  - langchain
+  - langgraph
+  - pydantic-ai
+  - dspy
+  - llm
+  - large-language-models
+  - machine-learning
+  - deep-learning
+  - rag
+  - retrieval-augmented-generation
+  - agent-frameworks
+  - autonomous-agents
+license: MIT
+version: 2.0.0
+date-released: "2025-01-15"
+

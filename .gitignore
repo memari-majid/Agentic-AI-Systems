@@ -1,15 +1,15 @@
+# MkDocs build directory
+site/
+
 # Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
-env/
 venv/
-.venv
-*.egg-info/
-dist/
-build/
+env/
+ENV/
 
 # IDE
 .vscode/
@@ -17,16 +17,7 @@ build/
 *.swp
 *.swo
 *~
-.DS_Store
-
-# Jupyter
-.ipynb_checkpoints/
-*.ipynb
-
-# Environment
-.env
-.env.local
-*.log
 
 # OS
+.DS_Store
 Thumbs.db

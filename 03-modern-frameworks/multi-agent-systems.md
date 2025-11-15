@@ -96,4 +96,4 @@ graph TD
 
 ---
 
-*Next: Explore [Agent Communication Protocols](communication_protocols.md) to design robust messaging strategies between agents.*
+*Next: Explore [Agent Communication Protocols](communication-protocols.md) to design robust messaging strategies between agents.*

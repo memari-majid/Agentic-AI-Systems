@@ -559,6 +559,6 @@ Autonomous agents represent a paradigm shift in AI systems, moving from reactive
 
 ## Next Steps
 
-- Explore [Enterprise Platforms](enterprise_platforms.md) for production deployment
-- Learn about [Multi-Agent Systems](multi_agent_systems.md) coordination
-- Review [Security & Observability](security_observability.md) for safe deployment
+- Explore [Enterprise Platforms](enterprise-platforms.md) for production deployment
+- Learn about [Multi-Agent Systems](multi-agent-systems.md) coordination
+- Review [Security & Observability](security-observability.md) for safe deployment

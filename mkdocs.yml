@@ -1,0 +1,166 @@
+site_name: Agentic AI Systems
+site_url: https://memari-majid.github.io/Agentic-AI-Systems/
+site_author: Majid Memari
+site_description: A comprehensive knowledge base for building intelligent AI agent systems - from foundational theory to production deployment
+
+repo_name: memari-majid/Agentic-AI-Systems
+repo_url: https://github.com/memari-majid/Agentic-AI-Systems
+edit_uri: edit/main/
+
+theme:
+  name: material
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+    - toc.follow
+  
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search:
+      lang: en
+  - tags
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/memari-majid
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/majid-memari/
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX  # Replace with your Google Analytics ID
+  
+copyright: Copyright &copy; 2025 Majid Memari
+
+nav:
+  - Home: index.md
+  
+  - Foundations:
+    - Overview: 01-foundations/README.md
+    - 01. Generative AI Fundamentals: 01-foundations/01-generative-ai-fundamentals.md
+    - 02. Agentic System Principles: 01-foundations/02-agentic-system-principles.md
+    - 03. Intelligent Agent Components: 01-foundations/03-intelligent-agent-components.md
+    - 04. Reflection & Introspection: 01-foundations/04-reflection-introspection.md
+    - 05. Tool Use & Planning: 01-foundations/05-tool-use-planning.md
+    - 06. Multi-Agent Coordination: 01-foundations/06-multi-agent-coordination.md
+    - 07. System Design Techniques: 01-foundations/07-system-design-techniques.md
+    - 08. Building Trust & Safety: 01-foundations/08-building-trust-safety.md
+    - 09. Ethics & Considerations: 01-foundations/09-ethics-considerations.md
+    - 10. Use Cases & Applications: 01-foundations/10-use-cases-applications.md
+    - 11. Future Outlook: 01-foundations/11-future-outlook.md
+  
+  - Implementation:
+    - Overview: 02-implementation/README.md
+    - 01. Introduction: 02-implementation/01-introduction.md
+    - 02. LangChain Foundations: 02-implementation/02-langchain-foundations.md
+    - 03. LangGraph Workflows: 02-implementation/03-langgraph-workflows.md
+    - 04. Combined Approach: 02-implementation/04-combined-approach.md
+    - 05. DSPy Optimization: 02-implementation/05-dspy-optimization.md
+    - 06. State Management: 02-implementation/06-state-management.md
+    - 07. Debugging & Monitoring: 02-implementation/07-debugging-monitoring.md
+    - 08. Unstructured Data (RAG): 02-implementation/08-unstructured-data.md
+    - 09. Best Practices: 02-implementation/09-best-practices.md
+    - 10. References: 02-implementation/10-references.md
+  
+  - Modern Frameworks:
+    - Overview: 03-modern-frameworks/README.md
+    - Pydantic AI: 03-modern-frameworks/pydantic-ai.md
+    - Model Context Protocol: 03-modern-frameworks/model-context-protocol.md
+    - Autonomous Agents: 03-modern-frameworks/autonomous-agents.md
+    - Multi-Agent Systems: 03-modern-frameworks/multi-agent-systems.md
+    - Communication Protocols: 03-modern-frameworks/communication-protocols.md
+    - Orchestration Frameworks: 03-modern-frameworks/orchestration-frameworks.md
+    - Security & Observability: 03-modern-frameworks/security-observability.md
+    - Enterprise Platforms: 03-modern-frameworks/enterprise-platforms.md
+    - Technology Comparison: 03-modern-frameworks/technology-comparison.md
+    - Agentic AI 2025: 03-modern-frameworks/agentic-ai-2025.md
+  
+  - Strategy:
+    - Overview: 04-strategy/README.md
+    - 01. Strategic Planning: 04-strategy/01-strategic-planning.md
+    - 02. Team Building: 04-strategy/02-team-building.md
+    - 03. Technology Selection: 04-strategy/03-technology-selection.md
+    - 04. Implementation Roadmap: 04-strategy/04-implementation-roadmap.md
+    - 05. Change Management: 04-strategy/05-change-management.md
+    - 06. Risk Assessment: 04-strategy/06-risk-assessment.md
+    - 07. Performance Metrics: 04-strategy/07-performance-metrics.md
+    - 08. Stakeholder Alignment: 04-strategy/08-stakeholder-alignment.md
+    - 09. Budget & Resources: 04-strategy/09-budget-resources.md
+    - 10. Governance & Ethics: 04-strategy/10-governance-ethics.md
+    - 11. Scaling Strategies: 04-strategy/11-scaling-strategies.md
+    - 12. Future Planning: 04-strategy/12-future-planning.md
+    - 13. Case Studies: 04-strategy/13-case-studies.md
+    - 14. Industry Applications: 04-strategy/14-industry-applications.md
+    - 15. ROI Measurement: 04-strategy/15-roi-measurement.md
+    - 16. Continuous Improvement: 04-strategy/16-continuous-improvement.md
+    - 17. Advanced Topics: 04-strategy/17-advanced-topics.md
+  
+  - Research:
+    - Overview: 05-research/README.md
+    - Leveraging Unstructured Data with LLMs: 05-research/leveraging-unstructured-data-llms.md
+  
+  - Labs:
+    - Overview: 06-labs/README.md
+    - 01. Hello Graph: 06-labs/01-hello-graph.md
+    - 02. Travel Booking Graph: 06-labs/02-travel-booking-graph.md
+    - 03. Parallel Scoring: 06-labs/03-parallel-scoring.md
+    - 04. Reflection Loops: 06-labs/04-reflection-loops.md
+    - 05. Parallel Planning: 06-labs/05-parallel-planning.md
+    - 06. Nested Graphs: 06-labs/06-nested-graphs.md
+    - 07. Memory & Feedback: 06-labs/07-memory-feedback.md
+    - 08. Tool Protocols: 06-labs/08-tool-protocols.md
+    - 09. Guardrails: 06-labs/09-guardrails.md
+    - 10. DSPy Optimization: 06-labs/10-dspy-optimization.md
+    - 11. Agent Fine-Tuning: 06-labs/11-agent-finetuning.md
+    - 12. Multi-Agent Systems: 06-labs/12-multi-agent-systems.md
+    - 13. Document RAG Agents: 06-labs/13-document-rag-agents.md
+    - 14. Document RAG Pipeline: 06-labs/13-document-rag-pipeline.md
+

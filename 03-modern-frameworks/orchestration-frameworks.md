@@ -595,6 +595,6 @@ Modern orchestration frameworks offer diverse approaches to building multi-agent
 
 ## Next Steps
 
-- Explore [Autonomous Agents](autonomous_agents.md) built with these frameworks
-- Learn about [Enterprise Platforms](enterprise_platforms.md) for production deployment
-- Review [Multi-Agent Systems](multi_agent_systems.md) architecture patterns
+- Explore [Autonomous Agents](autonomous-agents.md) built with these frameworks
+- Learn about [Enterprise Platforms](enterprise-platforms.md) for production deployment
+- Review [Multi-Agent Systems](multi-agent-systems.md) architecture patterns
