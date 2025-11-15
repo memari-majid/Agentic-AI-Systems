@@ -5,6 +5,8 @@
 A comprehensive review paper presenting a unified framework for understanding, designing, and implementing agentic AI systems—from theoretical foundations to production deployment.
 
 [![Read Paper](https://img.shields.io/badge/Read%20Paper-HTML-blue.svg)](https://memari-majid.github.io/Agentic-AI-Systems/)
+[![PDF Download](https://img.shields.io/badge/Download-PDF-red.svg)](arxiv-paper/paper.pdf)
+[![Citation](https://img.shields.io/badge/Cite-This%20Paper-green.svg)](CITING.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ---
@@ -20,7 +22,10 @@ The complete 43-page paper is available as a **full HTML website** (not PDF) wit
 - Easy navigation between sections
 - Professional web page format
 
-**Direct URL**: https://memari-majid.github.io/Agentic-AI-Systems/
+**Direct URLs**:
+- **HTML Version**: https://memari-majid.github.io/Agentic-AI-Systems/
+- **PDF Download**: [paper.pdf](arxiv-paper/paper.pdf)
+- **Citation Guide**: [CITING.md](CITING.md)
 
 **All Paper Sections (HTML)**:
 - [Introduction](https://memari-majid.github.io/Agentic-AI-Systems/paper/01-introduction/)
@@ -119,7 +124,9 @@ The paper is organized into 8 comprehensive sections, all available in HTML form
 
 ## 📖 Citation
 
-If you use this work in your research, please cite:
+**If you use this work in your research, please cite it!**
+
+### Quick Citation (BibTeX)
 
 ```bibtex
 @article{memari2025agentic,
@@ -127,9 +134,27 @@ If you use this work in your research, please cite:
   author={Memari, Majid},
   journal={arXiv preprint arXiv:XXXX.XXXXX},
   year={2025},
-  institution={Utah Valley University}
+  institution={Utah Valley University},
+  url={https://github.com/memari-majid/Agentic-AI-Systems},
+  note={Available at: \url{https://memari-majid.github.io/Agentic-AI-Systems/}}
 }
 ```
+
+### Citation Formats
+
+- **📄 [Full Citation Guide →](CITING.md)** - APA, MLA, IEEE, Chicago styles
+- **📋 [BibTeX File →](arxiv-paper/references.bib)** - Complete bibliography
+- **📝 [CITATION.cff →](CITATION.cff)** - Automatic citation metadata
+
+### Why Cite?
+
+Citing this work helps:
+- ✅ Advance the field of agentic AI
+- ✅ Support open research
+- ✅ Enable reproducible research
+- ✅ Build academic community
+
+**Thank you for your citation!** 🙏
 
 ---
 

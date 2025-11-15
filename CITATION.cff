@@ -1,7 +1,7 @@
 cff-version: 1.2.0
-title: "Agentic AI Systems: A Comprehensive Knowledge Base"
-message: "If you use this knowledge base in your research or work, please cite it using the metadata from this file."
-type: software
+title: "Agentic AI Systems: A Comprehensive Framework for Building Autonomous Intelligent Agents"
+message: "If you use this paper in your research or work, please cite it using the metadata from this file."
+type: article
 authors:
   - family-names: "Memari"
     given-names: "Majid"
@@ -14,7 +14,7 @@ identifiers:
     description: "GitHub Repository"
 repository-code: "https://github.com/memari-majid/Agentic-AI-Systems"
 url: "https://github.com/memari-majid/Agentic-AI-Systems"
-abstract: "A comprehensive knowledge base for building intelligent AI agent systems, covering foundational theory, practical implementation, modern frameworks, strategic considerations, research directions, and hands-on labs. This repository provides ~110 hours of content across 62 chapters and 13 Python labs."
+abstract: "A comprehensive framework for understanding, designing, and implementing agentic AI systems—from theoretical foundations to production deployment. This 43-page review paper synthesizes theoretical foundations with practical implementation strategies, covering the complete spectrum from foundational principles to production deployment. Includes 104 peer-reviewed references and 15 code examples."
 keywords:
   - agentic-ai
   - artificial-intelligence
@@ -32,6 +32,16 @@ keywords:
   - agent-frameworks
   - autonomous-agents
 license: MIT
-version: 2.0.0
-date-released: "2025-01-15"
+version: 2025.11.15
+date-released: "2025-11-15"
+identifiers:
+  - type: doi
+    value: "10.48550/arXiv.XXXX.XXXXX"
+    description: "arXiv DOI (to be updated after submission)"
+  - type: url
+    value: "https://memari-majid.github.io/Agentic-AI-Systems/"
+    description: "HTML Version"
+  - type: url
+    value: "https://github.com/memari-majid/Agentic-AI-Systems/arxiv-paper/paper.pdf"
+    description: "PDF Version"
 
