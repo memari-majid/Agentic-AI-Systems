@@ -8,6 +8,25 @@
 
 ---
 
+## 🗂️ Quick Navigation
+
+**Main Sections:**
+- [📚 Complete Table of Contents](#-complete-table-of-contents) - All chapters and files with hyperlinks
+- [📑 Complete File Index](#-complete-file-index) - Detailed file-by-file reference
+- [🎯 Learning Paths](#-learning-paths) - Recommended paths for different roles
+- [🛠️ Technologies Covered](#️-technologies-covered) - Frameworks & platforms
+- [💡 Tips for Success](#-tips-for-success) - Best practices for learning
+
+**Sections by Topic:**
+- [01 - Foundations](#01---foundations) (11 chapters)
+- [02 - Implementation](#02---implementation) (10 chapters)
+- [03 - Modern Frameworks](#03---modern-frameworks) (10 topics)
+- [04 - Strategy](#04---strategy) (17 chapters)
+- [05 - Research](#05---research) (1+ papers)
+- [06 - Labs](#06---labs) (13 labs)
+
+---
+
 ## 🚀 Quick Start
 
 ```bash
@@ -45,22 +64,22 @@ Agentic-AI-Systems/
 
 ---
 
-## 📚 Content Overview
+## 📚 Complete Table of Contents
 
 ### [01 - Foundations](01-foundations/) 
 **Core concepts and theoretical underpinnings**
 
-- Generative AI fundamentals
-- Agentic system principles  
-- Intelligent agent components
-- Reflection & introspection
-- Tool use & planning
-- Multi-agent coordination
-- System design techniques
-- Trust & safety
-- Ethics & considerations
-- Use cases & applications
-- Future outlook
+1. [Generative AI Fundamentals](01-foundations/01-generative-ai-fundamentals.md)
+2. [Agentic System Principles](01-foundations/02-agentic-system-principles.md)
+3. [Intelligent Agent Components](01-foundations/03-intelligent-agent-components.md)
+4. [Reflection & Introspection](01-foundations/04-reflection-introspection.md)
+5. [Tool Use & Planning](01-foundations/05-tool-use-planning.md)
+6. [Multi-Agent Coordination](01-foundations/06-multi-agent-coordination.md)
+7. [System Design Techniques](01-foundations/07-system-design-techniques.md)
+8. [Building Trust & Safety](01-foundations/08-building-trust-safety.md)
+9. [Ethics & Considerations](01-foundations/09-ethics-considerations.md)
+10. [Use Cases & Applications](01-foundations/10-use-cases-applications.md)
+11. [Future Outlook](01-foundations/11-future-outlook.md)
 
 **11 chapters** | Beginner-Intermediate | ~4 hours
 
@@ -69,16 +88,16 @@ Agentic-AI-Systems/
 ### [02 - Implementation](02-implementation/)
 **Hands-on development with modern frameworks**
 
-- Introduction to agentic AI
-- LangChain foundations
-- LangGraph workflows
-- Combined approach
-- DSPy optimization
-- State management
-- Debugging & monitoring
-- Unstructured data (RAG)
-- Best practices
-- References
+1. [Introduction to Agentic AI](02-implementation/01-introduction.md)
+2. [LangChain Foundations](02-implementation/02-langchain-foundations.md)
+3. [LangGraph Workflows](02-implementation/03-langgraph-workflows.md)
+4. [Combined Approach](02-implementation/04-combined-approach.md)
+5. [DSPy Optimization](02-implementation/05-dspy-optimization.md)
+6. [State Management](02-implementation/06-state-management.md)
+7. [Debugging & Monitoring](02-implementation/07-debugging-monitoring.md)
+8. [Unstructured Data (RAG)](02-implementation/08-unstructured-data.md)
+9. [Best Practices](02-implementation/09-best-practices.md)
+10. [References](02-implementation/10-references.md)
 
 **10 chapters** | Intermediate-Advanced | ~5 hours
 
@@ -87,16 +106,16 @@ Agentic-AI-Systems/
 ### [03 - Modern Frameworks](03-modern-frameworks/)
 **Cutting-edge technologies (2024-2025)**
 
-- Pydantic AI (type-safe)
-- Model Context Protocol (MCP)
-- Autonomous agents
-- Multi-agent systems
-- Communication protocols
-- Orchestration frameworks
-- Security & observability
-- Enterprise platforms
-- Technology comparison
-- 2025 advancements
+1. [Pydantic AI (Type-Safe)](03-modern-frameworks/pydantic-ai.md)
+2. [Model Context Protocol (MCP)](03-modern-frameworks/model-context-protocol.md)
+3. [Autonomous Agents](03-modern-frameworks/autonomous-agents.md)
+4. [Multi-Agent Systems](03-modern-frameworks/multi-agent-systems.md)
+5. [Communication Protocols](03-modern-frameworks/communication-protocols.md)
+6. [Orchestration Frameworks](03-modern-frameworks/orchestration-frameworks.md)
+7. [Security & Observability](03-modern-frameworks/security-observability.md)
+8. [Enterprise Platforms](03-modern-frameworks/enterprise-platforms.md)
+9. [Technology Comparison](03-modern-frameworks/technology-comparison.md)
+10. [Agentic AI 2025 Advancements](03-modern-frameworks/agentic-ai-2025.md)
 
 **10 topics** | Advanced | ~3-4 hours
 
@@ -105,23 +124,23 @@ Agentic-AI-Systems/
 ### [04 - Strategy](04-strategy/)
 **Leadership and organizational transformation**
 
-- Strategic planning
-- Team building
-- Technology selection
-- Implementation roadmap
-- Change management
-- Risk assessment
-- Performance metrics
-- Stakeholder alignment
-- Budget & resources
-- Governance & ethics
-- Scaling strategies
-- Future planning
-- Case studies
-- Industry applications
-- ROI measurement
-- Continuous improvement
-- Advanced topics
+1. [Strategic Planning](04-strategy/01-strategic-planning.md)
+2. [Team Building](04-strategy/02-team-building.md)
+3. [Technology Selection](04-strategy/03-technology-selection.md)
+4. [Implementation Roadmap](04-strategy/04-implementation-roadmap.md)
+5. [Change Management](04-strategy/05-change-management.md)
+6. [Risk Assessment](04-strategy/06-risk-assessment.md)
+7. [Performance Metrics](04-strategy/07-performance-metrics.md)
+8. [Stakeholder Alignment](04-strategy/08-stakeholder-alignment.md)
+9. [Budget & Resources](04-strategy/09-budget-resources.md)
+10. [Governance & Ethics](04-strategy/10-governance-ethics.md)
+11. [Scaling Strategies](04-strategy/11-scaling-strategies.md)
+12. [Future Planning](04-strategy/12-future-planning.md)
+13. [Case Studies](04-strategy/13-case-studies.md)
+14. [Industry Applications](04-strategy/14-industry-applications.md)
+15. [ROI Measurement](04-strategy/15-roi-measurement.md)
+16. [Continuous Improvement](04-strategy/16-continuous-improvement.md)
+17. [Advanced Topics](04-strategy/17-advanced-topics.md)
 
 **17 chapters** | Advanced | ~5-6 hours
 
@@ -130,36 +149,34 @@ Agentic-AI-Systems/
 ### [05 - Research](05-research/)
 **Frontier topics and emerging developments**
 
-- Leveraging unstructured data with LLMs
-- RAG vs fine-tuning (comprehensive guide)
-- Future research directions
+1. [Leveraging Unstructured Data with LLMs](05-research/leveraging-unstructured-data-llms.md)
 
-**2+ papers** | Advanced-Research | ~5-10 hours
+**1+ papers** | Advanced-Research | ~5-10 hours
 
 ---
 
 ### [06 - Labs](06-labs/)
 **Hands-on coding exercises with full implementations**
 
-**Beginner Labs:**
-- Hello Graph (basics)
-- Travel Booking Graph (workflows)
-- Parallel Scoring (concurrency)
+#### 🎓 Beginner Labs
+1. **Hello Graph** - [Tutorial](06-labs/01-hello-graph.md) | [Code](06-labs/01-hello-graph.py)
+2. **Travel Booking Graph** - [Tutorial](06-labs/02-travel-booking-graph.md) | [Code](06-labs/02-travel-booking-graph.py)
+3. **Parallel Scoring** - [Tutorial](06-labs/03-parallel-scoring.md) | [Code](06-labs/03-parallel-scoring.py)
 
-**Intermediate Labs:**
-- Reflection Loops (self-improvement)
-- Parallel Planning (advanced planning)
-- Nested Graphs (hierarchical systems)
-- Memory & Feedback (persistent memory)
+#### 👨‍💻 Intermediate Labs
+4. **Reflection Loops** - [Tutorial](06-labs/04-reflection-loops.md) | [Code](06-labs/04-reflection-loops.py)
+5. **Parallel Planning** - [Tutorial](06-labs/05-parallel-planning.md) | [Code](06-labs/05-parallel-planning.py)
+6. **Nested Graphs** - [Tutorial](06-labs/06-nested-graphs.md) | [Code](06-labs/06-nested-graphs.py)
+7. **Memory & Feedback** - [Tutorial](06-labs/07-memory-feedback.md) | [Code](06-labs/07-memory-feedback.py)
 
-**Advanced Labs:**
-- Tool Protocols (standardized integration)
-- Guardrails (safety systems)
-- DSPy Optimization (prompt tuning)
-- Agent Fine-Tuning (model customization)
-- Multi-Agent Systems (coordination)
-- Document RAG Agents (retrieval-augmented)
-- Document RAG Pipeline (production RAG)
+#### 🚀 Advanced Labs
+8. **Tool Protocols** - [Tutorial](06-labs/08-tool-protocols.md) | [Code](06-labs/08-tool-protocols.py)
+9. **Guardrails** - [Tutorial](06-labs/09-guardrails.md) | [Code](06-labs/09-guardrails.py)
+10. **DSPy Optimization** - [Tutorial](06-labs/10-dspy-optimization.md) | [Code](06-labs/10-dspy-optimization.py)
+11. **Agent Fine-Tuning** - [Tutorial](06-labs/11-agent-finetuning.md) | [Code](06-labs/11-agent-finetuning.py)
+12. **Multi-Agent Systems** - [Tutorial](06-labs/12-multi-agent-systems.md) | [Code](06-labs/12-multi-agent-systems.py)
+13. **Document RAG Agents** - [Tutorial](06-labs/13-document-rag-agents.md)
+14. **Document RAG Pipeline** - [Tutorial](06-labs/13-document-rag-pipeline.md)
 
 **13 labs** | Beginner-Advanced | ~30-40 hours
 
@@ -219,15 +236,15 @@ Explore frontier topics, understand state-of-art, implement research.
 
 ## 📊 Content Statistics
 
-| Section | Files | Difficulty | Est. Time |
-|---------|-------|------------|-----------|
-| Foundations | 11 chapters | Beginner-Intermediate | 15-20 hours |
-| Implementation | 10 chapters | Intermediate-Advanced | 25-30 hours |
-| Modern Frameworks | 10 topics | Advanced | 12-15 hours |
-| Strategy | 17 chapters | Advanced | 20-25 hours |
-| Research | 2+ papers | Advanced | 5-10 hours |
-| Labs | 13 labs + code | Beginner-Advanced | 30-40 hours |
-| **Total** | **70 files** | - | **~110 hours** |
+| Section | Chapters | Files | Difficulty | Est. Time |
+|---------|----------|-------|------------|-----------|
+| [01 - Foundations](#01---foundations) | 11 | 12 (.md + README) | Beginner-Intermediate | 15-20 hours |
+| [02 - Implementation](#02---implementation) | 10 | 11 (.md + README) | Intermediate-Advanced | 25-30 hours |
+| [03 - Modern Frameworks](#03---modern-frameworks) | 10 | 11 (.md + README) | Advanced | 12-15 hours |
+| [04 - Strategy](#04---strategy) | 17 | 18 (.md + README) | Advanced | 20-25 hours |
+| [05 - Research](#05---research) | 1 | 2 (.md + README) | Advanced-Research | 5-10 hours |
+| [06 - Labs](#06---labs) | 13 | 26 (.md + .py + README) | Beginner-Advanced | 30-40 hours |
+| **Total** | **62** | **80 files** | - | **~110 hours** |
 
 ---
 
@@ -343,14 +360,100 @@ If you use this knowledge base in your work:
 
 ## 🌟 Highlights
 
-- ✨ **70 Markdown files** - All easy to read
-- 🐍 **12 Python labs** - Complete implementations
-- 📖 **~110 hours** - Comprehensive content
-- 🎯 **4 learning paths** - For different roles
-- 🚀 **Latest tech** - 2024-2025 frameworks
-- 🧪 **Hands-on labs** - Practical experience
-- 📊 **Real examples** - Production patterns
-- 🔒 **No dependencies** - Just read and learn
+- ✨ **80 files total** - 62 Markdown chapters + 13 Python labs + READMEs
+- 🐍 **13 Python labs** - Complete implementations with tutorials
+- 📖 **~110 hours** - Comprehensive content across all sections
+- 🎯 **4 learning paths** - For different roles (Beginners, Developers, Leaders, Researchers)
+- 🚀 **Latest tech** - 2024-2025 frameworks (Pydantic AI, MCP, LangGraph, DSPy)
+- 🧪 **Hands-on labs** - Practical experience from beginner to advanced
+- 📊 **Real examples** - Production patterns and best practices
+- 🔒 **No dependencies** - Just read and learn, all content in Markdown
+- 🔗 **Fully hyperlinked** - Easy navigation with table of contents
+
+---
+
+## 📑 Complete File Index
+
+### 01 - Foundations (11 chapters)
+1. [01-generative-ai-fundamentals.md](01-foundations/01-generative-ai-fundamentals.md)
+2. [02-agentic-system-principles.md](01-foundations/02-agentic-system-principles.md)
+3. [03-intelligent-agent-components.md](01-foundations/03-intelligent-agent-components.md)
+4. [04-reflection-introspection.md](01-foundations/04-reflection-introspection.md)
+5. [05-tool-use-planning.md](01-foundations/05-tool-use-planning.md)
+6. [06-multi-agent-coordination.md](01-foundations/06-multi-agent-coordination.md)
+7. [07-system-design-techniques.md](01-foundations/07-system-design-techniques.md)
+8. [08-building-trust-safety.md](01-foundations/08-building-trust-safety.md)
+9. [09-ethics-considerations.md](01-foundations/09-ethics-considerations.md)
+10. [10-use-cases-applications.md](01-foundations/10-use-cases-applications.md)
+11. [11-future-outlook.md](01-foundations/11-future-outlook.md)
+- [README.md](01-foundations/README.md)
+
+### 02 - Implementation (10 chapters)
+1. [01-introduction.md](02-implementation/01-introduction.md)
+2. [02-langchain-foundations.md](02-implementation/02-langchain-foundations.md)
+3. [03-langgraph-workflows.md](02-implementation/03-langgraph-workflows.md)
+4. [04-combined-approach.md](02-implementation/04-combined-approach.md)
+5. [05-dspy-optimization.md](02-implementation/05-dspy-optimization.md)
+6. [06-state-management.md](02-implementation/06-state-management.md)
+7. [07-debugging-monitoring.md](02-implementation/07-debugging-monitoring.md)
+8. [08-unstructured-data.md](02-implementation/08-unstructured-data.md)
+9. [09-best-practices.md](02-implementation/09-best-practices.md)
+10. [10-references.md](02-implementation/10-references.md)
+- [README.md](02-implementation/README.md)
+
+### 03 - Modern Frameworks (10 topics)
+1. [pydantic-ai.md](03-modern-frameworks/pydantic-ai.md)
+2. [model-context-protocol.md](03-modern-frameworks/model-context-protocol.md)
+3. [autonomous-agents.md](03-modern-frameworks/autonomous-agents.md)
+4. [multi-agent-systems.md](03-modern-frameworks/multi-agent-systems.md)
+5. [communication-protocols.md](03-modern-frameworks/communication-protocols.md)
+6. [orchestration-frameworks.md](03-modern-frameworks/orchestration-frameworks.md)
+7. [security-observability.md](03-modern-frameworks/security-observability.md)
+8. [enterprise-platforms.md](03-modern-frameworks/enterprise-platforms.md)
+9. [technology-comparison.md](03-modern-frameworks/technology-comparison.md)
+10. [agentic-ai-2025.md](03-modern-frameworks/agentic-ai-2025.md)
+- [README.md](03-modern-frameworks/README.md)
+
+### 04 - Strategy (17 chapters)
+1. [01-strategic-planning.md](04-strategy/01-strategic-planning.md)
+2. [02-team-building.md](04-strategy/02-team-building.md)
+3. [03-technology-selection.md](04-strategy/03-technology-selection.md)
+4. [04-implementation-roadmap.md](04-strategy/04-implementation-roadmap.md)
+5. [05-change-management.md](04-strategy/05-change-management.md)
+6. [06-risk-assessment.md](04-strategy/06-risk-assessment.md)
+7. [07-performance-metrics.md](04-strategy/07-performance-metrics.md)
+8. [08-stakeholder-alignment.md](04-strategy/08-stakeholder-alignment.md)
+9. [09-budget-resources.md](04-strategy/09-budget-resources.md)
+10. [10-governance-ethics.md](04-strategy/10-governance-ethics.md)
+11. [11-scaling-strategies.md](04-strategy/11-scaling-strategies.md)
+12. [12-future-planning.md](04-strategy/12-future-planning.md)
+13. [13-case-studies.md](04-strategy/13-case-studies.md)
+14. [14-industry-applications.md](04-strategy/14-industry-applications.md)
+15. [15-roi-measurement.md](04-strategy/15-roi-measurement.md)
+16. [16-continuous-improvement.md](04-strategy/16-continuous-improvement.md)
+17. [17-advanced-topics.md](04-strategy/17-advanced-topics.md)
+- [README.md](04-strategy/README.md)
+
+### 05 - Research (1 paper)
+1. [leveraging-unstructured-data-llms.md](05-research/leveraging-unstructured-data-llms.md)
+- [README.md](05-research/README.md)
+
+### 06 - Labs (13 labs with code)
+1. [01-hello-graph.md](06-labs/01-hello-graph.md) + [01-hello-graph.py](06-labs/01-hello-graph.py)
+2. [02-travel-booking-graph.md](06-labs/02-travel-booking-graph.md) + [02-travel-booking-graph.py](06-labs/02-travel-booking-graph.py)
+3. [03-parallel-scoring.md](06-labs/03-parallel-scoring.md) + [03-parallel-scoring.py](06-labs/03-parallel-scoring.py)
+4. [04-reflection-loops.md](06-labs/04-reflection-loops.md) + [04-reflection-loops.py](06-labs/04-reflection-loops.py)
+5. [05-parallel-planning.md](06-labs/05-parallel-planning.md) + [05-parallel-planning.py](06-labs/05-parallel-planning.py)
+6. [06-nested-graphs.md](06-labs/06-nested-graphs.md) + [06-nested-graphs.py](06-labs/06-nested-graphs.py)
+7. [07-memory-feedback.md](06-labs/07-memory-feedback.md) + [07-memory-feedback.py](06-labs/07-memory-feedback.py)
+8. [08-tool-protocols.md](06-labs/08-tool-protocols.md) + [08-tool-protocols.py](06-labs/08-tool-protocols.py)
+9. [09-guardrails.md](06-labs/09-guardrails.md) + [09-guardrails.py](06-labs/09-guardrails.py)
+10. [10-dspy-optimization.md](06-labs/10-dspy-optimization.md) + [10-dspy-optimization.py](06-labs/10-dspy-optimization.py)
+11. [11-agent-finetuning.md](06-labs/11-agent-finetuning.md) + [11-agent-finetuning.py](06-labs/11-agent-finetuning.py)
+12. [12-multi-agent-systems.md](06-labs/12-multi-agent-systems.md) + [12-multi-agent-systems.py](06-labs/12-multi-agent-systems.py)
+13. [13-document-rag-agents.md](06-labs/13-document-rag-agents.md)
+14. [13-document-rag-pipeline.md](06-labs/13-document-rag-pipeline.md)
+- [README.md](06-labs/README.md)
 
 ---
 
