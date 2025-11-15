@@ -58,8 +58,8 @@ If you use this work in your research, please cite:
 }
 ```
 
-**📄 [Full Citation Guide →](../../CITING.md)** - APA, MLA, IEEE, Chicago formats  
-**📋 [BibTeX File →](../../arxiv-paper/references.bib)** - Complete bibliography
+**📄 [Full Citation Guide →](CITING.md)** - APA, MLA, IEEE, Chicago formats  
+**📋 [BibTeX File →](../arxiv-paper/references.bib)** - Complete bibliography
 
 ---
 

@@ -6,7 +6,7 @@ A comprehensive review paper presenting a unified framework for understanding, d
 
 [![Read Paper](https://img.shields.io/badge/Read%20Paper-HTML-blue.svg)](paper/)
 [![PDF Download](https://img.shields.io/badge/Download-PDF-red.svg)](../arxiv-paper/paper.pdf)
-[![Citation](https://img.shields.io/badge/Cite-This%20Paper-green.svg)](../CITING.md)
+[![Citation](https://img.shields.io/badge/Cite-This%20Paper-green.svg)](CITING.md)
 
 ---
 
@@ -24,7 +24,7 @@ The complete 43-page paper is available as a **full HTML website** with:
 **Direct Links**:
 - **HTML Version**: [paper/](paper/)
 - **PDF Download**: [paper.pdf](paper.pdf) - [Direct Link](https://memari-majid.github.io/Agentic-AI-Systems/paper.pdf)
-- **Citation Guide**: [CITING.md](../CITING.md)
+- **Citation Guide**: [CITING.md](CITING.md) - [Direct Link](https://memari-majid.github.io/Agentic-AI-Systems/CITING.md)
 
 ---
 
@@ -90,7 +90,7 @@ The paper is organized into 8 comprehensive sections:
 }
 ```
 
-**📄 [Full Citation Guide →](../CITING.md)** - APA, MLA, IEEE, Chicago styles
+**📄 [Full Citation Guide →](CITING.md)** - APA, MLA, IEEE, Chicago styles
 
 ---
 
