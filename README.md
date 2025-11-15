@@ -30,90 +30,138 @@ python scripts/search_new_papers.py
 mkdocs gh-deploy
 ```
 
-**New here?** → Read [`START-HERE.md`](START-HERE.md)
+**New here?** → Read [`guides/START-HERE.md`](guides/START-HERE.md)
 
 ---
 
-## 📚 What's Included
-
-### Review Paper (43 pages)
-- **104 peer-reviewed references** from NeurIPS, ICML, Nature, IEEE, etc.
-- **15 code examples** (LangChain, LangGraph, Pydantic AI, DSPy)
-- **Covers**: Theory, implementation, multi-agent systems, RAG, production deployment
-- **Status**: Ready for arXiv submission
-
-### Research Papers (5)
-1. Agentic AI Needs a Systems Theory (IBM Research, 2025)
-2. Agentic AI: Autonomous Intelligence (IEEE Access, 2025)
-3. Agentic AI Systems: Opportunities (IEEE EIT, 2025)
-4. AI Agents vs. Agentic AI (Information Fusion, 2026)
-5. The Rise of Agentic AI (Future Internet, 2025)
-
-See [`papers/PAPERS_SUMMARY.md`](papers/PAPERS_SUMMARY.md) for extracted insights.
-
-### Documentation & Guides
-- **[GITHUB_PAGES_GUIDE.md](GITHUB_PAGES_GUIDE.md)** - Run and deploy documentation
-- **[PAPER_UPDATE_RULES.md](PAPER_UPDATE_RULES.md)** - Keep review current (academic standards)
-- **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - Common commands
-- **[papers/INTEGRATION_GUIDE.md](papers/INTEGRATION_GUIDE.md)** - LaTeX integration snippets
-
-### Automation
-- **search_new_papers.py** - Automated paper discovery from arXiv & Semantic Scholar
-- **Academic filtering** - Only peer-reviewed sources (Tier 1-3 venues)
-- **Update workflows** - Weekly, monthly, quarterly routines
-
----
-
-## 📖 Repository Structure
+## 📚 Repository Structure
 
 ```
 Agentic-AI-Systems/
-├── arxiv-paper/          # Review paper (LaTeX + PDF)
-├── papers/               # 5 research papers + summaries
-├── docs/                 # Documentation source
-├── site/                 # Built website (GitHub Pages)
-├── scripts/              # Automation (paper search, etc.)
-├── GITHUB_PAGES_GUIDE.md # Deployment guide
-├── PAPER_UPDATE_RULES.md # Academic standards
-└── QUICK_REFERENCE.md    # Command cheat sheet
+├── README.md                    # This file
+├── arxiv-paper/                 # Review paper (43 pages, 104 refs)
+├── papers/                      # 5 research papers + summaries
+├── guides/                      # 7 comprehensive guides
+│   ├── START-HERE.md           # Quick start ⭐
+│   ├── GITHUB_PAGES_GUIDE.md   # Deploy documentation
+│   ├── PAPER_UPDATE_RULES.md   # Academic standards
+│   └── QUICK_REFERENCE.md      # Command cheat sheet
+├── docs/                        # Documentation source (MkDocs)
+├── site/                        # Built website (GitHub Pages)
+├── scripts/                     # Automation scripts
+├── docs-info/                   # Status reports & summaries
+└── .archive/                    # Historical documentation
 ```
 
-See [`ORGANIZATION.md`](ORGANIZATION.md) for complete structure.
+See [`guides/ORGANIZATION.md`](guides/ORGANIZATION.md) for complete details.
 
 ---
 
-## 🎯 Main Topics Covered
+## 📄 Review Paper
 
-- Agency and autonomy in AI systems
-- LangChain, LangGraph, Pydantic AI, DSPy frameworks
-- Multi-agent coordination patterns
-- RAG vs Fine-Tuning decision framework
-- Production deployment (monitoring, safety, testing)
-- Strategic considerations and ethics
+**Title**: Agentic AI Systems: A Comprehensive Framework for Building Autonomous Intelligent Agents
+
+**Author**: Majid Memari (Utah Valley University)  
+**Status**: Ready for arXiv submission
+
+**Highlights**:
+- 43 pages, 21,000 words
+- 104 peer-reviewed references
+- 15 code examples
+- Theory to production coverage
+
+---
+
+## 📦 Research Papers (5)
+
+1. **Agentic AI Needs a Systems Theory** (IBM Research, 2025)
+2. **Agentic AI: Autonomous Intelligence** (IEEE Access, 2025)
+3. **Agentic AI Systems: Opportunities** (IEEE EIT, 2025)
+4. **AI Agents vs. Agentic AI** (Information Fusion, 2026)
+5. **The Rise of Agentic AI** (Future Internet, 2025)
+
+See [`papers/PAPERS_SUMMARY.md`](papers/PAPERS_SUMMARY.md) for analysis.
+
+---
+
+## 🌐 GitHub Pages
+
+**Live**: https://memari-majid.github.io/Agentic-AI-Systems/
+
+**Run locally**:
+```bash
+mkdocs serve
+```
+
+**Deploy**:
+```bash
+mkdocs gh-deploy
+```
+
+**Guide**: [`guides/GITHUB_PAGES_GUIDE.md`](guides/GITHUB_PAGES_GUIDE.md)
 
 ---
 
 ## 🔄 Keeping Updated
 
-### Find New Papers
+### Automated Paper Discovery
 ```bash
 python scripts/search_new_papers.py
+cat new_papers.md
 ```
 
 ### Academic Standards
 - **Tier 1**: NeurIPS, ICML, ICLR, ACL, Nature, Science
-- **Tier 2**: AAMAS, IEEE Access, Information Fusion
+- **Tier 2**: AAMAS, IEEE Access, Information Fusion  
 - **Tier 3**: Top workshops, major lab reports
 - **Only peer-reviewed sources**
 
-Full guidelines: [`PAPER_UPDATE_RULES.md`](PAPER_UPDATE_RULES.md)
+**Complete rules**: [`guides/PAPER_UPDATE_RULES.md`](guides/PAPER_UPDATE_RULES.md)
+
+---
+
+## 📖 Essential Guides
+
+| Guide | Purpose |
+|-------|---------|
+| [START-HERE.md](guides/START-HERE.md) | Quick start ⭐ |
+| [GITHUB_PAGES_GUIDE.md](guides/GITHUB_PAGES_GUIDE.md) | Deploy docs |
+| [PAPER_UPDATE_RULES.md](guides/PAPER_UPDATE_RULES.md) | Academic standards |
+| [QUICK_REFERENCE.md](guides/QUICK_REFERENCE.md) | Commands |
+| [ORGANIZATION.md](guides/ORGANIZATION.md) | Structure |
+
+All guides: [`guides/`](guides/)
+
+---
+
+## 🛠️ Common Commands
+
+**Paper**:
+```bash
+cd arxiv-paper
+make          # Compile
+make view     # View PDF
+```
+
+**Documentation**:
+```bash
+mkdocs serve      # Local preview
+mkdocs gh-deploy  # Deploy
+```
+
+**Paper Search**:
+```bash
+python scripts/search_new_papers.py
+```
+
+See [`guides/QUICK_REFERENCE.md`](guides/QUICK_REFERENCE.md) for more.
 
 ---
 
 ## 📧 Contact
 
 **Majid Memari**  
-Department of Computer Science, Utah Valley University  
+Utah Valley University  
 📧 mmemari@uvu.edu | 🔗 [ORCID: 0000-0001-5654-4996](https://orcid.org/0000-0001-5654-4996)
 
 ---
@@ -134,8 +182,8 @@ Department of Computer Science, Utah Valley University
 
 ## 📜 License
 
-MIT License - See [LICENSE](LICENSE) file for details.
+MIT License - See [LICENSE](LICENSE)
 
 ---
 
-**Last Updated**: November 15, 2025 | **Status**: Published & Live 🚀
+**Last Updated**: November 15, 2025 | **Version**: 2.1 (Organized) | **Status**: Live 🚀
