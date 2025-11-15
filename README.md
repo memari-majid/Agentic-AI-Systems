@@ -1,166 +1,318 @@
-# Agentic AI Systems - Knowledge Base
+# Agentic AI Systems
 
-![Course Banner](assets/banner.png)
+A comprehensive knowledge base and research repository on Agentic AI systems, covering theoretical foundations, implementation frameworks, and practical applications.
 
-> **Build intelligent AI agent systems from theory to production**  
-> Easy-to-read Markdown files • No setup required • 110+ hours of content
+[![Documentation](https://img.shields.io/badge/docs-latest-blue.svg)](https://memari-majid.github.io/Agentic-AI-Systems/)
+[![arXiv Paper](https://img.shields.io/badge/arXiv-paper-red.svg)](arxiv-paper/paper.pdf)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![GitHub](https://img.shields.io/github/stars/memari-majid/Agentic-AI-Systems?style=social)](https://github.com/memari-majid/Agentic-AI-Systems)
+---
+
+> 📚 **Complete Guides Available**  
+> • [GitHub Pages Setup](GITHUB_PAGES_GUIDE.md) - Run and deploy documentation  
+> • [Paper Update Rules](PAPER_UPDATE_RULES.md) - Keep review current with academic standards  
+> • [Quick Reference](QUICK_REFERENCE.md) - Common commands and workflows
 
 ---
 
 ## 🚀 Quick Start
 
 ```bash
-# Pick your path
-cd 01-foundations    # Theory & concepts
-cd 02-implementation # Hands-on coding
-cd 03-modern-frameworks # Latest tech
-cd 04-strategy       # Leadership
-cd 05-research       # Frontier topics
-cd 06-labs           # Code examples
+# View the paper
+cd arxiv-paper && make view
 
-# Start reading
-cat README.md
+# Run documentation locally
+mkdocs serve  # Visit http://127.0.0.1:8000
+
+# Search for new papers
+python scripts/search_new_papers.py
+
+# Deploy documentation
+mkdocs gh-deploy
 ```
 
----
+**New here?** → Start with [`START-HERE.md`](START-HERE.md)
 
-## 📚 What's Inside
+## 📚 Repository Structure
 
-### [01 - Foundations](01-foundations/) (11 chapters)
-Core concepts and theory of intelligent agents
+```
+Agentic-AI-Systems/
+├── arxiv-paper/          # Review paper (LaTeX source + PDF)
+│   ├── paper.tex         # Main LaTeX document
+│   ├── paper.pdf         # Compiled PDF (43 pages, 104 refs)
+│   ├── references.bib    # Bibliography
+│   └── README.md         # Paper documentation
+├── papers/               # Research papers collection
+│   ├── *.pdf             # 5 converted research papers
+│   ├── PAPERS_SUMMARY.md # Extracted key findings
+│   ├── INTEGRATION_GUIDE.md # Integration instructions
+│   └── README.md         # Papers documentation
+├── docs/                 # MkDocs documentation source
+│   ├── index.md          # Landing page
+│   └── arxiv-paper/      # Paper documentation pages
+├── site/                 # Built documentation (GitHub Pages)
+├── scripts/              # Automation scripts
+│   └── search_new_papers.py  # Automated paper discovery
+├── GITHUB_PAGES_GUIDE.md    # Complete GitHub Pages guide
+├── PAPER_UPDATE_RULES.md    # Academic standards & workflows
+└── QUICK_REFERENCE.md       # Common commands
 
-### [02 - Implementation](02-implementation/) (10 chapters)
-Build agents with LangChain, LangGraph, and DSPy
+```
 
-### [03 - Modern Frameworks](03-modern-frameworks/) (10 topics)
-Latest technologies: Pydantic AI, MCP, OpenAI Swarm (2024-2025)
+## 📄 Main Paper
 
-### [04 - Strategy](04-strategy/) (17 chapters)
-Leadership, team building, and organizational transformation
+**Title**: Agentic AI Systems: A Comprehensive Framework for Building Autonomous Intelligent Agents
 
-### [05 - Research](05-research/) (1+ papers)
-RAG vs fine-tuning, frontier research topics
+**Author**: Majid Memari (Utah Valley University)
 
-### [06 - Labs](06-labs/) (13 labs + code)
-Hands-on exercises from beginner to advanced
+**Status**: Ready for arXiv submission
 
----
+**Statistics**:
+- **Pages**: 43
+- **References**: 104 peer-reviewed sources
+- **Word Count**: ~21,000 words
+- **Code Examples**: 15 complete implementations
 
-## 🎯 Choose Your Learning Path
+### Paper Highlights
 
-**🎓 Beginner?**  
-`01-foundations` → `02-implementation` → `06-labs` (beginner)
+1. **Unified Framework**: Theory to production
+2. **Autonomy Spectrum**: 5-level classification
+3. **7 Core Principles**: Essential design patterns
+4. **Pattern Library**: 15+ implementations
+5. **RAG vs Fine-Tuning**: Decision framework
+6. **Production Playbook**: Complete deployment guide
+7. **Strategic Framework**: Organizational adoption
 
-**👨‍💻 Developer?**  
-`02-implementation` → `03-modern-frameworks` → `06-labs` (advanced)
+## 🌐 Documentation & Deployment
 
-**📊 Leader?**  
-`04-strategy` → `01-foundations` → `03-modern-frameworks`
+### GitHub Pages
 
-**🔬 Researcher?**  
-`05-research` → `03-modern-frameworks` → `06-labs`
+**Live Site**: https://YOUR-USERNAME.github.io/Agentic-AI-Systems/
 
----
+**Run Locally**:
+```bash
+mkdocs serve
+```
 
-## 🔍 Find Content
+**Deploy**:
+```bash
+mkdocs gh-deploy
+```
+
+**Complete Guide**: [`GITHUB_PAGES_GUIDE.md`](GITHUB_PAGES_GUIDE.md)
+- Setup instructions
+- Configuration
+- Custom domain
+- Troubleshooting
+- Automated deployment with GitHub Actions
+
+## 🔄 Keeping the Paper Updated
+
+### Automated Paper Discovery
 
 ```bash
-# Search topics
-grep -r "multi-agent" .
-grep -r "RAG" .
-grep -r "LangChain" .
+# Find new papers (last 7 days)
+python scripts/search_new_papers.py
 
-# List chapters
-ls 01-foundations/
-ls 06-labs/
+# Longer timeframe
+python scripts/search_new_papers.py --days 14
 
-# Browse
-cd 01-foundations
-cat README.md  # Section guide
-cat 01-generative-ai-fundamentals.md  # Start reading
+# Review results
+cat new_papers.md
 ```
 
----
+### Update Rules
 
-## 📊 Content Overview
+See [`PAPER_UPDATE_RULES.md`](PAPER_UPDATE_RULES.md) for complete guidelines on:
 
-| Section | Chapters | Difficulty | Time |
-|---------|----------|------------|------|
-| Foundations | 11 | Beginner-Intermediate | ~20h |
-| Implementation | 10 | Intermediate-Advanced | ~30h |
-| Modern Frameworks | 10 | Advanced | ~15h |
-| Strategy | 17 | Advanced | ~25h |
-| Research | 1+ | Research | ~10h |
-| Labs | 13 | Beginner-Advanced | ~40h |
-| **Total** | **62** | - | **~140h** |
+**Academic Standards**:
+- ✅ Tier 1: NeurIPS, ICML, ICLR, ACL, Nature, Science
+- ✅ Tier 2: AAMAS, CoRL, IEEE Access, Information Fusion
+- ✅ Tier 3: Workshops at top venues, major lab tech reports
+- ❌ Non-peer-reviewed sources
 
----
+**Discovery Process**:
+- Weekly automated searches
+- Monthly deep reviews
+- Quarterly major updates
+- Citation tracking
 
-## 🛠️ Technologies Covered
+**Integration Workflow**:
+1. Search → 2. Screen → 3. Review → 4. Integrate → 5. Deploy
 
-**Frameworks**: LangChain • LangGraph • Pydantic AI • DSPy • OpenAI Swarm • CrewAI • AutoGPT  
-**Protocols**: Model Context Protocol (MCP) • Function Calling  
-**Platforms**: AWS Bedrock • Google Vertex AI • Azure AI • LangSmith
+**Quality Control**:
+- Peer-review requirement
+- Recent (< 3 years)
+- Proper citations
+- Section fit
+- Value addition
 
----
+## 📦 Research Papers Collection
 
-## 💡 How to Use
+Recently added 5 high-quality research papers (converted from PDF):
 
-✅ **Start with section READMEs** - Each has a navigation guide  
-✅ **Read sequentially** - Chapters build on each other  
-✅ **Try the labs** - Practice with real code  
-✅ **Search as needed** - Use grep or your IDE  
-✅ **No setup required** - Just open and read
+1. **Agentic AI Needs a Systems Theory** (IBM Research, 2025)
+2. **Agentic AI: Autonomous Intelligence** (IEEE Access, 2025)
+3. **Agentic AI Systems: Opportunities** (IEEE EIT, 2025)
+4. **AI Agents vs. Agentic AI** (Information Fusion, 2026)
+5. **The Rise of Agentic AI** (Future Internet, 2025)
 
----
+**Summary**: [`papers/PAPERS_SUMMARY.md`](papers/PAPERS_SUMMARY.md)  
+**Integration**: [`papers/INTEGRATION_GUIDE.md`](papers/INTEGRATION_GUIDE.md)
 
-## 👤 Author
+## 🛠️ Development
 
-**Majid Memari**  
-🌐 [Website](https://memari-majid.github.io/Agentic-AI-Systems/) • 💼 [LinkedIn](https://www.linkedin.com/in/majid-memari/) • 🐙 [GitHub](https://github.com/memari-majid)
+### Prerequisites
 
----
+```bash
+# For paper compilation
+sudo apt-get install texlive-full
 
-## 📝 Citation
+# For documentation
+pip install -r requirements.txt
+
+# For paper search
+pip install requests
+```
+
+### Common Commands
+
+See [`QUICK_REFERENCE.md`](QUICK_REFERENCE.md) for complete list.
+
+**Paper**:
+```bash
+cd arxiv-paper
+make          # Compile
+make view     # Open PDF
+make clean    # Clean files
+make wordcount # Count words
+```
+
+**Documentation**:
+```bash
+mkdocs serve      # Local preview
+mkdocs build      # Build site
+mkdocs gh-deploy  # Deploy to GitHub Pages
+```
+
+**Paper Discovery**:
+```bash
+python scripts/search_new_papers.py  # Search new papers
+cat new_papers.md                     # Review results
+```
+
+## 📊 Project Statistics
+
+- **Total References**: 104 peer-reviewed sources
+- **Research Papers**: 5 (converted and analyzed)
+- **Code Examples**: 15+ complete implementations
+- **Documentation Pages**: 60+ topics covered
+- **Lines of LaTeX**: ~3,000
+- **Repository Size**: ~20 MB
+
+## 🔬 Key Topics Covered
+
+### Theoretical Foundations
+- Agency and autonomy definitions
+- Functional agency framework
+- Cognitive architectures
+- System design principles
+- Multi-agent systems theory
+
+### Implementation
+- LangChain, LangGraph, Pydantic AI, DSPy
+- ReAct, Reflection, and Planning patterns
+- State management and memory systems
+- Tool integration and function calling
+- Multi-agent coordination
+
+### Practical Applications
+- Customer service automation
+- Software development assistance
+- Research and scientific discovery
+- Healthcare and finance applications
+- Robotic coordination
+
+### Production Considerations
+- Monitoring and observability
+- Safety and guardrails
+- Trustworthiness frameworks
+- Testing strategies
+- Scalability patterns
+
+## 🤝 Contributing
+
+Contributions welcome! Areas for contribution:
+
+1. **Add Papers**: Submit relevant research papers
+2. **Improve Documentation**: Enhance explanations
+3. **Share Use Cases**: Document applications
+4. **Report Issues**: Bug reports and suggestions
+5. **Code Examples**: Practical implementations
+
+**Process**:
+1. Fork repository
+2. Create feature branch
+3. Make changes
+4. Submit pull request
+5. Follow academic standards in [`PAPER_UPDATE_RULES.md`](PAPER_UPDATE_RULES.md)
+
+## 📖 Citation
+
+If you use this work in your research:
 
 ```bibtex
-@misc{memari2025agenticai,
-  author = {Memari, Majid},
-  title = {Agentic AI Systems: A Comprehensive Knowledge Base},
-  year = {2025},
-  publisher = {GitHub},
-  url = {https://github.com/memari-majid/Agentic-AI-Systems}
+@article{memari2025agentic,
+  title={Agentic AI Systems: A Comprehensive Framework for Building Autonomous Intelligent Agents},
+  author={Memari, Majid},
+  journal={arXiv preprint arXiv:XXXX.XXXXX},
+  year={2025},
+  institution={Utah Valley University}
 }
 ```
 
+## 📧 Contact
+
+**Author**: Majid Memari  
+**Institution**: Utah Valley University  
+**Email**: mmemari@uvu.edu  
+**ORCID**: 0000-0001-5654-4996
+
+## 📜 License
+
+MIT License - See LICENSE file for details
+
+## 🗂️ Documentation Index
+
+- **[START-HERE.md](START-HERE.md)** - Quick start guide ⭐
+- **[GITHUB_PAGES_GUIDE.md](GITHUB_PAGES_GUIDE.md)** - Complete GitHub Pages setup
+- **[PAPER_UPDATE_RULES.md](PAPER_UPDATE_RULES.md)** - Academic standards & workflows  
+- **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - Common commands
+- **[ORGANIZATION.md](ORGANIZATION.md)** - Repository structure
+- **[STRUCTURE_VISUAL.md](STRUCTURE_VISUAL.md)** - Visual directory tree
+
+## 🎯 Quick Links
+
+| Resource | Link |
+|----------|------|
+| **Paper PDF** | [arxiv-paper/paper.pdf](arxiv-paper/paper.pdf) |
+| **Documentation** | https://YOUR-USERNAME.github.io/Agentic-AI-Systems/ |
+| **Paper Summaries** | [papers/PAPERS_SUMMARY.md](papers/PAPERS_SUMMARY.md) |
+| **Integration Guide** | [papers/INTEGRATION_GUIDE.md](papers/INTEGRATION_GUIDE.md) |
+| **GitHub Pages Guide** | [GITHUB_PAGES_GUIDE.md](GITHUB_PAGES_GUIDE.md) |
+| **Update Rules** | [PAPER_UPDATE_RULES.md](PAPER_UPDATE_RULES.md) |
+
+## 🙏 Acknowledgments
+
+- Utah Valley University for supporting this research
+- The open-source AI community for frameworks and tools
+- All authors of referenced papers and research
+- Contributors to documentation and examples
+
 ---
 
-## 🤖 Keep Content Updated
+**Last Updated**: November 15, 2025  
+**Version**: 2.0 (Organized & Production-Ready)  
+**Status**: Active Development
 
-Run the AI agent to automatically check for updates:
-
-```bash
-# Install dependencies
-pip install openai requests
-
-# Set your API key
-export OPENAI_API_KEY="your-key"
-
-# Run the agent
-python update-agent.py
-```
-
-**The agent will:**
-- ✅ Check for framework version updates
-- ✅ Verify all internal links
-- ✅ Suggest content improvements
-- ✅ Generate maintenance recommendations
-
-**For automation**, see [AUTOMATION-GUIDE.md](AUTOMATION-GUIDE.md) for GitHub Actions setup.
-
----
-
-**Ready to learn? Pick a section above and start reading! 📚**
+**Next Steps**: See [START-HERE.md](START-HERE.md) to begin!

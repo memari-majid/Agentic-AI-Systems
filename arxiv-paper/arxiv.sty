@@ -1,0 +1,70 @@
+% arXiv.sty - Simple arXiv style file
+% This is a minimal implementation for arXiv-style formatting
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{arxiv}[2025/01/15 arXiv style]
+
+% Page layout
+\RequirePackage[
+  top=1in,
+  bottom=1in,
+  left=1in,
+  right=1in,
+  headheight=14pt
+]{geometry}
+
+% Better fonts
+\RequirePackage{lmodern}
+\RequirePackage[T1]{fontenc}
+
+% Improved typography
+\RequirePackage{microtype}
+
+% Line spacing
+\RequirePackage{setspace}
+\onehalfspacing
+
+% Section formatting
+\RequirePackage{titlesec}
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalsize\itshape}{\thesubsubsection}{1em}{}
+
+% Better tables
+\RequirePackage{array}
+\RequirePackage{longtable}
+
+% Better lists
+\RequirePackage{enumitem}
+
+% Math support
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{amsthm}
+
+% Abstract formatting
+\renewenvironment{abstract}{%
+  \begin{center}
+  \bfseries\abstractname
+  \end{center}
+  \quotation
+}{%
+  \endquotation
+}
+
+% Title formatting
+\renewcommand{\maketitle}{%
+  \begingroup
+  \begin{center}
+    {\LARGE\bfseries\@title\par}
+    \vskip 1em
+    {\large\@author\par}
+    \vskip 0.5em
+    {\large\@date\par}
+  \end{center}
+  \endgroup
+  \vskip 2em
+}
+
+\endinput
+

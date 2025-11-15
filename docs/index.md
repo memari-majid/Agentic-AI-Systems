@@ -8,6 +8,34 @@
 
 ---
 
+## 📄 New: Comprehensive Review Paper
+
+**Agentic AI Systems: A Comprehensive Framework for Building Autonomous Intelligent Agents**
+
+A 43-page peer-reviewed academic paper synthesizing the entire field with 99 verified references.
+
+<div class="grid cards" markdown>
+
+-   :material-file-pdf-box:{ .lg .middle } __Download Paper__
+
+    ---
+
+    Complete 43-page review with professional academic writing
+
+    [:octicons-download-24: Get PDF](paper.pdf){ .md-button .md-button--primary }
+
+-   :material-information:{ .lg .middle } __Learn More__
+
+    ---
+
+    Paper overview, structure, and citation information
+
+    [:octicons-arrow-right-24: Paper Overview](arxiv-paper/overview.md){ .md-button }
+
+</div>
+
+---
+
 ## 🚀 What You'll Learn
 
 This knowledge base provides everything you need to master agentic AI systems:

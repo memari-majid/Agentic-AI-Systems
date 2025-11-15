@@ -1,0 +1,116 @@
+/* Custom styling for Agentic AI Systems documentation */
+
+/* Primary color scheme */
+:root {
+  --md-primary-fg-color: #1565C0;
+  --md-primary-fg-color--light: #1976D2;
+  --md-primary-fg-color--dark: #0D47A1;
+  --md-accent-fg-color: #00897B;
+}
+
+/* Paper download button styling */
+.md-button--primary {
+  background-color: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+  color: white;
+}
+
+.md-button--primary:hover {
+  background-color: var(--md-primary-fg-color--light);
+  border-color: var(--md-primary-fg-color--light);
+}
+
+/* Card styling for paper section */
+.md-typeset .grid.cards > :is(ul, ol) > li {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.md-typeset .grid.cards > :is(ul, ol) > li:hover {
+  border-color: var(--md-accent-fg-color);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Enhance paper PDF link */
+a[href*="paper.pdf"] {
+  font-weight: 600;
+  color: var(--md-accent-fg-color);
+}
+
+/* Author information styling */
+.md-typeset h3 + ul li a[href*="orcid"] {
+  color: #A6CE39;
+  font-weight: 600;
+}
+
+.md-typeset h3 + ul li a[href*="linkedin"] {
+  color: #0077B5;
+  font-weight: 600;
+}
+
+.md-typeset h3 + ul li a[href*="github"] {
+  color: #333;
+  font-weight: 600;
+}
+
+/* Citation block styling */
+.md-typeset pre > code {
+  background-color: var(--md-code-bg-color);
+  border-left: 4px solid var(--md-accent-fg-color);
+}
+
+/* Admonition for paper highlights */
+.md-typeset .admonition.paper {
+  border-left-color: var(--md-accent-fg-color);
+}
+
+.md-typeset .admonition.paper > .admonition-title {
+  background-color: rgba(0, 137, 123, 0.1);
+}
+
+/* Statistics table enhancement */
+.md-typeset table th {
+  background-color: var(--md-primary-fg-color);
+  color: white;
+}
+
+/* Learning path cards */
+.md-typeset .grid > .card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.md-typeset .grid > .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Paper section badge */
+.paper-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background-color: var(--md-accent-fg-color);
+  color: white;
+  border-radius: 12px;
+  font-size: 0.85em;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+/* Responsive layout improvements */
+@media screen and (max-width: 76.1875em) {
+  .md-sidebar--primary {
+    top: 3.4rem;
+  }
+}
+
+/* Print styles for paper pages */
+@media print {
+  .md-header, .md-sidebar, .md-footer {
+    display: none;
+  }
+  
+  .md-content__inner {
+    max-width: none;
+  }
+}
+

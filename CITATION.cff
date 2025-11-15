@@ -5,17 +5,15 @@ type: software
 authors:
   - family-names: "Memari"
     given-names: "Majid"
-    email: majid.memari@example.com
-    affiliation: "Independent Researcher"
+    email: mmemari@uvu.edu
+    affiliation: "Department of Computer Science, Utah Valley University"
+    orcid: "https://orcid.org/0000-0001-5654-4996"
 identifiers:
   - type: url
     value: "https://github.com/memari-majid/Agentic-AI-Systems"
     description: "GitHub Repository"
-  - type: url
-    value: "https://memari-majid.github.io/Agentic-AI-Systems/"
-    description: "Documentation Website"
 repository-code: "https://github.com/memari-majid/Agentic-AI-Systems"
-url: "https://memari-majid.github.io/Agentic-AI-Systems/"
+url: "https://github.com/memari-majid/Agentic-AI-Systems"
 abstract: "A comprehensive knowledge base for building intelligent AI agent systems, covering foundational theory, practical implementation, modern frameworks, strategic considerations, research directions, and hands-on labs. This repository provides ~110 hours of content across 62 chapters and 13 Python labs."
 keywords:
   - agentic-ai
