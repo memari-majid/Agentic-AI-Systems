@@ -104,7 +104,19 @@ mkdocs gh-deploy
 
 ## 🔄 Keeping Updated
 
-### Automated Paper Discovery
+### 🤖 Automated Updates (GitHub Actions)
+
+The repository includes **AI-powered automation** to keep the paper updated:
+
+- **Weekly automatic updates** (every Monday)
+- **AI analysis** of new papers using GPT-4
+- **Framework version tracking** (LangChain, LangGraph, etc.)
+- **Link verification** and content suggestions
+- **Auto-generated GitHub issues** with findings
+
+**Setup**: See [`.github/SETUP_GITHUB_ACTIONS.md`](.github/SETUP_GITHUB_ACTIONS.md)
+
+### Manual Paper Discovery
 ```bash
 python scripts/search_new_papers.py
 cat new_papers.md

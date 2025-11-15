@@ -4,22 +4,26 @@ This directory contains automated workflows for maintaining the Agentic AI Syste
 
 ## 📋 Available Workflows
 
-### 1. Update Agentic AI Systems Review
-**File**: `workflows/update-review.yml`  
+### 1. AI-Powered Paper Update Agent ⭐ (Recommended)
+**File**: `workflows/ai-paper-update.yml`  
 **Trigger**: Weekly (Monday 9 AM UTC), Manual, or on workflow changes  
-**Purpose**: Automatically check for updates to the review content
+**Purpose**: AI-powered automated updates to keep the paper current
 
 **What it does:**
-- 🔍 Searches arXiv for relevant new papers (15 search queries)
-- 🤖 Uses GPT-4 to analyze paper relevance
-- 📦 Checks PyPI for framework version updates
+- 🤖 Runs AI Update Agent (`scripts/update_agent.py`)
+  - Searches arXiv for relevant new papers (15 curated queries)
+  - Uses GPT-4o-mini to analyze paper relevance (0-10 score)
+  - Suggests which section papers belong to
+- 📦 Checks PyPI for framework version updates (LangChain, LangGraph, etc.)
 - 🔗 Verifies links in README and paper
 - 💡 Generates AI-powered content suggestions
-- 📝 Creates/updates GitHub issue with comprehensive report
-- 📊 Uploads artifacts (update_report.md, update_suggestions.json)
+- 📝 Updates paper version automatically (YYYY.MM.DD format)
+- 📊 Creates/updates GitHub issue with comprehensive report
+- 🌐 Deploys updated documentation to GitHub Pages
+- 💾 Commits changes automatically
 
 **Requirements:**
-- `OPENAI_API_KEY` secret must be set
+- `OPENAI_API_KEY` secret must be set (see [SETUP_GITHUB_ACTIONS.md](SETUP_GITHUB_ACTIONS.md))
 - Workflow permissions: read/write for contents, issues, PRs
 
 **Estimated runtime**: 5-10 minutes  
@@ -28,29 +32,39 @@ This directory contains automated workflows for maintaining the Agentic AI Syste
 **Manual trigger:**
 ```bash
 # Via GitHub UI:
-Actions → Update Agentic AI Systems Review → Run workflow
+Actions → AI-Powered Paper Update Agent → Run workflow
 
 # Via GitHub CLI:
-gh workflow run update-review.yml
+gh workflow run ai-paper-update.yml
 ```
 
-### 2. Test Update Agent
-**File**: `workflows/test-update-agent.yml`  
-**Trigger**: Pull requests to update agent files, Manual  
-**Purpose**: Validate update agent code quality and functionality
+### 2. Weekly Paper Update (Basic)
+**File**: `workflows/weekly-paper-update.yml`  
+**Trigger**: Weekly (Monday 9 AM UTC), Manual  
+**Purpose**: Basic weekly paper search and version update (no AI)
 
 **What it does:**
-- ✅ Checks Python imports work correctly
-- ✅ Runs flake8 linting for syntax errors
-- ✅ Checks code formatting with black
-- ✅ Ensures no breaking changes
+- 📚 Searches for new papers (basic search, no AI analysis)
+- 📝 Updates paper version automatically
+- 💾 Commits changes
+- 🌐 Deploys documentation
+- 📊 Creates GitHub issue with findings
 
 **Requirements:**
-- No secrets required (runs without API key)
-- Workflow permissions: read only
+- No API key needed (free)
+- Workflow permissions: read/write for contents, issues
 
-**Estimated runtime**: 1-2 minutes  
+**Estimated runtime**: 2-3 minutes  
 **Cost**: FREE (GitHub Actions)
+
+**Manual trigger:**
+```bash
+# Via GitHub UI:
+Actions → Weekly Paper Update → Run workflow
+
+# Via GitHub CLI:
+gh workflow run weekly-paper-update.yml
+```
 
 ## 🔧 Configuration
 
@@ -60,7 +74,7 @@ Add in **Settings → Secrets and variables → Actions**:
 
 | Secret Name | Description | Required By |
 |------------|-------------|-------------|
-| `OPENAI_API_KEY` | OpenAI API key for GPT-4 analysis | update-review.yml |
+| `OPENAI_API_KEY` | OpenAI API key for GPT-4 analysis | ai-paper-update.yml |
 
 `GITHUB_TOKEN` is automatically provided by GitHub Actions.
 
@@ -82,12 +96,12 @@ This allows workflows to:
 
 | Workflow | Schedule | Cron Expression |
 |----------|----------|----------------|
-| Update Review | Every Monday 9 AM UTC | `0 9 * * 1` |
-| Test Agent | On PR only | N/A |
+| AI-Powered Paper Update | Every Monday 9 AM UTC | `0 9 * * 1` |
+| Weekly Paper Update | Every Monday 9 AM UTC | `0 9 * * 1` |
 
 ### Customizing Schedule
 
-Edit the `cron` expression in `update-review.yml`:
+Edit the `cron` expression in `ai-paper-update.yml` or `weekly-paper-update.yml`:
 
 ```yaml
 on:
@@ -120,9 +134,14 @@ on:
 
 Each workflow run produces downloadable artifacts:
 
-**update-review.yml**:
-- `update_report.md` - Human-readable markdown report
+**ai-paper-update.yml**:
+- `update_report.md` - Human-readable markdown report with AI analysis
 - `update_suggestions.json` - Machine-readable JSON data
+- Retained for 30 days
+
+**weekly-paper-update.yml**:
+- `new_papers_weekly.md` - Basic paper search results
+- `update_summary.md` - Update summary
 - Retained for 30 days
 
 **Access artifacts:**
@@ -132,13 +151,19 @@ Each workflow run produces downloadable artifacts:
 
 ### Issues
 
-**update-review.yml** creates/updates an issue:
-- **Title**: `🤖 Automated Review Update - YYYY-MM-DD`
-- **Labels**: `automated-update`, `enhancement`
-- **Content**: Full update report with findings
+**ai-paper-update.yml** creates/updates an issue:
+- **Title**: `🤖 AI-Powered Paper Update - YYYY-MM-DD`
+- **Labels**: `ai-update`, `paper-review`, `automated`
+- **Content**: Full AI analysis report with paper recommendations
 - **Location**: Issues tab
 
-If an existing issue with `automated-update` label exists (and is open), it will be updated instead of creating a new one.
+**weekly-paper-update.yml** creates/updates an issue:
+- **Title**: `📚 Weekly Paper Update - YYYY-MM-DD`
+- **Labels**: `weekly-update`, `paper-review`, `automated`
+- **Content**: Basic paper search results
+- **Location**: Issues tab
+
+If an existing issue with matching labels exists (and is open), it will be updated instead of creating a new one.
 
 ## 🔍 Monitoring
 
@@ -351,8 +376,7 @@ Add notification steps to workflow:
 
 ## 📚 Related Documentation
 
-- [QUICK-START.md](../QUICK-START.md) - 2-minute setup guide
-- [AUTOMATION-GUIDE.md](../AUTOMATION-GUIDE.md) - Complete automation guide
+- **[SETUP_GITHUB_ACTIONS.md](SETUP_GITHUB_ACTIONS.md)** - Complete setup guide ⭐
 - [scripts/README.md](../scripts/README.md) - Update agent documentation
 - [SECURITY.md](../SECURITY.md) - Security best practices
 
