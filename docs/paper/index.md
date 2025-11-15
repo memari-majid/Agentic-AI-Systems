@@ -42,4 +42,25 @@ This work provides a comprehensive reference for researchers, practitioners, and
 
 ---
 
+## 📖 How to Cite This Paper
+
+If you use this work in your research, please cite:
+
+```bibtex
+@article{memari2025agentic,
+  title={Agentic AI Systems: A Comprehensive Framework for Building Autonomous Intelligent Agents},
+  author={Memari, Majid},
+  journal={arXiv preprint arXiv:XXXX.XXXXX},
+  year={2025},
+  institution={Utah Valley University},
+  url={https://github.com/memari-majid/Agentic-AI-Systems},
+  note={Available at: \url{https://memari-majid.github.io/Agentic-AI-Systems/}}
+}
+```
+
+**📄 [Full Citation Guide →](../../CITING.md)** - APA, MLA, IEEE, Chicago formats  
+**📋 [BibTeX File →](../../arxiv-paper/references.bib)** - Complete bibliography
+
+---
+
 **[Continue to Section 1: Introduction →](01-introduction.md){ .md-button .md-button--primary }**
